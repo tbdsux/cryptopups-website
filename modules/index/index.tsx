@@ -10,6 +10,8 @@ const IndexPage = () => {
 
       <CardsPackEvent />
 
+      <hr />
+
       <CardAnatomy />
     </DefaultLayout>
   );

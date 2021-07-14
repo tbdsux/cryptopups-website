@@ -1,17 +1,10 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { ImageCenter, ImageContainerProps, IMAGES, ImageSides } from "./images";
 
 const GallerySlide = () => {
   const [prev, setPrev] = useState<ImageContainerProps>(IMAGES[0]);
   const [current, setCurrent] = useState<ImageContainerProps>(IMAGES[1]);
   const [next, setNext] = useState<ImageContainerProps>(IMAGES[2]);
-
-  const prevBtn = useRef<HTMLButtonElement>(null);
-  const nextBtn = useRef<HTMLButtonElement>(null);
-
-  const prevContainer = useRef<HTMLDivElement>(null);
-  const nextContainer = useRef<HTMLDivElement>(null);
-  const currentContainer = useRef<HTMLDivElement>(null);
 
   const prevFunc = () => {
     const isNextLast = IMAGES.indexOf(next) === IMAGES.length - 1;
@@ -32,12 +25,15 @@ const GallerySlide = () => {
   };
 
   return (
-    <div className="text-center">
+    <div className="text-center py-20">
       <h4 className="text-3xl font-black tracking-wide">Rarities</h4>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mt-8">
         <ImageSides image={prev.image} />
 
-        <button ref={prevBtn} onClick={prevFunc}>
+        <button
+          className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-800"
+          onClick={prevFunc}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -56,7 +52,10 @@ const GallerySlide = () => {
 
         <ImageCenter image={current.image} />
 
-        <button ref={nextBtn} onClick={nextFunc}>
+        <button
+          className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-800"
+          onClick={nextFunc}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"

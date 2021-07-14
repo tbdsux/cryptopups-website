@@ -15,6 +15,8 @@ const IndexPage = () => {
 
       <CardAnatomy />
 
+      <hr />
+
       <GallerySlide />
     </DefaultLayout>
   );

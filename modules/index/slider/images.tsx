@@ -67,11 +67,11 @@ const IMAGES: ImageContainerProps[] = [
 ];
 
 const ImageCenter = ({ image }: ImageContainerProps) => {
-  return <div className="relative h-128 w-full">{image}</div>;
+  return <div className="relative h-128 w-full drop-shadow-2xl">{image}</div>;
 };
 
 const ImageSides = ({ image }: ImageContainerProps) => {
-  return <div className="relative h-72 w-full">{image}</div>;
+  return <div className="relative h-72 w-full drop-shadow-2xl">{image}</div>;
 };
 
 export { ImageCenter, ImageSides, IMAGES, PUP_IMAGES };

@@ -15,7 +15,12 @@ module.exports = {
       alt: ['"Open Sans"', ...defaultTheme.fontFamily.sans],
       sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
     },
-    extend: {},
+    extend: {
+      spacing: {
+        112: "28em",
+        128: "32em",
+      },
+    },
   },
   variants: {
     extend: {},

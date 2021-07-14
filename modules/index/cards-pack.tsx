@@ -1,10 +1,12 @@
+import Image from "next/image";
 import Container from "../../components/container";
+import cardPackImg from "../../public/images/card_pack.png";
 
 const CardsPackEvent = () => {
   return (
     <Container className="w-4/5 flex items-center justify-between py-24">
-      <div className="w-5/12 h-96 border"></div>
-      <div className="w-6/12">
+      <Image src={cardPackImg} alt="Card Packs" height="2200" />
+      <div>
         <h3 className="text-5xl uppercase font-black tracking-wide">
           CARD Pack
         </h3>

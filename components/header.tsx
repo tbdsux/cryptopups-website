@@ -3,7 +3,7 @@ import Container from "./container";
 
 const Header = () => {
   return (
-    <header className="py-4 bg-gray-800">
+    <header className="py-3 bg-gray-900/50 hover:bg-gray-900 duration-500 fixed w-full items-center z-50">
       <Container className="w-11/12 text-center">
         <ul className="flex items-center justify-center text-gray-200 text-sm uppercase">
           <li className="px-8 py-2">

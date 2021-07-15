@@ -5,9 +5,9 @@ import SocialIcons from "./social-icons";
 
 const Showcase = () => {
   return (
-    <div className="bg-gray-900">
-      <Container className="w-5/6 text-center py-40">
-        <Image src={Logo} height="150" width="600" alt="World of CryptoPups" />
+    <div className="w-full bg-gray-900 relative">
+      <Container className="relative w-5/6 text-center py-36 z-40">
+        <Image src={Logo} height="225" width="500" alt="World of CryptoPups" />
         <p className="text-xl text-gray-100 leading-loose mt-4 tracking-wide">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
           reiciendis voluptates impedit esse corporis, perspiciatis similique
@@ -19,6 +19,16 @@ const Showcase = () => {
           <SocialIcons />
         </div>
       </Container>
+
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute w-full h-full inset-0 z-30 object-cover"
+        style={{ filter: "brightness(25%)" }}
+      >
+        <source src="/pack_vid.mp4" />
+      </video>
     </div>
   );
 };

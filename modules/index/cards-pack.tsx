@@ -17,9 +17,25 @@ const CardsPackEvent = () => {
           nisi accusantium?
         </p>
 
-        <button className="border py-2 px-16 rounded-full mt-4">BUY</button>
+        <button className="border py-3 px-16 text-gray-600 bg-gray-100 hover:bg-gray-300 duration-300 rounded-full mt-4 inline-flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+            />
+          </svg>{" "}
+          <span className="ml-2 font-bold">BUY</span>
+        </button>
 
-        <p className="text-right">Time Left 00:00:00</p>
+        <p className="text-right tracking-wide">Time Left 00:00:00</p>
       </div>
     </Container>
   );

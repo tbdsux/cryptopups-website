@@ -1,38 +1,22 @@
-import { useState } from "react";
-import { ImageCenter, ImageContainerProps, IMAGES, ImageSides } from "./images";
+import { useReducer } from "react";
+import { ImageCenter, ImageSides } from "./images";
+import { GallerySlideReducer, initGallerySlideReducer } from "./images-reducer";
 
 const GallerySlide = () => {
-  const [prev, setPrev] = useState<ImageContainerProps>(IMAGES[0]);
-  const [current, setCurrent] = useState<ImageContainerProps>(IMAGES[1]);
-  const [next, setNext] = useState<ImageContainerProps>(IMAGES[2]);
-
-  const prevFunc = () => {
-    const isNextLast = IMAGES.indexOf(next) === IMAGES.length - 1;
-
-    setPrev(current);
-    setCurrent(next);
-    setNext(isNextLast ? IMAGES[0] : IMAGES[IMAGES.indexOf(next) + 1]);
-  };
-
-  const nextFunc = () => {
-    const isPrevZero = IMAGES.indexOf(prev) === 0;
-
-    setPrev(
-      isPrevZero ? IMAGES[IMAGES.length - 1] : IMAGES[IMAGES.indexOf(prev) - 1]
-    );
-    setCurrent(prev);
-    setNext(current);
-  };
+  const [state, dispatch] = useReducer(
+    GallerySlideReducer,
+    initGallerySlideReducer
+  );
 
   return (
     <div className="text-center py-20">
       <h4 className="text-3xl font-black tracking-wide">Rarities</h4>
       <div className="flex items-center justify-center mt-8">
-        <ImageSides image={prev.image} />
+        <ImageSides image={state.prev.image} />
 
         <button
           className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-800"
-          onClick={prevFunc}
+          onClick={() => dispatch({ type: "prev" })}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -50,11 +34,11 @@ const GallerySlide = () => {
           </svg>
         </button>
 
-        <ImageCenter image={current.image} />
+        <ImageCenter image={state.current.image} />
 
         <button
           className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-800"
-          onClick={nextFunc}
+          onClick={() => dispatch({ type: "next" })}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +56,7 @@ const GallerySlide = () => {
           </svg>
         </button>
 
-        <ImageSides image={next.image} />
+        <ImageSides image={state.next.image} />
       </div>
     </div>
   );

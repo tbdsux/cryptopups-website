@@ -26,6 +26,7 @@ const IMAGES: ImageContainerProps[] = [
         alt="Common Pup"
         objectFit="contain"
         layout="fill"
+        placeholder="blur"
       />
     ),
   },
@@ -36,6 +37,7 @@ const IMAGES: ImageContainerProps[] = [
         alt="Cosmic Pup"
         objectFit="contain"
         layout="fill"
+        placeholder="blur"
       />
     ),
   },
@@ -46,12 +48,19 @@ const IMAGES: ImageContainerProps[] = [
         alt="Mythic Pup"
         objectFit="contain"
         layout="fill"
+        placeholder="blur"
       />
     ),
   },
   {
     image: (
-      <Image src={rarePup} alt="Rare Pup" objectFit="contain" layout="fill" />
+      <Image
+        src={rarePup}
+        alt="Rare Pup"
+        objectFit="contain"
+        layout="fill"
+        placeholder="blur"
+      />
     ),
   },
   {
@@ -61,17 +70,28 @@ const IMAGES: ImageContainerProps[] = [
         alt="Uncommon Pup"
         objectFit="contain"
         layout="fill"
+        placeholder="blur"
       />
     ),
   },
 ];
 
 const ImageCenter = ({ image }: ImageContainerProps) => {
-  return <div className="relative h-128 w-full drop-shadow-2xl">{image}</div>;
+  return (
+    <div className="relative h-128 w-full drop-shadow-2xl">
+      <div className="relative w-4/5 mx-auto h-full bg-gray-50 rounded-xl"></div>
+      {image}
+    </div>
+  );
 };
 
 const ImageSides = ({ image }: ImageContainerProps) => {
-  return <div className="relative h-72 w-full drop-shadow-2xl">{image}</div>;
+  return (
+    <div className="relative h-72 w-full drop-shadow-2xl">
+      <div className="relative w-1/2 mx-auto h-full bg-gray-50 rounded-xl"></div>
+      {image}
+    </div>
+  );
 };
 
 export { ImageCenter, ImageSides, IMAGES, PUP_IMAGES };

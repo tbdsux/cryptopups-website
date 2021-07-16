@@ -2,6 +2,7 @@ import Image from "next/image";
 import Container from "../../components/container";
 import cardPackImg from "../../public/_events/adventurers-pack.jpg";
 import AdventurersPackSlide from "./events/adventurers-pack/cards-slide";
+import EventsTimer from "./events/timer";
 
 const CardsPackEvent = () => {
   return (
@@ -45,7 +46,7 @@ const CardsPackEvent = () => {
             </button>
           </div>
         </div>
-        <p className="text-right tracking-wide">Time Left 00:00:00</p>
+        <EventsTimer />
       </Container>
 
       <AdventurersPackSlide />

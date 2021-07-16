@@ -11,7 +11,9 @@ const GallerySlide = () => {
 
   return (
     <div className="text-center py-20">
-      <h4 className="text-3xl font-black tracking-wide">Rarities</h4>
+      <h4 className="text-2xl md:text-3xl font-black tracking-wide text-warmGray-900">
+        Rarities
+      </h4>
       <Container className="w-11/12 sm:w-2/3 md:w-full">
         <div className="flex items-center justify-center mt-8">
           <ImageSides image={state.prev.image} />

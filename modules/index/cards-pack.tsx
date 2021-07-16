@@ -17,7 +17,7 @@ const CardsPackEvent = () => {
           nisi accusantium?
         </p>
 
-        <button className="border py-3 px-16 text-gray-600 bg-gray-100 hover:bg-gray-300 duration-300 rounded-full mt-4 inline-flex items-center">
+        <button className="py-3 px-16 text-gray-100 bg-gray-600 hover:bg-gray-800 duration-300 rounded-full mt-4 inline-flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"

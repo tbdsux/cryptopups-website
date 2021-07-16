@@ -17,7 +17,7 @@ const Footer = () => {
           placeholder="blur"
         />
 
-        <div className="flex items-center justify-between mt-8 text-sm">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between mt-8 text-sm">
           <div className="flex items-start">
             <div className="">
               <h5 className="text-gray-600 font-medium uppercase tracking-wide">
@@ -91,10 +91,10 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="">
+          <div className="mt-4 md:mt-0">
             <a
               href="https://discord.io/worldofcryptopups"
-              className="inline-flex items-center bg-gray-700 hover:bg-gray-800 duration-300 text-gray-100 py-3 px-8 rounded-full"
+              className="inline-flex items-center bg-gray-700 hover:bg-gray-800 duration-300 text-gray-100 py-2 lg:py-3 px-8 rounded-full"
             >
               <FontAwesomeIcon className="text-2xl mr-2" icon={faDiscord} />
               Join Our Clubhouse

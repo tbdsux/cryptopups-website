@@ -79,7 +79,7 @@ const IMAGES: ImageContainerProps[] = [
 const ImageCenter = ({ image }: ImageContainerProps) => {
   return (
     <div className="relative h-128 w-full drop-shadow-2xl">
-      <div className="relative w-4/5 mx-auto h-full bg-gray-50 rounded-xl"></div>
+      <div className="relative w-dull xl:w-4/5 mx-auto h-full bg-gray-50 rounded-xl"></div>
       {image}
     </div>
   );
@@ -87,8 +87,8 @@ const ImageCenter = ({ image }: ImageContainerProps) => {
 
 const ImageSides = ({ image }: ImageContainerProps) => {
   return (
-    <div className="relative h-72 w-full drop-shadow-2xl">
-      <div className="relative w-1/2 mx-auto h-full bg-gray-50 rounded-xl"></div>
+    <div className="hidden md:block relative h-72 w-full drop-shadow-2xl">
+      <div className="relative w-2/3 xl:w-1/2 mx-auto h-full bg-gray-50 rounded-xl"></div>
       {image}
     </div>
   );

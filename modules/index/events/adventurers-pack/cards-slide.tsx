@@ -21,7 +21,7 @@ const AdventurersPackSlide = () => {
       }}
     >
       <SwiperSlide>
-        <div className="relative w-full h-144 drop-shadow-xl">
+        <div className="relative w-full h-96 md:h-128 lg:h-144 drop-shadow-xl">
           <Image
             src={goldPack}
             layout="fill"
@@ -32,7 +32,7 @@ const AdventurersPackSlide = () => {
       </SwiperSlide>
 
       <SwiperSlide>
-        <div className="relative w-full h-144 drop-shadow-xl">
+        <div className="relative w-full h-80 md:h-128 lg:h-144 drop-shadow-xl">
           <Image
             src={silverPack}
             layout="fill"
@@ -43,7 +43,7 @@ const AdventurersPackSlide = () => {
       </SwiperSlide>
 
       <SwiperSlide>
-        <div className="relative w-full h-144 drop-shadow-xl">
+        <div className="relative w-full h-80 md:h-128 lg:h-144 drop-shadow-xl">
           <Image
             src={bronzePack}
             layout="fill"

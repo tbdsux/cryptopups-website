@@ -34,14 +34,14 @@ const Header = () => {
     >
       <Container className="w-11/12 text-center">
         <ul className="flex items-center justify-center text-gray-200 text-sm uppercase font-semibold">
-          <li className="px-8 py-2">
+          <li className="px-4 md:px-8 py-2">
             <Link href="/">
               <a className="tracking-wide hover:text-white" title="Goto Home">
                 Home
               </a>
             </Link>
           </li>
-          <li className="px-8 py-2">
+          <li className="px-4 md:px-8 py-2">
             <Link href="/">
               <a
                 className="tracking-wide hover:text-white"
@@ -51,14 +51,14 @@ const Header = () => {
               </a>
             </Link>
           </li>
-          <li className="px-8 py-2">
+          <li className="px-4 md:px-8 py-2">
             <Link href="/">
               <a className="tracking-wide hover:text-white" title="Goto Blog">
                 Blog
               </a>
             </Link>
           </li>
-          <li className="px-8 py-2">
+          <li className="px-4 md:px-8 py-2">
             <Link href="/">
               <a
                 className="tracking-wide hover:text-white"

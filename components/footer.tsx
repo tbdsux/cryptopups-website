@@ -9,7 +9,13 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 py-12">
       <Container className="w-5/6">
-        <Image src={Logo} height="75" width="175" alt="World of CryptoPups" />
+        <Image
+          src={Logo}
+          height="75"
+          width="175"
+          alt="World of CryptoPups"
+          placeholder="blur"
+        />
 
         <div className="flex items-center justify-between mt-8 text-sm">
           <div className="flex items-start">
@@ -87,7 +93,7 @@ const Footer = () => {
 
           <div className="">
             <a
-              href="https://"
+              href="https://discord.io/worldofcryptopups"
               className="inline-flex items-center bg-gray-700 hover:bg-gray-800 duration-300 text-gray-100 py-3 px-8 rounded-full"
             >
               <FontAwesomeIcon className="text-2xl mr-2" icon={faDiscord} />

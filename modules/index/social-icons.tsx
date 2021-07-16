@@ -1,7 +1,7 @@
 import {
   faFacebook,
   faInstagram,
-  faTwitter,
+  faTwitter
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
@@ -27,7 +27,7 @@ const SocialIcons = () => {
   return (
     <div>
       <p className="mb-4 text-gray-200 tracking-wider text-sm uppercase">
-        Visit us at our social pages
+        Follow us at our social pages to stay updated
       </p>
 
       <ul className="flex items-center justify-center">

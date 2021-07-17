@@ -27,6 +27,7 @@ const AdventurersPackSlide = () => {
             layout="fill"
             objectFit="contain"
             alt="Gold Pack - Adventurer's Pack"
+            title="Gold Pack - Adventurer's Pack"
           />
         </div>
       </SwiperSlide>
@@ -38,6 +39,7 @@ const AdventurersPackSlide = () => {
             layout="fill"
             objectFit="contain"
             alt="Silver Pack - Adventurer's Pack"
+            title="Silver Pack - Adventurer's Pack"
           />
         </div>
       </SwiperSlide>
@@ -49,6 +51,7 @@ const AdventurersPackSlide = () => {
             layout="fill"
             objectFit="contain"
             alt="Bronze Pack - Adventurer's Pack"
+            title="Bronze Pack - Adventurer's Pack"
           />
         </div>
       </SwiperSlide>

@@ -9,12 +9,12 @@ const CardsPackEvent = () => {
     <div className="py-24">
       <Container className="w-4/5 mb-12">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
-          <div className="md:mr-12 mb-8 md:mb-0">
+          <div className="md:mr-24 mb-8 md:mb-0">
             <Image
               src={cardPackImg}
               alt="Card Packs"
-              width="1800"
-              height="1100"
+              width="1500"
+              height="900"
               placeholder="blur"
             />
           </div>

@@ -10,6 +10,10 @@ module.exports = {
   mode: "jit",
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      xs: "425px",
+      ...defaultTheme.screens,
+    },
     colors,
     fontFamily: {
       alt: ['"Open Sans"', ...defaultTheme.fontFamily.sans],

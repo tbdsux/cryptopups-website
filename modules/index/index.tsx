@@ -1,8 +1,7 @@
 import DefaultLayout from "../../layout/default";
-import CardAnatomy from "./card-anatomy";
 import CardsPackEvent from "./cards-pack";
 import Showcase from "./showcase";
-import GallerySlide from "./slider/gallery-slide";
+import Rarities from "./slider/rarities";
 
 const IndexPage = () => {
   return (
@@ -11,13 +10,16 @@ const IndexPage = () => {
 
       <CardsPackEvent />
 
+      {/*
+      hide this component since it is incomplete
+
       <hr />
 
-      <CardAnatomy />
+      <CardAnatomy /> */}
 
       <hr />
 
-      <GallerySlide />
+      <Rarities />
     </DefaultLayout>
   );
 };

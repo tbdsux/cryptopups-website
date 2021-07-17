@@ -59,14 +59,15 @@ const Header = () => {
             </Link>
           </li>
           <li className="px-4 md:px-8 py-2">
-            <Link href="/">
-              <a
-                className="tracking-wide hover:text-white"
-                title="Goto Clubhouse"
-              >
-                Clubhouse
-              </a>
-            </Link>
+            <a
+              className="tracking-wide hover:text-white"
+              title="Goto Clubhouse"
+              href="https://discord.io/worldofcryptopups"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Clubhouse
+            </a>
           </li>
         </ul>
       </Container>

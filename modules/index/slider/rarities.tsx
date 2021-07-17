@@ -3,7 +3,7 @@ import Container from "../../../components/container";
 import { ImageCenter, ImageSides } from "./images";
 import { GallerySlideReducer, initGallerySlideReducer } from "./images-reducer";
 
-const GallerySlide = () => {
+const Rarities = () => {
   const [state, dispatch] = useReducer(
     GallerySlideReducer,
     initGallerySlideReducer
@@ -19,7 +19,7 @@ const GallerySlide = () => {
           <ImageSides image={state.prev.image} />
 
           <button
-            className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-800"
+            className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-800 mx-3"
             onClick={() => dispatch({ type: "prev" })}
           >
             <svg
@@ -41,7 +41,7 @@ const GallerySlide = () => {
           <ImageCenter image={state.current.image} />
 
           <button
-            className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-800"
+            className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-800 mx-4 md:mx-0"
             onClick={() => dispatch({ type: "next" })}
           >
             <svg
@@ -67,4 +67,4 @@ const GallerySlide = () => {
   );
 };
 
-export default GallerySlide;
+export default Rarities;

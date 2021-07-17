@@ -85,7 +85,7 @@ const EventsTimer = () => {
   if (waiting)
     return (
       <p className="text-right tracking-wide">
-        <span className="mr-4">Time Left</span>
+        <span className="mr-4">Waiting</span>
         <b>
           {timeLeft
             ? Object.keys(timeLeft).map(
@@ -102,7 +102,7 @@ const EventsTimer = () => {
   if (ongoing)
     return (
       <p className="text-right tracking-wide">
-        <span className="mr-4">On Going</span>
+        <span className="mr-4">Time Left</span>
         <b>
           {timeLeft
             ? Object.keys(timeLeft).map(

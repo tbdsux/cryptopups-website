@@ -1,23 +1,24 @@
 import {
   faFacebook,
   faInstagram,
-  faTwitter
+  faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
+
+// social links of the website
 const SocialLinks = [
   {
-    name: "facebook",
+    name: "Facebook",
     icon: faFacebook,
     link: "https://web.facebook.com/therealcryptopups",
   },
   {
-    name: "twitter",
+    name: "Twitter",
     icon: faTwitter,
     link: "https://twitter.com/apppllleee_pie",
   },
   {
-    name: "instagram",
+    name: "Instagram",
     icon: faInstagram,
     link: "https://www.instagram.com/apppllleee_pie/",
   },
@@ -33,17 +34,18 @@ const SocialIcons = () => {
       <ul className="flex items-center justify-center">
         {SocialLinks.map((s) => (
           <li key={s.name}>
-            <Link href={s.link}>
-              <a
-                className="text-3xl text-gray-200 mx-1 group"
-                title={`Visit us at ${s.name}`}
-              >
-                <FontAwesomeIcon
-                  icon={s.icon}
-                  className="transform group-hover:scale-110 duration-500"
-                />
-              </a>
-            </Link>
+            <a
+              className="text-3xl text-gray-200 mx-1 group"
+              title={`Visit us at ${s.name}`}
+              target="_blank"
+              rel="noreferrer"
+              href={s.link}
+            >
+              <FontAwesomeIcon
+                icon={s.icon}
+                className="transform group-hover:scale-110 duration-500"
+              />
+            </a>
           </li>
         ))}
       </ul>
@@ -52,3 +54,4 @@ const SocialIcons = () => {
 };
 
 export default SocialIcons;
+export { SocialLinks };

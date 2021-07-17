@@ -2,6 +2,7 @@ import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
+import { SocialLinks } from "../modules/index/social-icons";
 import Logo from "../public/logo.png";
 import Container from "./container";
 
@@ -32,23 +33,23 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="my-1">
-                  <Link href="/">
+                  <Link href="/gallery">
                     <a className="hover:text-white" title="Goto Gallery">
                       Gallery
                     </a>
                   </Link>
                 </li>
                 <li className="my-1">
-                  <Link href="/">
+                  <Link href="/blog">
                     <a className="hover:text-white" title="Goto Blog">
                       Blog
                     </a>
                   </Link>
                 </li>
                 <li className="my-1">
-                  <Link href="/">
+                  <Link href="/contact-us">
                     <a className="hover:text-white" title="Goto Us">
-                      About Us
+                      Contact Us
                     </a>
                   </Link>
                 </li>
@@ -60,33 +61,19 @@ const Footer = () => {
                 Social Media
               </h5>
               <ul className="text-gray-100">
-                <li className="my-1">
-                  <a
-                    className="hover:text-white"
-                    title="Goto Facebook"
-                    href="https://"
-                  >
-                    Facebook
-                  </a>
-                </li>
-                <li className="my-1">
-                  <a
-                    className="hover:text-white"
-                    title="Goto Twitter"
-                    href="https://"
-                  >
-                    Twitter
-                  </a>
-                </li>
-                <li className="my-1">
-                  <a
-                    className="hover:text-white"
-                    title="Goto Instagram"
-                    href="https://"
-                  >
-                    Instagram
-                  </a>
-                </li>
+                {SocialLinks.map((s, index) => (
+                  <li className="my-1" key={index}>
+                    <a
+                      className="hover:text-white"
+                      title={`Goto ${s.name}`}
+                      href={s.link}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {s.name}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

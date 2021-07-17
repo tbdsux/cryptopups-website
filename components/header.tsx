@@ -42,7 +42,7 @@ const Header = () => {
             </Link>
           </li>
           <li className="px-4 md:px-8 py-2">
-            <Link href="/">
+            <Link href="/gallery">
               <a
                 className="tracking-wide hover:text-white"
                 title="Goto Gallery"
@@ -52,7 +52,7 @@ const Header = () => {
             </Link>
           </li>
           <li className="px-4 md:px-8 py-2">
-            <Link href="/">
+            <Link href="/blog">
               <a className="tracking-wide hover:text-white" title="Goto Blog">
                 Blog
               </a>

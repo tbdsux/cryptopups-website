@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import { useHasMounted } from "../../../hooks/useHasMounted";
 
-const DATE = "Sat, 17 Jul 2021 16:00:00 UTC";
-const TIME_EVENT_HOURS = 12;
+const DATE = "Sat, 17 Jul 2021 16:00:00 UTC"; // event start date
+const TIME_EVENT_HOURS = 24; // duration of event
 var xDate = new Date(DATE);
 const END_DATE = new Date(xDate.setHours(xDate.getHours() + TIME_EVENT_HOURS));
 

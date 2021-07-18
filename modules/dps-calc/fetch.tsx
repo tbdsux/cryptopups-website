@@ -42,11 +42,11 @@ const DPS_Fetch = ({ wallet }: DPS_FetchProps) => {
     <Container className="w-5/6 mx-auto">
       <DPS_Calculate
         owner={wallet}
-        data={[
-          ...pupskinsData.data,
-          ...puppycardsData.data,
-          ...pupitemsData.data,
-        ]}
+        data={{
+          pupskins: pupskinsData.data,
+          puppycards: puppycardsData.data,
+          pupitems: pupitemsData.data,
+        }}
       />
 
       <hr className="my-4" />

@@ -62,6 +62,7 @@ export interface Data {
   BackImg: string;
   Description: string;
   "Authenticity Card": string;
+  "Item Owner"?: string;
 }
 
 export interface MutableData {}

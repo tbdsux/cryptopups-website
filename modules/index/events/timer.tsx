@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 import { useHasMounted } from "../../../hooks/useHasMounted";
 
 const DATE = "Sat, 17 Jul 2021 16:00:00 UTC";
-const TIME_EVENT_HOURS = "12";
+const TIME_EVENT_HOURS = 12;
 var xDate = new Date(DATE);
+const END_DATE = new Date(xDate.setHours(xDate.getHours() + TIME_EVENT_HOURS));
 
 type CalculateEventTimeTypeProps =
   | "days"
@@ -49,7 +50,7 @@ const EventsTimer = () => {
       return false;
     }
 
-    return !isEventDone(DATE);
+    return !isEventDone(END_DATE.toString());
   });
   const [timeLeft, setTimeLeft] = useState(CalculateEventTime(DATE));
 
@@ -73,15 +74,12 @@ const EventsTimer = () => {
 
   useEffect(() => {
     if (!waiting && ongoing) {
-      setD(
-        new Date(
-          xDate.setHours(xDate.getHours() + Number(TIME_EVENT_HOURS))
-        ).toLocaleString()
-      );
+      setD(END_DATE.toString());
     }
   }, [waiting, ongoing]);
 
   if (!mounted) return <></>;
+
   if (waiting)
     return (
       <p className="text-right tracking-wide">

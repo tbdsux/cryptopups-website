@@ -117,9 +117,12 @@ const Footer = () => {
 
         <div className="text-sm text-gray-200 flex items-center justify-between">
           <p className="tracking-wider">
-            All Rights Reserved | &copy; {new Date().getFullYear()}
+            All Rights Reserved | World of CryptoPups &copy;{" "}
+            {new Date().getFullYear()}
           </p>
-          <p className="tracking-wider">World of CryptoPups</p>
+          <p className="tracking-wider">
+            <small>(website is still in heavy development!)</small>
+          </p>
         </div>
       </Container>
     </footer>

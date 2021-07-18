@@ -1,23 +1,18 @@
 import { ReactNode } from "react";
 import Footer from "../components/footer";
-import Header from "../components/header";
 import BaseLayout from "./base";
 
-type DefaultLayoutProps = {
+type CustomLayoutProps = {
   title: string;
   children: ReactNode;
 };
-
-const DefaultLayout = ({ title, children }: DefaultLayoutProps) => (
+const CustomLayout = ({ title, children }: CustomLayoutProps) => (
   <BaseLayout title={title}>
-    {/* header component */}
-    <Header />
-
-    <div>{children}</div>
+    {children}
 
     {/* footer component */}
     <Footer />
   </BaseLayout>
 );
 
-export default DefaultLayout;
+export default CustomLayout;

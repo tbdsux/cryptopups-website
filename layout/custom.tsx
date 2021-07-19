@@ -3,11 +3,10 @@ import Footer from "../components/footer";
 import BaseLayout from "./base";
 
 type CustomLayoutProps = {
-  title: string;
   children: ReactNode;
 };
-const CustomLayout = ({ title, children }: CustomLayoutProps) => (
-  <BaseLayout title={title}>
+const CustomLayout = ({ children }: CustomLayoutProps) => (
+  <BaseLayout>
     {children}
 
     {/* footer component */}

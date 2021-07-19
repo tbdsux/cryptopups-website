@@ -4,12 +4,11 @@ import Header from "../components/header";
 import BaseLayout from "./base";
 
 type DefaultLayoutProps = {
-  title: string;
   children: ReactNode;
 };
 
-const DefaultLayout = ({ title, children }: DefaultLayoutProps) => (
-  <BaseLayout title={title}>
+const DefaultLayout = ({ children }: DefaultLayoutProps) => (
+  <BaseLayout>
     {/* header component */}
     <Header />
 

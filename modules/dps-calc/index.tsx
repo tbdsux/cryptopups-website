@@ -1,3 +1,4 @@
+import { NextSeo } from "next-seo";
 import { useRef, useState } from "react";
 import CustomPageHeader from "../../components/custom-page-header";
 import CustomLayout from "../../layout/custom";
@@ -21,7 +22,14 @@ const DPSCalculatorPage = () => {
   };
 
   return (
-    <CustomLayout title="DPS Calculator">
+    <CustomLayout>
+      {/* start seo */}
+      <NextSeo
+        title="DPS Calculator"
+        description="Calculate your DPS by entering your WAX wallet below"
+      />
+      {/* end seo */}
+
       <CustomPageHeader
         title="DPS Calculator"
         description="Calculate your DPS by entering your WAX wallet below"

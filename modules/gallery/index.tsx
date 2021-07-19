@@ -1,8 +1,16 @@
+import { NextSeo } from "next-seo";
 import DefaultLayout from "../../layout/default";
 
 const GalleryPage = () => {
   return (
-    <DefaultLayout title="Gallery">
+    <DefaultLayout>
+      {/* start seo */}
+      <NextSeo
+        title="Gallery"
+        description="View our pup collections, cards, skins, and items"
+      />
+      {/* end seo */}
+
       <div>START OF GALLERY PAGE</div>
     </DefaultLayout>
   );

@@ -34,13 +34,14 @@ const DPS_Fetch = ({ wallet }: DPS_FetchProps) => {
     return <div className="text-sm tracking-wide text-center">Fetching...</div>;
   }
 
-  if (pupsSkinsError || puppyCardsError || pupitemsError) {
-    return (
-      <div className="text-sm tracking-wide text-center">
-        Request failed, maybe WAX ID is wrong?
-      </div>
-    );
-  }
+  // if (pupsSkinsError || puppyCardsError || pupitemsError) {
+  //   return (
+  //     <div className="text-sm tracking-wide text-center">
+  //       Request failed, maybe WAX ID is wrong?
+  //       {pupsSkinsError}
+  //     </div>
+  //   );
+  // }
 
   return (
     <Container className="w-5/6 mx-auto">

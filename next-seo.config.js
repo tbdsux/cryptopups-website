@@ -7,7 +7,7 @@ module.exports = {
     site_name: "World of CryptoPups",
     images: [
       {
-        url: "https://cryptopups.cf/logo.png",
+        url: "https://www.cryptopups.cf/logo.png",
         height: 200,
         width: 400,
         alt: "The World of CryptoPups",

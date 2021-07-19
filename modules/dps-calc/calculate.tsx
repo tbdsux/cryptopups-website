@@ -25,7 +25,7 @@ const dpsItemsCalculator = (basis: Datum[], data: Datum[], owner: string) => {
     const element = data[index];
 
     const exists = basis.filter((d) => {
-      var _name = d.data.name;
+      var _name = d.data.name.trim();
 
       // patch fixes for demon and mecha items
       if (demon.includes(_name)) {
@@ -34,7 +34,11 @@ const dpsItemsCalculator = (basis: Datum[], data: Datum[], owner: string) => {
         _name = "Mecha";
       }
 
-      return _name === element.data["Item Owner"] && owner === element.owner;
+      if (element.data["Item Owner"]?.includes("Astro")) {
+        console.log(element.data);
+      }
+
+      return _name === element.data["Item Owner"]?.trim() && owner === element.owner;
     })[0];
     if (exists) {
       dps += Number(element.data.DPS);

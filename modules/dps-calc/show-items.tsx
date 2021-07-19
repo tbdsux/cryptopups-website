@@ -9,7 +9,7 @@ const ShowItems = ({ owner, data }: DPSComponentProps) => {
             key={index}
             className="flex items-center justify-between border-b p-2"
           >
-            <p>{d.data.name}</p>
+            <p>{d.data.name.trim()}</p>
             <strong className="text-gray-800">{d.data.DPS}</strong>
           </li>
         ) : null

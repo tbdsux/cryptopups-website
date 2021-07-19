@@ -2,7 +2,7 @@ import { DPSComponentProps } from "./apitypes";
 
 const ShowItems = ({ owner, data }: DPSComponentProps) => {
   return (
-    <ul>
+    <ul className="h-112 overflow-auto border p-2 rounded-lg">
       {data.map((d, index) =>
         d.owner === owner ? (
           <li

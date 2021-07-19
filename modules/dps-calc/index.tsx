@@ -24,7 +24,7 @@ const DPSCalculatorPage = () => {
     <CustomLayout title="DPS Calculator">
       <CustomPageHeader
         title="DPS Calculator"
-        description="Calculate your DPS from the pups that you have..."
+        description="Calculate your DPS by entering your WAX wallet below"
       >
         <div className="text-center mt-8">
           <div className="text-sm">

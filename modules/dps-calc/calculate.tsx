@@ -14,18 +14,27 @@ const dpsCalculator = ({ data, owner }: DPSComponentProps) => {
   return dps;
 };
 
+// fix: item owners could be different?
+const demon = ["Demon Queen", "Demon Ace", "Demon King"];
+const mecha = ["Mecha Glitter", "Mecha Apollo", "Mecha Draco"];
+
 const dpsItemsCalculator = (basis: Datum[], data: Datum[], owner: string) => {
   var dps = 0;
-
-  console.log(data[0]);
 
   for (let index = 0; index < data.length; index++) {
     const element = data[index];
 
     const exists = basis.filter((d) => {
-      return (
-        d.data.name === element.data["Item Owner"] && owner === element.owner
-      );
+      var _name = d.data.name;
+
+      // patch fixes for demon and mecha items
+      if (demon.includes(_name)) {
+        _name = "Demon";
+      } else if (mecha.includes(_name)) {
+        _name = "Mecha";
+      }
+
+      return _name === element.data["Item Owner"] && owner === element.owner;
     })[0];
     if (exists) {
       dps += Number(element.data.DPS);

@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
+import Logo from "../public/logo.png";
 import Container from "./container";
 
 type CustomPageHeaderProps = {
@@ -14,8 +16,19 @@ const CustomPageHeader = ({
   children,
 }: CustomPageHeaderProps) => {
   return (
-    <header className="py-12">
-      <Container className="w-11/12 mx-auto">
+    <header className="pb-12">
+      <div className="bg-gray-900 pt-12 pb-8">
+        <Container className="w-11/12 text-center">
+          <Image
+            src={Logo}
+            height="100"
+            width="250"
+            alt="World of CryptoPups"
+          />
+        </Container>
+      </div>
+
+      <Container className="w-11/12 mt-4 mx-auto">
         <Link href="/">
           <a
             className="text-sm tracking-wide hover:underline"

@@ -27,6 +27,10 @@ const DPSCalculatorPage = () => {
       <NextSeo
         title="DPS Calculator"
         description="Calculate your DPS by entering your WAX wallet below"
+        openGraph={{
+          title: "DPS Calculator",
+          description: "Calculate your DPS by entering your WAX wallet below",
+        }}
       />
       {/* end seo */}
 

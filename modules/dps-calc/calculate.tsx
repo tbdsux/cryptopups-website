@@ -34,11 +34,9 @@ const dpsItemsCalculator = (basis: Datum[], data: Datum[], owner: string) => {
         _name = "Mecha";
       }
 
-      if (element.data["Item Owner"]?.includes("Astro")) {
-        console.log(element.data);
-      }
-
-      return _name === element.data["Item Owner"]?.trim() && owner === element.owner;
+      return (
+        _name === element.data["Item Owner"]?.trim() && owner === element.owner
+      );
     })[0];
     if (exists) {
       dps += Number(element.data.DPS);

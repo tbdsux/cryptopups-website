@@ -31,11 +31,15 @@ const DPS_Fetch = ({ wallet }: DPS_FetchProps) => {
   );
 
   if (!pupskinsData || !puppycardsData || !pupitemsData) {
-    return <div>Fetching...</div>;
+    return <div className="text-sm tracking-wide text-center">Fetching...</div>;
   }
 
   if (pupsSkinsError || puppyCardsError || pupitemsError) {
-    return <div>Request failed, maybe WAX ID is wrong?</div>;
+    return (
+      <div className="text-sm tracking-wide text-center">
+        Request failed, maybe WAX ID is wrong?
+      </div>
+    );
   }
 
   return (

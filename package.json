@@ -14,7 +14,13 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "@hapi/iron": "^6.0.0",
+    "@scatterjs/eosjs2": "^1.5.36",
+    "@waxio/waxjs": "^0.0.15",
     "autoprefixer": "^10.2.6",
+    "cookie": "^0.4.1",
+    "eosjs": "20.0.0",
+    "ioredis": "^4.27.6",
     "next": "11.0.1",
     "next-seo": "^4.26.0",
     "postcss": "^8.3.5",
@@ -25,6 +31,8 @@
     "tailwindcss": "^2.2.4"
   },
   "devDependencies": {
+    "@types/cookie": "^0.4.1",
+    "@types/ioredis": "^4.26.6",
     "@types/react": "17.0.13",
     "eslint": "7.29.0",
     "eslint-config-next": "11.0.1",

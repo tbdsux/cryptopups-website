@@ -1,8 +1,10 @@
 type AuthUser = {
-  walletId: string;
+  wallet: string;
   type: string;
   discordId?: string;
   token: string;
 };
 
-export type { AuthUser };
+type AuthData = AuthUser | Record<string, string>;
+
+export type { AuthUser, AuthData };

@@ -1,35 +1,40 @@
 import {
-    createContext,
-    Dispatch,
-    ReactNode,
-    SetStateAction,
-    useState
+  createContext,
+  Dispatch,
+  ReactNode,
+  SetStateAction,
+  useEffect,
+  useState
 } from "react";
-type AuthContextTypeProps = 'anchor' | 'scatter' | 'wax-cloud' | string
+import useSWR from "swr";
+import { AuthData } from "../types/auth";
+type AuthContextTypeProps = "anchor" | "scatter" | "wax-cloud" | string;
 
 type AuthContextProps = {
-  walletId: string;
-  setWalletId: Dispatch<SetStateAction<string>>;
-  type: AuthContextTypeProps,
-  setType: Dispatch<SetStateAction<AuthContextTypeProps>>
+  session?: AuthData;
+  setSession: Dispatch<SetStateAction<AuthData | undefined>>;
 };
 type AuthProviderProps = {
   children: ReactNode;
 };
 
 const AuthContext = createContext<AuthContextProps>({
-  walletId: "",
-  setWalletId: () => {},
-  type: '',
-  setType: () => {}
+  setSession: () => {},
 });
 
 const AuthProvider = ({ children }: AuthProviderProps) => {
-  const [walletId, setWalletId] = useState("");
-  const [type, setType] = useState<AuthContextTypeProps>("")
+  const [session, setSession] = useState<AuthData | undefined>();
+
+  const { data } = useSWR("/api/auth/me");
+
+  useEffect(() => {
+    if (data) {
+      setSession(data.session);
+    }
+  }, [data]);
 
   return (
-    <AuthContext.Provider value={{ walletId, setWalletId, type, setType }}>
+    <AuthContext.Provider value={{ session, setSession }}>
       {children}
     </AuthContext.Provider>
   );

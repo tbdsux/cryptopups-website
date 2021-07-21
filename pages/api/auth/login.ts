@@ -1,31 +1,59 @@
+import { nanoid } from "nanoid";
 import type { NextApiRequest, NextApiResponse } from "next";
+import { createSession } from "../../../lib/auth";
+import { redis } from "../../../lib/redis";
+import { AuthUser } from "../../../types/auth";
 
 const login = async (req: NextApiRequest, res: NextApiResponse) => {
-  const { walletId, type } = req.body;
+  const { wallet, type } = req.body;
 
-  if (!walletId || !type) {
-    res.status(400).json({ error: true, data: {} });
+  if (!wallet || !type) {
+    res.status(400).json({ error: true, data: {}, message: "Missing values!" });
     return;
   }
 
-  //   if (login) {
-  //     const token = login.secret;
-  //     const u = await user.obtainUser(token, email);
+  const r = redis();
 
-  //     const username = u.data.username;
-  //     const userData = <UserProps>{
-  //       username,
-  //       email,
-  //       token,
-  //     };
+  // check if logged in / data already exists in database
+  const check = await r.get(wallet);
+  console.log(check);
+  if (check) {
+    const d = await r.hgetall(check);
 
-  //     // create a new session
-  //     await createSession(res, userData);
+    // store session
+    await createSession(res, d);
 
-  //     res.status(200).json({ userData });
-  //   } else {
-  //     res.status(401).json({ login: "failed" });
-  //   }
+    res.status(200).json({
+      error: false,
+      data: d,
+    });
+    return;
+  }
+
+  // generate tokenid for confirmation
+  const _tokenId = nanoid(12);
+
+  // try to create a new account? / data
+  const d: AuthUser = {
+    wallet,
+    type,
+    token: _tokenId,
+  };
+
+  await r.hset(_tokenId, d);
+  await r.set(wallet, _tokenId);
+
+  // store session
+  await createSession(res, d);
+
+  res.status(200).json({
+    error: false,
+    data: {
+      wallet,
+      type,
+      token: _tokenId,
+    },
+  });
 };
 
 export default login;

@@ -1,6 +1,6 @@
 import { CookieSerializeOptions, parse, serialize } from "cookie";
 import { NextApiRequest, NextApiResponse } from "next";
-import { AuthUser } from "../../types/auth";
+import { AuthData, AuthUser } from "../../types/auth";
 import { decrypt, encrypt } from "../iron";
 
 const TOKEN_NAME = "session"; // replace this with the name of your app, if you want to
@@ -20,7 +20,7 @@ const parseCookies = (req: NextApiRequest) => {
 };
 
 // creates a new session and store in a cookie
-const createSession = async (res: NextApiResponse, data: AuthUser) => {
+const createSession = async (res: NextApiResponse, data: AuthData) => {
   const token = await encrypt(data);
 
   const c = {

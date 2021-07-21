@@ -1,7 +1,7 @@
 import Iron from "@hapi/iron";
-import { AuthUser } from "../types/auth";
+import { AuthData } from "../types/auth";
 
-const encrypt = async (data: AuthUser) => {
+const encrypt = async (data: AuthData) => {
   return data && Iron.seal(data, process.env.SECRET_TOKEN || "", Iron.defaults);
 };
 

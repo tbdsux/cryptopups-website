@@ -1,5 +1,6 @@
 import useSWR from "swr";
 import Container from "../../components/container";
+import { PUPITEMS_API, PUPPYCARDS_API, PUPSKINS_API } from "../../lib/apilinks";
 import { WAXResponseProps } from "./apitypes";
 import DPS_Calculate from "./calculate";
 import ShowItems from "./show-items";
@@ -7,10 +8,6 @@ import ShowItems from "./show-items";
 type DPS_FetchProps = {
   wallet: string;
 };
-
-const PUPSKINS_API = `https://wax.api.atomicassets.io/atomicassets/v1/assets?owner={{owner}}&collection_name=cryptopuppie&schema_name=pupskincards&page=1&limit=1000&order=desc&sort=asset_id`;
-const PUPPYCARDS_API = `https://wax.api.atomicassets.io/atomicassets/v1/assets?owner={{owner}}&collection_name=cryptopuppie&schema_name=puppycards&page=1&limit=1000&order=desc&sort=asset_id`;
-const PUPITEMS_API = `https://wax.api.atomicassets.io/atomicassets/v1/assets?owner={{owner}}&collection_name=cryptopuppie&schema_name=pupitems&page=1&limit=1000&order=desc&sort=asset_id`;
 
 const DPS_Fetch = ({ wallet }: DPS_FetchProps) => {
   // pupskins

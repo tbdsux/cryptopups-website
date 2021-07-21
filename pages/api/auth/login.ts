@@ -15,8 +15,7 @@ const login = async (req: NextApiRequest, res: NextApiResponse) => {
   const r = redis();
 
   // check if logged in / data already exists in database
-  const check = await r.get(wallet);
-  console.log(check);
+  const check = await r.get(`_wallet_${wallet}`);
   if (check) {
     const d = await r.hgetall(check);
 
@@ -41,7 +40,7 @@ const login = async (req: NextApiRequest, res: NextApiResponse) => {
   };
 
   await r.hset(_tokenId, d);
-  await r.set(wallet, _tokenId);
+  await r.set(`_wallet_${wallet}`, _tokenId);
 
   // store session
   await createSession(res, d);

@@ -87,6 +87,10 @@ const MyCollectionsAuthenticate = () => {
       })
         .then((r) => r.json())
         .then((d: APIResponseProps<AuthUser>) => {
+          if (d.error) {
+            console.error(d);
+            return;
+          }
           setSession(d.data);
         })
         .catch(() => {

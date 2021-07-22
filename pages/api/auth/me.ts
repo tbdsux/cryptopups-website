@@ -1,7 +1,8 @@
-import type { NextApiRequest, NextApiResponse } from "next";
-import { getSession } from "../../../lib/auth";
+import type { NextApiRequest, NextApiResponse } from 'next';
+import { getSession } from '../../../lib/auth';
+import methodHandler from '../../../lib/middleware/method';
 
-const api = async (req: NextApiRequest, res: NextApiResponse) => {
+const me = async (req: NextApiRequest, res: NextApiResponse) => {
   const session = await getSession(req);
 
   if (session) {
@@ -11,4 +12,4 @@ const api = async (req: NextApiRequest, res: NextApiResponse) => {
   }
 };
 
-export default api;
+export default methodHandler(me, ['GET']);

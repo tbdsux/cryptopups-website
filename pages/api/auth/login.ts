@@ -1,14 +1,16 @@
-import { nanoid } from "nanoid";
-import type { NextApiRequest, NextApiResponse } from "next";
-import { createSession } from "../../../lib/auth";
-import { redis } from "../../../lib/redis";
-import { AuthUser } from "../../../types/auth";
+import { nanoid } from 'nanoid';
+import type { NextApiRequest, NextApiResponse } from 'next';
+import { createSession } from '../../../lib/auth';
+import methodHandler from '../../../lib/middleware/method';
+import validateRequest from '../../../lib/middleware/request';
+import { redis } from '../../../lib/redis';
+import { AuthUser } from '../../../types/auth';
 
 const login = async (req: NextApiRequest, res: NextApiResponse) => {
   const { wallet, type } = req.body;
 
   if (!wallet || !type) {
-    res.status(400).json({ error: true, data: {}, message: "Missing values!" });
+    res.status(400).json({ error: true, data: {}, message: 'Missing values!' });
     return;
   }
 
@@ -24,7 +26,7 @@ const login = async (req: NextApiRequest, res: NextApiResponse) => {
 
     res.status(200).json({
       error: false,
-      data: d,
+      data: d
     });
     return;
   }
@@ -36,7 +38,7 @@ const login = async (req: NextApiRequest, res: NextApiResponse) => {
   const d: AuthUser = {
     wallet,
     type,
-    token: _tokenId,
+    token: _tokenId
   };
 
   await r.hset(_tokenId, d);
@@ -50,9 +52,9 @@ const login = async (req: NextApiRequest, res: NextApiResponse) => {
     data: {
       wallet,
       type,
-      token: _tokenId,
-    },
+      token: _tokenId
+    }
   });
 };
 
-export default login;
+export default methodHandler(validateRequest(login), ['POST']);

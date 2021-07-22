@@ -59,26 +59,7 @@ const MyCollectionsAuthenticate = () => {
   const waxWalletLogin = async () => {
     const userAccount = await wax.login();
 
-    if (userAccount) {
-      // login
-      fetch("/api/auth/login", {
-        method: "POST",
-        body: JSON.stringify({
-          wallet: userAccount,
-          type: "wax-cloud",
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      })
-        .then((r) => r.json())
-        .then((d: APIResponseProps<AuthUser>) => {
-          setSession(d.data);
-        })
-        .catch((e) => {
-          console.error(e);
-        });
-    }
+    loginHandler(userAccount, "wax-cloud");
   };
 
   // TODO: scatter login
@@ -117,7 +98,32 @@ const MyCollectionsAuthenticate = () => {
 
     const userAccount = String(wallet_session?.auth).split("@")[0];
 
-    console.log(userAccount);
+    // login
+    loginHandler(userAccount, "anchor");
+  };
+
+  // LOGIN WRAPPER
+  const loginHandler = (userAccount: string | unknown, type: string) => {
+    if (userAccount) {
+      // login
+      fetch("/api/auth/login", {
+        method: "POST",
+        body: JSON.stringify({
+          wallet: userAccount,
+          type: type,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((r) => r.json())
+        .then((d: APIResponseProps<AuthUser>) => {
+          setSession(d.data);
+        })
+        .catch((e) => {
+          console.error(e);
+        });
+    }
   };
 
   return (

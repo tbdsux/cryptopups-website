@@ -1,29 +1,22 @@
-import { faDiscord } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
-import Link from "next/link";
-import { SocialLinks } from "../modules/index/social-icons";
-import Logo from "../public/logo.png";
-import Container from "./container";
+import { faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
+import Link from 'next/link';
+import { SocialLinks } from '../modules/index/social-icons';
+import Logo from '../public/logo.png';
+import Container from './container';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 py-12">
       <Container className="w-5/6">
-        <Image
-          src={Logo}
-          height="75"
-          width="175"
-          alt="World of CryptoPups"
-          placeholder="blur"
-        />
+        <Image src={Logo} height="75" width="175" alt="World of CryptoPups" placeholder="blur" />
 
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between mt-8 text-sm">
           <div className="flex flex-wrap items-start">
-            <div className="">
-              <h5 className="text-gray-600 font-medium uppercase tracking-wide">
-                Pages
-              </h5>
+            {/* main page links */}
+            <div className="mr-8 md:mr-16 lg:mr-24 my-1">
+              <h5 className="text-gray-600 font-medium uppercase tracking-wide">Pages</h5>
               <ul className="text-gray-100">
                 <li className="my-1">
                   <Link href="/">
@@ -56,10 +49,9 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="mx-12 md:mx-20 lg:mx-32">
-              <h5 className="text-gray-600 font-medium uppercase tracking-wide">
-                Social Media
-              </h5>
+            {/* social links */}
+            <div className="mr-8 md:mr-16 lg:mr-24 my-1">
+              <h5 className="text-gray-600 font-medium uppercase tracking-wide">Social Media</h5>
               <ul className="text-gray-100">
                 {SocialLinks.map((s, index) => (
                   <li className="my-1" key={index}>
@@ -77,10 +69,9 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div>
-              <h5 className="text-gray-600 font-medium uppercase tracking-wide">
-                Others
-              </h5>
+            {/* other links */}
+            <div className="mr-8 md:mr-16 lg:mr-24 my-1">
+              <h5 className="text-gray-600 font-medium uppercase tracking-wide">Others</h5>
               <ul className="text-gray-100">
                 <li className="my-1">
                   <Link href="/">
@@ -93,6 +84,34 @@ const Footer = () => {
                   <Link href="/development">
                     <a className="hover:text-white" title="Goto Development">
                       Development
+                    </a>
+                  </Link>
+                </li>
+                <li className="my-1">
+                  <Link href="/the-alliance">
+                    <a className="hover:text-white" title="Goto Development">
+                      The Alliance
+                    </a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* tools links */}
+            <div className="mr-8 md:mr-16 lg:mr-24 my-1">
+              <h5 className="text-gray-600 font-medium uppercase tracking-wide">Tools</h5>
+              <ul className="text-gray-100">
+                <li className="my-1">
+                  <Link href="/dps-calculator">
+                    <a className="hover:text-white" title="Goto Development">
+                      DPS Calculator
+                    </a>
+                  </Link>
+                </li>
+                <li className="my-1">
+                  <Link href="/my-collections">
+                    <a className="hover:text-white" title="Goto Development">
+                      My Collections
                     </a>
                   </Link>
                 </li>
@@ -117,8 +136,7 @@ const Footer = () => {
 
         <div className="text-sm text-gray-200 flex items-center justify-between">
           <p className="tracking-wider">
-            All Rights Reserved | World of CryptoPups &copy;{" "}
-            {new Date().getFullYear()}
+            All Rights Reserved | World of CryptoPups &copy; {new Date().getFullYear()}
           </p>
           <p className="tracking-wider">
             <small>(website is still in heavy development!)</small>

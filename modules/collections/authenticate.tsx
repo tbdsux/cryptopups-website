@@ -1,33 +1,14 @@
-import ScatterJS from "@scatterjs/core";
-import ScatterEOS from "@scatterjs/eosjs2";
 import * as waxjs from "@waxio/waxjs/dist";
 import AnchorLink, { LinkSession } from "anchor-link";
 import AnchorLinkBrowserTransport from "anchor-link-browser-transport";
-import { Api, JsonRpc } from "eosjs";
 import useAuth from "../../hooks/useAuth";
 import { AuthUser } from "../../types/auth";
 import { APIResponseProps } from "../../types/responses";
-ScatterJS.plugins(new ScatterEOS());
 
 const chainId =
   "1064487b3cd1a897ce03ae5b6a865651747e2e152090f99c1d19d44e01aea5a4";
 const endpoint = "https://wax.greymass.com";
 const dapp = "cryptopups.cf";
-
-// scatter
-const network = ScatterJS.Network.fromJson({
-  name: "WAX Blockchain",
-  host: "wax.greymass.com",
-  port: 443,
-  protocol: "https",
-  chainId: chainId,
-  token: {
-    symbol: "WAX",
-    contract: "eosio.token",
-    decimals: 8,
-  },
-});
-const rpc = new JsonRpc(network.fullhost());
 
 // wax cloud
 const wax = new waxjs.WaxJS(endpoint, undefined, undefined, false);
@@ -60,24 +41,6 @@ const MyCollectionsAuthenticate = () => {
     const userAccount = await wax.login();
 
     loginHandler(userAccount, "wax-cloud");
-  };
-
-  // TODO: scatter login
-  const scatterLogin = () => {
-    ScatterJS.connect("WorldOfCryptopups", { network }).then(
-      (connected: any) => {
-        if (!connected) return console.error("no scatter");
-
-        const eos = ScatterJS.eos(network, Api, { rpc });
-
-        ScatterJS.login().then((id: any) => {
-          if (!id) return console.error("no identity");
-          const account = ScatterJS.account("eos");
-
-          console.log(account);
-        });
-      }
-    );
   };
 
   // anchor login
@@ -151,14 +114,6 @@ const MyCollectionsAuthenticate = () => {
             onClick={anchorLogin}
           >
             Login with Anchor
-          </button>
-
-          <button
-            className="mx-1 py-2 border px-6 rounded-xl"
-            onClick={scatterLogin}
-            disabled
-          >
-            Login with Scatter
           </button>
         </div>
       )}

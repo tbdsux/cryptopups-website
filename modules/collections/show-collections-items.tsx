@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { Datum } from "../dps-calc/apitypes";
+import Image from 'next/image';
+import { Datum } from '../dps-calc/apitypes';
 
 type ShowCollectionsItemsProps = {
   data: Datum[];
@@ -7,7 +7,7 @@ type ShowCollectionsItemsProps = {
 
 const ShowCollectionsItems = ({ data }: ShowCollectionsItemsProps) => {
   return (
-    <ul className="grid grid-cols-4 h-112 py-4 rounded-xl overflow-auto border">
+    <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 h-112 py-4 rounded-xl overflow-auto border">
       {data.map((k, index) => (
         <li key={index} className="inline-flex flex-col items-center">
           <Image

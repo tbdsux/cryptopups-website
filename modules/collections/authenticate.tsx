@@ -9,6 +9,7 @@ import * as waxjs from '@waxio/waxjs/dist';
 import AnchorLink, { LinkSession } from 'anchor-link';
 import AnchorLinkBrowserTransport from 'anchor-link-browser-transport';
 import useAuth from '../../hooks/useAuth';
+import { useHasMounted } from '../../hooks/useHasMounted';
 import { AuthUser } from '../../types/auth';
 import { APIResponseProps } from '../../types/responses';
 
@@ -28,6 +29,7 @@ const anchorLink = new AnchorLink({
 });
 
 const MyCollectionsAuthenticate = () => {
+  const mounted = useHasMounted();
   const { session, setSession } = useAuth();
 
   const logoutHandler = async () => {
@@ -101,10 +103,13 @@ const MyCollectionsAuthenticate = () => {
     }
   };
 
+  // return a blank page if not mounted, this is to prevent unnecessary render and showing of elements
+  if (!mounted) return <></>;
+
   return (
     <>
       {session ? (
-        <div className="w-4/5 lg:w-3/4 mx-auto text-sm">
+        <div className="w-4/5 lg:w-3/4 mx-auto text-sm mt-8">
           <button
             onClick={logoutHandler}
             className="hover:underline text-right bg-gray-100 hover:bg-gray-200 py-1 px-3 rounded-full text-xs float-right"

@@ -1,29 +1,27 @@
-import useSWR from "swr";
-import Container from "../../components/container";
-import useAuth from "../../hooks/useAuth";
-import { PUPITEMS_API, PUPPYCARDS_API, PUPSKINS_API } from "../../lib/apilinks";
-import { WAXResponseProps } from "../dps-calc/apitypes";
-import ShowCollectionsItems from "./show-collections-items";
+import useSWR from 'swr';
+import Container from '../../components/container';
+import useAuth from '../../hooks/useAuth';
+import { PUPITEMS_API, PUPPYCARDS_API, PUPSKINS_API } from '../../lib/apilinks';
+import { WAXResponseProps } from '../dps-calc/apitypes';
+import ShowCollectionsItems from './show-collections-items';
 
 const ShowCollections = () => {
   const { session } = useAuth();
   const wallet = session?.wallet;
 
   // pupskins
-  const { data: pupskinsData, error: pupsSkinsError } =
-    useSWR<WAXResponseProps>(
-      wallet ? PUPSKINS_API.replace("{{owner}}", wallet) : null
-    );
+  const { data: pupskinsData, error: pupsSkinsError } = useSWR<WAXResponseProps>(
+    wallet ? PUPSKINS_API.replace('{{owner}}', wallet) : null
+  );
 
   // pupcards
-  const { data: puppycardsData, error: puppyCardsError } =
-    useSWR<WAXResponseProps>(
-      wallet ? PUPPYCARDS_API.replace("{{owner}}", wallet) : null
-    );
+  const { data: puppycardsData, error: puppyCardsError } = useSWR<WAXResponseProps>(
+    wallet ? PUPPYCARDS_API.replace('{{owner}}', wallet) : null
+  );
 
   // pupitems
   const { data: pupitemsData, error: pupitemsError } = useSWR<WAXResponseProps>(
-    wallet ? PUPITEMS_API.replace("{{owner}}", wallet) : null
+    wallet ? PUPITEMS_API.replace('{{owner}}', wallet) : null
   );
 
   if (!pupskinsData || !puppycardsData || !pupitemsData) {

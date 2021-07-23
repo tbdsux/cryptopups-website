@@ -10,7 +10,17 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 py-12">
       <Container className="w-5/6">
-        <Image src={Logo} height="75" width="175" alt="World of CryptoPups" placeholder="blur" />
+        <Link href="/">
+          <a>
+            <Image
+              src={Logo}
+              height="50"
+              width="200"
+              alt="World of CryptoPups"
+              placeholder="blur"
+            />
+          </a>
+        </Link>
 
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between mt-8 text-sm">
           <div className="flex flex-wrap items-start">

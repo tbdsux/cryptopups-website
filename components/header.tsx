@@ -40,7 +40,7 @@ const Header = () => {
           </Link>
         </div>
 
-        <ul className="flex items-center justify-center text-gray-200 text-sm uppercase font-semibold">
+        <ul className="flex items-center justify-center text-gray-300 text-sm font-semibold">
           <li className="px-4 md:px-6 lg:px-8 py-2">
             <Link href="/">
               <a className="tracking-wide hover:text-white" title="Goto Home">
@@ -65,12 +65,12 @@ const Header = () => {
           <li className="pl-4 md:pl-6 lg:pl-8 py-2">
             <a
               className="tracking-wide hover:text-white"
-              title="Goto Clubhouse"
+              title="Join the Community"
               href="https://discord.io/worldofcryptopups"
               target="_blank"
               rel="noreferrer"
             >
-              Clubhouse
+              Community
             </a>
           </li>
         </ul>

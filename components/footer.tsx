@@ -14,8 +14,8 @@ const Footer = () => {
           <a>
             <Image
               src={Logo}
-              height="50"
-              width="200"
+              height="40"
+              width="180"
               alt="World of CryptoPups"
               placeholder="blur"
             />
@@ -134,10 +134,10 @@ const Footer = () => {
               href="https://discord.io/worldofcryptopups"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center bg-gray-700 hover:bg-gray-800 duration-300 text-gray-100 py-2 lg:py-3 px-8 rounded-full"
+              className="inline-flex items-center bg-gray-800 opacity-75 hover:opacity-100 duration-300 text-gray-100 py-2 lg:py-3 px-8 rounded-full"
             >
               <FontAwesomeIcon className="text-2xl mr-2" icon={faDiscord} />
-              Join Our Clubhouse
+              Join the Community
             </a>
           </div>
         </div>

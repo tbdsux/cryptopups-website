@@ -32,13 +32,11 @@ const Header = () => {
       className="py-3 bg-black/50 hover:bg-black duration-500 fixed w-full z-50"
     >
       <Container className="w-11/12 text-center flex flex-col md:flex-row items-center justify-center md:justify-between">
-        <div className="">
-          <Link href="/">
-            <a>
-              <Image src={Logo} height="30" width="130" alt="World of Cryptopups" />
-            </a>
-          </Link>
-        </div>
+        <Link href="/">
+          <a className="flex">
+            <Image src={Logo} height="30" width="130" alt="World of Cryptopups" />
+          </a>
+        </Link>
 
         <ul className="flex items-center justify-center text-gray-300 text-sm font-semibold">
           <li className="px-4 md:px-6 lg:px-8 py-2">

@@ -1,7 +1,7 @@
 import { NextSeo } from 'next-seo';
 import Container from '../../components/container';
 import CustomPageHeader from '../../components/custom-page-header';
-import CustomLayout from '../../layout/custom';
+import CustomLayout from '../../layouts/custom';
 import { Alliance } from './alliance';
 import TheAllianceSection from './section';
 

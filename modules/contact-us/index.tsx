@@ -1,5 +1,5 @@
-import { NextSeo } from "next-seo";
-import DefaultLayout from "../../layout/default";
+import { NextSeo } from 'next-seo';
+import DefaultLayout from '../../layouts/default';
 
 const ContactPage = () => {
   return (

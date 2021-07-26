@@ -1,11 +1,11 @@
-import { NextSeo } from "next-seo";
-import Container from "../../components/container";
-import CustomPageHeader from "../../components/custom-page-header";
-import useAuth from "../../hooks/useAuth";
-import CustomLayout from "../../layout/custom";
-import MyCollectionsAuthenticate from "./authenticate";
-import ShowCollections from "./show-collections";
-import MyCollectionsUser from "./user";
+import { NextSeo } from 'next-seo';
+import Container from '../../components/container';
+import CustomPageHeader from '../../components/custom-page-header';
+import useAuth from '../../hooks/useAuth';
+import CustomLayout from '../../layouts/custom';
+import MyCollectionsAuthenticate from './authenticate';
+import ShowCollections from './show-collections';
+import MyCollectionsUser from './user';
 
 const MyCollectionsPage = () => {
   const { session } = useAuth();

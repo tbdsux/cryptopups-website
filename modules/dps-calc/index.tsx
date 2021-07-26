@@ -1,12 +1,12 @@
-import { NextSeo } from "next-seo";
-import { useRef, useState } from "react";
-import CustomPageHeader from "../../components/custom-page-header";
-import CustomLayout from "../../layout/custom";
-import DPS_Fetch from "./fetch";
+import { NextSeo } from 'next-seo';
+import { useRef, useState } from 'react';
+import CustomPageHeader from '../../components/custom-page-header';
+import CustomLayout from '../../layouts/custom';
+import DPS_Fetch from './fetch';
 
 const DPSCalculatorPage = () => {
   const [fetch, setFetch] = useState(false);
-  const [wallet, setWallet] = useState("");
+  const [wallet, setWallet] = useState('');
 
   const inputWaxID = useRef<HTMLInputElement>(null);
 
@@ -28,8 +28,8 @@ const DPSCalculatorPage = () => {
         title="DPS Calculator"
         description="Calculate your DPS by entering your WAX wallet below"
         openGraph={{
-          title: "DPS Calculator",
-          description: "Calculate your DPS by entering your WAX wallet below",
+          title: 'DPS Calculator',
+          description: 'Calculate your DPS by entering your WAX wallet below'
         }}
       />
       {/* end seo */}
@@ -65,8 +65,8 @@ const DPSCalculatorPage = () => {
           <DPS_Fetch wallet={wallet} />
         ) : (
           <div className="text-center tracking-wide text-sm text-warmGray-700">
-            Please enter your <strong>WAX ID</strong> and click the button to
-            fetch and calculate your DPS.
+            Please enter your <strong>WAX ID</strong> and click the button to fetch and calculate
+            your DPS.
           </div>
         )}
       </div>

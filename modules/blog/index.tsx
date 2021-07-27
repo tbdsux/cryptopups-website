@@ -1,5 +1,7 @@
 import { NextSeo } from 'next-seo';
+import Container from '../../components/container';
 import PageLayout from '../../layouts/page-layout';
+import ListBlogs from './list-blogs';
 
 const BlogPage = () => {
   return (
@@ -11,7 +13,9 @@ const BlogPage = () => {
       <NextSeo title="Blog" description="Read our articles and blogs" />
       {/* end seo */}
 
-      <div>START OF BLOG PAGE</div>
+      <Container className="w-5/6 mx-auto">
+        <ListBlogs />
+      </Container>
     </PageLayout>
   );
 };

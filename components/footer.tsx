@@ -91,9 +91,9 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="my-1">
-                  <Link href="/development">
+                  <Link href="/roadmap">
                     <a className="hover:text-white" title="Goto Development">
-                      Development
+                      Roadmap
                     </a>
                   </Link>
                 </li>

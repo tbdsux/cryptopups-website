@@ -1,14 +1,16 @@
 import { NextSeo } from 'next-seo';
-import DefaultLayout from '../../layouts/default';
+import PageLayout from '../../layouts/page-layout';
 
 const ContactPage = () => {
   return (
-    <DefaultLayout>
+    <PageLayout
+      title="Contact Us"
+      description="Send us a message, feedback, comment or maybe some business matters"
+    >
       {/* start seo */}
-      <NextSeo title="Contact" description="Contact us and send us a message" />
+      <NextSeo title="Contact Us" description="Contact us and send us a message" />
       {/* end seo */}
-      <div>START OF CONTACT PAGE</div>
-    </DefaultLayout>
+    </PageLayout>
   );
 };
 

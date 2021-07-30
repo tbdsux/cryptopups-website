@@ -104,6 +104,13 @@ const Footer = () => {
                     </a>
                   </Link>
                 </li>
+                <li className="my-1">
+                  <Link href="/pup-squad">
+                    <a className="hover:text-white" title="Goto Development">
+                      The Pup Squad
+                    </a>
+                  </Link>
+                </li>
               </ul>
             </div>
 

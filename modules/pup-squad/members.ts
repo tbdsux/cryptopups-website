@@ -2,6 +2,9 @@ type PupMembersProps = {
   name: string;
   image: StaticImageData;
   info: string;
+  links: {
+    twitter: string;
+  };
 };
 
 import apppllleee from '../../public/_profiles/apppllleee.png';
@@ -13,21 +16,33 @@ export const PupMembers: PupMembersProps[] = [
   {
     name: 'Apppllleee',
     info: 'Owner, Creator, Artist & Marketing Manager',
-    image: apppllleee
+    image: apppllleee,
+    links: {
+      twitter: 'https://twitter.com/apppllleeenana'
+    }
   },
   {
     name: 'Gleetch',
     info: 'Co-Creator & Artist',
-    image: gleetch
+    image: gleetch,
+    links: {
+      twitter: 'https://twitter.com/Gleetch5'
+    }
   },
   {
     name: 'TouchMeNot',
     info: 'Communications Manager',
-    image: touchmenot
+    image: touchmenot,
+    links: {
+      twitter: 'https://twitter.com/heartreaxxapp'
+    }
   },
   {
     name: 'TheBoringDude',
     info: 'Developer',
-    image: theboringdude
+    image: theboringdude,
+    links: {
+      twitter: 'https://twitter.com/joshabance'
+    }
   }
 ];

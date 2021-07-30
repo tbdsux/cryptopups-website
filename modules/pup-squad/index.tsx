@@ -28,9 +28,16 @@ const ThePupSquadPage = () => {
                   className="rounded-full"
                 />
               </div>
-              <h4 className="leading-loose mt-2 text-xl font-extrabold tracking-wide text-warmGray-800 text-center">
-                {member.name}
-              </h4>
+              <a
+                href={member.links.twitter}
+                target="_blank"
+                rel="noreferrer"
+                className="text-warmGray-800 hover:underline"
+              >
+                <h4 className="leading-loose mt-2 text-xl font-extrabold tracking-wide text-center">
+                  {member.name}
+                </h4>
+              </a>
 
               <p className="text-center tracking-wide">{member.info}</p>
             </li>

@@ -1,6 +1,7 @@
 import { NextSeo } from 'next-seo';
 import Container from '../../components/container';
 import PageLayout from '../../layouts/page-layout';
+import GalleryContainer from './gallery-container';
 
 const GalleryPage = () => {
   return (
@@ -12,7 +13,9 @@ const GalleryPage = () => {
       <NextSeo title="Gallery" description="View our pup collections, cards, skins, and items" />
       {/* end seo */}
 
-      <Container className="w-5/6 mx-auto">Start of the Pups Gallery</Container>
+      <Container className="w-11/12 mx-auto">
+        <GalleryContainer />
+      </Container>
     </PageLayout>
   );
 };

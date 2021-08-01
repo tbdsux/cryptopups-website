@@ -11,6 +11,7 @@ export type GalleryImagesProps = {
   name: string;
   link: string;
   filename: string;
-  rarity: GalleryImagesRarities;
-  category: GalleryImagesCategories;
+  rarity: GalleryImagesRarities | string;
+  category: GalleryImagesCategories | string;
+  owner?: string;
 };

@@ -4,468 +4,535 @@
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/01.0_Daylight%20Beads.png",
     "filename": "01.0_Daylight Beads.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Solar"
   },
   {
     "name": "Sunlight Sash",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/01.1%20Sunlight%20Sash.png",
     "filename": "01.1 Sunlight Sash.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Solar"
   },
   {
     "name": "Sungod's Crest",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/01.2%20Sungod%27s%20Crest.png",
     "filename": "01.2 Sungod's Crest.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Solar"
   },
   {
     "name": "Lunar Robe",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/02.0%20Lunar%20Robe.png",
     "filename": "02.0 Lunar Robe.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Luna"
   },
   {
     "name": "Moonlight Cycle",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/02.1%20Moonlight%20Cycle.png",
     "filename": "02.1 Moonlight Cycle.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Luna"
   },
   {
     "name": "Moongod's Crest",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/02.2%20Moongod%27s%20Crest.png",
     "filename": "02.2 Moongod's Crest.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Luna"
   },
   {
     "name": "Mafia Fedore",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/03.0%20Mafia%20Fedore.png",
     "filename": "03.0 Mafia Fedore.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Luna"
   },
   {
     "name": "Dandy Suit",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/03.1%20Dandy%20Suit.png",
     "filename": "03.1 Dandy Suit.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Luna"
   },
   {
     "name": "Red's Hood",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/04.0%20Red%27s%20Hood.png",
     "filename": "04.0 Red's Hood.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Stella"
   },
   {
     "name": "Goodie Basket",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/04.1%20Goodie%20Basket.png",
     "filename": "04.1 Goodie Basket.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Stella"
   },
   {
     "name": "Summer Surfboard",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/05.0%20Summer%20Surfboard.png",
     "filename": "05.0 Summer Surfboard.png",
     "rarity": "common",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Solar"
   },
   {
     "name": "Beach Ball",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/05.1%20Beach%20Ball.png",
     "filename": "05.1 Beach Ball.png",
     "rarity": "common",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Solar"
   },
   {
     "name": "School Bow",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/06.0%20School%20Bow.png",
     "filename": "06.0 School Bow.png",
     "rarity": "common",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Stella"
   },
   {
     "name": "School Uniform",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/06.1%20School%20Uniform.png",
     "filename": "06.1 School Uniform.png",
     "rarity": "common",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Stella"
   },
   {
     "name": "Lesson One",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/07.0%20Lesson%20One.png",
     "filename": "07.0 Lesson One.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Lyla"
   },
   {
     "name": "Black Board",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/07.1%20Black%20Board.png",
     "filename": "07.1 Black Board.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Lyla"
   },
   {
     "name": "Teachers Glasses",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/07.2%20Teachers%20Glasses.png",
     "filename": "07.2 Teachers Glasses.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Lyla"
   },
   {
     "name": "Lumber Axe",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/08.0%20Lumber%20Axe.png",
     "filename": "08.0 Lumber Axe.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Azul"
   },
   {
     "name": "Lumberjack's Bonnet",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/08.1%20Lumberjack%27s%20Bonnet.png",
     "filename": "08.1 Lumberjack's Bonnet.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Azul"
   },
   {
     "name": "Checkered Polo",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/08.2%20Checkered%20Polo.png",
     "filename": "08.2 Checkered Polo.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Azul"
   },
   {
     "name": "Redhot Ride",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/09.0%20Redhot%20Ride.png",
     "filename": "09.0 Redhot Ride.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Amarilla"
   },
   {
     "name": "Pizza Cap",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/09.1%20Pizza%20Cap.png",
     "filename": "09.1 Pizza Cap.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Amarilla"
   },
   {
     "name": "Puppy Pizzeria",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/09.2%20Puppy%20Pizzeria.png",
     "filename": "09.2 Puppy Pizzeria.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Amarilla"
   },
   {
     "name": "Pumpik Suit",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/10.0%20Pumpik%20Suit.png",
     "filename": "10.0 Pumpik Suit.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Kajel"
   },
   {
     "name": "Pumpkin Hat",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/10.1%20Pumpkin%20Hat.png",
     "filename": "10.1 Pumpkin Hat.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Kajel"
   },
   {
     "name": "Pumpkin Seeds",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/10.2%20Pumpkin%20Seeds.png",
     "filename": "10.2 Pumpkin Seeds.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Kajel"
   },
   {
     "name": "Fishing Boat",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/11.0%20Fishing%20Boat.png",
     "filename": "11.0 Fishing Boat.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Verde"
   },
   {
     "name": "Fishing Vest",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/11.1%20Fishing%20Vest.png",
     "filename": "11.1 Fishing Vest.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Verde"
   },
   {
     "name": "Fishing Rod",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/11.2%20Fishing%20Rod.png",
     "filename": "11.2 Fishing Rod.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Verde"
   },
   {
     "name": "Rosa's Toque",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/12.0%20Rosa%27s%20Toque.png",
     "filename": "12.0 Rosa's Toque.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Rosa"
   },
   {
     "name": "Rosa's Coat",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/12.1%20Rosa%27s%20Coat.png",
     "filename": "12.1 Rosa's Coat.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Rosa"
   },
   {
     "name": "Rainbow Bakeshop",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/12.2%20Rainbow%20Bakeshop.png",
     "filename": "12.2 Rainbow Bakeshop.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Rosa"
   },
   {
     "name": "Naval Ship",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/13.0%20Naval%20Ship.png",
     "filename": "13.0 Naval Ship.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Prism"
   },
   {
     "name": "Captain's Uniform",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/13.1%20Captain%27s%20Uniform.png",
     "filename": "13.1 Captain's Uniform.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Prism"
   },
   {
     "name": "Captain's Cap",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/13.2%20Captain%27s%20Cap.png",
     "filename": "13.2 Captain's Cap.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Prism"
   },
   {
     "name": "Demonic Heart",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/14.0%20Demonic%20Heart.png",
     "filename": "14.0 Demonic Heart.png",
     "rarity": "mythic",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Demon"
   },
   {
     "name": "B-317 Ears",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/15.0%20B-317%20Ears.png",
     "filename": "15.0 B-317 Ears.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Easter"
   },
   {
     "name": "Bunny Crest",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/15.1%20Bunny%20Crest.png",
     "filename": "15.1 Bunny Crest.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Easter"
   },
   {
     "name": "A-001 Hopper",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/15.2%20A-001%20Hopper.png",
     "filename": "15.2 A-001 Hopper.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Easter"
   },
   {
     "name": "Space Rocket",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/16.0%20Space%20Rocket.png",
     "filename": "16.0 Space Rocket.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Theodore"
   },
   {
     "name": "Space Helmet",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/16.1%20Space%20Helmet.png",
     "filename": "16.1 Space Helmet.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Theodore"
   },
   {
     "name": "Space Suit",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/16.2%20Space%20Suit.png",
     "filename": "16.2 Space Suit.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Theodore"
   },
   {
     "name": "Vampire Wings",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/17.0%20Vampire%20Wings.png",
     "filename": "17.0 Vampire Wings.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Ace"
   },
   {
     "name": "Dracula's Coat",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/17.1%20Dracula%27s%20Coat.png",
     "filename": "17.1 Dracula's Coat.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Ace"
   },
   {
     "name": "Vampire Blood",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/17.2%20Vampire%20Blood.png",
     "filename": "17.2 Vampire Blood.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Ace"
   },
   {
     "name": "Steampunk Diver",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/18.0%20Steampunk%20Diver.png",
     "filename": "18.0 Steampunk Diver.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Theodore"
   },
   {
     "name": "Schoo o' Fish",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/18.1%20Schoo%20o%27%20Fish.png",
     "filename": "18.1 Schoo o' Fish.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Theodore"
   },
   {
     "name": "GIft Bag",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/19.0%20GIft%20Bag.png",
     "filename": "19.0 GIft Bag.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Theodore"
   },
   {
     "name": "Santa's Hat",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/19.1%20Santa%27s%20Hat.png",
     "filename": "19.1 Santa's Hat.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Theodore"
   },
   {
     "name": "Christmas Tree",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/19.2%20Christmas%20Tree.png",
     "filename": "19.2 Christmas Tree.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Theodore"
   },
   {
     "name": "Raindeer Bell",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/20.0%20Raindeer%20Bell.png",
     "filename": "20.0 Raindeer Bell.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Stella"
   },
   {
     "name": "Raindeer Costume",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/20.1%20Raindeer%20Costume.png",
     "filename": "20.1 Raindeer Costume.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Stella"
   },
   {
     "name": "Tori Gate",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/21.0%20Tori%20Gate.png",
     "filename": "21.0 Tori Gate.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Ace"
   },
   {
     "name": "Samurai Helmet",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/21.1%20Samurai%20Helmet.png",
     "filename": "21.1 Samurai Helmet.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Ace"
   },
   {
     "name": "Ichi Seal",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/21.2%20Ichi%20Seal.png",
     "filename": "21.2 Ichi Seal.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Ace"
   },
   {
     "name": "Wizard Hat",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/22.0%20Wizard%20Hat.png",
     "filename": "22.0 Wizard Hat.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Jack"
   },
   {
     "name": "Spell Book",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/22.1%20Spell%20Book.png",
     "filename": "22.1 Spell Book.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Jack"
   },
   {
     "name": "Mystery Potions",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/22.2%20Mystery%20Potions.png",
     "filename": "22.2 Mystery Potions.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Jack"
   },
   {
     "name": "Ancient Halberd",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/23.0%20Ancient%20Halberd.png",
     "filename": "23.0 Ancient Halberd.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Queen"
   },
   {
     "name": "Valhalla Armor",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/23.1%20Valhalla%20Armor.png",
     "filename": "23.1 Valhalla Armor.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Queen"
   },
   {
     "name": "Valhalla Gauntlets",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/23.2%20Valhalla%20Gauntlets.png",
     "filename": "23.2 Valhalla Gauntlets.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Queen"
   },
   {
     "name": "Seraphim Wings",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/24.0%20Seraphim%20Wings.png",
     "filename": "24.0 Seraphim Wings.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Ten"
   },
   {
     "name": "Trumpet of Apocalypse",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/24.1%20Trumpet%20of%20Apocalypse.png",
     "filename": "24.1 Trumpet of Apocalypse.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Ten"
   },
   {
     "name": "Divine Clothing",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/24.2%20Divine%20Clothing.png",
     "filename": "24.2 Divine Clothing.png",
     "rarity": "rare",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Ten"
   },
   {
     "name": "Small Trash",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/25.0%20Small%20Trash.png",
     "filename": "25.0 Small Trash.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Tweety"
   },
   {
     "name": "Trash Can",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/25.1%20Trash%20Can.png",
     "filename": "25.1 Trash Can.png",
     "rarity": "uncommon",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Tweety"
   },
   {
     "name": "Mecha Core",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/26.0%20Mecha%20Core.png",
     "filename": "26.0 Mecha Core.png",
     "rarity": "mythic",
-    "category": "pupitems"
+    "category": "pupitems",
+    "owner": "Mecha"
   }
 ]

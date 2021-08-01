@@ -4,6 +4,7 @@ import { GalleryImagesCategories, GalleryImagesRarities } from './images';
 type GalleryImagesProps = {
   rarity: string[];
   category: string[];
+  names: string[];
 };
 
 type GalleryReducerActions =
@@ -13,7 +14,9 @@ type GalleryReducerActions =
     }
   | { type: 'removeCategory'; item: GalleryImagesCategories | string }
   | { type: 'addRarity'; item: GalleryImagesRarities | string }
-  | { type: 'removeRarity'; item: GalleryImagesRarities | string };
+  | { type: 'removeRarity'; item: GalleryImagesRarities | string }
+  | { type: 'addNames'; item: string }
+  | { type: 'removeNames'; item: string };
 
 type GalleryContextProps = {
   state: GalleryImagesProps;
@@ -25,7 +28,7 @@ type GalleryProviderProps = {
 };
 
 const GContext = createContext<GalleryContextProps>({
-  state: { rarity: [], category: [] },
+  state: { rarity: [], category: [], names: [] },
   dispatch: () => {}
 });
 
@@ -52,11 +55,23 @@ const GalleryReducer = (state: GalleryImagesProps, action: GalleryReducerActions
         ...state,
         rarity: state.rarity.filter((i) => i !== action.item)
       };
+
+    case 'addNames':
+      return {
+        ...state,
+        names: [...state.names, action.item]
+      };
+
+    case 'removeNames':
+      return {
+        ...state,
+        names: state.names.filter((i) => i !== action.item)
+      };
   }
 };
 
 const GalleryProvider = ({ children }: GalleryProviderProps) => {
-  const [state, dispatch] = useReducer(GalleryReducer, { rarity: [], category: [] });
+  const [state, dispatch] = useReducer(GalleryReducer, { rarity: [], category: [], names: [] });
 
   return <GContext.Provider value={{ state, dispatch }}>{children}</GContext.Provider>;
 };

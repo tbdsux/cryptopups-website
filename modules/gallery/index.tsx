@@ -13,7 +13,7 @@ const GalleryPage = () => {
       <NextSeo title="Gallery" description="View our pup collections, cards, skins, and items" />
       {/* end seo */}
 
-      <Container className="w-11/12 mx-auto">
+      <Container className="w-11/12 xs:w-4/5 sm:w-2/3 md:w-11/12 mx-auto">
         <GalleryContainer />
       </Container>
     </PageLayout>

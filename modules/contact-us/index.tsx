@@ -1,5 +1,7 @@
 import { NextSeo } from 'next-seo';
+import Container from '../../components/container';
 import PageLayout from '../../layouts/page-layout';
+import ContactManager from './contact-manager';
 
 const ContactPage = () => {
   return (
@@ -10,6 +12,10 @@ const ContactPage = () => {
       {/* start seo */}
       <NextSeo title="Contact Us" description="Contact us and send us a message" />
       {/* end seo */}
+
+      <Container className="w-5/6">
+        <ContactManager />
+      </Container>
     </PageLayout>
   );
 };

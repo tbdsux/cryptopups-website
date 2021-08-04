@@ -1,9 +1,9 @@
-import useSWR from "swr";
-import Container from "../../components/container";
-import { PUPITEMS_API, PUPPYCARDS_API, PUPSKINS_API } from "../../lib/apilinks";
-import { WAXResponseProps } from "./apitypes";
-import DPS_Calculate from "./calculate";
-import ShowItems from "./show-items";
+import useSWR from 'swr';
+import Container from '../../components/container';
+import { PUPITEMS_API, PUPPYCARDS_API, PUPSKINS_API } from './apilinks';
+import { WAXResponseProps } from './apitypes';
+import DPS_Calculate from './calculate';
+import ShowItems from './show-items';
 
 type DPS_FetchProps = {
   wallet: string;
@@ -11,20 +11,21 @@ type DPS_FetchProps = {
 
 const DPS_Fetch = ({ wallet }: DPS_FetchProps) => {
   // pupskins
-  const { data: pupskinsData, error: pupsSkinsError } =
-    useSWR<WAXResponseProps>(
-      wallet ? PUPSKINS_API.replace("{{owner}}", wallet) : null
-    );
+  const { data: pupskinsData, error: pupsSkinsError } = useSWR<WAXResponseProps>(
+    wallet ? PUPSKINS_API.replace('{{owner}}', wallet) : null,
+    { revalidateOnFocus: false, refreshInterval: 300000 } // do not revalidate if focused, refresh after 5 minutes?
+  );
 
   // pupcards
-  const { data: puppycardsData, error: puppyCardsError } =
-    useSWR<WAXResponseProps>(
-      wallet ? PUPPYCARDS_API.replace("{{owner}}", wallet) : null
-    );
+  const { data: puppycardsData, error: puppyCardsError } = useSWR<WAXResponseProps>(
+    wallet ? PUPPYCARDS_API.replace('{{owner}}', wallet) : null,
+    { revalidateOnFocus: false, refreshInterval: 300000 } // do not revalidate if focused, refresh after 5 minutes?
+  );
 
   // pupitems
   const { data: pupitemsData, error: pupitemsError } = useSWR<WAXResponseProps>(
-    wallet ? PUPITEMS_API.replace("{{owner}}", wallet) : null
+    wallet ? PUPITEMS_API.replace('{{owner}}', wallet) : null,
+    { revalidateOnFocus: false, refreshInterval: 300000 } // do not revalidate if focused, refresh after 5 minutes?
   );
 
   if (!pupskinsData || !puppycardsData || !pupitemsData) {
@@ -47,7 +48,7 @@ const DPS_Fetch = ({ wallet }: DPS_FetchProps) => {
         data={{
           pupskins: pupskinsData.data,
           puppycards: puppycardsData.data,
-          pupitems: pupitemsData.data,
+          pupitems: pupitemsData.data
         }}
       />
 

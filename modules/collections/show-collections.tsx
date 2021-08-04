@@ -1,7 +1,7 @@
 import useSWR from 'swr';
 import Container from '../../components/container';
 import useAuth from '../../hooks/useAuth';
-import { PUPITEMS_API, PUPPYCARDS_API, PUPSKINS_API } from '../../lib/apilinks';
+import { PUPITEMS_API, PUPPYCARDS_API, PUPSKINS_API } from '../dps-calc/apilinks';
 import { WAXResponseProps } from '../dps-calc/apitypes';
 import ShowCollectionsItems from './show-collections-items';
 

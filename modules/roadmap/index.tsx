@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Container from '../../components/container';
 import CustomPageHeader from '../../components/custom-page-header';
 import CustomLayout from '../../layouts/custom';
-import imgRoadmap from '../../public/roadmap.jpg';
+import imgRoadmap from '../../public/roadmap.png';
 
 const RoadMap = () => {
   return (

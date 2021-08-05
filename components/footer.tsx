@@ -84,16 +84,21 @@ const Footer = () => {
               <h5 className="text-gray-600 font-medium uppercase tracking-wide">Others</h5>
               <ul className="text-gray-100">
                 <li className="my-1">
-                  <Link href="/">
+                  <Link href="/roadmap">
                     <a className="hover:text-white" title="Goto Development">
-                      Leaderboard
+                      Roadmap
                     </a>
                   </Link>
                 </li>
                 <li className="my-1">
-                  <Link href="/roadmap">
-                    <a className="hover:text-white" title="Goto Development">
-                      Roadmap
+                  <Link href="/whitepaper.pdf">
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hover:text-white"
+                      title="Goto Development"
+                    >
+                      Whitepaper
                     </a>
                   </Link>
                 </li>
@@ -118,6 +123,13 @@ const Footer = () => {
             <div className="mr-8 md:mr-16 lg:mr-24 my-1">
               <h5 className="text-gray-600 font-medium uppercase tracking-wide">Tools</h5>
               <ul className="text-gray-100">
+                <li className="my-1">
+                  <Link href="/">
+                    <a className="hover:text-white" title="Goto Development">
+                      Leaderboard
+                    </a>
+                  </Link>
+                </li>
                 <li className="my-1">
                   <Link href="/dps-calculator">
                     <a className="hover:text-white" title="Goto Development">

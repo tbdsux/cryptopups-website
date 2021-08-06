@@ -30,28 +30,30 @@ const Footer = () => {
               <ul className="text-gray-100">
                 <li className="my-1">
                   <Link href="/">
-                    <a className="hover:text-white" title="Goto Home">
+                    <a className="hover:text-white" title="Home">
                       Home
                     </a>
                   </Link>
                 </li>
                 <li className="my-1">
                   <Link href="/gallery">
-                    <a className="hover:text-white" title="Goto Gallery">
+                    <a className="hover:text-white" title="Gallery">
                       Gallery
                     </a>
                   </Link>
                 </li>
+                {/* 
+                // TODO: For Consideration
                 <li className="my-1">
                   <Link href="/blog">
                     <a className="hover:text-white" title="Goto Blog">
                       Blog
                     </a>
                   </Link>
-                </li>
+                </li> */}
                 <li className="my-1">
                   <Link href="/contact-us">
-                    <a className="hover:text-white" title="Goto Us">
+                    <a className="hover:text-white" title="Contact Us">
                       Contact Us
                     </a>
                   </Link>
@@ -85,7 +87,7 @@ const Footer = () => {
               <ul className="text-gray-100">
                 <li className="my-1">
                   <Link href="/roadmap">
-                    <a className="hover:text-white" title="Goto Development">
+                    <a className="hover:text-white" title="Roadmap">
                       Roadmap
                     </a>
                   </Link>
@@ -96,7 +98,7 @@ const Footer = () => {
                       target="_blank"
                       rel="noreferrer"
                       className="hover:text-white"
-                      title="Goto Development"
+                      title="Whitepaper"
                     >
                       Whitepaper
                     </a>
@@ -104,14 +106,14 @@ const Footer = () => {
                 </li>
                 <li className="my-1">
                   <Link href="/the-alliance">
-                    <a className="hover:text-white" title="Goto Development">
+                    <a className="hover:text-white" title="The Alliance">
                       The Alliance
                     </a>
                   </Link>
                 </li>
                 <li className="my-1">
                   <Link href="/pup-squad">
-                    <a className="hover:text-white" title="Goto Development">
+                    <a className="hover:text-white" title="The Pup Squad">
                       The Pup Squad
                     </a>
                   </Link>
@@ -125,21 +127,21 @@ const Footer = () => {
               <ul className="text-gray-100">
                 <li className="my-1">
                   <Link href="/">
-                    <a className="hover:text-white" title="Goto Development">
+                    <a className="hover:text-white" title="Leaderboard">
                       Leaderboard
                     </a>
                   </Link>
                 </li>
                 <li className="my-1">
                   <Link href="/dps-calculator">
-                    <a className="hover:text-white" title="Goto Development">
+                    <a className="hover:text-white" title="DPS Calculator">
                       DPS Calculator
                     </a>
                   </Link>
                 </li>
                 <li className="my-1">
                   <Link href="/my-collections">
-                    <a className="hover:text-white" title="Goto Development">
+                    <a className="hover:text-white" title="My Collections">
                       My Collections
                     </a>
                   </Link>

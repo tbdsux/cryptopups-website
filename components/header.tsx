@@ -41,25 +41,27 @@ const Header = () => {
         <ul className="flex items-center justify-center text-gray-300 text-sm font-semibold">
           <li className="px-4 md:px-6 lg:px-8 py-2">
             <Link href="/">
-              <a className="tracking-wide hover:text-white" title="Goto Home">
+              <a className="tracking-wide hover:text-white" title="Home">
                 Home
               </a>
             </Link>
           </li>
           <li className="px-4 md:px-6 lg:px-8 py-2">
             <Link href="/gallery">
-              <a className="tracking-wide hover:text-white" title="Goto Gallery">
+              <a className="tracking-wide hover:text-white" title="Gallery">
                 Gallery
               </a>
             </Link>
           </li>
+          {/* 
+          // TODO: For Consideration
           <li className="px-4 md:px-6 lg:px-8 py-2">
             <Link href="/blog">
               <a className="tracking-wide hover:text-white" title="Goto Blog">
                 Blog
               </a>
             </Link>
-          </li>
+          </li> */}
           <li className="pl-4 md:pl-6 lg:pl-8 py-2">
             <a
               className="tracking-wide hover:text-white"

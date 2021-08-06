@@ -11,17 +11,20 @@ const ShowCollections = () => {
 
   // pupskins
   const { data: pupskinsData, error: pupsSkinsError } = useSWR<WAXResponseProps>(
-    wallet ? PUPSKINS_API.replace('{{owner}}', wallet) : null
+    wallet ? PUPSKINS_API.replace('{{owner}}', wallet) : null,
+    { revalidateOnFocus: false } // do not revalidate on focus
   );
 
   // pupcards
   const { data: puppycardsData, error: puppyCardsError } = useSWR<WAXResponseProps>(
-    wallet ? PUPPYCARDS_API.replace('{{owner}}', wallet) : null
+    wallet ? PUPPYCARDS_API.replace('{{owner}}', wallet) : null,
+    { revalidateOnFocus: false } // do not revalidate on focus
   );
 
   // pupitems
   const { data: pupitemsData, error: pupitemsError } = useSWR<WAXResponseProps>(
-    wallet ? PUPITEMS_API.replace('{{owner}}', wallet) : null
+    wallet ? PUPITEMS_API.replace('{{owner}}', wallet) : null,
+    { revalidateOnFocus: false } // do not revalidate on focus
   );
 
   if (!pupskinsData || !puppycardsData || !pupitemsData) {

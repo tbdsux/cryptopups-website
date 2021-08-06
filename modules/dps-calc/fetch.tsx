@@ -13,19 +13,19 @@ const DPS_Fetch = ({ wallet }: DPS_FetchProps) => {
   // pupskins
   const { data: pupskinsData, error: pupsSkinsError } = useSWR<WAXResponseProps>(
     wallet ? PUPSKINS_API.replace('{{owner}}', wallet) : null,
-    { revalidateOnFocus: false, refreshInterval: 300000 } // do not revalidate if focused, refresh after 5 minutes?
+    { revalidateOnFocus: false } // do not revalidate on focus
   );
 
   // pupcards
   const { data: puppycardsData, error: puppyCardsError } = useSWR<WAXResponseProps>(
     wallet ? PUPPYCARDS_API.replace('{{owner}}', wallet) : null,
-    { revalidateOnFocus: false, refreshInterval: 300000 } // do not revalidate if focused, refresh after 5 minutes?
+    { revalidateOnFocus: false } // do not revalidate on focus
   );
 
   // pupitems
   const { data: pupitemsData, error: pupitemsError } = useSWR<WAXResponseProps>(
     wallet ? PUPITEMS_API.replace('{{owner}}', wallet) : null,
-    { revalidateOnFocus: false, refreshInterval: 300000 } // do not revalidate if focused, refresh after 5 minutes?
+    { revalidateOnFocus: false } // do not revalidate on focus
   );
 
   if (!pupskinsData || !puppycardsData || !pupitemsData) {

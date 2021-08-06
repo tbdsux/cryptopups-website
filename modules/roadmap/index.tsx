@@ -12,6 +12,14 @@ const RoadMap = () => {
       <NextSeo
         title="Roadmap"
         description="The Roadmap status of the World of CryptoPups project"
+        openGraph={{
+          images: [
+            {
+              url: 'https://www.cryptopups.cf/roadmap.png',
+              alt: 'Roadmap of World of Cryptopups'
+            }
+          ]
+        }}
       />
       {/* end seo */}
 

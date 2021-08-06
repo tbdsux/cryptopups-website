@@ -1,3 +1,4 @@
+import { RefObject, useEffect } from 'react';
 import useSWR from 'swr';
 import Container from '../../components/container';
 import { PUPITEMS_API, PUPPYCARDS_API, PUPSKINS_API } from './apilinks';
@@ -7,9 +8,10 @@ import ShowItems from './show-items';
 
 type DPS_FetchProps = {
   wallet: string;
+  btnGetRef: RefObject<HTMLButtonElement>;
 };
 
-const DPS_Fetch = ({ wallet }: DPS_FetchProps) => {
+const DPS_Fetch = ({ wallet, btnGetRef }: DPS_FetchProps) => {
   // pupskins
   const { data: pupskinsData, error: pupsSkinsError } = useSWR<WAXResponseProps>(
     wallet ? PUPSKINS_API.replace('{{owner}}', wallet) : null,
@@ -28,6 +30,16 @@ const DPS_Fetch = ({ wallet }: DPS_FetchProps) => {
     { revalidateOnFocus: false } // do not revalidate on focus
   );
 
+  useEffect(() => {
+    if (pupskinsData && puppycardsData && pupitemsData) {
+      if (btnGetRef.current) {
+        btnGetRef.current.innerHTML = 'Get';
+        btnGetRef.current.disabled = false;
+      }
+      // setDone(true);
+    }
+  }, [btnGetRef, pupitemsData, puppycardsData, pupskinsData]);
+
   if (!pupskinsData || !puppycardsData || !pupitemsData) {
     return <div className="text-sm tracking-wide text-center">Fetching...</div>;
   }
@@ -43,6 +55,8 @@ const DPS_Fetch = ({ wallet }: DPS_FetchProps) => {
 
   return (
     <Container className="w-5/6 mx-auto">
+      <h3 className="mb-4 font-bold tracking-wide text-gray-500">@{wallet}</h3>
+
       <DPS_Calculate
         owner={wallet}
         data={{

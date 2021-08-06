@@ -1,16 +1,24 @@
 import { NextSeo } from 'next-seo';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import CustomPageHeader from '../../components/custom-page-header';
 import CustomLayout from '../../layouts/custom';
 import DPS_Fetch from './fetch';
 
 const DPSCalculatorPage = () => {
   const [fetch, setFetch] = useState(false);
+  const [done, setDone] = useState(false);
   const [wallet, setWallet] = useState('');
 
   const inputWaxID = useRef<HTMLInputElement>(null);
+  const btnGetRef = useRef<HTMLButtonElement>(null);
 
   const fetcher = () => {
+    // disable the button
+    if (btnGetRef.current) {
+      btnGetRef.current.disabled = true;
+      btnGetRef.current.innerHTML = 'Fetching...';
+    }
+
     const v = inputWaxID.current?.value;
     if (!v) {
       setFetch(false);
@@ -20,6 +28,16 @@ const DPSCalculatorPage = () => {
     setWallet(v.trim());
     setFetch(true);
   };
+
+  useEffect(() => {
+    if (done) {
+      if (btnGetRef.current) {
+        btnGetRef.current.innerHTML = 'Get';
+        btnGetRef.current.disabled = false;
+        setDone(false);
+      }
+    }
+  }, [done]);
 
   return (
     <CustomLayout>
@@ -39,7 +57,7 @@ const DPSCalculatorPage = () => {
         description="Calculate your DPS by entering your WAX wallet below"
       >
         <div className="text-center mt-8">
-          <div className="text-sm">
+          <div>
             <input
               ref={inputWaxID}
               type="text"
@@ -48,7 +66,8 @@ const DPSCalculatorPage = () => {
             />
             <button
               onClick={fetcher}
-              className="py-2 px-4 rounded-xl ml-2 bg-warmGray-600 hover:bg-warmGray-700 text-white tracking-wide"
+              ref={btnGetRef}
+              className="py-2 px-4 rounded-xl ml-2 bg-warmGray-600 hover:bg-warmGray-700 text-white tracking-wide disabled:opacity-80"
             >
               Get
             </button>
@@ -60,9 +79,9 @@ const DPSCalculatorPage = () => {
         </div>
       </CustomPageHeader>
 
-      <div className="py-12">
+      <div className="py-8">
         {fetch ? (
-          <DPS_Fetch wallet={wallet} />
+          <DPS_Fetch wallet={wallet} btnGetRef={btnGetRef} />
         ) : (
           <div className="text-center tracking-wide text-sm text-warmGray-700">
             Please enter your <strong>WAX ID</strong> and click the button to fetch and calculate

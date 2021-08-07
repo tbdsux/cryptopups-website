@@ -20,6 +20,10 @@ module.exports = {
   },
   additionalMetaTags: [
     {
+      name: 'viewport',
+      content: 'width=device-width, initial-scale=1'
+    },
+    {
       name: 'msapplication-TileColor',
       content: '#ffffff'
     },

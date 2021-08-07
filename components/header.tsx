@@ -39,17 +39,24 @@ const Header = () => {
         </Link>
 
         <ul className="flex items-center justify-center text-gray-300 text-sm font-semibold">
-          <li className="px-4 md:px-6 lg:px-8 py-2">
+          {/* <li className="px-4 md:px-6 lg:px-8 py-2">
             <Link href="/">
               <a className="tracking-wide hover:text-white" title="Home">
                 Home
+              </a>
+            </Link>
+          </li> */}
+          <li className="px-4 md:px-6 lg:px-8 py-2">
+            <Link href="/gallery">
+              <a className="tracking-wide hover:text-white" title="Gallery">
+                Gallery
               </a>
             </Link>
           </li>
           <li className="px-4 md:px-6 lg:px-8 py-2">
             <Link href="/gallery">
               <a className="tracking-wide hover:text-white" title="Gallery">
-                Gallery
+                The Pup Squad
               </a>
             </Link>
           </li>

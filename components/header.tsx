@@ -54,7 +54,7 @@ const Header = () => {
             </Link>
           </li>
           <li className="px-4 md:px-6 lg:px-8 py-2">
-            <Link href="/gallery">
+            <Link href="/pup-squad">
               <a className="tracking-wide hover:text-white" title="Gallery">
                 The Pup Squad
               </a>

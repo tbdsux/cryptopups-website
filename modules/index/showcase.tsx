@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Container from '../../components/container';
 import LogoAdvent from '../../public/logo-adventurers.png';
-import SocialIcons from './social-icons';
+import { SocialIcons } from './social-icons';
 
 const Showcase = () => {
   return (

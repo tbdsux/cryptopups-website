@@ -1,8 +1,8 @@
-import Image from "next/image";
-import Container from "../../components/container";
-import cardPackImg from "../../public/_events/adventurers-pack.jpg";
-import AdventurersPackSlide from "./events/adventurers-pack/cards-slide";
-import EventsTimer from "./events/timer";
+import Image from 'next/image';
+import Container from '../../components/container';
+import cardPackImg from '../../public/_events/adventurers-pack.jpg';
+import AdventurersPackSlide from './events/adventurers-pack/cards-slide';
+import EventsTimer from './events/timer';
 
 const CardsPackEvent = () => {
   return (
@@ -23,9 +23,8 @@ const CardsPackEvent = () => {
               Adventurer&apos;s Pack
             </h3>
             <p className="text-base lg:text-lg tracking-wide mt-3 text-gray-700">
-              With over <b>100+ trading cards</b>, this will be the biggest
-              cryptopups drop. 5 Packs will be available with 1 Free drop for
-              pupskin holders and 1 Free whitelisted drop.
+              With over <b>100+ trading cards</b>, this will be the biggest cryptopups drop. 5 Packs
+              will be available with 1 Free drop for pupskin holders and 1 Free whitelisted drop.
             </p>
 
             <button className="py-2 lg:py-3 px-12 lg:px-16 text-gray-100 bg-gray-600 hover:bg-gray-800 duration-300 rounded-full mt-4 inline-flex items-center text-sm lg:text-base mb-8">
@@ -42,7 +41,7 @@ const CardsPackEvent = () => {
                   strokeWidth={2}
                   d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                 />
-              </svg>{" "}
+              </svg>{' '}
               <a
                 href="https://neftyblocks.com/c/cryptopuppie/drops/21425+21424+21423"
                 target="_blank"

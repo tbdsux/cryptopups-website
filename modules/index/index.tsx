@@ -1,8 +1,10 @@
 import { NextSeo } from 'next-seo';
 import DefaultLayout from '../../layouts/default';
 import CardsPackEvent from './cards-pack';
+import DiscoverContainer from './discover';
 import Showcase from './showcase';
 import Rarities from './slider/rarities';
+import { SocialContainer } from './social-icons';
 
 const IndexPage = () => {
   return (
@@ -30,9 +32,17 @@ const IndexPage = () => {
 
       <CardAnatomy /> */}
 
-      <hr />
+      <hr className="w-11/12 mx-auto" />
 
       <Rarities />
+
+      <hr />
+
+      <div>
+        <DiscoverContainer />
+        <hr />
+        <SocialContainer />
+      </div>
     </DefaultLayout>
   );
 };

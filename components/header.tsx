@@ -1,7 +1,5 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
-import Logo from '../public/logo.png';
 import Container from './container';
 
 const Header = () => {
@@ -31,32 +29,32 @@ const Header = () => {
       ref={headerRef}
       className="py-3 bg-black/50 hover:bg-black duration-500 fixed w-full z-50"
     >
-      <Container className="w-11/12 text-center flex flex-col md:flex-row items-center justify-center md:justify-between">
-        <Link href="/">
+      <Container className="w-11/12 text-center">
+        {/* <Link href="/">
           <a className="flex">
             <Image src={Logo} height="30" width="130" alt="World of Cryptopups" />
           </a>
-        </Link>
+        </Link> */}
 
         <ul className="flex items-center justify-center text-gray-300 text-sm font-semibold">
-          {/* <li className="px-4 md:px-6 lg:px-8 py-2">
+          <li className="px-2 xs:px-4 md:px-6 lg:px-8 py-2">
             <Link href="/">
               <a className="tracking-wide hover:text-white" title="Home">
                 Home
               </a>
             </Link>
-          </li> */}
-          <li className="px-4 md:px-6 lg:px-8 py-2">
+          </li>
+          <li className="px-2 xs:px-4 md:px-6 lg:px-8 py-2">
             <Link href="/gallery">
               <a className="tracking-wide hover:text-white" title="Gallery">
                 Gallery
               </a>
             </Link>
           </li>
-          <li className="px-4 md:px-6 lg:px-8 py-2">
+          <li className="px-2 xs:px-4 md:px-6 lg:px-8 py-2">
             <Link href="/pup-squad">
               <a className="tracking-wide hover:text-white" title="Gallery">
-                The Pup Squad
+                Pup Squad
               </a>
             </Link>
           </li>
@@ -69,7 +67,7 @@ const Header = () => {
               </a>
             </Link>
           </li> */}
-          <li className="pl-4 md:pl-6 lg:pl-8 py-2">
+          <li className="px-2 xs:px-4 md:px-6 lg:px-8 py-2">
             <a
               className="tracking-wide hover:text-white"
               title="Join the Community"

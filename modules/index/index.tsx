@@ -23,6 +23,10 @@ const IndexPage = () => {
 
       <Showcase />
 
+      <DiscoverContainer />
+
+      <hr />
+
       <CardsPackEvent />
 
       {/*
@@ -39,7 +43,6 @@ const IndexPage = () => {
       <hr />
 
       <div>
-        <DiscoverContainer />
         <hr />
         <SocialContainer />
       </div>

@@ -58,12 +58,12 @@ const SocialIcons = () => {
 
 const SocialContainer = () => {
   return (
-    <Container className="w-5/6 py-16">
+    <Container className="w-5/6 py-20">
       <div className="text-center">
-        <h4 className="text-4xl font-black tracking-wide text-warmGray-800 leading-relaxed">
+        <h4 className="text-3xl md:text-4xl font-black tracking-wide text-warmGray-800 leading-relaxed mb-2">
           Follow us on Social Media
         </h4>
-        <p className="text-lg tracking-wide ">
+        <p className="text-base lg:text-lg tracking-wide ">
           Receive faster updates, events, notifications and announcements in our social media pages
         </p>
 
@@ -74,7 +74,7 @@ const SocialContainer = () => {
                 href={s.link}
                 rel="noreferrer"
                 target="_blank"
-                className={`py-2 px-6 text-white rounded-lg inline-flex items-center ${s.style}`}
+                className={`text-sm md:text-base py-2 px-6 text-white rounded-lg inline-flex items-center ${s.style}`}
               >
                 <FontAwesomeIcon icon={s.icon} className="text-xl" />
                 <span className="tracking-wide ml-2">@{s.username}</span>
@@ -88,7 +88,7 @@ const SocialContainer = () => {
             href="https://discord.io/worldofcryptopups"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center bg-gray-700 hover:bg-gray-800 duration-300 text-gray-100 py-2 lg:py-3 px-8 rounded-full"
+            className="text-sm md:text-base inline-flex items-center bg-gray-700 hover:bg-gray-800 duration-300 text-gray-100 py-2 lg:py-3 px-8 rounded-full"
             title="Join the amazing community on Discord"
           >
             <FontAwesomeIcon className="text-2xl mr-2" icon={faDiscord} />

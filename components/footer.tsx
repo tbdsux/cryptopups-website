@@ -169,9 +169,9 @@ const Footer = () => {
           <p className="tracking-wider">
             All Rights Reserved | World of CryptoPups &copy; {new Date().getFullYear()}
           </p>
-          <p className="tracking-wider">
+          {/* <p className="tracking-wider">
             <small>(website is still in heavy development!)</small>
-          </p>
+          </p> */}
         </div>
       </Container>
     </footer>

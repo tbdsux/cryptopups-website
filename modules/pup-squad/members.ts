@@ -18,7 +18,7 @@ export const PupMembers: PupMembersProps[] = [
     info: 'Owner, Creator, Artist & Marketing Manager',
     image: apppllleee,
     links: {
-      twitter: 'https://twitter.com/apppllleeenana'
+      twitter: 'https://twitter.com/apppllleee_pie'
     }
   },
   {

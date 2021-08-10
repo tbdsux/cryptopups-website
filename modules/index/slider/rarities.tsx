@@ -1,23 +1,17 @@
-import { useReducer } from "react";
-import Container from "../../../components/container";
-import { ImageCenter, ImageSides } from "./images";
-import { GallerySlideReducer, initGallerySlideReducer } from "./images-reducer";
+import { useReducer } from 'react';
+import Container from '../../../components/container';
+import { ImageCenter, ImageSides } from './images';
+import { GallerySlideReducer, initGallerySlideReducer } from './images-reducer';
 
 const Rarities = () => {
-  const [state, dispatch] = useReducer(
-    GallerySlideReducer,
-    initGallerySlideReducer
-  );
+  const [state, dispatch] = useReducer(GallerySlideReducer, initGallerySlideReducer);
 
   return (
     <div className="text-center py-20">
-      <h4 className="text-2xl md:text-3xl font-black tracking-wide text-warmGray-900">
-        Rarities
-      </h4>
+      <h4 className="text-2xl md:text-3xl font-black tracking-wide text-warmGray-900">Rarities</h4>
 
-      <p className="mt-4 text-warmGray-700 tracking-wide">
-        Cards differ from their rarity,{" "}
-        <b>cosmic, mythic, common, uncommon, rare</b>
+      <p className="mt-4 lg:text-lg text-warmGray-700 tracking-wide">
+        Cards differ from their rarity, <b>cosmic, mythic, common, uncommon, rare</b>
       </p>
 
       <Container className="w-11/12 sm:w-2/3 md:w-full xl:w-11/12">
@@ -26,7 +20,7 @@ const Rarities = () => {
 
           <button
             className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-800 mx-3"
-            onClick={() => dispatch({ type: "prev" })}
+            onClick={() => dispatch({ type: 'prev' })}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +42,7 @@ const Rarities = () => {
 
           <button
             className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-800 mx-4 md:mx-0"
-            onClick={() => dispatch({ type: "next" })}
+            onClick={() => dispatch({ type: 'next' })}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

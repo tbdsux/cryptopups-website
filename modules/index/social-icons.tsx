@@ -63,7 +63,7 @@ const SocialContainer = () => {
         <h4 className="text-3xl md:text-4xl font-black tracking-wide text-warmGray-800 leading-relaxed mb-2">
           Follow us on Social Media
         </h4>
-        <p className="text-base lg:text-lg tracking-wide ">
+        <p className="lg:text-lg tracking-wide ">
           Receive faster updates, events, notifications and announcements in our social media pages
         </p>
 

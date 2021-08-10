@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint --dir types --dir components --dir modules --dir page --dir lib --dir hooks --dir layout",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "test:cypress": "cypress open",
+    "test:cypress:cli": "cypress run"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -38,6 +40,7 @@
     "@types/cookie": "^0.4.1",
     "@types/ioredis": "^4.26.6",
     "@types/react": "17.0.13",
+    "cypress": "^8.2.0",
     "eslint": "7.29.0",
     "eslint-config-next": "11.0.1",
     "husky": "^7.0.0",

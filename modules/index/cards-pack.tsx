@@ -43,7 +43,7 @@ const CardsPackEvent = () => {
                 />
               </svg>{' '}
               <a
-                href="https://neftyblocks.com/c/cryptopuppie/drops/21425+21424+21423"
+                href="https://wax.atomichub.io/market?collection_name=cryptopuppie&order=desc&sort=created&symbol=WAX"
                 target="_blank"
                 rel="noreferrer"
                 className="ml-2 font-bold"

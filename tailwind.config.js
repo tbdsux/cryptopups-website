@@ -15,7 +15,15 @@ module.exports = {
       xs: '425px',
       ...defaultTheme.screens
     },
-    colors,
+    colors: {
+      ...colors,
+      'spec-red': '#ec6971',
+      'spec-orange': '#f9a96e',
+      'spec-yellow': '#f2d24c',
+      'spec-green': '#8fc96e',
+      'spec-blue': '#75b9e3',
+      'spec-purple': '#afa5d1'
+    },
     fontFamily: {
       alt: ['"Open Sans"', ...defaultTheme.fontFamily.sans],
       sans: ['Montserrat', ...defaultTheme.fontFamily.sans]

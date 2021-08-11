@@ -1,7 +1,7 @@
 <div align="center">
     <img src="./public/logo.png" />
     <h1>World of Cryptopups</h1>
-    <a href="https://www.cryptopups.cf/" target="_blank" rel="noreferrer">www.cryptopups.cf</a>
+    <a href="https://www.worldofcryptopups.cf/" target="_blank" rel="noreferrer">www.worldofcryptopups.cf</a>
     <p>Official website development source code and stuff.</p>
 </div>
 

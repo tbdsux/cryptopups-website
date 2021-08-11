@@ -19,7 +19,7 @@ const login = async (req: NextApiRequest, res: NextApiResponse) => {
   // check if logged in / data already exists in database
   const check = await r.get(`_wallet_${wallet}`);
   if (check) {
-    const d = await r.hgetall(check);
+    const d = await r.hgetall(`_token_${check}`);
 
     // store session
     await createSession(res, d);
@@ -32,7 +32,7 @@ const login = async (req: NextApiRequest, res: NextApiResponse) => {
   }
 
   // generate tokenid for confirmation
-  const _tokenId = nanoid(12);
+  const _tokenId = nanoid(20);
 
   // try to create a new account? / data
   const d: AuthUser = {
@@ -41,7 +41,7 @@ const login = async (req: NextApiRequest, res: NextApiResponse) => {
     token: _tokenId
   };
 
-  await r.hset(_tokenId, d);
+  await r.hset(`_token_${_tokenId}`, d);
   await r.set(`_wallet_${wallet}`, _tokenId);
 
   // store session

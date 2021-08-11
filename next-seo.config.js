@@ -8,7 +8,7 @@ module.exports = {
     images: [
       {
         url: 'https://www.worldofcryptopups.cf/logo.png',
-        height: 200,
+        height: 175,
         width: 400,
         alt: 'The World of CryptoPups'
       }

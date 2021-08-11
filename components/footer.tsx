@@ -125,13 +125,13 @@ const Footer = () => {
             <div className="mr-8 md:mr-16 lg:mr-24 my-1">
               <h5 className="text-gray-600 font-medium uppercase tracking-wide">Tools</h5>
               <ul className="text-gray-100">
-                <li className="my-1">
+                {/* <li className="my-1">
                   <Link href="/">
                     <a className="hover:text-white" title="Leaderboard">
                       Leaderboard
                     </a>
                   </Link>
-                </li>
+                </li> */}
                 <li className="my-1">
                   <Link href="/dps-calculator">
                     <a className="hover:text-white" title="DPS Calculator">
@@ -165,9 +165,9 @@ const Footer = () => {
 
         <hr className="border-gray-700 my-4" />
 
-        <div className="text-sm text-gray-200 flex items-center justify-between">
+        <div className="text-sm text-gray-200">
           <p className="tracking-wider">
-            All Rights Reserved | World of CryptoPups &copy; {new Date().getFullYear()}
+            All Rights Reserved | World of Cryptopups &copy; {new Date().getFullYear()}
           </p>
           {/* <p className="tracking-wider">
             <small>(website is still in heavy development!)</small>

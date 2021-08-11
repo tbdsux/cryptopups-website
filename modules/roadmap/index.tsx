@@ -15,7 +15,7 @@ const RoadMap = () => {
         openGraph={{
           images: [
             {
-              url: 'https://www.cryptopups.cf/roadmap.png',
+              url: 'https://www.worldofcryptopups.cf/roadmap.png',
               alt: 'Roadmap of World of Cryptopups'
             }
           ]

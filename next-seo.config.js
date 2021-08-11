@@ -3,11 +3,11 @@ module.exports = {
   openGraph: {
     type: 'website',
     locale: 'en_PH',
-    url: 'https://www.cryptopups.cf/',
+    url: 'https://www.worldofcryptopups.cf/',
     site_name: 'World of Cryptopups',
     images: [
       {
-        url: 'https://www.cryptopups.cf/logo.png',
+        url: 'https://www.worldofcryptopups.cf/logo.png',
         height: 200,
         width: 400,
         alt: 'The World of CryptoPups'

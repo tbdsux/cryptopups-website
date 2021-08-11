@@ -24,6 +24,11 @@ const SocialLinks = [
     link: 'https://www.instagram.com/apppllleee_pie/',
     username: 'apppllleee_pie',
     style: 'bg-red-500 hover:bg-red-600'
+  },
+  {
+    name: 'Discord',
+    icon: faDiscord,
+    link: 'https://discord.io/worldofcryptopups'
   }
 ];
 
@@ -68,7 +73,7 @@ const SocialContainer = () => {
         </p>
 
         <ul className="flex justify-center flex-wrap mt-4">
-          {SocialLinks.map((s, index) => (
+          {SocialLinks.filter((s) => s.name !== 'Discord').map((s, index) => (
             <li key={index} className="m-1">
               <a
                 href={s.link}

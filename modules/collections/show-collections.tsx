@@ -31,7 +31,7 @@ const ShowCollections = () => {
     return <div className="text-sm tracking-wide text-center">Fetching...</div>;
   }
   return (
-    <Container className="w-5/6 mx-auto">
+    <Container className="w-5/6">
       <div className="my-4">
         <h4 className="text-warmGray-700 text-2xl font-black tracking-wide leading-loose">
           Puppy Cards

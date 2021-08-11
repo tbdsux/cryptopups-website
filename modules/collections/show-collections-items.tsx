@@ -14,7 +14,7 @@ const ShowCollectionsItems = ({ data }: ShowCollectionsItemsProps) => {
           className="flex flex-col items-center justify-center shadow-2xl rounded-xl pt-1 pb-3"
         >
           <Image
-            src={`https://wax.atomichub.io/ipfs/${k.data.img}`}
+            src={`https://gateway.pinata.cloud/ipfs/${k.data.img}`}
             height="400"
             width="300"
             objectFit="contain"

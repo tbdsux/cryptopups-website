@@ -1,6 +1,6 @@
 import Image from 'next/image';
+import cardPackImg from '../../../public/_events/adventurers-pack.jpg';
 import Container from '../../components/container';
-import cardPackImg from '../../public/_events/adventurers-pack.jpg';
 import AdventurersPackSlide from './events/adventurers-pack/cards-slide';
 import EventsTimer from './events/timer';
 

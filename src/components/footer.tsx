@@ -2,8 +2,8 @@ import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import Link from 'next/link';
+import Logo from '../../public/logo.png';
 import { SocialLinks } from '../modules/index/social-icons';
-import Logo from '../public/logo.png';
 import Container from './container';
 
 const Footer = () => {

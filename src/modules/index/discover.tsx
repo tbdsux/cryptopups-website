@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import featuredPup from '../../../public/featured-white.png';
 import Container from '../../components/container';
-import featuredPup from '../../public/featured-white.png';
 
 const DiscoverItems = [
   {

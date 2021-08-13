@@ -1,12 +1,12 @@
 /* eslint-disable react/jsx-key */
-import Image from "next/image";
-import "swiper/components/pagination/pagination.min.css";
-import SwiperCore, { Autoplay, Pagination } from "swiper/core";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper.min.css";
-import bronzePack from "../../../../public/_events/bronze-pack.jpg";
-import goldPack from "../../../../public/_events/gold-pack.jpg";
-import silverPack from "../../../../public/_events/silver-pack.jpg";
+import Image from 'next/image';
+import 'swiper/components/pagination/pagination.min.css';
+import SwiperCore, { Autoplay, Pagination } from 'swiper/core';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper.min.css';
+import bronzePack from '../../../../../public/_events/bronze-pack.jpg';
+import goldPack from '../../../../../public/_events/gold-pack.jpg';
+import silverPack from '../../../../../public/_events/silver-pack.jpg';
 
 SwiperCore.use([Autoplay, Pagination]);
 
@@ -17,7 +17,7 @@ const AdventurersPackSlide = () => {
       centeredSlides={true}
       autoplay={{ delay: 3000 }}
       pagination={{
-        clickable: true,
+        clickable: true
       }}
     >
       <SwiperSlide>

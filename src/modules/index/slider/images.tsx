@@ -1,17 +1,17 @@
 /* eslint-disable react/jsx-key */
-import Image from "next/image";
-import commonPup from "../../../public/images/common.png";
-import cosmicPup from "../../../public/images/cosmic.png";
-import mythicPup from "../../../public/images/mythic.png";
-import rarePup from "../../../public/images/rare.png";
-import uncommonPup from "../../../public/images/uncommon.png";
+import Image from 'next/image';
+import commonPup from '../../../../public/images/common.png';
+import cosmicPup from '../../../../public/images/cosmic.png';
+import mythicPup from '../../../../public/images/mythic.png';
+import rarePup from '../../../../public/images/rare.png';
+import uncommonPup from '../../../../public/images/uncommon.png';
 
 const PUP_IMAGES = [
   <Image src={commonPup} alt="Common Pup" />,
   // <Image src={cosmicPup} alt="Cosmic Pup" />,
   <Image src={mythicPup} alt="Mythic Pup" />,
   <Image src={rarePup} alt="Rare Pup" />,
-  <Image src={uncommonPup} alt="Uncommon Pup" />,
+  <Image src={uncommonPup} alt="Uncommon Pup" />
 ];
 
 type ImageContainerProps = {
@@ -28,7 +28,7 @@ const IMAGES: ImageContainerProps[] = [
         layout="fill"
         placeholder="blur"
       />
-    ),
+    )
   },
   {
     image: (
@@ -39,7 +39,7 @@ const IMAGES: ImageContainerProps[] = [
         layout="fill"
         placeholder="blur"
       />
-    ),
+    )
   },
   {
     image: (
@@ -50,18 +50,12 @@ const IMAGES: ImageContainerProps[] = [
         layout="fill"
         placeholder="blur"
       />
-    ),
+    )
   },
   {
     image: (
-      <Image
-        src={rarePup}
-        alt="Rare Pup"
-        objectFit="contain"
-        layout="fill"
-        placeholder="blur"
-      />
-    ),
+      <Image src={rarePup} alt="Rare Pup" objectFit="contain" layout="fill" placeholder="blur" />
+    )
   },
   {
     image: (
@@ -72,8 +66,8 @@ const IMAGES: ImageContainerProps[] = [
         layout="fill"
         placeholder="blur"
       />
-    ),
-  },
+    )
+  }
 ];
 
 const ImageCenter = ({ image }: ImageContainerProps) => {

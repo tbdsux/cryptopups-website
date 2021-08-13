@@ -4,146 +4,167 @@
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/01_Solar.png",
     "filename": "01_Solar.png",
     "rarity": "uncommon",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 200
   },
   {
     "name": "Luna",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/02_Luna.png",
     "filename": "02_Luna.png",
     "rarity": "uncommon",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 200
   },
   {
     "name": "Stella",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/03_Stella.png",
     "filename": "03_Stella.png",
     "rarity": "common",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 125
   },
   {
     "name": "Apollo",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/04_Apollo.png",
     "filename": "04_Apollo.png",
     "rarity": "uncommon",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 210
   },
   {
     "name": "Glitter",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/05_Glitter.png",
     "filename": "05_Glitter.png",
     "rarity": "uncommon",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 219
   },
   {
     "name": "Draco",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/06_Draco.png",
     "filename": "06_Draco.png",
     "rarity": "uncommon",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 210
   },
   {
     "name": "Lyla",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/07_Lyla.png",
     "filename": "07_Lyla.png",
     "rarity": "common",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 120
   },
   {
     "name": "Azul",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/08_Azul.png",
     "filename": "08_Azul.png",
     "rarity": "common",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 120
   },
   {
     "name": "Amarilla",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/09_Amarilla.png",
     "filename": "09_Amarilla.png",
     "rarity": "common",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 120
   },
   {
     "name": "Kajel",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/10_Kajel.png",
     "filename": "10_Kajel.png",
     "rarity": "common",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 120
   },
   {
     "name": "Verde",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/11_Verde.png",
     "filename": "11_Verde.png",
     "rarity": "common",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 120
   },
   {
     "name": "Rosa",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/12_Rosa.png",
     "filename": "12_Rosa.png",
     "rarity": "common",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 120
   },
   {
     "name": "Prism",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/13_Prism.png",
     "filename": "13_Prism.png",
     "rarity": "rare",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 338
   },
   {
     "name": "Ten",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/14_Ten.png",
     "filename": "14_Ten.png",
     "rarity": "common",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 177
   },
   {
     "name": "Jack",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/15_Jack.png",
     "filename": "15_Jack.png",
     "rarity": "common",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 180
   },
   {
     "name": "Queen",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/16_Queen.png",
     "filename": "16_Queen.png",
     "rarity": "uncommon",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 253
   },
   {
     "name": "King",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/17_King.png",
     "filename": "17_King.png",
     "rarity": "uncommon",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 250
   },
   {
     "name": "Ace",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/18_Ace.png",
     "filename": "18_Ace.png",
     "rarity": "rare",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 326
   },
   {
     "name": "Theodore",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/19_Theodore.png",
     "filename": "19_Theodore.png",
     "rarity": "uncommon",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 217
   },
   {
     "name": "Tweety",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/20_Tweety.png",
     "filename": "20_Tweety.png",
     "rarity": "uncommon",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 270
   },
   {
     "name": "Easter",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/01_Pupcards/21_Easter.png",
     "filename": "21_Easter.png",
     "rarity": "uncommon",
-    "category": "pupcards"
+    "category": "pupcards",
+    "DPS": 248
   }
 ]

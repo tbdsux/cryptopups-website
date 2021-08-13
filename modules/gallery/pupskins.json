@@ -4,209 +4,239 @@
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/01_Sungod%20Solar.png",
     "filename": "01_Sungod Solar.png",
     "rarity": "mythic",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 477
   },
   {
     "name": "Moongod Luna",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/02_Moongod%20Luna.png",
     "filename": "02_Moongod Luna.png",
     "rarity": "mythic",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 477
   },
   {
     "name": "Mafia Luna",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/03_Mafia%20Luna.png",
     "filename": "03_Mafia Luna.png",
     "rarity": "rare",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 355
   },
   {
     "name": "Little Red Stella",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/04_Little%20Red%20Stella.png",
     "filename": "04_Little Red Stella.png",
     "rarity": "rare",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 333
   },
   {
     "name": "Beach Boy Solar",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/05_Beach%20Boy%20Solar.png",
     "filename": "05_Beach Boy Solar.png",
     "rarity": "uncommon",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 203
   },
   {
     "name": "School girl Stella",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/06_School%20girl%20Stella.png",
     "filename": "06_School girl Stella.png",
     "rarity": "uncommon",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 213
   },
   {
     "name": "Professor Lyla",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/07_Professor%20Lyla.png",
     "filename": "07_Professor Lyla.png",
     "rarity": "rare",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 338
   },
   {
     "name": "Lumberjack Azul",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/08_Lumberjack%20Azul.png",
     "filename": "08_Lumberjack Azul.png",
     "rarity": "rare",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 338
   },
   {
     "name": "Pizza Girl Amarilla",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/09_Pizza%20Girl%20Amarilla.png",
     "filename": "09_Pizza Girl Amarilla.png",
     "rarity": "rare",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 338
   },
   {
     "name": "Pumpkin Kajel",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/10_Pumpkin%20Kajel.png",
     "filename": "10_Pumpkin Kajel.png",
     "rarity": "rare",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 338
   },
   {
     "name": "Fisherman Verde",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/11_Fisherman%20Verde.png",
     "filename": "11_Fisherman Verde.png",
     "rarity": "rare",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 338
   },
   {
     "name": "Baker Rosa",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/12_Baker%20Rosa.png",
     "filename": "12_Baker Rosa.png",
     "rarity": "rare",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 338
   },
   {
     "name": "Captain Prism",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/13_Captain%20Prism.png",
     "filename": "13_Captain Prism.png",
     "rarity": "mythic",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 496
   },
   {
     "name": "Demon King",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/14.1_Demon%20King.png",
     "filename": "14.1_Demon King.png",
     "rarity": "cosmic",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 800
   },
   {
     "name": "Demon Queen",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/14.2_Demon%20Queen.png",
     "filename": "14.2_Demon Queen.png",
     "rarity": "cosmic",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 800
   },
   {
     "name": "Demon Ace",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/14.3_Demon%20Ace.png",
     "filename": "14.3_Demon Ace.png",
     "rarity": "cosmic",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 800
   },
   {
     "name": "Battle Bunny Easter",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/15_Battle%20Bunny%20Easter.png",
     "filename": "15_Battle Bunny Easter.png",
     "rarity": "mythic",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 475
   },
   {
     "name": "Astro Theodore",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/16_Astro%20Theodore.png",
     "filename": "16_Astro Theodore.png",
     "rarity": "rare",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 333
   },
   {
     "name": "Vampire Ace",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/17_Vampire%20Ace.png",
     "filename": "17_Vampire Ace.png",
     "rarity": "mythic",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 425
   },
   {
     "name": "Deep Sea Theodore",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/18_Deep%20Sea%20Theodore.png",
     "filename": "18_Deep Sea Theodore.png",
     "rarity": "rare",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 333
   },
   {
     "name": "Christmas Theodore",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/19_Christmas%20Theodore.png",
     "filename": "19_Christmas Theodore.png",
     "rarity": "mythic",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 467
   },
   {
     "name": "Reindeer Stella",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/20_Reindeer%20Stella.png",
     "filename": "20_Reindeer Stella.png",
     "rarity": "rare",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 319
   },
   {
     "name": "Samurai Ace",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/21_Samurai%20Ace.png",
     "filename": "21_Samurai Ace.png",
     "rarity": "mythic",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 475
   },
   {
     "name": "Wizard Jack",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/22_Wizard%20Jack.png",
     "filename": "22_Wizard Jack.png",
     "rarity": "rare",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 317
   },
   {
     "name": "Valkyrie Queen",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/23_Valkyrie%20Queen.png",
     "filename": "23_Valkyrie Queen.png",
     "rarity": "mythic",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 499
   },
   {
     "name": "Seraphim Ten",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/24_Seraphim%20Ten.png",
     "filename": "24_Seraphim Ten.png",
     "rarity": "mythic",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 499
   },
   {
     "name": "Trashy Tweety",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/25_Trashy%20Tweety.png",
     "filename": "25_Trashy Tweety.png",
     "rarity": "rare",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 317
   },
   {
     "name": "Mecha Glitter",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/26.1%20Mecha%20Glitter.png",
     "filename": "26.1 Mecha Glitter.png",
     "rarity": "cosmic",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 793
   },
   {
     "name": "Mecha Apollo",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/26.2_Mecha%20Apollo.png",
     "filename": "26.2_Mecha Apollo.png",
     "rarity": "cosmic",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 793
   },
   {
     "name": "Mecha Draco",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/02_Pupskins/26.3_Mecha%20Draco.png",
     "filename": "26.3_Mecha Draco.png",
     "rarity": "cosmic",
-    "category": "pupskins"
+    "category": "pupskins",
+    "DPS": 793
   }
 ]

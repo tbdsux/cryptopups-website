@@ -5,7 +5,8 @@
     "filename": "01.0_Daylight Beads.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Solar"
+    "owner": "Solar",
+    "DPS": 58
   },
   {
     "name": "Sunlight Sash",
@@ -13,7 +14,8 @@
     "filename": "01.1 Sunlight Sash.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Solar"
+    "owner": "Solar",
+    "DPS": 55
   },
   {
     "name": "Sungod's Crest",
@@ -21,7 +23,8 @@
     "filename": "01.2 Sungod's Crest.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Solar"
+    "owner": "Solar",
+    "DPS": 73
   },
   {
     "name": "Lunar Robe",
@@ -29,7 +32,8 @@
     "filename": "02.0 Lunar Robe.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Luna"
+    "owner": "Luna",
+    "DPS": 58
   },
   {
     "name": "Moonlight Cycle",
@@ -37,7 +41,8 @@
     "filename": "02.1 Moonlight Cycle.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Luna"
+    "owner": "Luna",
+    "DPS": 55
   },
   {
     "name": "Moongod's Crest",
@@ -45,7 +50,8 @@
     "filename": "02.2 Moongod's Crest.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Luna"
+    "owner": "Luna",
+    "DPS": 73
   },
   {
     "name": "Mafia Fedore",
@@ -53,7 +59,8 @@
     "filename": "03.0 Mafia Fedore.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Luna"
+    "owner": "Luna",
+    "DPS": 17
   },
   {
     "name": "Dandy Suit",
@@ -61,7 +68,8 @@
     "filename": "03.1 Dandy Suit.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Luna"
+    "owner": "Luna",
+    "DPS": 23
   },
   {
     "name": "Red's Hood",
@@ -69,7 +77,8 @@
     "filename": "04.0 Red's Hood.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Stella"
+    "owner": "Stella",
+    "DPS": 23
   },
   {
     "name": "Goodie Basket",
@@ -77,7 +86,8 @@
     "filename": "04.1 Goodie Basket.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Stella"
+    "owner": "Stella",
+    "DPS": 20
   },
   {
     "name": "Summer Surfboard",
@@ -85,7 +95,8 @@
     "filename": "05.0 Summer Surfboard.png",
     "rarity": "common",
     "category": "pupitems",
-    "owner": "Solar"
+    "owner": "Solar",
+    "DPS": 8
   },
   {
     "name": "Beach Ball",
@@ -93,7 +104,8 @@
     "filename": "05.1 Beach Ball.png",
     "rarity": "common",
     "category": "pupitems",
-    "owner": "Solar"
+    "owner": "Solar",
+    "DPS": 1
   },
   {
     "name": "School Bow",
@@ -101,7 +113,8 @@
     "filename": "06.0 School Bow.png",
     "rarity": "common",
     "category": "pupitems",
-    "owner": "Stella"
+    "owner": "Stella",
+    "DPS": 3
   },
   {
     "name": "School Uniform",
@@ -109,7 +122,8 @@
     "filename": "06.1 School Uniform.png",
     "rarity": "common",
     "category": "pupitems",
-    "owner": "Stella"
+    "owner": "Stella",
+    "DPS": 5
   },
   {
     "name": "Lesson One",
@@ -117,7 +131,8 @@
     "filename": "07.0 Lesson One.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Lyla"
+    "owner": "Lyla",
+    "DPS": 20
   },
   {
     "name": "Black Board",
@@ -125,7 +140,8 @@
     "filename": "07.1 Black Board.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Lyla"
+    "owner": "Lyla",
+    "DPS": 13
   },
   {
     "name": "Teachers Glasses",
@@ -133,7 +149,8 @@
     "filename": "07.2 Teachers Glasses.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Lyla"
+    "owner": "Lyla",
+    "DPS": 19
   },
   {
     "name": "Lumber Axe",
@@ -141,7 +158,8 @@
     "filename": "08.0 Lumber Axe.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Azul"
+    "owner": "Azul",
+    "DPS": 21
   },
   {
     "name": "Lumberjack's Bonnet",
@@ -149,7 +167,8 @@
     "filename": "08.1 Lumberjack's Bonnet.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Azul"
+    "owner": "Azul",
+    "DPS": 23
   },
   {
     "name": "Checkered Polo",
@@ -157,7 +176,8 @@
     "filename": "08.2 Checkered Polo.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Azul"
+    "owner": "Azul",
+    "DPS": 18
   },
   {
     "name": "Redhot Ride",
@@ -165,7 +185,8 @@
     "filename": "09.0 Redhot Ride.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Amarilla"
+    "owner": "Amarilla",
+    "DPS": 28
   },
   {
     "name": "Pizza Cap",
@@ -173,7 +194,8 @@
     "filename": "09.1 Pizza Cap.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Amarilla"
+    "owner": "Amarilla",
+    "DPS": 10
   },
   {
     "name": "Puppy Pizzeria",
@@ -181,15 +203,17 @@
     "filename": "09.2 Puppy Pizzeria.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Amarilla"
+    "owner": "Amarilla",
+    "DPS": 15
   },
   {
-    "name": "Pumpik Suit",
+    "name": "Pumpkin Suit",
     "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/10.0%20Pumpik%20Suit.png",
     "filename": "10.0 Pumpik Suit.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Kajel"
+    "owner": "Kajel",
+    "DPS": 13
   },
   {
     "name": "Pumpkin Hat",
@@ -197,7 +221,8 @@
     "filename": "10.1 Pumpkin Hat.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Kajel"
+    "owner": "Kajel",
+    "DPS": 17
   },
   {
     "name": "Pumpkin Seeds",
@@ -205,7 +230,8 @@
     "filename": "10.2 Pumpkin Seeds.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Kajel"
+    "owner": "Kajel",
+    "DPS": 15
   },
   {
     "name": "Fishing Boat",
@@ -213,7 +239,8 @@
     "filename": "11.0 Fishing Boat.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Verde"
+    "owner": "Verde",
+    "DPS": 21
   },
   {
     "name": "Fishing Vest",
@@ -221,7 +248,8 @@
     "filename": "11.1 Fishing Vest.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Verde"
+    "owner": "Verde",
+    "DPS": 15
   },
   {
     "name": "Fishing Rod",
@@ -229,7 +257,8 @@
     "filename": "11.2 Fishing Rod.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Verde"
+    "owner": "Verde",
+    "DPS": 21
   },
   {
     "name": "Rosa's Toque",
@@ -237,7 +266,8 @@
     "filename": "12.0 Rosa's Toque.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Rosa"
+    "owner": "Rosa",
+    "DPS": 20
   },
   {
     "name": "Rosa's Coat",
@@ -245,7 +275,8 @@
     "filename": "12.1 Rosa's Coat.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Rosa"
+    "owner": "Rosa",
+    "DPS": 18
   },
   {
     "name": "Rainbow Bakeshop",
@@ -253,7 +284,8 @@
     "filename": "12.2 Rainbow Bakeshop.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Rosa"
+    "owner": "Rosa",
+    "DPS": 19
   },
   {
     "name": "Naval Ship",
@@ -261,7 +293,8 @@
     "filename": "13.0 Naval Ship.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Prism"
+    "owner": "Prism",
+    "DPS": 69
   },
   {
     "name": "Captain's Uniform",
@@ -269,7 +302,8 @@
     "filename": "13.1 Captain's Uniform.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Prism"
+    "owner": "Prism",
+    "DPS": 76
   },
   {
     "name": "Captain's Cap",
@@ -277,7 +311,8 @@
     "filename": "13.2 Captain's Cap.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Prism"
+    "owner": "Prism",
+    "DPS": 75
   },
   {
     "name": "Demonic Heart",
@@ -285,7 +320,8 @@
     "filename": "14.0 Demonic Heart.png",
     "rarity": "mythic",
     "category": "pupitems",
-    "owner": "Demon"
+    "owner": "Demon",
+    "DPS": 281
   },
   {
     "name": "B-317 Ears",
@@ -293,7 +329,8 @@
     "filename": "15.0 B-317 Ears.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Easter"
+    "owner": "Easter",
+    "DPS": 80
   },
   {
     "name": "Bunny Crest",
@@ -301,7 +338,8 @@
     "filename": "15.1 Bunny Crest.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Easter"
+    "owner": "Easter",
+    "DPS": 54
   },
   {
     "name": "A-001 Hopper",
@@ -309,7 +347,8 @@
     "filename": "15.2 A-001 Hopper.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Easter"
+    "owner": "Easter",
+    "DPS": 78
   },
   {
     "name": "Space Rocket",
@@ -317,7 +356,8 @@
     "filename": "16.0 Space Rocket.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Theodore"
+    "owner": "Theodore",
+    "DPS": 33
   },
   {
     "name": "Space Helmet",
@@ -325,7 +365,8 @@
     "filename": "16.1 Space Helmet.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Theodore"
+    "owner": "Theodore",
+    "DPS": 13
   },
   {
     "name": "Space Suit",
@@ -333,7 +374,8 @@
     "filename": "16.2 Space Suit.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Theodore"
+    "owner": "Theodore",
+    "DPS": 17
   },
   {
     "name": "Vampire Wings",
@@ -341,7 +383,8 @@
     "filename": "17.0 Vampire Wings.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Ace"
+    "owner": "Ace",
+    "DPS": 80
   },
   {
     "name": "Dracula's Coat",
@@ -349,7 +392,8 @@
     "filename": "17.1 Dracula's Coat.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Ace"
+    "owner": "Ace",
+    "DPS": 55
   },
   {
     "name": "Vampire Blood",
@@ -357,7 +401,8 @@
     "filename": "17.2 Vampire Blood.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Ace"
+    "owner": "Ace",
+    "DPS": 78
   },
   {
     "name": "Steampunk Diver",
@@ -365,7 +410,8 @@
     "filename": "18.0 Steampunk Diver.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Theodore"
+    "owner": "Theodore",
+    "DPS": 17
   },
   {
     "name": "Schoo o' Fish",
@@ -373,7 +419,8 @@
     "filename": "18.1 Schoo o' Fish.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Theodore"
+    "owner": "Theodore",
+    "DPS": 32
   },
   {
     "name": "GIft Bag",
@@ -381,7 +428,8 @@
     "filename": "19.0 GIft Bag.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Theodore"
+    "owner": "Theodore",
+    "DPS": 70
   },
   {
     "name": "Santa's Hat",
@@ -389,7 +437,8 @@
     "filename": "19.1 Santa's Hat.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Theodore"
+    "owner": "Theodore",
+    "DPS": 75
   },
   {
     "name": "Christmas Tree",
@@ -397,7 +446,8 @@
     "filename": "19.2 Christmas Tree.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Theodore"
+    "owner": "Theodore",
+    "DPS": 73
   },
   {
     "name": "Raindeer Bell",
@@ -405,7 +455,8 @@
     "filename": "20.0 Raindeer Bell.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Stella"
+    "owner": "Stella",
+    "DPS": 25
   },
   {
     "name": "Raindeer Costume",
@@ -413,7 +464,8 @@
     "filename": "20.1 Raindeer Costume.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Stella"
+    "owner": "Stella",
+    "DPS": 20
   },
   {
     "name": "Tori Gate",
@@ -421,7 +473,8 @@
     "filename": "21.0 Tori Gate.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Ace"
+    "owner": "Ace",
+    "DPS": 80
   },
   {
     "name": "Samurai Helmet",
@@ -429,7 +482,8 @@
     "filename": "21.1 Samurai Helmet.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Ace"
+    "owner": "Ace",
+    "DPS": 75
   },
   {
     "name": "Ichi Seal",
@@ -437,7 +491,8 @@
     "filename": "21.2 Ichi Seal.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Ace"
+    "owner": "Ace",
+    "DPS": 55
   },
   {
     "name": "Wizard Hat",
@@ -445,7 +500,8 @@
     "filename": "22.0 Wizard Hat.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Jack"
+    "owner": "Jack",
+    "DPS": 30
   },
   {
     "name": "Spell Book",
@@ -453,7 +509,8 @@
     "filename": "22.1 Spell Book.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Jack"
+    "owner": "Jack",
+    "DPS": 32
   },
   {
     "name": "Mystery Potions",
@@ -461,7 +518,8 @@
     "filename": "22.2 Mystery Potions.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Jack"
+    "owner": "Jack",
+    "DPS": 37
   },
   {
     "name": "Ancient Halberd",
@@ -469,7 +527,8 @@
     "filename": "23.0 Ancient Halberd.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Queen"
+    "owner": "Queen",
+    "DPS": 73
   },
   {
     "name": "Valhalla Armor",
@@ -477,7 +536,8 @@
     "filename": "23.1 Valhalla Armor.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Queen"
+    "owner": "Queen",
+    "DPS": 60
   },
   {
     "name": "Valhalla Gauntlets",
@@ -485,7 +545,8 @@
     "filename": "23.2 Valhalla Gauntlets.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Queen"
+    "owner": "Queen",
+    "DPS": 65
   },
   {
     "name": "Seraphim Wings",
@@ -493,7 +554,8 @@
     "filename": "24.0 Seraphim Wings.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Ten"
+    "owner": "Ten",
+    "DPS": 85
   },
   {
     "name": "Trumpet of Apocalypse",
@@ -501,7 +563,8 @@
     "filename": "24.1 Trumpet of Apocalypse.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Ten"
+    "owner": "Ten",
+    "DPS": 80
   },
   {
     "name": "Divine Clothing",
@@ -509,7 +572,8 @@
     "filename": "24.2 Divine Clothing.png",
     "rarity": "rare",
     "category": "pupitems",
-    "owner": "Ten"
+    "owner": "Ten",
+    "DPS": 55
   },
   {
     "name": "Small Trash",
@@ -517,7 +581,8 @@
     "filename": "25.0 Small Trash.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Tweety"
+    "owner": "Tweety",
+    "DPS": 23
   },
   {
     "name": "Trash Can",
@@ -525,7 +590,8 @@
     "filename": "25.1 Trash Can.png",
     "rarity": "uncommon",
     "category": "pupitems",
-    "owner": "Tweety"
+    "owner": "Tweety",
+    "DPS": 29
   },
   {
     "name": "Mecha Core",
@@ -533,6 +599,7 @@
     "filename": "26.0 Mecha Core.png",
     "rarity": "mythic",
     "category": "pupitems",
-    "owner": "Mecha"
+    "owner": "Mecha",
+    "DPS": 272
   }
 ]

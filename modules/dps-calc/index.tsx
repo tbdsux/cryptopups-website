@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import CustomPageHeader from '../../components/custom-page-header';
 import CustomLayout from '../../layouts/custom';
 import DPS_Fetch from './fetch';
+import DPSListTable from './table-list';
 
 const DPSCalculatorPage = () => {
   const [fetch, setFetch] = useState(false);
@@ -89,6 +90,10 @@ const DPSCalculatorPage = () => {
           </div>
         )}
       </div>
+
+      <hr />
+
+      <DPSListTable />
     </CustomLayout>
   );
 };

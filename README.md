@@ -23,6 +23,16 @@ Vercel doesn't support deploying from organizations on a free account so, that's
   git clone https://github.com/TheBoringDude/new-cryptopups.git
   ```
 
+- Required environment variables
+
+  ```
+  SECRET_TOKEN=
+  REDIS_HOST=
+  APP_URL= # use -> in dev :: 'http://localhost:3000'
+  APP_DEV_URL= # use -> in dev :: 'http://localhost:3000'
+
+  ```
+
 - Install the dependencies
 
   ```

@@ -80,9 +80,9 @@ const EventsTimer = ({ date: DATE, duration: TIME_EVENT_HOURS }: EventsTimerProp
 
   if (waiting)
     return (
-      <p className="text-right tracking-wide">
+      <p className="text-right tracking-wide text-lg">
         <span className="mr-4">Waiting</span>
-        <b>
+        <strong className="font-extrabold">
           {timeLeft
             ? Object.keys(timeLeft).map(
                 (val, index) =>
@@ -91,15 +91,15 @@ const EventsTimer = ({ date: DATE, duration: TIME_EVENT_HOURS }: EventsTimerProp
                   }`
               )
             : null}
-        </b>
+        </strong>
       </p>
     );
 
   if (ongoing)
     return (
-      <p className="text-right tracking-wide">
+      <p className="text-right tracking-wide text-lg">
         <span className="mr-4">Time Left</span>
-        <b>
+        <strong className="font-extrabold">
           {timeLeft
             ? Object.keys(timeLeft).map(
                 (val, index) =>
@@ -108,12 +108,12 @@ const EventsTimer = ({ date: DATE, duration: TIME_EVENT_HOURS }: EventsTimerProp
                   }`
               )
             : null}
-        </b>
+        </strong>
       </p>
     );
 
   return (
-    <p className="text-right tracking-wide">
+    <p className="text-right tracking-wide text-lg">
       <span className="mr-4">EVENT IS OVER!</span>
     </p>
   );

@@ -1,7 +1,6 @@
 import { NextSeo } from 'next-seo';
 import DefaultLayout from '../../layouts/default';
 import DiscoverContainer from './discover';
-import CardsPackEvent from './events/adventurers-pack/cards-pack';
 import CurrentEventModal from './events/current-event-modal';
 import SeasonPassEvent from './events/season-pass/season-pass';
 import Showcase from './showcase';
@@ -38,11 +37,7 @@ const IndexPage = () => {
         </h2>
         <hr className="border-gray-200 w-5/6 mx-auto" />
 
-        <div className="h-200 overflow-auto">
-          <SeasonPassEvent />
-          <hr className="border-gray-200 w-4/5 mx-auto" />
-          <CardsPackEvent />
-        </div>
+        <SeasonPassEvent />
       </div>
 
       {/*

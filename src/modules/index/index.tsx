@@ -2,6 +2,7 @@ import { NextSeo } from 'next-seo';
 import DefaultLayout from '../../layouts/default';
 import DiscoverContainer from './discover';
 import CardsPackEvent from './events/adventurers-pack/cards-pack';
+import CurrentEventModal from './events/current-event-modal';
 import SeasonPassEvent from './events/season-pass/season-pass';
 import Showcase from './showcase';
 import Rarities from './slider/rarities';
@@ -21,6 +22,9 @@ const IndexPage = () => {
         }}
       />
       {/* end seo */}
+
+      {/* current event modal */}
+      <CurrentEventModal />
 
       <Showcase />
 

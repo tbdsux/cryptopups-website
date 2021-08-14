@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <header
       ref={headerRef}
-      className="py-3 bg-black/50 hover:bg-black duration-500 fixed w-full z-50"
+      className="py-3 bg-black/50 hover:bg-black duration-500 fixed w-full z-40"
     >
       <Container className="w-11/12 text-center">
         {/* <Link href="/">

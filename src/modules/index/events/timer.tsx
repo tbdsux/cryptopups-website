@@ -37,8 +37,8 @@ type EventsTimerProps = {
 };
 
 const EventsTimer = ({ date: DATE, duration: TIME_EVENT_HOURS }: EventsTimerProps) => {
-  var xDate = new Date(DATE);
-  const END_DATE = new Date(xDate.setHours(xDate.getHours() + TIME_EVENT_HOURS));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const xDate = new Date(DATE);
 
   const mounted = useHasMounted();
 
@@ -49,7 +49,7 @@ const EventsTimer = ({ date: DATE, duration: TIME_EVENT_HOURS }: EventsTimerProp
       return false;
     }
 
-    return !isEventDone(END_DATE.toString());
+    return !isEventDone(new Date(xDate.setHours(xDate.getHours() + TIME_EVENT_HOURS)).toString());
   });
   const [timeLeft, setTimeLeft] = useState(CalculateEventTime(DATE));
 
@@ -73,9 +73,9 @@ const EventsTimer = ({ date: DATE, duration: TIME_EVENT_HOURS }: EventsTimerProp
 
   useEffect(() => {
     if (!waiting && ongoing) {
-      setD(END_DATE.toString());
+      setD(new Date(xDate.setHours(xDate.getHours() + TIME_EVENT_HOURS)).toString());
     }
-  }, [waiting, ongoing, END_DATE]);
+  }, [waiting, ongoing, xDate, TIME_EVENT_HOURS]);
   if (!mounted) return <></>;
 
   if (waiting)
@@ -118,4 +118,6 @@ const EventsTimer = ({ date: DATE, duration: TIME_EVENT_HOURS }: EventsTimerProp
     </p>
   );
 };
+
 export default EventsTimer;
+export { isEventDone };

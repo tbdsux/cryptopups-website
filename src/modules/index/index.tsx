@@ -1,7 +1,8 @@
 import { NextSeo } from 'next-seo';
 import DefaultLayout from '../../layouts/default';
-import CardsPackEvent from './cards-pack';
 import DiscoverContainer from './discover';
+import CardsPackEvent from './events/adventurers-pack/cards-pack';
+import SeasonPassEvent from './events/season-pass/season-pass';
 import Showcase from './showcase';
 import Rarities from './slider/rarities';
 import { SocialContainer } from './social-icons';
@@ -27,7 +28,18 @@ const IndexPage = () => {
 
       <hr />
 
-      <CardsPackEvent />
+      <div className="py-24">
+        <h2 className="text-center text-4xl font-black trackin-wide text-warmGray-800 pb-8">
+          World of Cryptopups Events
+        </h2>
+        <hr className="border-gray-200 w-5/6 mx-auto" />
+
+        <div className="h-200 overflow-auto">
+          <SeasonPassEvent />
+          <hr className="border-gray-200 w-4/5 mx-auto" />
+          <CardsPackEvent />
+        </div>
+      </div>
 
       {/*
       hide this component since it is incomplete

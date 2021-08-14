@@ -1,19 +1,9 @@
 // TODO: this component needs to re-do or clean it up (it is really ugly)
 
-import { useEffect, useState } from "react";
-import { useHasMounted } from "../../../hooks/useHasMounted";
+import { useEffect, useState } from 'react';
+import { useHasMounted } from '../../../hooks/useHasMounted';
 
-const DATE = "Sat, 17 Jul 2021 16:00:00 UTC"; // event start date
-const TIME_EVENT_HOURS = 24; // duration of event
-var xDate = new Date(DATE);
-const END_DATE = new Date(xDate.setHours(xDate.getHours() + TIME_EVENT_HOURS));
-
-type CalculateEventTimeTypeProps =
-  | "days"
-  | "hours"
-  | "minutes"
-  | "seconds"
-  | string;
+type CalculateEventTimeTypeProps = 'days' | 'hours' | 'minutes' | 'seconds' | string;
 type CalculateEventTimeProps = {
   [key in CalculateEventTimeTypeProps]: number;
 };
@@ -26,7 +16,7 @@ const CalculateEventTime = (date: string): CalculateEventTimeProps | null => {
       days: Math.floor(diff / (1000 * 60 * 60 * 24)),
       hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
       minutes: Math.floor((diff / 1000 / 60) % 60),
-      seconds: Math.floor((diff / 1000) % 60),
+      seconds: Math.floor((diff / 1000) % 60)
     };
   }
 
@@ -41,8 +31,17 @@ const isEventDone = (date: string) => {
   return false;
 };
 
-const EventsTimer = () => {
+type EventsTimerProps = {
+  date: string;
+  duration: number;
+};
+
+const EventsTimer = ({ date: DATE, duration: TIME_EVENT_HOURS }: EventsTimerProps) => {
+  var xDate = new Date(DATE);
+  const END_DATE = new Date(xDate.setHours(xDate.getHours() + TIME_EVENT_HOURS));
+
   const mounted = useHasMounted();
+
   const [d, setD] = useState(DATE);
   const [waiting, setWaiting] = useState(!isEventDone(DATE));
   const [ongoing, setOngoing] = useState(() => {
@@ -76,8 +75,7 @@ const EventsTimer = () => {
     if (!waiting && ongoing) {
       setD(END_DATE.toString());
     }
-  }, [waiting, ongoing]);
-
+  }, [waiting, ongoing, END_DATE]);
   if (!mounted) return <></>;
 
   if (waiting)
@@ -89,7 +87,7 @@ const EventsTimer = () => {
             ? Object.keys(timeLeft).map(
                 (val, index) =>
                   `${`0${timeLeft[val]}`.slice(-2)}${
-                    index < Object.keys(timeLeft).length - 1 ? " : " : ""
+                    index < Object.keys(timeLeft).length - 1 ? ' : ' : ''
                   }`
               )
             : null}
@@ -106,7 +104,7 @@ const EventsTimer = () => {
             ? Object.keys(timeLeft).map(
                 (val, index) =>
                   `${`0${timeLeft[val]}`.slice(-2)}${
-                    index < Object.keys(timeLeft).length - 1 ? " : " : ""
+                    index < Object.keys(timeLeft).length - 1 ? ' : ' : ''
                   }`
               )
             : null}
@@ -120,5 +118,4 @@ const EventsTimer = () => {
     </p>
   );
 };
-
 export default EventsTimer;

@@ -58,6 +58,17 @@ const Footer = () => {
                     </a>
                   </Link>
                 </li>
+                <li className="my-1">
+                  <a
+                    href="https://events.worldofcryptopups.cf/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-white"
+                    title="Events"
+                  >
+                    Events
+                  </a>
+                </li>
               </ul>
             </div>
 

@@ -31,7 +31,7 @@ const IndexPage = () => {
 
       <hr />
 
-      <div className="py-24">
+      <div className="py-28">
         <h2 className="text-center text-4xl font-black trackin-wide text-warmGray-800 pb-8">
           World of Cryptopups Events
         </h2>

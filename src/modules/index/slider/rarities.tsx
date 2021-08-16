@@ -7,10 +7,12 @@ const Rarities = () => {
   const [state, dispatch] = useReducer(GallerySlideReducer, initGallerySlideReducer);
 
   return (
-    <div className="text-center py-20">
-      <h4 className="text-2xl md:text-3xl font-black tracking-wide text-warmGray-900">Rarities</h4>
+    <div className="text-center py-24">
+      <h4 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black tracking-wide text-warmGray-900">
+        Rarities
+      </h4>
 
-      <p className="mt-4 lg:text-lg text-warmGray-700 tracking-wide">
+      <p className="mt-4 lg:mt-6 lg:text-lg xl:text-xl text-warmGray-700 tracking-wide">
         Cards differ from their rarity, <b>cosmic, mythic, common, uncommon, rare</b>
       </p>
 

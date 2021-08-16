@@ -18,10 +18,10 @@ const SeasonPassEvent = () => {
             />
           </div>
           <div>
-            <h3 className="text-4xl lg:text-5xl uppercase font-black tracking-wide text-warmGray-900">
+            <h3 className="text-4xl lg:text-5xl xl:text-6xl uppercase font-black tracking-wide text-warmGray-900">
               Season One Pass
             </h3>
-            <p className="text-base lg:text-lg tracking-wide mt-3 text-gray-700">
+            <p className="text-base lg:text-lg xl:text-xl tracking-wide mt-3 xl:mt-4 text-gray-700">
               Having this pass would allow you to claim your rewards and discounts based on your
               rank! Enjoy the <strong>Adventure</strong>!
             </p>

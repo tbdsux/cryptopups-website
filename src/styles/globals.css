@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.ethereal {
+  background: rgb(236, 105, 113);
+  background: -moz-linear-gradient(60deg, #fef5d4 0%, #ffd6aa 20%, #efdad6 40%, #dadafc 60%);
+  background: -webkit-linear-gradient(60deg, #fef5d4 0%, #ffd6aa 20%, #efdad6 40%, #dadafc 60%);
+  background: linear-gradient(60deg, #fef5d4 0%, #ffd6aa 20%, #efdad6 40%, #dadafc 60%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
+}
+
 .special-link {
   background: rgb(236, 105, 113);
   background: -moz-linear-gradient(

@@ -14,17 +14,19 @@ type AllianceProps = {
 const Alliance: AllianceProps[] = [
   {
     name: 'unaxxtradingcards',
-    image: 'https://pbs.twimg.com/profile_images/1405599474701975553/7Fxlf46A_400x400.jpg',
-    banner: 'https://pbs.twimg.com/profile_banners/825047544816422913/1626374618/1500x500',
+    image: 'https://pbs.twimg.com/profile_images/1424796215154257934/7RhnM9-t_400x400.jpg',
+    banner: 'https://pbs.twimg.com/profile_banners/825047544816422913/1628087428/1500x500',
     links: {
       telegram: 'https://t.me/officialunaxxtg',
       nefty: 'https://neftyblocks.com/c/unaxxtrdcrds',
-      twitter: 'https://twitter.com/allerkrans92'
+      twitter: 'https://twitter.com/allerkrans92',
+      website: 'https://www.unaxx.com/'
     }
   },
   {
     name: 'createdwlove',
-    image: 'https://pbs.twimg.com/profile_images/1404350057638371329/JsC59AeZ_400x400.jpg',
+    image:
+      'https://cdn.discordapp.com/avatars/389563656762818588/6ba24be2707afee65c5a35b0a04fdbac.webp?size=256',
     banner: '',
     links: {
       telegram: 'https://t.me/createdwlove',
@@ -56,7 +58,7 @@ const Alliance: AllianceProps[] = [
   {
     name: 'catstickers',
     image: 'https://pbs.twimg.com/profile_images/1397872457860661248/Fo8hYoEf_400x400.jpg',
-    banner: 'https://pbs.twimg.com/profile_banners/1240921920746520576/1625411927/1500x500',
+    banner: 'https://pbs.twimg.com/profile_banners/1240921920746520576/1629129749/1500x500',
     links: {
       twitter: 'https://twitter.com/cutecatstickers',
       nefty: 'https://neftyblocks.com/c/catstickerss/',

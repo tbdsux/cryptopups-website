@@ -44,7 +44,7 @@ const CordyEvent = () => {
                 />
               </svg>{' '}
               <a
-                href="https://events.worldofcryptopups.cf/season-one-pass"
+                href="https://events.worldofcryptopups.cf/cordy-drop"
                 target="_blank"
                 rel="noreferrer"
                 className="ml-2 font-bold"

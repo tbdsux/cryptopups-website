@@ -82,7 +82,7 @@ const EventsTimer = ({ date: DATE, duration: TIME_EVENT_HOURS }: EventsTimerProp
     return (
       <p className="text-right tracking-wide text-lg">
         <span className="mr-4">Waiting</span>
-        <strong className="font-extrabold">
+        <strong className="font-extrabold xl:text-2xl">
           {timeLeft
             ? Object.keys(timeLeft).map(
                 (val, index) =>
@@ -99,7 +99,7 @@ const EventsTimer = ({ date: DATE, duration: TIME_EVENT_HOURS }: EventsTimerProp
     return (
       <p className="text-right tracking-wide text-lg">
         <span className="mr-4">Time Left</span>
-        <strong className="font-extrabold">
+        <strong className="font-extrabold xl:text-2xl">
           {timeLeft
             ? Object.keys(timeLeft).map(
                 (val, index) =>

@@ -1,6 +1,12 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['wax.atomichub.io', 'pbs.twimg.com', 'neftyblocks.com', 'gateway.pinata.cloud']
+    domains: [
+      'wax.atomichub.io',
+      'pbs.twimg.com',
+      'neftyblocks.com',
+      'gateway.pinata.cloud',
+      'cdn.discordapp.com'
+    ]
   }
 };

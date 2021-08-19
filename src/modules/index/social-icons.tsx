@@ -28,7 +28,7 @@ const SocialLinks = [
   {
     name: 'Discord',
     icon: faDiscord,
-    link: 'https://discord.io/worldofcryptopups'
+    link: 'https://discord.gg/ZKEezUwzaB'
   }
 ];
 

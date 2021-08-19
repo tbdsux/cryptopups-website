@@ -23,7 +23,7 @@ const galleryPupRarities = {
   rare: 'bg-blue-500',
   mythic: 'bg-purple-500',
   cosmic: 'bg-red-500',
-  ethereal: 'bg-yellow-500',
+  ethereal: 'ethereal',
   special: 'bg-teal-500'
 };
 

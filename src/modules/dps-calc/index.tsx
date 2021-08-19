@@ -2,13 +2,23 @@ import { NextSeo } from 'next-seo';
 import { useEffect, useRef, useState } from 'react';
 import CustomPageHeader from '../../components/custom-page-header';
 import CustomLayout from '../../layouts/custom';
+import { WAXResponseProps } from './apitypes';
 import DPS_Fetch from './fetch';
 import DPSListTable from './table-list';
 
-const DPSCalculatorPage = () => {
-  const [fetch, setFetch] = useState(false);
+type DPSCalculatorPageProps = {
+  wallet?: string;
+  data?: {
+    pupitems: WAXResponseProps;
+    pupcards: WAXResponseProps;
+    pupskins: WAXResponseProps;
+  };
+};
+
+const DPSCalculatorPage = ({ wallet: w, data }: DPSCalculatorPageProps) => {
+  const [fetch, setFetch] = useState(w ? true : false);
   const [done, setDone] = useState(false);
-  const [wallet, setWallet] = useState('');
+  const [wallet, setWallet] = useState(w || '');
 
   const inputWaxID = useRef<HTMLInputElement>(null);
   const btnGetRef = useRef<HTMLButtonElement>(null);
@@ -64,6 +74,7 @@ const DPSCalculatorPage = () => {
               type="text"
               className="py-2 px-4 rounded-xl tracking-wide border border-warmGray-400"
               placeholder="Enter your WAX id"
+              defaultValue={wallet}
             />
             <button
               onClick={fetcher}
@@ -82,7 +93,7 @@ const DPSCalculatorPage = () => {
 
       <div className="py-8">
         {fetch ? (
-          <DPS_Fetch wallet={wallet} btnGetRef={btnGetRef} />
+          <DPS_Fetch wallet={wallet} btnGetRef={btnGetRef} data={data} />
         ) : (
           <div className="text-center tracking-wide text-sm text-warmGray-700">
             Please enter your <strong>WAX ID</strong> and click the button to fetch and calculate

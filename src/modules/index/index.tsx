@@ -1,8 +1,8 @@
 import { NextSeo } from 'next-seo';
 import DefaultLayout from '../../layouts/default';
 import DiscoverContainer from './discover';
+import CordyEvent from './events/cordy/event';
 import CurrentEventModal from './events/current-event-modal';
-import SeasonPassEvent from './events/season-pass/season-pass';
 import Showcase from './showcase';
 import Rarities from './slider/rarities';
 import { SocialContainer } from './social-icons';
@@ -37,7 +37,7 @@ const IndexPage = () => {
         </h2>
         <hr className="border-gray-200 w-5/6 mx-auto" />
 
-        <SeasonPassEvent />
+        <CordyEvent />
       </div>
 
       {/*

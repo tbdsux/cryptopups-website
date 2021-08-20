@@ -51,7 +51,7 @@ const TheAllianceSection = ({ data }: TheAllianceSectionProps) => {
                 href={data.links.discord}
                 target="_blank"
                 rel="noreferrer"
-                className="mx-1 group inline-flex items-center py-2 px-4 rounded-full bg-blue-600 hover:bg-blue-700 text-white"
+                className="m-1 group inline-flex items-center py-2 px-4 rounded-full bg-blue-600 hover:bg-blue-700 text-white"
               >
                 <FontAwesomeIcon icon={faDiscord} className="text-xl mr-1" /> <span>Discord</span>
               </a>
@@ -62,7 +62,7 @@ const TheAllianceSection = ({ data }: TheAllianceSectionProps) => {
                 href={data.links.telegram}
                 target="_blank"
                 rel="noreferrer"
-                className="mx-1 group inline-flex items-center py-2 px-4 rounded-full bg-lightBlue-600 hover:bg-lightBlue-700 text-white"
+                className="m-1 group inline-flex items-center py-2 px-4 rounded-full bg-lightBlue-600 hover:bg-lightBlue-700 text-white"
               >
                 <FontAwesomeIcon icon={faTelegram} className="text-xl mr-1" /> <span>Telegram</span>
               </a>
@@ -73,7 +73,7 @@ const TheAllianceSection = ({ data }: TheAllianceSectionProps) => {
                 href={data.links.website}
                 target="_blank"
                 rel="noreferrer"
-                className="mx-1 group inline-flex items-center py-2 px-4 rounded-full bg-gray-600 hover:bg-gray-700 text-white"
+                className="m-1 group inline-flex items-center py-2 px-4 rounded-full bg-gray-600 hover:bg-gray-700 text-white"
               >
                 <FontAwesomeIcon icon={faGlobe} className="text-xl mr-1" /> <span>Website</span>
               </a>
@@ -84,7 +84,7 @@ const TheAllianceSection = ({ data }: TheAllianceSectionProps) => {
                 href={data.links.nefty}
                 target="_blank"
                 rel="noreferrer"
-                className="mx-1 group inline-flex items-center py-2 px-4 rounded-full bg-teal-600 hover:bg-teal-700 text-white"
+                className="m-1 group inline-flex items-center py-2 px-4 rounded-full bg-teal-600 hover:bg-teal-700 text-white"
               >
                 <Image
                   src="https://neftyblocks.com/apple-touch-icon.png"

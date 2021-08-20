@@ -122,7 +122,7 @@ const MyCollectionsAuthenticate = () => {
           <button
             type="button"
             title="Authenticate your account with WAX Cloud Wallet"
-            className="mx-1 py-2 px-6 rounded-md font-medium tracking-wide text-white bg-orange-500 hover:bg-orange-600"
+            className="m-2 py-2 px-6 rounded-md font-medium tracking-wide text-white bg-orange-500 hover:bg-orange-600"
             onClick={waxWalletLogin}
           >
             Login with WAX Cloud Wallet
@@ -131,7 +131,7 @@ const MyCollectionsAuthenticate = () => {
           <button
             type="button"
             title="Authenticate your account with Anchor"
-            className="mx-1 py-2 px-6 rounded-md font-medium tracking-wide text-white bg-blue-500 hover:bg-blue-600"
+            className="m-2 py-2 px-6 rounded-md font-medium tracking-wide text-white bg-blue-500 hover:bg-blue-600"
             onClick={anchorLogin}
           >
             Login with Anchor

@@ -13,8 +13,8 @@ const CordyEvent = () => {
             <Image
               src={cordyImg}
               alt="Season One Pass"
-              width="1200"
-              height="700"
+              width="1300"
+              height="1000"
               placeholder="blur"
             />
           </div>

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import EventLogo from '../../../public/logo-cordy.png';
+import EventBg from '../../../public/_events/ethereal.png';
 import Container from '../../components/container';
 import { SocialIcons } from './social-icons';
 
@@ -22,7 +23,7 @@ const Showcase = () => {
         </div>
       </Container>
 
-      <video
+      {/* <video
         autoPlay
         loop
         muted
@@ -30,7 +31,14 @@ const Showcase = () => {
         style={{ filter: 'brightness(20%)' }}
       >
         <source src="/pack_vid.mp4" />
-      </video>
+      </video> */}
+
+      <Image
+        src={EventBg}
+        alt="World of Cryptopups"
+        layout="fill"
+        className="w-full h-full inset-0 z-20 object-cover brightness-20"
+      />
     </div>
   );
 };

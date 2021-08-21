@@ -57,7 +57,7 @@ const CordyEvent = () => {
 
         <div className="float-right flex flex-col">
           <div className="inline-flex items-end my-1">
-            <EventsTimer date="20 Aug 2021 04:00 PM UTC" duration={48} />
+            <EventsTimer date="20 Aug 2021 04:00 PM UTC" duration={12} />
             <strong
               title="The Private Sale would be for all pups who now have claimed their Season Pass."
               className="ml-2 border-b border-dashed"

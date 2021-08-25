@@ -1,19 +1,22 @@
 import Image from 'next/image';
+import { datumFilter } from '../../lib/datum-filter';
 import { Datum } from '../dps-calc/apitypes';
 
 type ShowCollectionsItemsProps = {
   data: Datum[];
 };
 
-const ShowCollectionsItems = ({ data }: ShowCollectionsItemsProps) => {
+const ShowCollectionsItems = ({ data: x }: ShowCollectionsItemsProps) => {
+  const xdata = Object.entries(datumFilter(x));
+
   return (
     <ul
       className={`${
-        data.length > 0 && 'grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10'
+        xdata.length > 0 && 'grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10'
       } p-6 h-112 py-4 rounded-xl overflow-auto border`}
     >
-      {data.length > 0 ? (
-        data.map((k, index) => (
+      {xdata.length > 0 ? (
+        xdata.map(([, { data: k, count }], index) => (
           <li
             key={index}
             className="flex flex-col items-center justify-center shadow-2xl rounded-xl pt-1 pb-3"
@@ -25,7 +28,14 @@ const ShowCollectionsItems = ({ data }: ShowCollectionsItemsProps) => {
               objectFit="contain"
               alt={k.name.trim()}
             />
-            <span>{k.name.trim()}</span>
+            <span>
+              {k.name.trim()}{' '}
+              {count > 1 && (
+                <small>
+                  <strong>(x{count})</strong>
+                </small>
+              )}
+            </span>
           </li>
         ))
       ) : (

@@ -1,5 +1,7 @@
 // NOTE:: ! THIS COMPONENT NEEDS TO BE UPDATED EVERY EVENT!
 
+import { faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Dialog, Transition } from '@headlessui/react';
 import React, { Fragment, useState } from 'react';
 
@@ -46,25 +48,26 @@ const CurrentEventModal = () => {
           >
             <div className="inline-block w-full max-w-3xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform ethereal shadow-xl rounded-2xl relative">
               <Dialog.Title as="h2" className="text-2xl font-black leading-6 ethereal-text z-50">
-                CORDY is here!
+                Nitro Cordy Fanart
               </Dialog.Title>
 
               <Dialog.Description
                 as="p"
                 className="mt-3 text-lg tracking-wide text-warmGray-700 p-2 z-50"
               >
-                Please have a round of applause for our new pup, <strong>Cordy</strong>!<br />
-                <strong>Cordy</strong> will be your new pup in the upcoming sale!
+                The official start of our <strong>FANART CONTEST</strong>! We encourage everyone to
+                join the said contest for it is open for every single person in the discord server!
               </Dialog.Description>
 
-              <div className="mt-4 z-50">
+              <div className="mt-4 z-50 inline-flex items-center">
                 <a
-                  href="https://events.worldofcryptopups.cf/cordy-drop"
-                  className="py-3 px-6 rounded-lg text-sm font-medium tracking-wide bg-warmGray-800 hover:bg-warmGray-900 text-white"
+                  href="https://discord.gg/ZKEezUwzaB"
+                  className="py-3 px-6 rounded-lg text-sm font-medium tracking-wide bg-warmGray-800 hover:bg-warmGray-900 text-white inline-flex items-center"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  View Event
+                  <FontAwesomeIcon icon={faDiscord} className="text-xl mr-2" />
+                  Join Discord Server
                 </a>
 
                 <button

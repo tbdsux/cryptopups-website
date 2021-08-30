@@ -3,7 +3,7 @@
     "name": "Noob Cordy",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/01_PupskinCards/00_Noob%20Cordy.png",
     "filename": "00_Noob Cordy.png",
-    "rarity": "",
+    "rarity": "uncommon",
     "category": "pupskins",
     "DPS": 289
   },
@@ -11,7 +11,7 @@
     "name": "Minecraft Cordy",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/01_PupskinCards/01_Minecraft%20Cordy.png",
     "filename": "01_Minecraft Cordy.png",
-    "rarity": "",
+    "rarity": "rare",
     "category": "pupskins",
     "DPS": 396
   },
@@ -19,7 +19,7 @@
     "name": "Gamer Cordy",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/01_PupskinCards/02_Gamer%20Cordy.png",
     "filename": "02_Gamer Cordy.png",
-    "rarity": "",
+    "rarity": "mythic",
     "category": "pupskins",
     "DPS": 500
   },
@@ -27,7 +27,7 @@
     "name": "eSports Cordy",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/01_PupskinCards/03_eSports%20Cordy.png",
     "filename": "03_eSports Cordy.png",
-    "rarity": "",
+    "rarity": "cosmic",
     "category": "pupskins",
     "DPS": 1250
   },
@@ -35,7 +35,7 @@
     "name": "Nitro Cordy",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/01_PupskinCards/04_Nitro%20Cordy.png",
     "filename": "04_Nitro Cordy.png",
-    "rarity": "",
+    "rarity": "ethereal",
     "category": "pupskins",
     "DPS": 2494
   },

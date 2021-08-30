@@ -18,7 +18,7 @@ const endpoint = 'https://wax.greymass.com';
 const dapp = 'worldofcryptopups.cf';
 
 // wax cloud
-const wax = new waxjs.WaxJS(endpoint, undefined, undefined, false);
+const wax = new waxjs.WaxJS({ rpcEndpoint: endpoint, tryAutoLogin: false });
 
 // anchor
 const anchorTransport = new AnchorLinkBrowserTransport();

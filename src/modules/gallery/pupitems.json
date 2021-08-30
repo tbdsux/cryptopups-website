@@ -3,7 +3,7 @@
     "name": "Puptendo Console",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/00.0_Puptendo%20Console.png",
     "filename": "00.0_Puptendo Console.png",
-    "rarity": "",
+    "rarity": "common",
     "category": "pupitems",
     "owner": "Cordy",
     "DPS": 10
@@ -12,7 +12,7 @@
     "name": "Puptendo Controller",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/00.1_Puptendo%20Controller.png",
     "filename": "00.1_Puptendo Controller.png",
-    "rarity": "",
+    "rarity": "common",
     "category": "pupitems",
     "owner": "Cordy",
     "DPS": 8
@@ -21,7 +21,7 @@
     "name": "Game Over",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/00.2_Game%20Over.png",
     "filename": "00.2_Game Over.png",
-    "rarity": "",
+    "rarity": "common",
     "category": "pupitems",
     "owner": "Cordy",
     "DPS": 18
@@ -30,7 +30,7 @@
     "name": "Discord Sword",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/01.0_Discord%20Sword.png",
     "filename": "01.0_Discord Sword.png",
-    "rarity": "",
+    "rarity": "uncommon",
     "category": "pupitems",
     "owner": "Cordy",
     "DPS": 19
@@ -39,7 +39,7 @@
     "name": "Woofing Diamonds",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/01.1_Woofing%20Diamonds.png",
     "filename": "01.1_Woofing Diamonds.png",
-    "rarity": "",
+    "rarity": "uncommon",
     "category": "pupitems",
     "owner": "Cordy",
     "DPS": 17
@@ -48,7 +48,7 @@
     "name": "Wooden Pupshield",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/01.2_Wooden%20Pupshield.png",
     "filename": "01.2_Wooden Pupshield.png",
-    "rarity": "",
+    "rarity": "uncommon",
     "category": "pupitems",
     "owner": "Cordy",
     "DPS": 18
@@ -57,7 +57,7 @@
     "name": "Gamepup Master",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/02.0_Gamepup%20Master.png",
     "filename": "02.0_Gamepup Master.png",
-    "rarity": "",
+    "rarity": "rare",
     "category": "pupitems",
     "owner": "Cordy",
     "DPS": 80
@@ -66,7 +66,7 @@
     "name": "Logipup Gaming",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/02.1_Logipup%20Gaming.png",
     "filename": "02.1_Logipup Gaming.png",
-    "rarity": "",
+    "rarity": "rare",
     "category": "pupitems",
     "owner": "Cordy",
     "DPS": 76
@@ -75,7 +75,7 @@
     "name": "MSpup Chroma",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/02.2_MSpup%20Chroma.png",
     "filename": "02.2_MSpup Chroma.png",
-    "rarity": "",
+    "rarity": "rare",
     "category": "pupitems",
     "owner": "Cordy",
     "DPS": 81
@@ -84,7 +84,7 @@
     "name": "eSports Pupcup",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/03.0_eSports%20Pupcup.png",
     "filename": "03.0_eSports Pupcup.png",
-    "rarity": "",
+    "rarity": "mythic",
     "category": "pupitems",
     "owner": "Cordy",
     "DPS": 259
@@ -93,7 +93,7 @@
     "name": "MSpup Merch",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/03.1_MSpup%20Merch.png",
     "filename": "03.1_MSpup Merch.png",
-    "rarity": "",
+    "rarity": "mythic",
     "category": "pupitems",
     "owner": "Cordy",
     "DPS": 271
@@ -102,7 +102,7 @@
     "name": "eSports Center",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/03.2_eSports%20Center.png",
     "filename": "03.2_eSports Center.png",
-    "rarity": "",
+    "rarity": "mythic",
     "category": "pupitems",
     "owner": "Cordy",
     "DPS": 248
@@ -111,7 +111,7 @@
     "name": "Nitro Mark-I",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/04.0_Nitro%20Mark-I.png",
     "filename": "04.0_Nitro Mark-I.png",
-    "rarity": "",
+    "rarity": "cosmic",
     "category": "pupitems",
     "owner": "Cordy",
     "DPS": 769
@@ -120,7 +120,7 @@
     "name": "Nitro Air-I",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/04.1_Nitro%20Air-I.png",
     "filename": "04.1_Nitro Air-I.png",
-    "rarity": "",
+    "rarity": "cosmic",
     "category": "pupitems",
     "owner": "Cordy",
     "DPS": 769
@@ -129,7 +129,7 @@
     "name": "Nitro Gem",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/04.2_Nitro%20Gem.png",
     "filename": "04.2_Nitro Gem.png",
-    "rarity": "",
+    "rarity": "cosmic",
     "category": "pupitems",
     "owner": "Cordy",
     "DPS": 718

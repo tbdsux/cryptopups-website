@@ -42,7 +42,7 @@ const NitroCordyFanart = () => {
           </div>
         </div>
 
-        <EventsTimer date="Sun, 29 Aug 2021 09:00 PM GMT+8" duration={72} />
+        <EventsTimer date="Sun, 29 Aug 2021 02:00 PM GMT" duration={72} />
       </Container>
     </div>
   );

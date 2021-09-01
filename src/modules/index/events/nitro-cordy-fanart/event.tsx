@@ -1,14 +1,17 @@
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
+import eventWinner from '../../../../../public/_events/nitro-cordy-fanart-winner.png';
 import eventImg from '../../../../../public/_events/nitro-cordy-fanart.png';
 import Container from '../../../../components/container';
 import EventsTimer from '../timer';
 
 const NitroCordyFanart = () => {
   return (
-    <div className="pt-24">
-      <Container className="w-4/5 mb-12">
+    <div className="pt-12">
+      <Image src={eventWinner} alt="Nitro Cordy Fanart Winner" className="h-full w-full" />
+
+      <Container className="w-4/5 my-14">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
           <div className="md:mr-24 mb-8 md:mb-0">
             <Image

@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo';
 import DefaultLayout from '../../layouts/default';
 import DiscoverContainer from './discover';
 import CurrentEventModal from './events/current-event-modal';
-import NitroCordyFanart from './events/nitro-cordy-fanart/event';
+import ShellyEvent from './events/shelly-infernal/event';
 import Showcase from './showcase';
 import Rarities from './slider/rarities';
 import { SocialContainer } from './social-icons';
@@ -37,7 +37,7 @@ const IndexPage = () => {
         </h2>
         <hr className="border-gray-200 w-5/6 mx-auto" />
 
-        <NitroCordyFanart />
+        <ShellyEvent />
       </div>
 
       {/*

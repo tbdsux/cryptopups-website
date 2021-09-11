@@ -97,11 +97,13 @@ const Footer = () => {
               <h5 className="text-gray-600 font-medium uppercase tracking-wide">Others</h5>
               <ul className="text-gray-100">
                 <li className="my-1">
-                  <Link href="/roadmap">
-                    <a className="hover:text-white" title="Roadmap">
-                      Roadmap
-                    </a>
-                  </Link>
+                  <a
+                    className="hover:text-white"
+                    title="Roadmap"
+                    href="https://roadmap.worldofcryptopups.cf/"
+                  >
+                    Roadmap
+                  </a>
                 </li>
                 <li className="my-1">
                   <Link href="/whitepaper.pdf">

@@ -1,9 +1,9 @@
 // NOTE:: ! THIS COMPONENT NEEDS TO BE UPDATED EVERY EVENT!
 
-import { faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Dialog, Transition } from '@headlessui/react';
-import React, { Fragment, useState } from 'react';
+import { Fragment, useState } from 'react';
 
 const CurrentEventModal = () => {
   const [open, setOpen] = useState(true);
@@ -48,31 +48,31 @@ const CurrentEventModal = () => {
           >
             <div className="inline-block w-full max-w-3xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform ethereal shadow-xl rounded-2xl relative">
               <Dialog.Title as="h2" className="text-2xl font-black leading-6 ethereal-text z-50">
-                Nitro Cordy Fanart
+                Shelly, the Infernal Pup
               </Dialog.Title>
 
               <Dialog.Description
                 as="p"
                 className="mt-3 text-lg tracking-wide text-warmGray-700 p-2 z-50"
               >
-                The official start of our <strong>FANART CONTEST</strong>! We encourage everyone to
-                join the said contest for it is open for every single person in the discord server!
+                The first ever <strong>Elemental Pup</strong> is coming to World of Cryptopups!
+                Collect, trade, and blend to get the second ethereal card for her.
               </Dialog.Description>
 
               <div className="mt-4 z-50 inline-flex items-center">
                 <a
-                  href="https://discord.gg/ZKEezUwzaB"
+                  href="https://elementals.worldofcryptopups.cf/"
                   className="py-3 px-6 rounded-lg text-sm font-medium tracking-wide bg-warmGray-800 hover:bg-warmGray-900 text-white inline-flex items-center"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FontAwesomeIcon icon={faDiscord} className="text-xl mr-2" />
-                  Join Discord Server
+                  <FontAwesomeIcon icon={faGlobe} className="text-xl mr-2" />
+                  Elementals Website
                 </a>
 
                 <button
                   type="button"
-                  className="py-3 px-6 rounded-lg text-sm font-medium tracking-wide bg-warmGray-300 hover:bg-warmGray-400 ml-2"
+                  className="py-3 px-6 rounded-lg text-sm font-medium tracking-wide bg-white hover:bg-warmGray-100 ml-2"
                   onClick={closeModal}
                 >
                   Got It!

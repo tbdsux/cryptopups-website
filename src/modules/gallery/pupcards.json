@@ -1,5 +1,13 @@
 [
   {
+    "name": "Shelly",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Puppycards/00_Shelly.png",
+    "filename": "00_Shelly.png",
+    "rarity": "common",
+    "category": "pupcards",
+    "DPS": 190
+  },
+  {
     "name": "Cordy",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/00_PuppyCard/00_Pupper%20Cordy.png",
     "filename": "00_Pupper Cordy.png",

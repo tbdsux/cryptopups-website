@@ -1,6 +1,7 @@
 // NOTE:: ! THIS COMPONENT NEEDS TO BE UPDATED EVERY EVENT!
 
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
@@ -48,7 +49,7 @@ const CurrentEventModal = () => {
           >
             <div className="inline-block w-full max-w-3xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform ethereal shadow-xl rounded-2xl relative">
               <Dialog.Title as="h2" className="text-2xl font-black leading-6 ethereal-text z-50">
-                Shelly, the Infernal Pup
+                Smash Karts Tournament
               </Dialog.Title>
 
               <Dialog.Description
@@ -61,13 +62,23 @@ const CurrentEventModal = () => {
 
               <div className="mt-4 z-50 inline-flex items-center">
                 <a
-                  href="https://elementals.worldofcryptopups.cf/"
+                  href="https://events.worldofcryptopups.cf/smashkarts-tournament"
                   className="py-3 px-6 rounded-lg text-sm font-medium tracking-wide bg-warmGray-800 hover:bg-warmGray-900 text-white inline-flex items-center"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FontAwesomeIcon icon={faGlobe} className="text-xl mr-2" />
-                  Elementals Website
+                  <FontAwesomeIcon icon={faExternalLinkAlt} className="mr-2" />
+                  View Event
+                </a>
+
+                <a
+                  href="https://discord.gg/ZKEezUwzaB"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="py-3 px-6 rounded-lg text-sm font-medium tracking-wide bg-violet-600 hover:bg-violet-700 text-white inline-flex items-center ml-2"
+                >
+                  <FontAwesomeIcon icon={faDiscord} className="mr-2" />
+                  Join Discord Server
                 </a>
 
                 <button

@@ -54,7 +54,7 @@ const ShellyEvent = () => {
 
         <div className="float-right flex flex-col">
           <div className="inline-flex items-end my-1">
-            <EventsTimer date="12 Sep 2021 05:00 PM UTC" duration={12} />
+            <EventsTimer date="12 Sep 2021 05:00 PM UTC" duration={48} />
             <strong
               title="The Private Sale would be for all pups who now have claimed their Season Pass."
               className="ml-2 border-b border-dashed"

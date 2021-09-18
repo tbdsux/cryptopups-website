@@ -1,5 +1,140 @@
 [
   {
+    "name": "Comfy Campfire",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/00.1_Comfy%20Campfire.png",
+    "filename": "00.1_Comfy Campfire.png",
+    "rarity": "common",
+    "category": "pupitems",
+    "owner": "Shelly",
+    "DPS": 10
+  },
+  {
+    "name": "Puppy Scarf",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/00.2_Puppy%20Scarf.png",
+    "filename": "00.2_Puppy Scarf.png",
+    "rarity": "common",
+    "category": "pupitems",
+    "owner": "Shelly",
+    "DPS": 13
+  },
+  {
+    "name": "Chewy Mallows",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/00.3_Chewy%20Mallows.png",
+    "filename": "00.3_Chewy Mallows.png",
+    "rarity": "common",
+    "category": "pupitems",
+    "owner": "Shelly",
+    "DPS": 10
+  },
+  {
+    "name": "Blaze Jacket",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/01.1_Blaze%20Jacket.png",
+    "filename": "01.1_Blaze Jacket.png",
+    "rarity": "uncommon",
+    "category": "pupitems",
+    "owner": "Shelly",
+    "DPS": 29
+  },
+  {
+    "name": "Pupper Protection",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/01.2_Pupper%20Protection.png",
+    "filename": "01.2_Pupper Protection.png",
+    "rarity": "uncommon",
+    "category": "pupitems",
+    "owner": "Shelly",
+    "DPS": 29
+  },
+  {
+    "name": "Fire Axe",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/01.3_Fire%20Axe.png",
+    "filename": "01.3_Fire Axe.png",
+    "rarity": "uncommon",
+    "category": "pupitems",
+    "owner": "Shelly",
+    "DPS": 28
+  },
+  {
+    "name": "Pyromancers Hat",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/02.1_Pyromancers%20Hat.png",
+    "filename": "02.1_Pyromancers Hat.png",
+    "rarity": "rare",
+    "category": "pupitems",
+    "owner": "Shelly",
+    "DPS": 93
+  },
+  {
+    "name": "Staff of Pyropupcy",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/02.2_Staff%20of%20Pyropupcy.png",
+    "filename": "02.2_Staff of Pyropupcy.png",
+    "rarity": "rare",
+    "category": "pupitems",
+    "owner": "Shelly",
+    "DPS": 85
+  },
+  {
+    "name": "Travel Goodies",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/02.3_Travel%20Goodies.png",
+    "filename": "02.3_Travel Goodies.png",
+    "rarity": "rare",
+    "category": "pupitems",
+    "owner": "Shelly",
+    "DPS": 88
+  },
+  {
+    "name": "Eye of Ember",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/03.1_Eye%20of%20Ember.png",
+    "filename": "03.1_Eye of Ember.png",
+    "rarity": "mythic",
+    "category": "pupitems",
+    "owner": "Shelly",
+    "DPS": 293
+  },
+  {
+    "name": "Eternal Flame",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/03.2_Eternal%20Flame.png",
+    "filename": "03.2_Eternal Flame.png",
+    "rarity": "mythic",
+    "category": "pupitems",
+    "owner": "Shelly",
+    "DPS": 293
+  },
+  {
+    "name": "Fire Storm",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/03.3_Fire%20Storm.png",
+    "filename": "03.3_Fire Storm.png",
+    "rarity": "mythic",
+    "category": "pupitems",
+    "owner": "Shelly",
+    "DPS": 291
+  },
+  {
+    "name": "Path to Inferno",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/04.1_Path%20to%20Inferno.png",
+    "filename": "04.1_Path to Inferno.png",
+    "rarity": "cosmic",
+    "category": "pupitems",
+    "owner": "Shelly",
+    "DPS": 734
+  },
+  {
+    "name": "Infernal Gauntlets",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/04.2_Infernal%20Gauntlets.png",
+    "filename": "04.2_Infernal Gauntlets.png",
+    "rarity": "cosmic",
+    "category": "pupitems",
+    "owner": "Shelly",
+    "DPS": 788
+  },
+  {
+    "name": "Chalice of Inferno",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/04.3_Chalice%20of%20Inferno.png",
+    "filename": "04.3_Chalice of Inferno.png",
+    "rarity": "cosmic",
+    "category": "pupitems",
+    "owner": "Shelly",
+    "DPS": 769
+  },
+  {
     "name": "Puptendo Console",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/00.0_Puptendo%20Console.png",
     "filename": "00.0_Puptendo Console.png",

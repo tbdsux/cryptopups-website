@@ -1,5 +1,45 @@
 [
   {
+    "name": "Campfire Shelly",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupskin%20cards/00_Campfire%20Shelly.png",
+    "filename": "00_Campfire Shelly.png",
+    "rarity": "uncommon",
+    "category": "pupskins",
+    "DPS": 288
+  },
+  {
+    "name": "Firedog Shelly",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupskin%20cards/01_Firedog%20Shelly.png",
+    "filename": "01_Firedog Shelly.png",
+    "rarity": "rare",
+    "category": "pupskins",
+    "DPS": 394
+  },
+  {
+    "name": "Pyromancer Shelly",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupskin%20cards/02_Pyromancer%20Shelly.png",
+    "filename": "02_Pyromancer Shelly.png",
+    "rarity": "mythic",
+    "category": "pupskins",
+    "DPS": 490
+  },
+  {
+    "name": "Kindred Shelly",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupskin%20cards/03_Kindred%20Shelly.png",
+    "filename": "03_Kindred Shelly.png",
+    "rarity": "cosmic",
+    "category": "pupskins",
+    "DPS": 1200
+  },
+  {
+    "name": "Infernal Shelly",
+    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupskin%20cards/04_Infernal%20Shelly.png",
+    "filename": "04_Infernal Shelly.png",
+    "rarity": "ethereal",
+    "category": "pupskins",
+    "DPS": 2455
+  },
+  {
     "name": "Noob Cordy",
     "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/01_PupskinCards/00_Noob%20Cordy.png",
     "filename": "00_Noob Cordy.png",

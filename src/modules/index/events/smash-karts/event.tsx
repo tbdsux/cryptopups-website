@@ -55,7 +55,7 @@ const SmashKartsTournamentEvent = () => {
 
         <div className="float-right flex flex-col">
           <div className="inline-flex items-end my-1">
-            <EventsTimer date="19 Sep 2021 04:00 PM UTC" duration={6} />
+            <EventsTimer date="19 Sep 2021 04:00 PM UTC" duration={48} />
           </div>
         </div>
       </Container>

@@ -42,7 +42,12 @@ const GalleryImages = () => {
           })
           .map((i, index) => (
             <li key={index}>
-              <Image src={i.link} alt={i.name} height="300" width="200" />
+              <Image
+                src={`https://gateway.ipfs.io${i.link}`}
+                alt={i.name}
+                height="300"
+                width="200"
+              />
             </li>
           ))}
       </ul>

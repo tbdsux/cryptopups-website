@@ -59,7 +59,7 @@ const DPS_Fetch = ({ wallet, btnGetRef, data }: DPS_FetchProps) => {
   // }
 
   return (
-    <Container className="w-5/6 mx-auto">
+    <Container className="w-5/6 2xl:w-3/4 3xl:w-2/3 mx-auto">
       <h3 className="mb-4 font-bold tracking-wide text-gray-500">@{wallet}</h3>
 
       <DPS_Calculate

@@ -75,7 +75,7 @@ const ContactForm = () => {
       ) : (
         <div>
           <p className="mb-8 text-red-500 tracking-wide text-center underline">{error}</p>
-          <form onSubmit={submitForm} className="w-full sm:w-4/5 xl:w-1/2 mx-auto">
+          <form onSubmit={submitForm} className="w-full sm:w-4/5 xl:w-1/2 3xl:w-2/5 mx-auto">
             <div className="flex flex-col my-3">
               <label htmlFor="name" title="What is your name?">
                 Your Name

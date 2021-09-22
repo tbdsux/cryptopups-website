@@ -13,7 +13,7 @@ const GalleryImages = () => {
 
   return (
     <div className="w-full mt-8 md:mt-0 ml-0 md:ml-12 h-172 lg:h-200 border border-warmGray-300 rounded-lg overflow-auto p-6">
-      <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+      <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 3xl:grid-cols-8 gap-6">
         {AllImages.filter((i) => {
           if (category.length === 0) return true;
 

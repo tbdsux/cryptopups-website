@@ -19,7 +19,7 @@ const TheAlliancePage = () => {
         <div></div>
       </CustomPageHeader>
 
-      <Container className="w-5/6 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mt-8 mb-24">
+      <Container className="w-5/6 2xl:w-4/5 3xl:w-3/4 mx-auto grid grid-cols-1 md:grid-cols-2 3xl:grid-cols-3 gap-12 mt-8 mb-24">
         {Alliance.map((d, index) => (
           <TheAllianceSection key={index} data={d} />
         ))}

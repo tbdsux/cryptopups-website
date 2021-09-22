@@ -57,7 +57,7 @@ const DiscoverItems = [
 const DiscoverContainer = () => {
   return (
     <div className="py-32 bg-warmGray-900">
-      <Container className="w-5/6 flex flex-col lg:flex-row items-center">
+      <Container className="w-5/6 2xl:w-4/5 3xl:w-2/3 flex flex-col lg:flex-row items-center">
         <div className="lg:mr-16">
           <h4 className="text-4xl md:text-5xl leading-relaxed font-black tracking-wide mb-12 text-white">
             About the Project
@@ -87,7 +87,7 @@ const DiscoverContainer = () => {
             ))}
           </div>
         </div>
-        <div className="w-3/4 xs:w-2/3 sm:w-3/5 md:w-1/2 lg:w-full xl:w-2/3 mt-12 lg:mt-0">
+        <div className="w-3/4 xs:w-2/3 sm:w-3/5 md:w-1/2 lg:w-full xl:w-2/3 2xl:w-1/2 3xl:w-2/5 mt-12 lg:mt-0">
           <Image src={featuredPup} alt="World of Cryptopups" />
         </div>
       </Container>

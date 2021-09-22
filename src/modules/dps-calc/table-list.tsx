@@ -27,7 +27,7 @@ const DPSListTable = () => {
         DPS Cards & Items Basis
       </h4>
 
-      <div className="w-11/12 sm:w-5/6 mx-auto h-screen overflow-auto">
+      <div className="w-11/12 sm:w-5/6 2xl:w-3/4 3xl:w-2/3 mx-auto h-screen overflow-auto">
         {LIST.map((x, index) => (
           <div key={index} className="mb-8">
             <h5>{x.name}</h5>

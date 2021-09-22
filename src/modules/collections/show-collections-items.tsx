@@ -12,7 +12,8 @@ const ShowCollectionsItems = ({ data: x }: ShowCollectionsItemsProps) => {
   return (
     <ul
       className={`${
-        xdata.length > 0 && 'grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10'
+        xdata.length > 0 &&
+        'grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 4xl:grid-cols-8 gap-10'
       } p-6 h-112 py-4 rounded-xl overflow-auto border`}
     >
       {xdata.length > 0 ? (

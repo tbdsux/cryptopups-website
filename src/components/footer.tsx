@@ -9,7 +9,7 @@ import Container from './container';
 const Footer = () => {
   return (
     <footer className="bg-gray-900 py-12">
-      <Container className="w-5/6">
+      <Container className="w-5/6 2xl:w-4/5 3xl:w-2/3">
         <Link href="/">
           <a>
             <Image

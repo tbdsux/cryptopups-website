@@ -30,7 +30,7 @@ const Alliance: AllianceProps[] = [
     links: {
       twitter: 'https://twitter.com/cutecatstickers',
       nefty: 'https://neftyblocks.com/c/catstickerss/',
-      discord: 'https://discord.com/invite/wnH3MCm',
+      discord: 'https://discord.gg/uUaQEhxPt4',
       website: 'https://www.catstickersnft.com/'
     }
   },
@@ -75,7 +75,8 @@ const Alliance: AllianceProps[] = [
     links: {
       telegram: 'https://t.me/createdwlove',
       twitter: 'https://twitter.com/esalesonline',
-      nefty: 'https://neftyblocks.com/c/createdwlove'
+      nefty: 'https://neftyblocks.com/c/createdwlove',
+      discord: 'https://discord.gg/uVNT7VpJZT'
     }
   },
   {

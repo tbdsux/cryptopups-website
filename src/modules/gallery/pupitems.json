@@ -1,7 +1,7 @@
 [
   {
     "name": "Comfy Campfire",
-    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/00.1_Comfy%20Campfire.png",
+    "link": "/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/00.1_Comfy%20Campfire.png",
     "filename": "00.1_Comfy Campfire.png",
     "rarity": "common",
     "category": "pupitems",
@@ -10,7 +10,7 @@
   },
   {
     "name": "Puppy Scarf",
-    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/00.2_Puppy%20Scarf.png",
+    "link": "/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/00.2_Puppy%20Scarf.png",
     "filename": "00.2_Puppy Scarf.png",
     "rarity": "common",
     "category": "pupitems",
@@ -19,7 +19,7 @@
   },
   {
     "name": "Chewy Mallows",
-    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/00.3_Chewy%20Mallows.png",
+    "link": "/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/00.3_Chewy%20Mallows.png",
     "filename": "00.3_Chewy Mallows.png",
     "rarity": "common",
     "category": "pupitems",
@@ -28,7 +28,7 @@
   },
   {
     "name": "Blaze Jacket",
-    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/01.1_Blaze%20Jacket.png",
+    "link": "/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/01.1_Blaze%20Jacket.png",
     "filename": "01.1_Blaze Jacket.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -37,7 +37,7 @@
   },
   {
     "name": "Pupper Protection",
-    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/01.2_Pupper%20Protection.png",
+    "link": "/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/01.2_Pupper%20Protection.png",
     "filename": "01.2_Pupper Protection.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -46,7 +46,7 @@
   },
   {
     "name": "Fire Axe",
-    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/01.3_Fire%20Axe.png",
+    "link": "/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/01.3_Fire%20Axe.png",
     "filename": "01.3_Fire Axe.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -55,7 +55,7 @@
   },
   {
     "name": "Pyromancers Hat",
-    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/02.1_Pyromancers%20Hat.png",
+    "link": "/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/02.1_Pyromancers%20Hat.png",
     "filename": "02.1_Pyromancers Hat.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -64,7 +64,7 @@
   },
   {
     "name": "Staff of Pyropupcy",
-    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/02.2_Staff%20of%20Pyropupcy.png",
+    "link": "/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/02.2_Staff%20of%20Pyropupcy.png",
     "filename": "02.2_Staff of Pyropupcy.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -73,7 +73,7 @@
   },
   {
     "name": "Travel Goodies",
-    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/02.3_Travel%20Goodies.png",
+    "link": "/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/02.3_Travel%20Goodies.png",
     "filename": "02.3_Travel Goodies.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -82,7 +82,7 @@
   },
   {
     "name": "Eye of Ember",
-    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/03.1_Eye%20of%20Ember.png",
+    "link": "/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/03.1_Eye%20of%20Ember.png",
     "filename": "03.1_Eye of Ember.png",
     "rarity": "mythic",
     "category": "pupitems",
@@ -91,7 +91,7 @@
   },
   {
     "name": "Eternal Flame",
-    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/03.2_Eternal%20Flame.png",
+    "link": "/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/03.2_Eternal%20Flame.png",
     "filename": "03.2_Eternal Flame.png",
     "rarity": "mythic",
     "category": "pupitems",
@@ -100,7 +100,7 @@
   },
   {
     "name": "Fire Storm",
-    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/03.3_Fire%20Storm.png",
+    "link": "/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/03.3_Fire%20Storm.png",
     "filename": "03.3_Fire Storm.png",
     "rarity": "mythic",
     "category": "pupitems",
@@ -109,7 +109,7 @@
   },
   {
     "name": "Path to Inferno",
-    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/04.1_Path%20to%20Inferno.png",
+    "link": "/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/04.1_Path%20to%20Inferno.png",
     "filename": "04.1_Path to Inferno.png",
     "rarity": "cosmic",
     "category": "pupitems",
@@ -118,7 +118,7 @@
   },
   {
     "name": "Infernal Gauntlets",
-    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/04.2_Infernal%20Gauntlets.png",
+    "link": "/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/04.2_Infernal%20Gauntlets.png",
     "filename": "04.2_Infernal Gauntlets.png",
     "rarity": "cosmic",
     "category": "pupitems",
@@ -127,7 +127,7 @@
   },
   {
     "name": "Chalice of Inferno",
-    "link": "https://gateway.pinata.cloud/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/04.3_Chalice%20of%20Inferno.png",
+    "link": "/ipfs/QmQk2zjEzuMg4kJksaDNkXZtbk19MqsQAE99CH16GjFzGL/Pupitems/04.3_Chalice%20of%20Inferno.png",
     "filename": "04.3_Chalice of Inferno.png",
     "rarity": "cosmic",
     "category": "pupitems",
@@ -136,7 +136,7 @@
   },
   {
     "name": "Puptendo Console",
-    "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/00.0_Puptendo%20Console.png",
+    "link": "/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/00.0_Puptendo%20Console.png",
     "filename": "00.0_Puptendo Console.png",
     "rarity": "common",
     "category": "pupitems",
@@ -145,7 +145,7 @@
   },
   {
     "name": "Puptendo Controller",
-    "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/00.1_Puptendo%20Controller.png",
+    "link": "/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/00.1_Puptendo%20Controller.png",
     "filename": "00.1_Puptendo Controller.png",
     "rarity": "common",
     "category": "pupitems",
@@ -154,7 +154,7 @@
   },
   {
     "name": "Game Over",
-    "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/00.2_Game%20Over.png",
+    "link": "/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/00.2_Game%20Over.png",
     "filename": "00.2_Game Over.png",
     "rarity": "common",
     "category": "pupitems",
@@ -163,7 +163,7 @@
   },
   {
     "name": "Discord Sword",
-    "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/01.0_Discord%20Sword.png",
+    "link": "/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/01.0_Discord%20Sword.png",
     "filename": "01.0_Discord Sword.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -172,7 +172,7 @@
   },
   {
     "name": "Woofing Diamonds",
-    "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/01.1_Woofing%20Diamonds.png",
+    "link": "/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/01.1_Woofing%20Diamonds.png",
     "filename": "01.1_Woofing Diamonds.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -181,7 +181,7 @@
   },
   {
     "name": "Wooden Pupshield",
-    "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/01.2_Wooden%20Pupshield.png",
+    "link": "/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/01.2_Wooden%20Pupshield.png",
     "filename": "01.2_Wooden Pupshield.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -190,7 +190,7 @@
   },
   {
     "name": "Gamepup Master",
-    "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/02.0_Gamepup%20Master.png",
+    "link": "/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/02.0_Gamepup%20Master.png",
     "filename": "02.0_Gamepup Master.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -199,7 +199,7 @@
   },
   {
     "name": "Logipup Gaming",
-    "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/02.1_Logipup%20Gaming.png",
+    "link": "/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/02.1_Logipup%20Gaming.png",
     "filename": "02.1_Logipup Gaming.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -208,7 +208,7 @@
   },
   {
     "name": "MSpup Chroma",
-    "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/02.2_MSpup%20Chroma.png",
+    "link": "/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/02.2_MSpup%20Chroma.png",
     "filename": "02.2_MSpup Chroma.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -217,7 +217,7 @@
   },
   {
     "name": "eSports Pupcup",
-    "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/03.0_eSports%20Pupcup.png",
+    "link": "/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/03.0_eSports%20Pupcup.png",
     "filename": "03.0_eSports Pupcup.png",
     "rarity": "mythic",
     "category": "pupitems",
@@ -226,7 +226,7 @@
   },
   {
     "name": "MSpup Merch",
-    "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/03.1_MSpup%20Merch.png",
+    "link": "/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/03.1_MSpup%20Merch.png",
     "filename": "03.1_MSpup Merch.png",
     "rarity": "mythic",
     "category": "pupitems",
@@ -235,7 +235,7 @@
   },
   {
     "name": "eSports Center",
-    "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/03.2_eSports%20Center.png",
+    "link": "/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/03.2_eSports%20Center.png",
     "filename": "03.2_eSports Center.png",
     "rarity": "mythic",
     "category": "pupitems",
@@ -244,7 +244,7 @@
   },
   {
     "name": "Nitro Mark-I",
-    "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/04.0_Nitro%20Mark-I.png",
+    "link": "/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/04.0_Nitro%20Mark-I.png",
     "filename": "04.0_Nitro Mark-I.png",
     "rarity": "cosmic",
     "category": "pupitems",
@@ -253,7 +253,7 @@
   },
   {
     "name": "Nitro Air-I",
-    "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/04.1_Nitro%20Air-I.png",
+    "link": "/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/04.1_Nitro%20Air-I.png",
     "filename": "04.1_Nitro Air-I.png",
     "rarity": "cosmic",
     "category": "pupitems",
@@ -262,7 +262,7 @@
   },
   {
     "name": "Nitro Gem",
-    "link": "https://gateway.pinata.cloud/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/04.2_Nitro%20Gem.png",
+    "link": "/ipfs/Qmb5ESNZxWD9k9G1yeQuq247At6cXrm3oHyEN58rnwaNNd/02_Pupitem%20Cards/04.2_Nitro%20Gem.png",
     "filename": "04.2_Nitro Gem.png",
     "rarity": "cosmic",
     "category": "pupitems",
@@ -271,7 +271,7 @@
   },
   {
     "name": "Daylight Beads",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/01.0_Daylight%20Beads.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/01.0_Daylight%20Beads.png",
     "filename": "01.0_Daylight Beads.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -280,7 +280,7 @@
   },
   {
     "name": "Sunlight Sash",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/01.1%20Sunlight%20Sash.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/01.1%20Sunlight%20Sash.png",
     "filename": "01.1 Sunlight Sash.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -289,7 +289,7 @@
   },
   {
     "name": "Sungod's Crest",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/01.2%20Sungod%27s%20Crest.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/01.2%20Sungod%27s%20Crest.png",
     "filename": "01.2 Sungod's Crest.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -298,7 +298,7 @@
   },
   {
     "name": "Lunar Robe",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/02.0%20Lunar%20Robe.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/02.0%20Lunar%20Robe.png",
     "filename": "02.0 Lunar Robe.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -307,7 +307,7 @@
   },
   {
     "name": "Moonlight Cycle",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/02.1%20Moonlight%20Cycle.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/02.1%20Moonlight%20Cycle.png",
     "filename": "02.1 Moonlight Cycle.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -316,7 +316,7 @@
   },
   {
     "name": "Moongod's Crest",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/02.2%20Moongod%27s%20Crest.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/02.2%20Moongod%27s%20Crest.png",
     "filename": "02.2 Moongod's Crest.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -325,7 +325,7 @@
   },
   {
     "name": "Mafia Fedore",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/03.0%20Mafia%20Fedore.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/03.0%20Mafia%20Fedore.png",
     "filename": "03.0 Mafia Fedore.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -334,7 +334,7 @@
   },
   {
     "name": "Dandy Suit",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/03.1%20Dandy%20Suit.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/03.1%20Dandy%20Suit.png",
     "filename": "03.1 Dandy Suit.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -343,7 +343,7 @@
   },
   {
     "name": "Red's Hood",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/04.0%20Red%27s%20Hood.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/04.0%20Red%27s%20Hood.png",
     "filename": "04.0 Red's Hood.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -352,7 +352,7 @@
   },
   {
     "name": "Goodie Basket",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/04.1%20Goodie%20Basket.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/04.1%20Goodie%20Basket.png",
     "filename": "04.1 Goodie Basket.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -361,7 +361,7 @@
   },
   {
     "name": "Summer Surfboard",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/05.0%20Summer%20Surfboard.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/05.0%20Summer%20Surfboard.png",
     "filename": "05.0 Summer Surfboard.png",
     "rarity": "common",
     "category": "pupitems",
@@ -370,7 +370,7 @@
   },
   {
     "name": "Beach Ball",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/05.1%20Beach%20Ball.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/05.1%20Beach%20Ball.png",
     "filename": "05.1 Beach Ball.png",
     "rarity": "common",
     "category": "pupitems",
@@ -379,7 +379,7 @@
   },
   {
     "name": "School Bow",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/06.0%20School%20Bow.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/06.0%20School%20Bow.png",
     "filename": "06.0 School Bow.png",
     "rarity": "common",
     "category": "pupitems",
@@ -388,7 +388,7 @@
   },
   {
     "name": "School Uniform",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/06.1%20School%20Uniform.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/06.1%20School%20Uniform.png",
     "filename": "06.1 School Uniform.png",
     "rarity": "common",
     "category": "pupitems",
@@ -397,7 +397,7 @@
   },
   {
     "name": "Lesson One",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/07.0%20Lesson%20One.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/07.0%20Lesson%20One.png",
     "filename": "07.0 Lesson One.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -406,7 +406,7 @@
   },
   {
     "name": "Black Board",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/07.1%20Black%20Board.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/07.1%20Black%20Board.png",
     "filename": "07.1 Black Board.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -415,7 +415,7 @@
   },
   {
     "name": "Teachers Glasses",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/07.2%20Teachers%20Glasses.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/07.2%20Teachers%20Glasses.png",
     "filename": "07.2 Teachers Glasses.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -424,7 +424,7 @@
   },
   {
     "name": "Lumber Axe",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/08.0%20Lumber%20Axe.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/08.0%20Lumber%20Axe.png",
     "filename": "08.0 Lumber Axe.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -433,7 +433,7 @@
   },
   {
     "name": "Lumberjack's Bonnet",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/08.1%20Lumberjack%27s%20Bonnet.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/08.1%20Lumberjack%27s%20Bonnet.png",
     "filename": "08.1 Lumberjack's Bonnet.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -442,7 +442,7 @@
   },
   {
     "name": "Checkered Polo",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/08.2%20Checkered%20Polo.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/08.2%20Checkered%20Polo.png",
     "filename": "08.2 Checkered Polo.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -451,7 +451,7 @@
   },
   {
     "name": "Redhot Ride",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/09.0%20Redhot%20Ride.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/09.0%20Redhot%20Ride.png",
     "filename": "09.0 Redhot Ride.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -460,7 +460,7 @@
   },
   {
     "name": "Pizza Cap",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/09.1%20Pizza%20Cap.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/09.1%20Pizza%20Cap.png",
     "filename": "09.1 Pizza Cap.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -469,7 +469,7 @@
   },
   {
     "name": "Puppy Pizzeria",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/09.2%20Puppy%20Pizzeria.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/09.2%20Puppy%20Pizzeria.png",
     "filename": "09.2 Puppy Pizzeria.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -478,7 +478,7 @@
   },
   {
     "name": "Pumpkin Suit",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/10.0%20Pumpik%20Suit.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/10.0%20Pumpik%20Suit.png",
     "filename": "10.0 Pumpik Suit.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -487,7 +487,7 @@
   },
   {
     "name": "Pumpkin Hat",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/10.1%20Pumpkin%20Hat.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/10.1%20Pumpkin%20Hat.png",
     "filename": "10.1 Pumpkin Hat.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -496,7 +496,7 @@
   },
   {
     "name": "Pumpkin Seeds",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/10.2%20Pumpkin%20Seeds.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/10.2%20Pumpkin%20Seeds.png",
     "filename": "10.2 Pumpkin Seeds.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -505,7 +505,7 @@
   },
   {
     "name": "Fishing Boat",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/11.0%20Fishing%20Boat.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/11.0%20Fishing%20Boat.png",
     "filename": "11.0 Fishing Boat.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -514,7 +514,7 @@
   },
   {
     "name": "Fishing Vest",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/11.1%20Fishing%20Vest.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/11.1%20Fishing%20Vest.png",
     "filename": "11.1 Fishing Vest.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -523,7 +523,7 @@
   },
   {
     "name": "Fishing Rod",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/11.2%20Fishing%20Rod.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/11.2%20Fishing%20Rod.png",
     "filename": "11.2 Fishing Rod.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -532,7 +532,7 @@
   },
   {
     "name": "Rosa's Toque",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/12.0%20Rosa%27s%20Toque.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/12.0%20Rosa%27s%20Toque.png",
     "filename": "12.0 Rosa's Toque.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -541,7 +541,7 @@
   },
   {
     "name": "Rosa's Coat",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/12.1%20Rosa%27s%20Coat.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/12.1%20Rosa%27s%20Coat.png",
     "filename": "12.1 Rosa's Coat.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -550,7 +550,7 @@
   },
   {
     "name": "Rainbow Bakeshop",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/12.2%20Rainbow%20Bakeshop.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/12.2%20Rainbow%20Bakeshop.png",
     "filename": "12.2 Rainbow Bakeshop.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -559,7 +559,7 @@
   },
   {
     "name": "Naval Ship",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/13.0%20Naval%20Ship.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/13.0%20Naval%20Ship.png",
     "filename": "13.0 Naval Ship.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -568,7 +568,7 @@
   },
   {
     "name": "Captain's Uniform",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/13.1%20Captain%27s%20Uniform.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/13.1%20Captain%27s%20Uniform.png",
     "filename": "13.1 Captain's Uniform.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -577,7 +577,7 @@
   },
   {
     "name": "Captain's Cap",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/13.2%20Captain%27s%20Cap.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/13.2%20Captain%27s%20Cap.png",
     "filename": "13.2 Captain's Cap.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -586,7 +586,7 @@
   },
   {
     "name": "Demonic Heart",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/14.0%20Demonic%20Heart.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/14.0%20Demonic%20Heart.png",
     "filename": "14.0 Demonic Heart.png",
     "rarity": "mythic",
     "category": "pupitems",
@@ -595,7 +595,7 @@
   },
   {
     "name": "B-317 Ears",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/15.0%20B-317%20Ears.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/15.0%20B-317%20Ears.png",
     "filename": "15.0 B-317 Ears.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -604,7 +604,7 @@
   },
   {
     "name": "Bunny Crest",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/15.1%20Bunny%20Crest.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/15.1%20Bunny%20Crest.png",
     "filename": "15.1 Bunny Crest.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -613,7 +613,7 @@
   },
   {
     "name": "A-001 Hopper",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/15.2%20A-001%20Hopper.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/15.2%20A-001%20Hopper.png",
     "filename": "15.2 A-001 Hopper.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -622,7 +622,7 @@
   },
   {
     "name": "Space Rocket",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/16.0%20Space%20Rocket.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/16.0%20Space%20Rocket.png",
     "filename": "16.0 Space Rocket.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -631,7 +631,7 @@
   },
   {
     "name": "Space Helmet",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/16.1%20Space%20Helmet.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/16.1%20Space%20Helmet.png",
     "filename": "16.1 Space Helmet.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -640,7 +640,7 @@
   },
   {
     "name": "Space Suit",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/16.2%20Space%20Suit.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/16.2%20Space%20Suit.png",
     "filename": "16.2 Space Suit.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -649,7 +649,7 @@
   },
   {
     "name": "Vampire Wings",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/17.0%20Vampire%20Wings.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/17.0%20Vampire%20Wings.png",
     "filename": "17.0 Vampire Wings.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -658,7 +658,7 @@
   },
   {
     "name": "Dracula's Coat",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/17.1%20Dracula%27s%20Coat.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/17.1%20Dracula%27s%20Coat.png",
     "filename": "17.1 Dracula's Coat.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -667,7 +667,7 @@
   },
   {
     "name": "Vampire Blood",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/17.2%20Vampire%20Blood.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/17.2%20Vampire%20Blood.png",
     "filename": "17.2 Vampire Blood.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -676,7 +676,7 @@
   },
   {
     "name": "Steampunk Diver",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/18.0%20Steampunk%20Diver.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/18.0%20Steampunk%20Diver.png",
     "filename": "18.0 Steampunk Diver.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -685,7 +685,7 @@
   },
   {
     "name": "Schoo o' Fish",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/18.1%20Schoo%20o%27%20Fish.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/18.1%20Schoo%20o%27%20Fish.png",
     "filename": "18.1 Schoo o' Fish.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -694,7 +694,7 @@
   },
   {
     "name": "GIft Bag",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/19.0%20GIft%20Bag.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/19.0%20GIft%20Bag.png",
     "filename": "19.0 GIft Bag.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -703,7 +703,7 @@
   },
   {
     "name": "Santa's Hat",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/19.1%20Santa%27s%20Hat.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/19.1%20Santa%27s%20Hat.png",
     "filename": "19.1 Santa's Hat.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -712,7 +712,7 @@
   },
   {
     "name": "Christmas Tree",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/19.2%20Christmas%20Tree.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/19.2%20Christmas%20Tree.png",
     "filename": "19.2 Christmas Tree.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -721,7 +721,7 @@
   },
   {
     "name": "Raindeer Bell",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/20.0%20Raindeer%20Bell.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/20.0%20Raindeer%20Bell.png",
     "filename": "20.0 Raindeer Bell.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -730,7 +730,7 @@
   },
   {
     "name": "Raindeer Costume",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/20.1%20Raindeer%20Costume.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/20.1%20Raindeer%20Costume.png",
     "filename": "20.1 Raindeer Costume.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -739,7 +739,7 @@
   },
   {
     "name": "Tori Gate",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/21.0%20Tori%20Gate.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/21.0%20Tori%20Gate.png",
     "filename": "21.0 Tori Gate.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -748,7 +748,7 @@
   },
   {
     "name": "Samurai Helmet",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/21.1%20Samurai%20Helmet.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/21.1%20Samurai%20Helmet.png",
     "filename": "21.1 Samurai Helmet.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -757,7 +757,7 @@
   },
   {
     "name": "Ichi Seal",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/21.2%20Ichi%20Seal.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/21.2%20Ichi%20Seal.png",
     "filename": "21.2 Ichi Seal.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -766,7 +766,7 @@
   },
   {
     "name": "Wizard Hat",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/22.0%20Wizard%20Hat.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/22.0%20Wizard%20Hat.png",
     "filename": "22.0 Wizard Hat.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -775,7 +775,7 @@
   },
   {
     "name": "Spell Book",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/22.1%20Spell%20Book.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/22.1%20Spell%20Book.png",
     "filename": "22.1 Spell Book.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -784,7 +784,7 @@
   },
   {
     "name": "Mystery Potions",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/22.2%20Mystery%20Potions.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/22.2%20Mystery%20Potions.png",
     "filename": "22.2 Mystery Potions.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -793,7 +793,7 @@
   },
   {
     "name": "Ancient Halberd",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/23.0%20Ancient%20Halberd.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/23.0%20Ancient%20Halberd.png",
     "filename": "23.0 Ancient Halberd.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -802,7 +802,7 @@
   },
   {
     "name": "Valhalla Armor",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/23.1%20Valhalla%20Armor.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/23.1%20Valhalla%20Armor.png",
     "filename": "23.1 Valhalla Armor.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -811,7 +811,7 @@
   },
   {
     "name": "Valhalla Gauntlets",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/23.2%20Valhalla%20Gauntlets.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/23.2%20Valhalla%20Gauntlets.png",
     "filename": "23.2 Valhalla Gauntlets.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -820,7 +820,7 @@
   },
   {
     "name": "Seraphim Wings",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/24.0%20Seraphim%20Wings.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/24.0%20Seraphim%20Wings.png",
     "filename": "24.0 Seraphim Wings.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -829,7 +829,7 @@
   },
   {
     "name": "Trumpet of Apocalypse",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/24.1%20Trumpet%20of%20Apocalypse.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/24.1%20Trumpet%20of%20Apocalypse.png",
     "filename": "24.1 Trumpet of Apocalypse.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -838,7 +838,7 @@
   },
   {
     "name": "Divine Clothing",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/24.2%20Divine%20Clothing.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/24.2%20Divine%20Clothing.png",
     "filename": "24.2 Divine Clothing.png",
     "rarity": "rare",
     "category": "pupitems",
@@ -847,7 +847,7 @@
   },
   {
     "name": "Small Trash",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/25.0%20Small%20Trash.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/25.0%20Small%20Trash.png",
     "filename": "25.0 Small Trash.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -856,7 +856,7 @@
   },
   {
     "name": "Trash Can",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/25.1%20Trash%20Can.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/25.1%20Trash%20Can.png",
     "filename": "25.1 Trash Can.png",
     "rarity": "uncommon",
     "category": "pupitems",
@@ -865,7 +865,7 @@
   },
   {
     "name": "Mecha Core",
-    "link": "https://gateway.pinata.cloud/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/26.0%20Mecha%20Core.png",
+    "link": "/ipfs/QmPsTuRRQtSzTzexVEvudaouhHm5oqSAyivodzf82vz2Sg/03_PupItems/26.0%20Mecha%20Core.png",
     "filename": "26.0 Mecha Core.png",
     "rarity": "mythic",
     "category": "pupitems",

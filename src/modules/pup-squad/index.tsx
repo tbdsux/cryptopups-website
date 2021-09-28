@@ -14,7 +14,7 @@ const ThePupSquadPage = () => {
       />
       {/* end seo */}
 
-      <Container className="w-3/4 lg:w-5/6">
+      <Container className="w-3/4 lg:w-5/6 2xl:w-3/4 3xl:w-3/5 4xl:w-1/2">
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14">
           {PupMembers.map((member, index) => (
             <li key={index} className="border shadow-2xl p-4 rounded-lg">

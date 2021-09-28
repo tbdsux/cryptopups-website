@@ -34,12 +34,14 @@ const IndexPage = () => {
       <hr />
 
       <div className="py-28">
-        <h2 className="text-center text-4xl font-black trackin-wide text-warmGray-800 pb-8">
-          World of Cryptopups Events
-        </h2>
-        <hr className="border-gray-200 w-5/6 mx-auto" />
+        <div className="2xl:w-5/6 3xl:w-3/4 mx-auto">
+          <h2 className="text-center text-4xl font-black trackin-wide text-warmGray-800 pb-8">
+            World of Cryptopups Events
+          </h2>
+          <hr className="border-gray-200 w-5/6 mx-auto" />
 
-        <SmashKartsTournamentEvent />
+          <SmashKartsTournamentEvent />
+        </div>
       </div>
 
       <div className="relative">
@@ -55,13 +57,13 @@ const IndexPage = () => {
               <h3 className="font-black text-5xl">Elemental Pups</h3>
             </div>
           </a>
-          <Image
-            src={ElementalsBg}
-            alt="World of Cryptopups"
-            layout="fill"
-            className="w-full h-full inset-0 z-20 object-cover brightness-20"
-          />
         </div>
+        <Image
+          src={ElementalsBg}
+          alt="World of Cryptopups"
+          layout="fill"
+          className="w-full h-full inset-0 z-20 object-cover brightness-20"
+        />
       </div>
 
       {/*

@@ -1,7 +1,6 @@
 // NOTE:: ! THIS COMPONENT NEEDS TO BE UPDATED EVERY EVENT!
 
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
@@ -49,19 +48,19 @@ const CurrentEventModal = () => {
           >
             <div className="inline-block w-full max-w-3xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform ethereal shadow-xl rounded-2xl relative">
               <Dialog.Title as="h2" className="text-2xl font-black leading-6 ethereal-text z-50">
-                Smash Karts Tournament
+                Racer Shiba
               </Dialog.Title>
 
               <Dialog.Description
                 as="p"
                 className="mt-3 text-lg tracking-wide text-warmGray-700 p-2 z-50"
               >
-                The first ever <strong>Elemental Pup</strong> is coming to World of Cryptopups!
-                Collect, trade, and blend to get the second ethereal card for her.
+                First <strong>Special Rarity</strong> pup is coming to World of Cryptopups! Get him
+                and join his crusade and adventure!
               </Dialog.Description>
 
               <div className="mt-4 z-50 inline-flex items-center">
-                <a
+                {/* <a
                   href="https://events.worldofcryptopups.cf/smashkarts-tournament"
                   className="py-3 px-6 rounded-lg text-sm font-medium tracking-wide bg-warmGray-800 hover:bg-warmGray-900 text-white inline-flex items-center"
                   target="_blank"
@@ -69,7 +68,7 @@ const CurrentEventModal = () => {
                 >
                   <FontAwesomeIcon icon={faExternalLinkAlt} className="mr-2" />
                   View Event
-                </a>
+                </a> */}
 
                 <a
                   href="https://discord.gg/ZKEezUwzaB"
@@ -78,7 +77,7 @@ const CurrentEventModal = () => {
                   className="py-3 px-6 rounded-lg text-sm font-medium tracking-wide bg-violet-600 hover:bg-violet-700 text-white inline-flex items-center ml-2"
                 >
                   <FontAwesomeIcon icon={faDiscord} className="mr-2" />
-                  Join Discord Server
+                  Join Community
                 </a>
 
                 <button

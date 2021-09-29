@@ -4,7 +4,8 @@ import ElementalsBg from '../../../public/elementals.jpg';
 import DefaultLayout from '../../layouts/default';
 import DiscoverContainer from './discover';
 import CurrentEventModal from './events/current-event-modal';
-import SmashKartsTournamentEvent from './events/smash-karts/event';
+import RacerShibaEvent from './events/racer-shiba/event';
+import NewRarity from './new-rarity';
 import Showcase from './showcase';
 import Rarities from './slider/rarities';
 import { SocialContainer } from './social-icons';
@@ -33,6 +34,10 @@ const IndexPage = () => {
 
       <hr />
 
+      <NewRarity />
+
+      <hr />
+
       <div className="py-28">
         <div className="2xl:w-5/6 3xl:w-3/4 mx-auto">
           <h2 className="text-center text-4xl font-black trackin-wide text-warmGray-800 pb-8">
@@ -40,7 +45,7 @@ const IndexPage = () => {
           </h2>
           <hr className="border-gray-200 w-5/6 mx-auto" />
 
-          <SmashKartsTournamentEvent />
+          <RacerShibaEvent />
         </div>
       </div>
 

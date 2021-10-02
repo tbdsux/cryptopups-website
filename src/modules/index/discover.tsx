@@ -15,7 +15,7 @@ const DiscoverItems = [
   {
     title: 'Roadmap',
     link: {
-      url: '/roadmap',
+      url: 'https://roadmap.worldofcryptopups.cf/',
       text: 'Visit Roadmap'
     },
     style: 'bg-spec-orange'
@@ -73,9 +73,13 @@ const DiscoverContainer = () => {
           </p>
 
           <div className="mt-8 grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-2 md:gap-4">
-            {DiscoverItems.map((d, index) => (
-              <Link key={index} href={d.link.url}>
+            {DiscoverItems.map((d, index) =>
+              d.link.url.startsWith('https') ? (
                 <a
+                  href={d.link.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  key={index}
                   title={d.link.text}
                   className={`p-3 sm:p-4 lg:p-5 rounded-xl opacity-80 hover:opacity-100 ${d.style}`}
                 >
@@ -83,8 +87,19 @@ const DiscoverContainer = () => {
                     {d.title}
                   </span>
                 </a>
-              </Link>
-            ))}
+              ) : (
+                <Link key={index} href={d.link.url}>
+                  <a
+                    title={d.link.text}
+                    className={`p-3 sm:p-4 lg:p-5 rounded-xl opacity-80 hover:opacity-100 ${d.style}`}
+                  >
+                    <span className="text-base md:text-lg lg:text-xl font-bold text-white">
+                      {d.title}
+                    </span>
+                  </a>
+                </Link>
+              )
+            )}
           </div>
         </div>
         <div className="w-3/4 xs:w-2/3 sm:w-3/5 md:w-1/2 lg:w-full xl:w-2/3 2xl:w-1/2 3xl:w-2/5 mt-12 lg:mt-0">

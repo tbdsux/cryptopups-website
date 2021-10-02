@@ -27,7 +27,7 @@ const RacerShibaEvent = () => {
               Join his crusade in being the number one racer and leave slow racers in the dust.
             </p>
 
-            <a
+            {/* <a
               href="https://events.worldofcryptopups.cf/smashkarts-tournament"
               target="_blank"
               rel="noreferrer"
@@ -48,7 +48,7 @@ const RacerShibaEvent = () => {
                 />
               </svg>{' '}
               <span className="ml-2 font-bold">View Event</span>
-            </a>
+            </a> */}
           </div>
         </div>
 

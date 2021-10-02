@@ -50,13 +50,13 @@ const IndexPage = () => {
       </div>
 
       <div className="relative">
-        <div className="py-20 w-5/6 mx-auto">
+        <div className="py-20 w-5/6 mx-auto relative z-30">
           <a
             title="See Elementals Project"
             href="https://elementals.worldofcryptopups.cf/"
             target="_blank"
             rel="noreferrer"
-            className="text-white relative z-30"
+            className="text-white relative"
           >
             <div className="flex items-center justify-between">
               <h3 className="font-black text-5xl">Elemental Pups</h3>

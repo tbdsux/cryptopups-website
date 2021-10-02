@@ -5,6 +5,7 @@ import DefaultLayout from '../../layouts/default';
 import DiscoverContainer from './discover';
 import CurrentEventModal from './events/current-event-modal';
 import RacerShibaEvent from './events/racer-shiba/event';
+import ExternalLinks from './external-links';
 import NewRarity from './new-rarity';
 import Showcase from './showcase';
 import Rarities from './slider/rarities';
@@ -77,6 +78,8 @@ const IndexPage = () => {
       <hr />
 
       <CardAnatomy /> */}
+
+      <ExternalLinks />
 
       <hr className="w-11/12 mx-auto" />
 

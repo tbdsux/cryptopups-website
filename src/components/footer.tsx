@@ -25,7 +25,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between mt-8 text-sm">
           <div className="flex flex-wrap items-start">
             {/* main page links */}
-            <div className="mr-8 md:mr-16 lg:mr-24 my-1">
+            <div className="mr-8 md:mr-16 2xl:mr-24 my-1">
               <h5 className="text-gray-600 font-medium uppercase tracking-wide">Pages</h5>
               <ul className="text-gray-100">
                 <li className="my-1">
@@ -73,7 +73,7 @@ const Footer = () => {
             </div>
 
             {/* social links */}
-            <div className="mr-8 md:mr-16 lg:mr-24 my-1">
+            <div className="mr-8 md:mr-16 2xl:mr-24 my-1">
               <h5 className="text-gray-600 font-medium uppercase tracking-wide">Social Media</h5>
               <ul className="text-gray-100">
                 {SocialLinks.map((s, index) => (
@@ -93,7 +93,32 @@ const Footer = () => {
             </div>
 
             {/* other links */}
-            <div className="mr-8 md:mr-16 lg:mr-24 my-1">
+            <div className="mr-8 md:mr-16 2xl:mr-24 my-1">
+              <h5 className="text-gray-600 font-medium uppercase tracking-wide">External Links</h5>
+              <ul className="text-gray-100">
+                <li className="my-1">
+                  <a
+                    className="hover:text-white"
+                    title="Neftyblocks"
+                    href="https://neftyblocks.com/c/cryptopuppie/"
+                  >
+                    Neftyblocks
+                  </a>
+                </li>
+                <li className="my-1">
+                  <a
+                    className="hover:text-white"
+                    title="Atomichub"
+                    href="https://wax.atomichub.io/explorer/collection/cryptopuppie"
+                  >
+                    Atomichub
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* other links */}
+            <div className="mr-8 md:mr-16 2xl:mr-24 my-1">
               <h5 className="text-gray-600 font-medium uppercase tracking-wide">Others</h5>
               <ul className="text-gray-100">
                 <li className="my-1">
@@ -135,7 +160,7 @@ const Footer = () => {
             </div>
 
             {/* tools links */}
-            <div className="mr-8 md:mr-16 lg:mr-24 my-1">
+            <div className="mr-8 md:mr-16 2xl:mr-24 my-1">
               <h5 className="text-gray-600 font-medium uppercase tracking-wide">Tools</h5>
               <ul className="text-gray-100">
                 {/* <li className="my-1">

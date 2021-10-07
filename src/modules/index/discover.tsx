@@ -56,7 +56,7 @@ const DiscoverItems = [
 
 const DiscoverContainer = () => {
   return (
-    <div className="py-32 bg-warmGray-900">
+    <div className="py-32 bg-gray-900">
       <Container className="w-5/6 2xl:w-4/5 3xl:w-2/3 flex flex-col lg:flex-row items-center">
         <div className="lg:mr-16">
           <h4 className="text-4xl md:text-5xl leading-relaxed font-black tracking-wide mb-12 text-white">

@@ -4,7 +4,7 @@ import ElementalsBg from '../../../public/elementals.jpg';
 import DefaultLayout from '../../layouts/default';
 import DiscoverContainer from './discover';
 import CurrentEventModal from './events/current-event-modal';
-import RacerShibaEvent from './events/racer-shiba/event';
+import InfiniteVoidReturnsEvent from './events/infinite-void/event';
 import ExternalLinks from './external-links';
 import NewRarity from './new-rarity';
 import Showcase from './showcase';
@@ -31,6 +31,8 @@ const IndexPage = () => {
 
       <Showcase />
 
+      <ExternalLinks />
+
       <DiscoverContainer />
 
       <hr />
@@ -46,7 +48,7 @@ const IndexPage = () => {
           </h2>
           <hr className="border-gray-200 w-5/6 mx-auto" />
 
-          <RacerShibaEvent />
+          <InfiniteVoidReturnsEvent />
         </div>
       </div>
 
@@ -78,8 +80,6 @@ const IndexPage = () => {
       <hr />
 
       <CardAnatomy /> */}
-
-      <ExternalLinks />
 
       <hr className="w-11/12 mx-auto" />
 

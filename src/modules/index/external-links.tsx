@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 const ExternalLinks = () => {
   return (
-    <div className="py-20">
+    <div className="py-24">
       <div className="w-5/6 mx-auto text-center">
-        <h3 className="text-3xl font-black tracking-wide text-warmGray-800">Wax Links</h3>
+        <h3 className="text-4xl font-black tracking-wide text-warmGray-800 uppercase">Wax Links</h3>
         <p className="mt-4 text-lg tracking-wide">
           View our collections, items and sales directly from our wax pages
         </p>

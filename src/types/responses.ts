@@ -4,4 +4,10 @@ interface APIResponseProps<T> {
   message?: string;
 }
 
-export type { APIResponseProps };
+interface AWAPIResponseProps<T> {
+  success: boolean;
+  data?: T;
+  query_time: number;
+}
+
+export type { APIResponseProps, AWAPIResponseProps };

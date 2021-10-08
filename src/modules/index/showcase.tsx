@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import EventLogo from '../../../public/logo-cordy.png';
-import EventBg from '../../../public/_events/ethereal.png';
+import EventBg from '../../../public/_events/void.png';
 import Container from '../../components/container';
 import { SocialIcons } from './social-icons';
 
@@ -37,7 +37,9 @@ const Showcase = () => {
         src={EventBg}
         alt="World of Cryptopups"
         layout="fill"
-        className="w-full h-full inset-0 z-20 object-cover brightness-20"
+        objectFit="cover"
+        objectPosition="bottom"
+        className="w-full h-full inset-0 z-20"
       />
     </div>
   );

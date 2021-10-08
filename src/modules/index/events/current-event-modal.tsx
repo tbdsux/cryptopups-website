@@ -48,15 +48,18 @@ const CurrentEventModal = () => {
           >
             <div className="inline-block w-full max-w-3xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform ethereal shadow-xl rounded-2xl relative">
               <Dialog.Title as="h2" className="text-2xl font-black leading-6 ethereal-text z-50">
-                Racer Shiba
+                Infinite Void Returns
               </Dialog.Title>
 
               <Dialog.Description
                 as="p"
                 className="mt-3 text-lg tracking-wide text-warmGray-700 p-2 z-50"
               >
-                First <strong>Special Rarity</strong> pup is coming to World of Cryptopups! Get him
-                and join his crusade and adventure!
+                A familiar rift opens in the World of Cryptopups...
+                <br />
+                An upcoming threat is imminent...
+                <br />
+                <q>Gaze into nothingness</q>
               </Dialog.Description>
 
               <div className="mt-4 z-50 inline-flex items-center">

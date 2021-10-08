@@ -1,10 +1,10 @@
+import { ImagesTemplateProps } from '../../types/template';
 import CustomDisclosure from './disclosure';
 import { useGallery } from './gallery-provider';
-import pupcards from './pupcards.json';
 
 const galleryCategories = [
   {
-    key: 'pupskins',
+    key: 'pupskincards',
     name: 'Pupskin Cards'
   },
   {
@@ -12,7 +12,7 @@ const galleryCategories = [
     name: 'Pupitem Cards'
   },
   {
-    key: 'pupcards',
+    key: 'puppycards',
     name: 'Puppy Cards'
   }
 ];
@@ -27,7 +27,11 @@ const galleryPupRarities = {
   special: 'bg-teal-500'
 };
 
-const GallerySidebar = () => {
+type GallerySidebarProps = {
+  images: ImagesTemplateProps[] | null | false | undefined;
+};
+
+const GallerySidebar = ({ images }: GallerySidebarProps) => {
   const { state, dispatch } = useGallery();
   const { rarity, category, names } = state;
 
@@ -90,27 +94,35 @@ const GallerySidebar = () => {
           <h5 className="mb-1 uppercase text-sm">Pup Name</h5>
           <hr className="border-gray-700" />
           <ul className="overflow-auto h-56">
-            {pupcards.map((x, index) => (
-              <li key={index}>
-                <button
-                  className={`text-sm md:text-base font-normal tracking-wide my-0.5 ${
-                    names.includes(x.name.toLowerCase()) && 'underline'
-                  }`}
-                  type="button"
-                  title={`Show ${x.name}`}
-                  onClick={() => {
-                    if (names.includes(x.name.toLowerCase())) {
-                      dispatch({ type: 'removeNames', item: x.name.toLowerCase() });
-                      return;
-                    }
+            {images === false ? (
+              <p>Failed to load puppers.</p>
+            ) : images === null ? (
+              <p>Loading...</p>
+            ) : (
+              images
+                ?.filter((i) => i.schema.schema_name === 'puppycards')
+                .map((x, index) => (
+                  <li key={index}>
+                    <button
+                      className={`text-sm md:text-base font-normal tracking-wide my-0.5 ${
+                        names.includes(x.name.toLowerCase()) && 'underline'
+                      }`}
+                      type="button"
+                      title={`Show ${x.name}`}
+                      onClick={() => {
+                        if (names.includes(x.name.toLowerCase())) {
+                          dispatch({ type: 'removeNames', item: x.name.toLowerCase() });
+                          return;
+                        }
 
-                    dispatch({ type: 'addNames', item: x.name.toLowerCase() });
-                  }}
-                >
-                  {x.name}
-                </button>
-              </li>
-            ))}
+                        dispatch({ type: 'addNames', item: x.name.toLowerCase() });
+                      }}
+                    >
+                      {x.name}
+                    </button>
+                  </li>
+                ))
+            )}
           </ul>
         </div>
       </CustomDisclosure>

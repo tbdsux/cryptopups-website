@@ -163,13 +163,13 @@ const Footer = () => {
             <div className="mr-8 md:mr-16 2xl:mr-24 my-1">
               <h5 className="text-gray-600 font-medium uppercase tracking-wide">Tools</h5>
               <ul className="text-gray-100">
-                {/* <li className="my-1">
-                  <Link href="/">
+                <li className="my-1">
+                  <Link href="/leaderboard">
                     <a className="hover:text-white" title="Leaderboard">
                       Leaderboard
                     </a>
                   </Link>
-                </li> */}
+                </li>
                 <li className="my-1">
                   <Link href="/dps-calculator">
                     <a className="hover:text-white" title="DPS Calculator">

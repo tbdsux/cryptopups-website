@@ -4,9 +4,9 @@ import SpecialCard from '../../../public/images/new-rarity.png';
 const NewRarity = () => {
   return (
     <div className="py-20">
-      <div className="w-5/6 mx-auto flex items-center justify-between">
+      <div className="w-5/6 mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
         <Image src={SpecialCard} height="500" width="400" objectFit="contain" alt="" />
-        <div className="w-1/2">
+        <div className="mb-12 md:mb-0 w-full md:w-1/2">
           <span className="bg-lightBlue-400 text-white italic font-bold py-1 px-5 rounded-lg">
             SPECIAL
           </span>

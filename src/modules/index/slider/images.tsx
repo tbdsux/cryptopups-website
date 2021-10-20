@@ -1,17 +1,17 @@
 /* eslint-disable react/jsx-key */
 import Image from 'next/image';
-import commonPup from '../../../../public/images/common.png';
 import cosmicPup from '../../../../public/images/cosmic.png';
+import etherealPup from '../../../../public/images/ethereal.png';
 import mythicPup from '../../../../public/images/mythic.png';
 import rarePup from '../../../../public/images/rare.png';
 import uncommonPup from '../../../../public/images/uncommon.png';
 
 const PUP_IMAGES = [
-  <Image src={commonPup} alt="Common Pup" />,
-  // <Image src={cosmicPup} alt="Cosmic Pup" />,
-  <Image src={mythicPup} alt="Mythic Pup" />,
+  <Image src={uncommonPup} alt="Uncommon Pup" />,
   <Image src={rarePup} alt="Rare Pup" />,
-  <Image src={uncommonPup} alt="Uncommon Pup" />
+  <Image src={mythicPup} alt="Mythic Pup" />,
+  <Image src={cosmicPup} alt="Mythic Pup" />,
+  <Image src={etherealPup} alt="Mythic Pup" />
 ];
 
 type ImageContainerProps = {
@@ -22,8 +22,24 @@ const IMAGES: ImageContainerProps[] = [
   {
     image: (
       <Image
-        src={commonPup}
-        alt="Common Pup"
+        src={uncommonPup}
+        alt="Uncommon Pup"
+        objectFit="contain"
+        layout="fill"
+        placeholder="blur"
+      />
+    )
+  },
+  {
+    image: (
+      <Image src={rarePup} alt="Rare Pup" objectFit="contain" layout="fill" placeholder="blur" />
+    )
+  },
+  {
+    image: (
+      <Image
+        src={mythicPup}
+        alt="Mythic Pup"
         objectFit="contain"
         layout="fill"
         placeholder="blur"
@@ -44,24 +60,8 @@ const IMAGES: ImageContainerProps[] = [
   {
     image: (
       <Image
-        src={mythicPup}
-        alt="Mythic Pup"
-        objectFit="contain"
-        layout="fill"
-        placeholder="blur"
-      />
-    )
-  },
-  {
-    image: (
-      <Image src={rarePup} alt="Rare Pup" objectFit="contain" layout="fill" placeholder="blur" />
-    )
-  },
-  {
-    image: (
-      <Image
-        src={uncommonPup}
-        alt="Uncommon Pup"
+        src={etherealPup}
+        alt="Ethereal Pup"
         objectFit="contain"
         layout="fill"
         placeholder="blur"

@@ -1,12 +1,14 @@
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 
-const ExternalLinks = () => {
+const OurLinks = () => {
   return (
     <div className="py-24">
       <div className="w-5/6 mx-auto text-center">
-        <h3 className="text-4xl font-black tracking-wide text-warmGray-800 uppercase">Wax Links</h3>
+        <h3 className="text-4xl font-black tracking-wide text-warmGray-800 uppercase">Our Links</h3>
         <p className="mt-4 text-lg tracking-wide">
-          View our collections, items and sales directly from our wax pages
+          View our collections, sales, and announcement from our links
         </p>
 
         <ul className="flex flex-wrap justify-center mt-8">
@@ -43,9 +45,21 @@ const ExternalLinks = () => {
             </a>
           </li>
         </ul>
+
+        <div className="mt-4">
+          <a
+            href="https://twitter.com/apppllleee_pie"
+            rel="noreferrer"
+            target="_blank"
+            className="lg:text-lg py-2 px-8 text-white rounded-lg inline-flex items-center bg-lightBlue-500 hover:bg-lightBlue-600"
+          >
+            <FontAwesomeIcon icon={faTwitter} className="text-xl" />
+            <span className="tracking-wide ml-2">@apppllleee_pie</span>
+          </a>
+        </div>
       </div>
     </div>
   );
 };
 
-export default ExternalLinks;
+export default OurLinks;

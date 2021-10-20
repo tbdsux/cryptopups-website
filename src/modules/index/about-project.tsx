@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import featuredPup from '../../../public/featured-white.png';
+import featuredPup from '../../../public/featured.png';
 import Container from '../../components/container';
 
 const DiscoverItems = [
@@ -54,7 +54,7 @@ const DiscoverItems = [
   }
 ];
 
-const DiscoverContainer = () => {
+const AboutProject = () => {
   return (
     <div className="py-32 bg-gray-900">
       <Container className="w-5/6 2xl:w-4/5 3xl:w-2/3 flex flex-col lg:flex-row items-center">
@@ -72,7 +72,7 @@ const DiscoverContainer = () => {
             Where do you want to start your adventure?
           </p>
 
-          <div className="mt-8 grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-2 md:gap-4">
+          <div className="mt-8 grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-2 xl:gap-4">
             {DiscoverItems.map((d, index) =>
               d.link.url.startsWith('https') ? (
                 <a
@@ -81,9 +81,9 @@ const DiscoverContainer = () => {
                   rel="noreferrer"
                   key={index}
                   title={d.link.text}
-                  className={`p-3 sm:p-4 lg:p-5 rounded-xl opacity-80 hover:opacity-100 ${d.style}`}
+                  className={`p-3 sm:p-4 xl:p-5 rounded-xl opacity-80 hover:opacity-100 ${d.style}`}
                 >
-                  <span className="text-base md:text-lg lg:text-xl font-bold text-white">
+                  <span className="text-base md:text-lg xl:text-xl font-bold text-white">
                     {d.title}
                   </span>
                 </a>
@@ -91,9 +91,9 @@ const DiscoverContainer = () => {
                 <Link key={index} href={d.link.url}>
                   <a
                     title={d.link.text}
-                    className={`p-3 sm:p-4 lg:p-5 rounded-xl opacity-80 hover:opacity-100 ${d.style}`}
+                    className={`p-3 sm:p-4 xl:p-5 rounded-xl opacity-80 hover:opacity-100 ${d.style}`}
                   >
-                    <span className="text-base md:text-lg lg:text-xl font-bold text-white">
+                    <span className="text-base md:text-lg xl:text-xl font-bold text-white">
                       {d.title}
                     </span>
                   </a>
@@ -102,12 +102,13 @@ const DiscoverContainer = () => {
             )}
           </div>
         </div>
-        <div className="w-3/4 xs:w-2/3 sm:w-3/5 md:w-1/2 lg:w-full xl:w-2/3 2xl:w-1/2 3xl:w-2/5 mt-12 lg:mt-0">
-          <Image src={featuredPup} alt="World of Cryptopups" />
+
+        <div className="w-5/6 mx-auto sm:w-3/4 md:w-1/2 lg:w-full">
+          <Image height="1100" width="1100" src={featuredPup} alt="World of Cryptopups" />
         </div>
       </Container>
     </div>
   );
 };
 
-export default DiscoverContainer;
+export default AboutProject;

@@ -67,11 +67,11 @@ const GallerySidebar = ({ images }: GallerySidebarProps) => {
         <div className="my-2">
           <h5 className="mb-1 uppercase text-sm">Rarity</h5>
           <hr className="border-gray-700" />
-          <ul className="flex items-center">
+          <ul className="flex items-center md:justify-around mt-1">
             {Object.entries(galleryPupRarities).map(([key, color]) => (
               <li key={key} className="mx-0.5">
                 <button
-                  className={`${color} h-4 sm:h-5 w-4 sm:w-5 rounded-full ${
+                  className={`${color} h-5 sm:h-6 w-5 sm:w-6 rounded-full ${
                     rarity.includes(key) && 'border-2'
                   }`}
                   title={key}
@@ -90,10 +90,10 @@ const GallerySidebar = ({ images }: GallerySidebarProps) => {
           </ul>
         </div>
 
-        <div className="mt-4">
+        <div className="mt-6">
           <h5 className="mb-1 uppercase text-sm">Pup Name</h5>
           <hr className="border-gray-700" />
-          <ul className="overflow-auto h-56">
+          <ul className="overflow-auto h-56 mt-2">
             {images === false ? (
               <p>Failed to load puppers.</p>
             ) : images === null ? (

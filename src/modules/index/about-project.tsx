@@ -56,13 +56,13 @@ const DiscoverItems = [
 
 const AboutProject = () => {
   return (
-    <div className="py-32 bg-gray-900">
+    <div className="py-32">
       <Container className="w-5/6 2xl:w-4/5 3xl:w-2/3 flex flex-col lg:flex-row items-center">
         <div className="lg:mr-16">
-          <h4 className="text-4xl md:text-5xl leading-relaxed font-black tracking-wide mb-12 text-white">
+          <h4 className="text-4xl md:text-5xl leading-relaxed font-black tracking-wide mb-12 text-gray-900">
             About the Project
           </h4>
-          <p className="text-lg lg:text-xl tracking-wide text-gray-100">
+          <p className="text-lg lg:text-xl tracking-wide text-gray-800">
             <strong className="font-black">The World of Cryptopups</strong> is a collectible
             Non-Fungible-Tokens (NFTs) of unique pups that can suit everyone.
             <br className="mb-2" />

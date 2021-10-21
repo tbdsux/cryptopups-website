@@ -32,11 +32,7 @@ const IndexPage = () => {
 
       <AboutProject />
 
-      <hr />
-
       <NewRarity />
-
-      <hr />
 
       <div className="py-28">
         <div className="2xl:w-5/6 3xl:w-3/4 mx-auto">
@@ -84,10 +80,7 @@ const IndexPage = () => {
 
       <hr />
 
-      <div>
-        <hr />
-        <OurLinks />
-      </div>
+      <OurLinks />
     </DefaultLayout>
   );
 };

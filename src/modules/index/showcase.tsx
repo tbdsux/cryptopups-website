@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import EventLogo from '../../../public/logo-cordy.png';
-import EventBg from '../../../public/_events/void.png';
+import EventLogo from '../../../public/logo-void.png';
+import EventBg from '../../../public/voidbg.jpg';
 import Container from '../../components/container';
 import { SocialIcons } from './social-icons';
 
@@ -8,7 +8,7 @@ const Showcase = () => {
   return (
     <div className="w-full bg-gray-900 relative">
       <Container className="relative w-5/6 2xl:w-3/4 3xl:w-1/2 text-center pt-40 pb-36 z-30">
-        <Image src={EventLogo} height="225" width="500" alt="World of CryptoPups" />
+        <Image src={EventLogo} height="225" width="600" alt="World of CryptoPups" />
         <p
           data-cy="showcase-text"
           className="text-xl text-gray-100 leading-loose mt-4 tracking-wide"
@@ -39,7 +39,7 @@ const Showcase = () => {
         layout="fill"
         objectFit="cover"
         objectPosition="bottom"
-        className="w-full h-full inset-0 z-20"
+        className="w-full h-full inset-0 z-20 brightness-50"
       />
     </div>
   );

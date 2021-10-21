@@ -2,14 +2,13 @@ import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import ElementalsBg from '../../../public/elementals.jpg';
 import DefaultLayout from '../../layouts/default';
-import DiscoverContainer from './discover';
+import AboutProject from './about-project';
 import CurrentEventModal from './events/current-event-modal';
 import InfiniteVoidReturnsEvent from './events/infinite-void/event';
-import ExternalLinks from './external-links';
+import OurLinks from './links';
 import NewRarity from './new-rarity';
 import Showcase from './showcase';
 import Rarities from './slider/rarities';
-import { SocialContainer } from './social-icons';
 
 const IndexPage = () => {
   return (
@@ -31,9 +30,7 @@ const IndexPage = () => {
 
       <Showcase />
 
-      <ExternalLinks />
-
-      <DiscoverContainer />
+      <AboutProject />
 
       <hr />
 
@@ -89,7 +86,7 @@ const IndexPage = () => {
 
       <div>
         <hr />
-        <SocialContainer />
+        <OurLinks />
       </div>
     </DefaultLayout>
   );

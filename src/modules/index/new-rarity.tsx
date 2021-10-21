@@ -3,7 +3,7 @@ import SpecialCard from '../../../public/images/new-rarity.png';
 
 const NewRarity = () => {
   return (
-    <div className="py-20">
+    <div className="py-20 bg-warmGray-100">
       <div className="w-5/6 mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
         <Image src={SpecialCard} height="500" width="400" objectFit="contain" alt="" />
         <div className="mb-12 md:mb-0 w-full md:w-1/2">

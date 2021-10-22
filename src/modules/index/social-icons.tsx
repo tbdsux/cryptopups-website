@@ -36,7 +36,7 @@ const SocialIcons = () => {
   return (
     <div>
       <p className="mb-4 text-gray-200 tracking-wider text-sm uppercase">
-        Follow us at our social pages to stay updated
+        Follow us at our social media pages to stay updated
       </p>
 
       <ul className="flex items-center justify-center">
@@ -49,10 +49,7 @@ const SocialIcons = () => {
               rel="noreferrer"
               href={s.link}
             >
-              <FontAwesomeIcon
-                icon={s.icon}
-                className="transform group-hover:scale-110 duration-500"
-              />
+              <FontAwesomeIcon icon={s.icon} className="transform group-hover:scale-105 " />
             </a>
           </li>
         ))}

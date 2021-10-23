@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import { ImagesTemplateProps } from '../../types/template';
+import ImageLightbox from './gallery-lightbox';
 import { useGallery } from './gallery-provider';
 
 //  const AllImages: GalleryImagesProps[] = [...pupcards, ...pupskins, ...pupitems];
@@ -53,12 +53,7 @@ const GalleryImages = ({ images }: GalleryImagesProps) => {
             })
             .map((i, index) => (
               <li key={index}>
-                <Image
-                  src={`https://ipfs.io/ipfs/${i.immutable_data.img}`}
-                  alt={i.name}
-                  height="300"
-                  width="200"
-                />
+                <ImageLightbox src={`https://ipfs.io/ipfs/${i.immutable_data.img}`} alt={i.name} />
               </li>
             ))}
         </ul>

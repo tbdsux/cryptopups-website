@@ -23,7 +23,7 @@ const GalleryImages = ({ images }: GalleryImagesProps) => {
       ) : images === null ? (
         <p>Loading...</p>
       ) : (
-        <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 3xl:grid-cols-8 gap-6">
+        <ul className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 3xl:grid-cols-8 gap-6">
           {images
             ?.filter((i) => {
               if (category.length === 0) return true;
@@ -52,9 +52,11 @@ const GalleryImages = ({ images }: GalleryImagesProps) => {
               }
             })
             .map((i, index) => (
-              <li key={index}>
-                <ImageLightbox src={`https://ipfs.io/ipfs/${i.immutable_data.img}`} alt={i.name} />
-              </li>
+              <ImageLightbox
+                key={index}
+                src={`https://ipfs.io/ipfs/${i.immutable_data.img}`}
+                alt={i.name}
+              />
             ))}
         </ul>
       )}

@@ -28,7 +28,14 @@ const ImageLightbox = ({ src, alt }: ImageLightboxProps) => {
         />
       )}
 
-      <Image onClick={() => setOpen({ src, alt })} src={src} alt={alt} height="300" width="200" />
+      <Image
+        onClick={() => setOpen({ src, alt })}
+        src={src}
+        alt={alt}
+        height="300"
+        width="200"
+        className="cursor-pointer"
+      />
     </li>
   );
 };

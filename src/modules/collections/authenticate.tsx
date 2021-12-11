@@ -112,7 +112,7 @@ const MyCollectionsAuthenticate = () => {
         <div className="w-4/5 lg:w-3/4 mx-auto text-sm mt-8">
           <button
             onClick={logoutHandler}
-            className="hover:underline text-right bg-gray-100 hover:bg-gray-200 py-1 px-3 rounded-full text-xs float-right"
+            className="hover:underline text-right bg-stone-100 hover:bg-stone-200 py-1 px-3 rounded-full text-xs float-right"
           >
             Log Out
           </button>

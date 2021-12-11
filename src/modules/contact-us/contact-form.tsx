@@ -84,7 +84,7 @@ const ContactForm = () => {
                 ref={inputNameRef}
                 type="text"
                 name="name"
-                className="text-sm xs:text-base border-2 py-2 px-4 rounded-lg focus:border-warmGray-500 focus:outline-none mt-1"
+                className="text-sm xs:text-base border-2 py-2 px-4 rounded-lg focus:border-stone-500 focus:outline-none mt-1"
                 placeholder="What is your name?"
                 required
               />
@@ -98,7 +98,7 @@ const ContactForm = () => {
                 ref={inputEmailRef}
                 type="email"
                 name="email"
-                className="text-sm xs:text-base border-2 py-2 px-4 rounded-lg focus:border-warmGray-500 focus:outline-none mt-1"
+                className="text-sm xs:text-base border-2 py-2 px-4 rounded-lg focus:border-stone-500 focus:outline-none mt-1"
                 placeholder="What is your email address? (we might contact you)"
                 required
               />
@@ -112,7 +112,7 @@ const ContactForm = () => {
                 ref={inputMessageRef}
                 name="message"
                 placeholder="What do you want to say to us?"
-                className="text-sm xs:text-base border-2 py-2 px-4 rounded-lg focus:border-warmGray-500 focus:outline-none h-56 mt-1"
+                className="text-sm xs:text-base border-2 py-2 px-4 rounded-lg focus:border-stone-500 focus:outline-none h-56 mt-1"
                 required
               ></textarea>
             </div>
@@ -120,7 +120,7 @@ const ContactForm = () => {
             <div className="text-center my-3">
               <input
                 ref={btnSubmitRef}
-                className="py-2 px-20 rounded-lg bg-gray-700 hover:bg-gray-800 text-gray-100 cursor-pointer disabled:opacity-70"
+                className="py-2 px-20 rounded-lg bg-stone-700 hover:bg-stone-800 text-stone-100 cursor-pointer disabled:opacity-70"
                 type="submit"
                 title="Send Message"
                 value="Send Message"

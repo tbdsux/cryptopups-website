@@ -124,10 +124,34 @@ const Footer = () => {
                 <li className="my-1">
                   <a
                     className="hover:text-white"
+                    title="Packs"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://packs.worldofcryptopups.cf/"
+                  >
+                    Packs
+                  </a>
+                </li>
+                <li className="my-1">
+                  <a
+                    className="hover:text-white"
                     title="Roadmap"
+                    target="_blank"
+                    rel="noreferrer"
                     href="https://roadmap.worldofcryptopups.cf/"
                   >
                     Roadmap
+                  </a>
+                </li>
+                <li className="my-1">
+                  <a
+                    className="hover:text-white"
+                    title="Dev"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://dev.worldofcryptopups.cf/"
+                  >
+                    Dev
                   </a>
                 </li>
                 <li className="my-1">

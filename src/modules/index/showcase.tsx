@@ -7,15 +7,21 @@ import { SocialIcons } from './social-icons';
 const Showcase = () => {
   return (
     <div className="w-full bg-stone-900 relative">
-      <Container className="relative w-5/6 2xl:w-3/4 3xl:w-1/2 text-center pt-40 pb-36 z-30">
-        <Image src={EventLogo} height="225" width="625" alt="World of CryptoPups" />
-        <p
-          data-cy="showcase-text"
-          className="text-xl text-stone-100 leading-loose mt-4 tracking-wide"
-        >
-          Welcome To <b>The World Of Cryptopups Adventures!</b> <br /> Collect, Trade, and Show off
-          your World of Cryptopups Adventure Cards. Each pup has their own unique personality and
-          ability. Collect Pup Items to increase puppy card DPS.
+      <Container className="relative w-5/6 2xl:w-3/4 3xl:w-1/2 text-center py-44 z-30">
+        <Image
+          src={EventLogo}
+          height="225"
+          width="625"
+          alt="World of CryptoPups"
+          className="object-contain"
+        />
+
+        <p data-cy="showcase-text" className="text-xl text-stone-100 leading-loose tracking-wide">
+          <span className="mb-2 text-3xl font-bold">
+            Welcome To <b>The World Of Cryptopups Adventures!</b>
+          </span>
+          <br /> Collect, Trade, and Show off your World of Cryptopups Adventure Cards. Each pup has
+          their own unique personality and ability. Collect Pup Items to increase puppy card DPS.
         </p>
 
         <div className="mt-12">
@@ -39,7 +45,7 @@ const Showcase = () => {
         layout="fill"
         objectFit="cover"
         objectPosition="bottom"
-        className="w-full h-full inset-0 z-20 brightness-50"
+        className="w-full h-full inset-0 z-20 brightness-30"
       />
     </div>
   );

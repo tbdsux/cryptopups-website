@@ -14,7 +14,7 @@ const Rarities = () => {
         </h4>
 
         <p className="mt-4 lg:mt-6 lg:text-lg xl:text-xl text-warmGray-700 tracking-wide">
-          Cards differ from their rarity, <b>cosmic, mythic, common, uncommon, rare</b>
+          Cards differ from their rarity: <b>cosmic, mythic, common, uncommon, rare</b>
         </p>
 
         <Container className="w-11/12 sm:w-2/3 md:w-full xl:w-11/12">

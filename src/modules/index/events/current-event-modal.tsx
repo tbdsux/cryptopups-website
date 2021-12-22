@@ -5,10 +5,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 
+const currentTitle = 'Infinite Void Returns'; // set the event title here
+
 const CurrentEventModal = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(() => {
+    if (typeof window === 'undefined') return false;
+
+    const lastEventTitle = window.localStorage.getItem('cryptopuppie-event-current');
+
+    // if already seen
+    if (lastEventTitle === currentTitle) return false;
+
+    return true;
+  });
 
   const closeModal = () => {
+    // setting it means it has been seen by the user already
+    window.localStorage.setItem('cryptopuppie-event-current', currentTitle);
+
     setOpen(false);
   };
 
@@ -48,7 +62,7 @@ const CurrentEventModal = () => {
           >
             <div className="inline-block w-full max-w-3xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform ethereal shadow-xl rounded-2xl relative">
               <Dialog.Title as="h2" className="text-2xl font-black leading-6 ethereal-text z-50">
-                Infinite Void Returns
+                {currentTitle}
               </Dialog.Title>
 
               <Dialog.Description

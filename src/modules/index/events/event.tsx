@@ -1,6 +1,7 @@
 import Image from 'next/image';
-import eventImg from '../../../../public/_events/infinitevoidsreturn.png';
+import eventImg from '../../../../public/_events/christmas-emotes.png';
 import Container from '../../../components/container';
+import EventsTimer from './timer';
 
 const CurrentEventContainer = () => {
   return (
@@ -19,13 +20,12 @@ const CurrentEventContainer = () => {
           </div>
           <div>
             <h3 className="text-4xl lg:text-5xl xl:text-6xl uppercase font-black tracking-wide text-warmGray-900">
-              Infinite Void Returns
+              Christmas Emotes
             </h3>
             <p className="text-base lg:text-lg xl:text-xl tracking-wide mt-3 xl:mt-4 text-gray-700">
-              A familiar rift opens in the World of Cryptopups... An upcoming threat is imminent...
+              Four new collectible pupmoji cards will be dropping from Santa Theodore&apos;s sleigh.{' '}
               <br />
-              <br />
-              <q>Gaze into nothingness</q>
+              Christmas pupmoji pack will be free to all who own 25 Cryptopup assets.
             </p>
 
             {/* <a
@@ -53,11 +53,11 @@ const CurrentEventContainer = () => {
           </div>
         </div>
 
-        {/* <div className="float-right flex flex-col">
+        <div className="float-right flex flex-col">
           <div className="inline-flex items-end my-1">
-            <EventsTimer date="19 Sep 2021 04:00 PM UTC" duration={48} />
+            <EventsTimer date="28 December 2021 17:00 UTC" duration={48} />
           </div>
-        </div> */}
+        </div>
       </Container>
     </div>
   );

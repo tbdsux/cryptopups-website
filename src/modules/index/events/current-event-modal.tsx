@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 
-const currentTitle = 'Infinite Void Returns'; // set the event title here
+const currentTitle = 'Christmas Emotes'; // set the event title here
 
 const CurrentEventModal = () => {
   const [open, setOpen] = useState(() => {
@@ -69,11 +69,9 @@ const CurrentEventModal = () => {
                 as="p"
                 className="mt-3 text-lg tracking-wide text-warmGray-700 p-2 z-50"
               >
-                A familiar rift opens in the World of Cryptopups...
-                <br />
-                An upcoming threat is imminent...
-                <br />
-                <q>Gaze into nothingness</q>
+                Santa is coming this December 28th 17:00 UTC to the world of cryptopups to give
+                gifts to all good pups. Four new collectible pupmoji cards will be dropping from
+                Santa Theodore&apos;s sleigh...
               </Dialog.Description>
 
               <div className="mt-4 z-50 inline-flex items-center">

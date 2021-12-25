@@ -36,7 +36,7 @@ const Header = () => {
           </a>
         </Link> */}
 
-        <ul className="flex items-center justify-center text-gray-300 text-sm font-semibold">
+        <ul className="flex items-center justify-center text-stone-300 text-sm font-semibold">
           <li className="px-2 xs:px-4 md:px-6 lg:px-8 py-2">
             <Link href="/">
               <a className="tracking-wide hover:text-white" title="Home">

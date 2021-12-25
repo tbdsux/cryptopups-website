@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+hr {
+  @apply border-neutral-200;
+}
+
 .ethereal {
   background: rgb(236, 105, 113);
   background: -moz-linear-gradient(60deg, #fef5d4 0%, #ffd6aa 20%, #efdad6 40%, #dadafc 60%);

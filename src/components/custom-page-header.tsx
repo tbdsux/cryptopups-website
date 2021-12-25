@@ -13,7 +13,7 @@ type CustomPageHeaderProps = {
 const CustomPageHeader = ({ title, description, children }: CustomPageHeaderProps) => {
   return (
     <header className="pb-12">
-      <div className="bg-gray-900 pt-12 pb-8">
+      <div className="bg-stone-900 pt-12 pb-8">
         <Container className="w-11/12 text-center">
           <Link href="/">
             <a>
@@ -31,10 +31,10 @@ const CustomPageHeader = ({ title, description, children }: CustomPageHeaderProp
         </Link>
 
         <div className="mt-8 text-center">
-          <h1 className="text-3xl md:text-4xl xl:text-5xl text-warmGray-900 font-black tracking-wide leading-loose">
+          <h1 className="text-3xl md:text-4xl xl:text-5xl text-stone-900 font-black tracking-wide leading-loose">
             {title}
           </h1>
-          <p className="text-lg tracking-wide text-warmGray-700 mt-3">{description}</p>
+          <p className="text-lg tracking-wide text-stone-700 mt-3">{description}</p>
         </div>
 
         <div>{children}</div>

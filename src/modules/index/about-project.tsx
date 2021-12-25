@@ -10,7 +10,7 @@ const DiscoverItems = [
       url: '/gallery',
       text: 'View Pup Collections'
     },
-    style: 'bg-spec-red'
+    style: 'bg-rose-500 hover:bg-rose-600'
   },
   {
     title: 'Roadmap',
@@ -18,7 +18,7 @@ const DiscoverItems = [
       url: 'https://roadmap.worldofcryptopups.cf/',
       text: 'Visit Roadmap'
     },
-    style: 'bg-spec-orange'
+    style: 'bg-orange-500 hover:bg-orange-600'
   },
   {
     title: 'Whitepaper',
@@ -26,7 +26,7 @@ const DiscoverItems = [
       url: '/whitepaper.pdf',
       text: 'Download Whitepaper'
     },
-    style: 'bg-spec-yellow'
+    style: 'bg-yellow-500 hover:bg-yellow-600'
   },
   {
     title: 'The Alliance',
@@ -34,7 +34,7 @@ const DiscoverItems = [
       url: '/the-alliance',
       text: 'View Alliance Party'
     },
-    style: 'bg-spec-green'
+    style: 'bg-green-500 hover:bg-green-600'
   },
   {
     title: 'DPS Calculator',
@@ -42,7 +42,7 @@ const DiscoverItems = [
       url: '/dps-calculator',
       text: 'View Page'
     },
-    style: 'bg-spec-blue'
+    style: 'bg-blue-500 hover:bg-blue-600'
   },
   {
     title: 'My Collections',
@@ -50,7 +50,7 @@ const DiscoverItems = [
       url: '/my-collections',
       text: 'Visit Page'
     },
-    style: 'bg-spec-purple'
+    style: 'bg-purple-500 hover:bg-purple-600'
   }
 ];
 
@@ -63,7 +63,7 @@ const AboutProject = () => {
             About the Project
           </h4>
           <p className="text-lg lg:text-xl tracking-wide text-gray-800">
-            <strong className="font-black">The World of Cryptopups</strong> is a collectible
+            <strong className="font-black">The World of Cryptopups</strong> is a collectible for
             Non-Fungible-Tokens (NFTs) of unique pups that can suit everyone.
             <br className="mb-2" />
             We are a fast-growing community and with various levels, rewards, and quests to explore,
@@ -81,7 +81,7 @@ const AboutProject = () => {
                   rel="noreferrer"
                   key={index}
                   title={d.link.text}
-                  className={`p-3 sm:p-4 xl:p-5 rounded-xl opacity-80 hover:opacity-100 ${d.style}`}
+                  className={`p-3 sm:p-4 xl:p-5 rounded-xl opacity-80 hover:opacity-100 ${d.style} duration-300`}
                 >
                   <span className="text-base md:text-lg xl:text-xl font-bold text-white">
                     {d.title}
@@ -91,7 +91,7 @@ const AboutProject = () => {
                 <Link key={index} href={d.link.url}>
                   <a
                     title={d.link.text}
-                    className={`p-3 sm:p-4 xl:p-5 rounded-xl opacity-80 hover:opacity-100 ${d.style}`}
+                    className={`p-3 sm:p-4 xl:p-5 rounded-xl opacity-80 hover:opacity-100 ${d.style} duration-300`}
                   >
                     <span className="text-base md:text-lg xl:text-xl font-bold text-white">
                       {d.title}

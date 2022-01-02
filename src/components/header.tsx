@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
 import Container from './container';
+import MobileMenu from './mobile-menu';
 
 const Header = () => {
   const headerRef = useRef<HTMLElement>(null);
@@ -36,22 +37,24 @@ const Header = () => {
           </a>
         </Link> */}
 
-        <ul className="flex items-center justify-center text-stone-300 text-sm font-semibold">
-          <li className="px-2 xs:px-4 md:px-6 lg:px-8 py-2">
+        <MobileMenu />
+
+        <ul className="hidden sm:flex items-center justify-center text-stone-300 text-sm font-semibold">
+          <li className="px-6 lg:px-8 xl:px-10 py-2">
             <Link href="/">
               <a className="tracking-wide hover:text-white" title="Home">
                 Home
               </a>
             </Link>
           </li>
-          <li className="px-2 xs:px-4 md:px-6 lg:px-8 py-2">
+          <li className="px-6 lg:px-8 xl:px-10 py-2">
             <Link href="/gallery">
               <a className="tracking-wide hover:text-white" title="Gallery">
                 Gallery
               </a>
             </Link>
           </li>
-          <li className="px-2 xs:px-4 md:px-6 lg:px-8 py-2">
+          <li className="px-6 lg:px-8 xl:px-10 py-2">
             <Link href="/pup-squad">
               <a className="tracking-wide hover:text-white" title="Gallery">
                 Pup Squad
@@ -67,7 +70,7 @@ const Header = () => {
               </a>
             </Link>
           </li> */}
-          <li className="px-2 xs:px-4 md:px-6 lg:px-8 py-2">
+          <li className="px-6 lg:px-8 xl:px-10 py-2">
             <a
               className="tracking-wide hover:text-white"
               title="Join the Community"

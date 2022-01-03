@@ -19,7 +19,7 @@ const DPS_Calculate = ({ owner, data }: DPS_CalculateProps) => {
   return (
     <div>
       <h3 className="text-2xl">
-        <strong className="text-gray-700 mr-4 text-4xl underline font-black tracking-wider">
+        <strong className="text-neutral-700 mr-4 text-4xl underline font-black tracking-wider">
           {(skinsDPs + cardsDps + realItemsDps).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
         </strong>
         TOTAL DPS
@@ -27,28 +27,28 @@ const DPS_Calculate = ({ owner, data }: DPS_CalculateProps) => {
 
       <ul className="flex items-center justify-between flex-wrap mt-4">
         <li className="tracking-wide">
-          <strong className="text-lg tracking-wide font-black text-gray-700">
+          <strong className="text-lg tracking-wide font-black text-neutral-700">
             {cardsDps.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </strong>
           <span className=" ml-2">Cards DPS</span>
         </li>
 
         <li className="tracking-wide">
-          <strong className="text-lg tracking-wide font-black text-gray-700">
+          <strong className="text-lg tracking-wide font-black text-neutral-700">
             {skinsDPs.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </strong>
           <span className=" ml-2">Skins DPS</span>
         </li>
 
         <li className="tracking-wide">
-          <strong className="text-lg tracking-wide font-black text-gray-700">
+          <strong className="text-lg tracking-wide font-black text-neutral-700">
             {rawItemsDps.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </strong>
           <span className=" ml-2">Items DPS (Raw)</span>
         </li>
 
         <li className="tracking-wide">
-          <strong className="text-lg tracking-wide font-black text-gray-700">
+          <strong className="text-lg tracking-wide font-black text-neutral-700">
             {realItemsDps.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </strong>
           <span className=" ml-2">Items DPS (Real)</span>

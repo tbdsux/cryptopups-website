@@ -20,7 +20,7 @@ const MyCollectionsUser = () => {
             TOKEN ID
             <span
               title="This Token will be used in registering for the future bot. Please do not share this token with anyone."
-              className="ml-1 text-gray-700 hover:text-gray-800"
+              className="ml-1 text-neutral-700 hover:text-neutral-800"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

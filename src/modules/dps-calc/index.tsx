@@ -68,18 +68,19 @@ const DPSCalculatorPage = ({ wallet: w, data }: DPSCalculatorPageProps) => {
         description="Calculate your DPS by entering your WAX wallet below"
       >
         <div className="text-center mt-8">
-          <div>
+          <div className="w-full xs:w-4/5 md:w-3/4 lg:w-3/5 xl:w-1/2 mx-auto flex flex-wrap items-center justify-center">
             <input
               ref={inputWaxID}
               type="text"
-              className="py-2 px-4 rounded-xl tracking-wide border border-warmGray-400"
-              placeholder="Enter your WAX id"
+              placeholder="Enter your WAX wallet address"
+              maxLength={13} // <13 is wax
+              className="py-3 px-4 text-neutral-800 font-bold rounded-lg tracking-wide border border-warmGray-400 w-full placeholder-neutral-400"
               defaultValue={wallet}
             />
             <button
               onClick={fetcher}
               ref={btnGetRef}
-              className="py-2 px-4 rounded-xl ml-2 bg-warmGray-600 hover:bg-warmGray-700 text-white tracking-wide disabled:opacity-80"
+              className="py-3 px-8 rounded-lg m-2 bg-warmGray-600 hover:bg-warmGray-700 text-white tracking-wide disabled:opacity-80"
             >
               Get
             </button>

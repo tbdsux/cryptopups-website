@@ -12,7 +12,7 @@ const CardAnatomy = () => {
       <div className="mt-8 flex flex-col md:flex-row  items-center justify-between">
         <div className="w-11/12 sm:w-3/4 md:w-1/2 mr-4">
           <h5 className="text-xl font-bold text-warmGray-800">Front</h5>
-          <p className="text-lg tracking-wide mt-3 text-gray-700">
+          <p className="text-lg tracking-wide mt-3 text-neutral-700">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet exercitationem alias
             quasi necessitatibus impedit minus quam facilis laudantium eum id?
           </p>
@@ -24,7 +24,7 @@ const CardAnatomy = () => {
 
         <div className="w-11/12 sm:w-3/4 md:w-1/2 ml-4">
           <h5 className="text-xl font-bold text-warmGray-800">Back</h5>
-          <p className="text-lg tracking-wide mt-3 text-gray-700">
+          <p className="text-lg tracking-wide mt-3 text-neutral-700">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dicta laudantium
             cupiditate libero voluptatibus reprehenderit dolorem nostrum eaque enim tempora!
           </p>

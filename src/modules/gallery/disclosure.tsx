@@ -21,7 +21,7 @@ const CustomDisclosure = ({
         type="button"
         className={`w-full flex items-center justify-between ${buttonClassName}`}
       >
-        <p className="text-base md:text-lg leading-relaxed uppercase tracking-wide text-gray-200">
+        <p className="text-base md:text-lg leading-relaxed uppercase tracking-wide text-neutral-200">
           {title}
         </p>
         <svg
@@ -34,7 +34,7 @@ const CustomDisclosure = ({
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </button>
-      <hr className="my-2 border-gray-500" />
+      <hr className="my-2 border-neutral-500" />
 
       {show && <div className="p-1">{children}</div>}
     </div>

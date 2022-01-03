@@ -35,7 +35,7 @@ const SocialLinks = [
 const SocialIcons = () => {
   return (
     <div>
-      <p className="mb-4 text-gray-200 tracking-wider text-sm uppercase">
+      <p className="mb-4 text-neutral-200 tracking-wider text-sm uppercase">
         Follow us at our social media pages to stay updated
       </p>
 
@@ -43,7 +43,7 @@ const SocialIcons = () => {
         {SocialLinks.map((s) => (
           <li key={s.name}>
             <a
-              className="text-3xl text-gray-200 mx-1 group"
+              className="text-3xl text-neutral-200 mx-1 group"
               title={`Visit us at ${s.name}`}
               target="_blank"
               rel="noreferrer"
@@ -90,7 +90,7 @@ const SocialContainer = () => {
             href="https://discord.io/worldofcryptopups"
             target="_blank"
             rel="noreferrer"
-            className="text-sm md:text-base inline-flex items-center bg-gray-700 hover:bg-gray-800 duration-300 text-gray-100 py-2 lg:py-3 px-8 rounded-full"
+            className="text-sm md:text-base inline-flex items-center bg-neutral-700 hover:bg-neutral-800 duration-300 text-neutral-100 py-2 lg:py-3 px-8 rounded-full"
             title="Join the amazing community on Discord"
           >
             <FontAwesomeIcon className="text-2xl mr-2" icon={faDiscord} />

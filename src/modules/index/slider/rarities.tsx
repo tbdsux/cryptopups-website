@@ -22,7 +22,7 @@ const Rarities = () => {
             <ImageSides image={state.prev.image} />
 
             <button
-              className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-800 mx-3"
+              className="p-2 rounded-full bg-neutral-100 hover:bg-neutral-200 text-neutral-800 mx-3"
               onClick={() => dispatch({ type: 'prev' })}
             >
               <svg
@@ -44,7 +44,7 @@ const Rarities = () => {
             <ImageCenter image={state.current.image} />
 
             <button
-              className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-800 mx-4 md:mx-0"
+              className="p-2 rounded-full bg-neutral-100 hover:bg-neutral-200 text-neutral-800 mx-4 md:mx-0"
               onClick={() => dispatch({ type: 'next' })}
             >
               <svg

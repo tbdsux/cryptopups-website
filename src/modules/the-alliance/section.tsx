@@ -20,7 +20,7 @@ const TheAllianceSection = ({ data }: TheAllianceSectionProps) => {
               className="rounded-t-xl"
             />
           ) : (
-            <div className="h-full w-full absolute bg-gray-300 rounded-t-xl"></div>
+            <div className="h-full w-full absolute bg-neutral-300 rounded-t-xl"></div>
           )}
           <div className="absolute -bottom-10 border rounded-full inline-flex">
             <Image
@@ -73,7 +73,7 @@ const TheAllianceSection = ({ data }: TheAllianceSectionProps) => {
                 href={data.links.website}
                 target="_blank"
                 rel="noreferrer"
-                className="m-1 group inline-flex items-center py-2 px-4 rounded-full bg-gray-600 hover:bg-gray-700 text-white"
+                className="m-1 group inline-flex items-center py-2 px-4 rounded-full bg-neutral-600 hover:bg-neutral-700 text-white"
               >
                 <FontAwesomeIcon icon={faGlobe} className="text-xl mr-1" /> <span>Website</span>
               </a>

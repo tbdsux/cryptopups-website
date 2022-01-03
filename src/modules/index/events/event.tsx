@@ -22,7 +22,7 @@ const CurrentEventContainer = () => {
             <h3 className="text-4xl lg:text-5xl xl:text-6xl uppercase font-black tracking-wide text-warmGray-900">
               Christmas Emotes
             </h3>
-            <p className="text-base lg:text-lg xl:text-xl tracking-wide mt-3 xl:mt-4 text-gray-700">
+            <p className="text-base lg:text-lg xl:text-xl tracking-wide mt-3 xl:mt-4 text-neutral-700">
               Four new collectible pupmoji cards will be dropping from Santa Theodore&apos;s sleigh.{' '}
               <br />
               Christmas pupmoji pack will be free to all who own 25 Cryptopup assets.
@@ -32,7 +32,7 @@ const CurrentEventContainer = () => {
               href="https://events.worldofcryptopups.cf/smashkarts-tournament"
               target="_blank"
               rel="noreferrer"
-              className="py-2 lg:py-3 px-12 lg:px-16 text-gray-100 bg-gray-600 hover:bg-gray-800 duration-300 rounded-full mt-4 inline-flex items-center text-sm lg:text-base mb-8"
+              className="py-2 lg:py-3 px-12 lg:px-16 text-neutral-100 bg-neutral-600 hover:bg-neutral-800 duration-300 rounded-full mt-4 inline-flex items-center text-sm lg:text-base mb-8"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

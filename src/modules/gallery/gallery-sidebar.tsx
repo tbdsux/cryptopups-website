@@ -18,7 +18,7 @@ const galleryCategories = [
 ];
 
 const galleryPupRarities = {
-  common: 'bg-gray-500',
+  common: 'bg-stone-500',
   uncommon: 'bg-green-500',
   rare: 'bg-blue-500',
   mythic: 'bg-purple-500',
@@ -36,7 +36,7 @@ const GallerySidebar = ({ images }: GallerySidebarProps) => {
   const { rarity, category, names } = state;
 
   return (
-    <div className="w-full flex flex-row md:flex-col flex-wrap justify-around items-start md:w-1/3 text-white bg-gray-800 p-4 rounded-lg">
+    <div className="w-full flex flex-row md:flex-col flex-wrap justify-around items-start md:w-1/3 text-white bg-stone-800 p-4 rounded-lg">
       <CustomDisclosure title="Categories" className="mb-4">
         <ul>
           {galleryCategories.map((x, index) => (
@@ -66,7 +66,7 @@ const GallerySidebar = ({ images }: GallerySidebarProps) => {
       <CustomDisclosure className="mb-4" title="Filter By">
         <div className="my-2">
           <h5 className="mb-1 uppercase text-sm">Rarity</h5>
-          <hr className="border-gray-700" />
+          <hr className="border-stone-700" />
           <ul className="flex items-center md:justify-around mt-1">
             {Object.entries(galleryPupRarities).map(([key, color]) => (
               <li key={key} className="mx-0.5">
@@ -92,7 +92,7 @@ const GallerySidebar = ({ images }: GallerySidebarProps) => {
 
         <div className="mt-6">
           <h5 className="mb-1 uppercase text-sm">Pup Name</h5>
-          <hr className="border-gray-700" />
+          <hr className="border-stone-700" />
           <ul className="overflow-auto h-56 mt-2">
             {images === false ? (
               <p>Failed to load puppers.</p>

@@ -10,12 +10,12 @@ const ShowItems = ({ owner, data }: DPSComponentProps) => {
             <p>
               {d.data.name.trim()}{' '}
               {count > 1 && (
-                <span title={`${count} Items`} className="underline text-gray-700 text-sm">
+                <span title={`${count} Items`} className="underline text-neutral-700 text-sm">
                   ({count})
                 </span>
               )}
             </p>
-            <strong className="text-gray-800">{Number(d.data.DPS) * Number(count)}</strong>
+            <strong className="text-neutral-800">{Number(d.data.DPS) * Number(count)}</strong>
           </li>
         ) : null
       )}

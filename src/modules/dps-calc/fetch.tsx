@@ -18,19 +18,19 @@ type DPS_FetchProps = {
 
 const DPS_Fetch = ({ wallet, btnGetRef, data }: DPS_FetchProps) => {
   // pupskins
-  const { data: pupskinsData, error: pupsSkinsError } = useSWR<WAXResponseProps>(
+  const { data: pupskinsData } = useSWR<WAXResponseProps>(
     wallet ? PUPSKINS_API.replace('{{owner}}', wallet) : null,
     { revalidateOnFocus: false, fallbackData: data?.pupskins } // do not revalidate on focus
   );
 
   // pupcards
-  const { data: puppycardsData, error: puppyCardsError } = useSWR<WAXResponseProps>(
+  const { data: puppycardsData } = useSWR<WAXResponseProps>(
     wallet ? PUPPYCARDS_API.replace('{{owner}}', wallet) : null,
     { revalidateOnFocus: false, fallbackData: data?.pupcards } // do not revalidate on focus
   );
 
   // pupitems
-  const { data: pupitemsData, error: pupitemsError } = useSWR<WAXResponseProps>(
+  const { data: pupitemsData } = useSWR<WAXResponseProps>(
     wallet ? PUPITEMS_API.replace('{{owner}}', wallet) : null,
     { revalidateOnFocus: false, fallbackData: data?.pupitems } // do not revalidate on focus
   );
@@ -60,7 +60,7 @@ const DPS_Fetch = ({ wallet, btnGetRef, data }: DPS_FetchProps) => {
 
   return (
     <Container className="w-5/6 2xl:w-3/4 3xl:w-2/3 mx-auto">
-      <h3 className="mb-4 font-bold tracking-wide text-gray-500">@{wallet}</h3>
+      <h3 className="mb-4 font-bold tracking-wide text-neutral-500">@{wallet}</h3>
 
       <DPS_Calculate
         owner={wallet}

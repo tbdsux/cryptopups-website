@@ -1,3 +1,9 @@
+import { StaticImageData } from 'next/image';
+import apppllleee from '../../../public/_profiles/apppllleee.png';
+import gleetch from '../../../public/_profiles/gleetch.png';
+import theboringdude from '../../../public/_profiles/theboringdude.png';
+import touchmenot from '../../../public/_profiles/touchmenot.png';
+
 type PupMembersProps = {
   name: string;
   image: StaticImageData;
@@ -6,11 +12,6 @@ type PupMembersProps = {
     twitter: string;
   };
 };
-
-import apppllleee from '../../../public/_profiles/apppllleee.png';
-import gleetch from '../../../public/_profiles/gleetch.png';
-import theboringdude from '../../../public/_profiles/theboringdude.png';
-import touchmenot from '../../../public/_profiles/touchmenot.png';
 
 export const PupMembers: PupMembersProps[] = [
   {

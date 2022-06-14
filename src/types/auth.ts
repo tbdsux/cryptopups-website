@@ -1,5 +1,5 @@
 type AuthUser = {
-  key: string;
+  key?: string;
   wallet: string;
   type: AuthContextTypeProps;
   token: string;

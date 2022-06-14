@@ -6,8 +6,7 @@ module.exports = {
       'pbs.twimg.com',
       'neftyblocks.com',
       'gateway.pinata.cloud',
-      'ipfs.io',
-      'gateway.ipfs.io',
+      'ipfs.atomichub.io',
       'cdn.discordapp.com'
     ]
   }

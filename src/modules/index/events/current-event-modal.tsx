@@ -3,21 +3,12 @@
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Dialog, Transition } from '@headlessui/react';
-import { Fragment, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 
 const currentTitle = 'Christmas Emotes'; // set the event title here
 
 const CurrentEventModal = () => {
-  const [open, setOpen] = useState(() => {
-    if (typeof window === 'undefined') return false;
-
-    const lastEventTitle = window.localStorage.getItem('cryptopuppie-event-current');
-
-    // if already seen
-    if (lastEventTitle === currentTitle) return false;
-
-    return true;
-  });
+  const [open, setOpen] = useState(false);
 
   const closeModal = () => {
     // setting it means it has been seen by the user already
@@ -25,6 +16,17 @@ const CurrentEventModal = () => {
 
     setOpen(false);
   };
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+  
+      const lastEventTitle = window.localStorage.getItem('cryptopuppie-event-current');
+  
+      // if already seen
+      if (lastEventTitle === currentTitle) return;
+  
+      setOpen(true);
+  }, [])
 
   return (
     <Transition appear show={open} as={Fragment}>

@@ -1,8 +1,9 @@
 type AuthUser = {
-  wallet: AuthContextTypeProps;
-  type: string;
-  discordId?: string;
+  key: string;
+  wallet: string;
+  type: AuthContextTypeProps;
   token: string;
+  linked?: boolean;
 };
 
 type AuthContextTypeProps = 'anchor' | 'wax-cloud';

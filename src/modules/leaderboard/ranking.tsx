@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import useSWR from 'swr';
+import fetcher from '../../lib/fetcher';
 import { DPSProps } from '../../types/dps';
 import { APIResponseProps } from '../../types/responses';
 import { isEven } from '../../utils/isEven';
@@ -7,7 +8,10 @@ import { isEven } from '../../utils/isEven';
 const API_URL = 'https://cordy-api.deta.dev/leaderboard';
 
 const LeaderboardRanking = () => {
-  const { data, error } = useSWR<APIResponseProps<DPSProps[]>, APIResponseProps<null>>(API_URL);
+  const { data, error } = useSWR<APIResponseProps<DPSProps[]>, APIResponseProps<null>>(
+    API_URL,
+    fetcher
+  );
 
   if (error) {
     return <div>{error.message}</div>;

@@ -1,9 +1,9 @@
 import { nanoid } from 'nanoid';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { createSession } from '../../../lib/auth';
+import { db } from '../../../lib/deta';
 import methodHandler from '../../../lib/middleware/method';
 import validateRequest from '../../../lib/middleware/request';
-import { redis } from '../../../lib/redis';
 import { AuthUser } from '../../../types/auth';
 
 const login = async (req: NextApiRequest, res: NextApiResponse) => {
@@ -14,19 +14,14 @@ const login = async (req: NextApiRequest, res: NextApiResponse) => {
     return;
   }
 
-  const r = redis();
-
-  // check if logged in / data already exists in database
-  const check = await r.get(`_wallet_${wallet}`);
-  if (check) {
-    const d = await r.hgetall(`_token_${check}`);
-
-    // store session
-    await createSession(res, d);
+  const data = (await db.get(wallet)) as Record<string, any>;
+  if (data != null) {
+    // data exists
+    await createSession(res, data);
 
     res.status(200).json({
       error: false,
-      data: d
+      data
     });
     return;
   }
@@ -41,19 +36,14 @@ const login = async (req: NextApiRequest, res: NextApiResponse) => {
     token: _tokenId
   };
 
-  await r.hset(`_token_${_tokenId}`, d);
-  await r.set(`_wallet_${wallet}`, _tokenId);
+  await db.put(d, wallet);
 
   // store session
   await createSession(res, d);
 
   res.status(200).json({
     error: false,
-    data: {
-      wallet,
-      type,
-      token: _tokenId
-    }
+    data: d
   });
 };
 

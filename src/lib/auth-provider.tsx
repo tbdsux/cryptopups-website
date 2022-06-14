@@ -1,6 +1,7 @@
 import { createContext, Dispatch, ReactNode, SetStateAction, useEffect, useState } from 'react';
 import useSWR from 'swr';
 import { AuthData } from '../types/auth';
+import fetcher from './fetcher';
 
 type AuthContextProps = {
   session?: AuthData;
@@ -17,7 +18,7 @@ const AuthContext = createContext<AuthContextProps>({
 const AuthProvider = ({ children }: AuthProviderProps) => {
   const [session, setSession] = useState<AuthData | undefined>();
 
-  const { data } = useSWR('/api/auth/me');
+  const { data } = useSWR('/api/auth/me', fetcher);
 
   useEffect(() => {
     if (data) {

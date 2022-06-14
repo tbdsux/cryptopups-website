@@ -1,6 +1,7 @@
 import { RefObject, useEffect } from 'react';
 import useSWR from 'swr';
 import Container from '../../components/container';
+import fetcher from '../../lib/fetcher';
 import { PUPITEMS_API, PUPPYCARDS_API, PUPSKINS_API } from './apilinks';
 import { WAXResponseProps } from './apitypes';
 import DPS_Calculate from './calculate';
@@ -20,18 +21,21 @@ const DPS_Fetch = ({ wallet, btnGetRef, data }: DPS_FetchProps) => {
   // pupskins
   const { data: pupskinsData } = useSWR<WAXResponseProps>(
     wallet ? PUPSKINS_API.replace('{{owner}}', wallet) : null,
+    fetcher,
     { revalidateOnFocus: false, fallbackData: data?.pupskins } // do not revalidate on focus
   );
 
   // pupcards
   const { data: puppycardsData } = useSWR<WAXResponseProps>(
     wallet ? PUPPYCARDS_API.replace('{{owner}}', wallet) : null,
+    fetcher,
     { revalidateOnFocus: false, fallbackData: data?.pupcards } // do not revalidate on focus
   );
 
   // pupitems
   const { data: pupitemsData } = useSWR<WAXResponseProps>(
     wallet ? PUPITEMS_API.replace('{{owner}}', wallet) : null,
+    fetcher,
     { revalidateOnFocus: false, fallbackData: data?.pupitems } // do not revalidate on focus
   );
 

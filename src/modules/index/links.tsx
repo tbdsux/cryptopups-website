@@ -34,7 +34,7 @@ const OurLinks = () => {
               className="font-bold flex items-center py-3 px-8 hover:bg-teal-600 text-neutral-800 tracking-wide uppercase hover:text-white duration-300 hover:border-teal-300 rounded-full border-2"
             >
               <Image
-                src="https://neftyblocks.com/apple-touch-icon.png"
+                src="https://neftyblocks.com/android-chrome-144x144.png"
                 height="25"
                 width="25"
                 alt=""

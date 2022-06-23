@@ -42,15 +42,6 @@ const Footer = () => {
                     </a>
                   </Link>
                 </li>
-                {/* 
-                // TODO: For Consideration
-                <li className="my-1">
-                  <Link href="/blog">
-                    <a className="hover:text-white" title="Goto Blog">
-                      Blog
-                    </a>
-                  </Link>
-                </li> */}
                 <li className="my-1">
                   <Link href="/contact-us">
                     <a className="hover:text-white" title="Contact Us">
@@ -100,7 +91,9 @@ const Footer = () => {
                   <a
                     className="hover:text-white"
                     title="Neftyblocks"
+                    target="_blank"
                     href="https://neftyblocks.com/c/cryptopuppie/"
+                    rel="noreferrer"
                   >
                     Neftyblocks
                   </a>
@@ -109,7 +102,9 @@ const Footer = () => {
                   <a
                     className="hover:text-white"
                     title="Atomichub"
+                    target="_blank"
                     href="https://wax.atomichub.io/explorer/collection/cryptopuppie"
+                    rel="noreferrer"
                   >
                     Atomichub
                   </a>
@@ -187,13 +182,6 @@ const Footer = () => {
             <div className="mr-8 md:mr-16 2xl:mr-24 my-1">
               <h5 className="text-stone-600 font-medium uppercase tracking-wide">Tools</h5>
               <ul className="text-stone-100">
-                <li className="my-1">
-                  <Link href="/leaderboard">
-                    <a className="hover:text-white" title="Leaderboard">
-                      Leaderboard
-                    </a>
-                  </Link>
-                </li>
                 <li className="my-1">
                   <Link href="/dps-calculator">
                     <a className="hover:text-white" title="DPS Calculator">

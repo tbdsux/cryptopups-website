@@ -1,10 +1,7 @@
 import { NextSeo } from 'next-seo';
-import Image from 'next/image';
-import ElementalsBg from '../../../public/elementals.jpg';
 import DefaultLayout from '../../layouts/default';
 import AboutProject from './about-project';
 import CurrentEventModal from './events/current-event-modal';
-import CurrentEventContainer from './events/event';
 import OurLinks from './links';
 import NewRarity from './new-rarity';
 import Showcase from './showcase';
@@ -33,46 +30,6 @@ const IndexPage = () => {
       <AboutProject />
 
       <NewRarity />
-
-      <div className="py-28">
-        <div className="2xl:w-5/6 3xl:w-3/4 mx-auto">
-          <h2 className="text-center text-4xl font-black trackin-wide text-warmGray-800 pb-8">
-            World of Cryptopups Events
-          </h2>
-          <hr className="border-neutral-200 w-5/6 mx-auto" />
-
-          <CurrentEventContainer />
-        </div>
-      </div>
-
-      <div className="relative">
-        <div className="py-20 w-5/6 mx-auto relative z-30">
-          <a
-            title="See Elementals Project"
-            href="https://elementals.worldofcryptopups.cf/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-white relative"
-          >
-            <div className="flex items-center justify-between">
-              <h3 className="font-black text-5xl">Elemental Pups</h3>
-            </div>
-          </a>
-        </div>
-        <Image
-          src={ElementalsBg}
-          alt="World of Cryptopups"
-          layout="fill"
-          className="w-full h-full inset-0 z-20 object-cover brightness-20"
-        />
-      </div>
-
-      {/*
-      hide this component since it is incomplete
-
-      <hr />
-
-      <CardAnatomy /> */}
 
       <hr className="w-11/12 mx-auto" />
 

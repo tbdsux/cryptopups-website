@@ -49,17 +49,6 @@ const Footer = () => {
                     </a>
                   </Link>
                 </li>
-                <li className="my-1">
-                  <a
-                    href="https://events.worldofcryptopups.cf/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-white"
-                    title="Events"
-                  >
-                    Events
-                  </a>
-                </li>
               </ul>
             </div>
 
@@ -130,17 +119,6 @@ const Footer = () => {
                 <li className="my-1">
                   <a
                     className="hover:text-white"
-                    title="Roadmap"
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://roadmap.worldofcryptopups.cf/"
-                  >
-                    Roadmap
-                  </a>
-                </li>
-                <li className="my-1">
-                  <a
-                    className="hover:text-white"
                     title="Dev"
                     target="_blank"
                     rel="noreferrer"
@@ -148,18 +126,6 @@ const Footer = () => {
                   >
                     Dev
                   </a>
-                </li>
-                <li className="my-1">
-                  <Link href="/whitepaper.pdf">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      className="hover:text-white"
-                      title="Whitepaper"
-                    >
-                      Whitepaper
-                    </a>
-                  </Link>
                 </li>
                 <li className="my-1">
                   <Link href="/the-alliance">

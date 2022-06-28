@@ -13,30 +13,6 @@ const DiscoverItems = [
     style: 'bg-rose-500 hover:bg-rose-600'
   },
   {
-    title: 'Roadmap',
-    link: {
-      url: 'https://roadmap.worldofcryptopups.cf/',
-      text: 'Visit Roadmap'
-    },
-    style: 'bg-orange-500 hover:bg-orange-600'
-  },
-  {
-    title: 'Whitepaper',
-    link: {
-      url: '/whitepaper.pdf',
-      text: 'Download Whitepaper'
-    },
-    style: 'bg-yellow-500 hover:bg-yellow-600'
-  },
-  {
-    title: 'The Alliance',
-    link: {
-      url: '/the-alliance',
-      text: 'View Alliance Party'
-    },
-    style: 'bg-green-500 hover:bg-green-600'
-  },
-  {
     title: 'DPS Calculator',
     link: {
       url: '/dps-calculator',

@@ -79,7 +79,7 @@ const Footer = () => {
                 <li className="my-1">
                   <a
                     className="hover:text-white"
-                    title="Neftyblocks"
+                    title="Neftyblocks Link"
                     target="_blank"
                     href="https://neftyblocks.com/c/cryptopuppie/"
                     rel="noreferrer"
@@ -90,7 +90,7 @@ const Footer = () => {
                 <li className="my-1">
                   <a
                     className="hover:text-white"
-                    title="Atomichub"
+                    title="Atomichub Link"
                     target="_blank"
                     href="https://wax.atomichub.io/explorer/collection/cryptopuppie"
                     rel="noreferrer"

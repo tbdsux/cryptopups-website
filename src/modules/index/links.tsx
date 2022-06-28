@@ -14,7 +14,10 @@ const OurLinks = () => {
         <ul className="flex flex-wrap justify-center mt-8">
           <li className="m-1">
             <a
-              href=""
+              target="_blank"
+              href="https://wax.atomichub.io/explorer/collection/cryptopuppie"
+              rel="noreferrer"
+              title="Atomichub Link"
               className="font-bold flex items-center py-3 px-8 hover:bg-orange-600 text-neutral-800 tracking-wide uppercase hover:text-white duration-300 hover:border-orange-300 rounded-full border-2"
             >
               <Image
@@ -30,7 +33,10 @@ const OurLinks = () => {
           </li>
           <li className="m-1">
             <a
-              href=""
+              target="_blank"
+              href="https://neftyblocks.com/c/cryptopuppie/"
+              rel="noreferrer"
+              title="Neftyblocks Link"
               className="font-bold flex items-center py-3 px-8 hover:bg-teal-600 text-neutral-800 tracking-wide uppercase hover:text-white duration-300 hover:border-teal-300 rounded-full border-2"
             >
               <Image

@@ -7,7 +7,8 @@ module.exports = {
       'neftyblocks.com',
       'gateway.pinata.cloud',
       'ipfs.atomichub.io',
-      'cdn.discordapp.com'
+      'cdn.discordapp.com',
+      'atomichub-ipfs.com'
     ]
   }
 };

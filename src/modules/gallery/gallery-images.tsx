@@ -54,7 +54,7 @@ const GalleryImages = ({ images }: GalleryImagesProps) => {
             .map((i, index) => (
               <ImageLightbox
                 key={index}
-                src={`https://ipfs.atomichub.io/ipfs/${i.immutable_data.img}`}
+                src={`https://atomichub-ipfs.com/ipfs/${i.immutable_data.img}`}
                 alt={i.name}
               />
             ))}

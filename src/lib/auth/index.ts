@@ -39,7 +39,7 @@ const createSession = async (res: NextApiResponse, data: AuthData) => {
 // gets the session from the cookie
 const getSession = async (req: NextApiRequest): Promise<AuthUser> => {
   const cookies = parseCookies(req);
-  return await decrypt(cookies?.[TOKEN_NAME]);
+  return await decrypt(cookies?.[TOKEN_NAME] ?? "");
 };
 
 // removes the session cookie from the browser / header

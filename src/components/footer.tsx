@@ -128,13 +128,6 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="my-1">
-                  <Link href="/the-alliance">
-                    <a className="hover:text-white" title="The Alliance">
-                      The Alliance
-                    </a>
-                  </Link>
-                </li>
-                <li className="my-1">
                   <Link href="/pup-squad">
                     <a className="hover:text-white" title="The Pup Squad">
                       The Pup Squad

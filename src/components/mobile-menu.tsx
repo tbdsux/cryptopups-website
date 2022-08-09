@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import ConnectWalletButton from './connect-wallet';
 
 const MobileMenu = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="sm:hidden py-2">
+    <div className="md:hidden py-2">
       <div className="flex items-center justify-between text-stone-100">
         <h3 className="text-sm ">Main Menu</h3>
 
@@ -26,40 +27,44 @@ const MobileMenu = () => {
       </div>
 
       {open ? (
-        <ul className="mt-4 flex flex-col items-center text-stone-300 text-sm font-semibold ease transition-transform duration-300">
-          <li className="py-2">
-            <Link href="/">
-              <a className="tracking-wide hover:text-white" title="Home">
-                Home
+        <div>
+          <ul className="mt-4 flex flex-col items-center text-stone-300 text-sm font-semibold ease transition-transform duration-300">
+            <li className="py-2">
+              <Link href="/">
+                <a className="tracking-wide hover:text-white" title="Home">
+                  Home
+                </a>
+              </Link>
+            </li>
+            <li className="py-2">
+              <Link href="/gallery">
+                <a className="tracking-wide hover:text-white" title="Gallery">
+                  Gallery
+                </a>
+              </Link>
+            </li>
+            <li className="py-2">
+              <Link href="/pup-squad">
+                <a className="tracking-wide hover:text-white" title="Gallery">
+                  Pup Squad
+                </a>
+              </Link>
+            </li>
+            <li className="py-2">
+              <a
+                className="tracking-wide hover:text-white"
+                title="Join the Community"
+                href="https://discord.io/worldofcryptopups"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Community
               </a>
-            </Link>
-          </li>
-          <li className="py-2">
-            <Link href="/gallery">
-              <a className="tracking-wide hover:text-white" title="Gallery">
-                Gallery
-              </a>
-            </Link>
-          </li>
-          <li className="py-2">
-            <Link href="/pup-squad">
-              <a className="tracking-wide hover:text-white" title="Gallery">
-                Pup Squad
-              </a>
-            </Link>
-          </li>
-          <li className="py-2">
-            <a
-              className="tracking-wide hover:text-white"
-              title="Join the Community"
-              href="https://discord.io/worldofcryptopups"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Community
-            </a>
-          </li>
-        </ul>
+            </li>
+          </ul>
+
+          <ConnectWalletButton />
+        </div>
       ) : (
         <></>
       )}

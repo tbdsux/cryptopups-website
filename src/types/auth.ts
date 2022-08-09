@@ -1,12 +1,12 @@
+import { WaxWalletType } from '@cryptopuppie/next-waxauth';
+
 type AuthUser = {
   key?: string;
   wallet: string;
-  type: AuthContextTypeProps;
+  type: WaxWalletType;
   token: string;
   linked?: boolean;
 };
-
-type AuthContextTypeProps = 'anchor' | 'wax-cloud';
 
 type AuthData = AuthUser | Record<string, string>;
 

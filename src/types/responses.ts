@@ -1,4 +1,4 @@
-interface APIResponseProps<T> {
+interface InternalAPIResponseProps<T> {
   error: boolean;
   data?: T;
   message?: string;
@@ -10,4 +10,4 @@ interface AWAPIResponseProps<T> {
   query_time: number;
 }
 
-export type { APIResponseProps, AWAPIResponseProps };
+export type { InternalAPIResponseProps, AWAPIResponseProps };

@@ -1,14 +1,14 @@
+import { useWaxUser } from '@cryptopuppie/next-waxauth';
 import useSWR from 'swr';
 import Container from '../../components/container';
-import useAuth from '../../hooks/useAuth';
 import fetcher from '../../lib/fetcher';
 import { PUPITEMS_API, PUPPYCARDS_API, PUPSKINS_API } from '../dps-calc/apilinks';
 import { WAXResponseProps } from '../dps-calc/apitypes';
 import ShowCollectionsItems from './show-collections-items';
 
 const ShowCollections = () => {
-  const { session } = useAuth();
-  const wallet = session?.wallet;
+  const { user } = useWaxUser();
+  const wallet = user?.wallet;
 
   // pupskins
   const { data: pupskinsData, error: pupsSkinsError } = useSWR<WAXResponseProps>(

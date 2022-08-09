@@ -1,7 +1,7 @@
+import { useWaxUser } from '@cryptopuppie/next-waxauth';
 import { NextSeo } from 'next-seo';
 import Container from '../../components/container';
 import CustomPageHeader from '../../components/custom-page-header';
-import useAuth from '../../hooks/useAuth';
 import { useHasMounted } from '../../hooks/useHasMounted';
 import CustomLayout from '../../layouts/custom';
 import MyCollectionsAuthenticate from './authenticate';
@@ -9,7 +9,7 @@ import ShowCollections from './show-collections';
 import MyCollectionsUser from './user';
 
 const MyCollectionsPage = () => {
-  const { session } = useAuth();
+  const { isLoggedIn } = useWaxUser();
   const mounted = useHasMounted();
 
   return (
@@ -30,7 +30,7 @@ const MyCollectionsPage = () => {
         </div>
       </CustomPageHeader>
 
-      {session && mounted && (
+      {isLoggedIn && mounted && (
         <Container className="w-11/12 pb-8">
           <MyCollectionsUser />
 

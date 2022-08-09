@@ -13,12 +13,14 @@
     "test:cypress:cli": "cypress run"
   },
   "dependencies": {
+    "@cryptopuppie/next-waxauth": "^0.3.0",
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
     "@fortawesome/free-brands-svg-icons": "^6.1.2",
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@hapi/iron": "^7.0.0",
     "@headlessui/react": "^1.6.6",
+    "@heroicons/react": "^1.0.6",
     "@waxio/waxjs": "^1.1.0",
     "anchor-link": "^3.5.1",
     "anchor-link-browser-transport": "^3.5.1",

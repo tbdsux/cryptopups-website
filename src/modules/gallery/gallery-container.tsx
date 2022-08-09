@@ -1,7 +1,8 @@
-import { Listbox, Transition } from '@headlessui/react';
+import { Listbox, Tab, Transition } from '@headlessui/react';
 import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
 import { Fragment, useState } from 'react';
-import ImageLightbox from './gallery-lightbox';
+import GalleryImages from './gallery-images';
+import { ImageSets } from './sets';
 import { useImages } from './useImages';
 
 interface CategoriesProp {
@@ -32,6 +33,14 @@ const GalleryContainer = () => {
   const [selectedCategory, setSelectedCategory] = useState<CategoriesProp | undefined>(undefined);
   const [selectedRarity, setSelectedRarity] = useState<string | undefined>(undefined);
   const [selectedPuppy, setSelectedPuppy] = useState<string | undefined>(undefined);
+
+  const allSets = [
+    {
+      name: 'All',
+      templates: []
+    },
+    ...ImageSets
+  ];
 
   return (
     <div>
@@ -221,49 +230,46 @@ const GalleryContainer = () => {
         </div>
       </div>
 
-      <div className="w-full mt-8 md:mt-0 ml-0 md:ml-12 h-172 lg:h-200 border border-warmGray-300 rounded-lg overflow-auto p-6">
-        {images === false ? (
-          <p>
-            Failed to load gallery images. If problem persists, please send a message to community
-            mods and admins.
-          </p>
-        ) : images === null ? (
-          <p>Loading...</p>
-        ) : (
-          <ul className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 2xl:grid-cols-8 3xl:grid-cols-8 gap-6">
-            {images
-              ?.filter((i) => {
-                if (selectedCategory) {
-                  return selectedCategory.value === i.schema.schema_name;
+      <div className="mt-2">
+        <Tab.Group>
+          <Tab.List className="overflow-auto whitespace-nowrap">
+            {allSets.map((x, index) => (
+              <Tab
+                className={({ selected }) =>
+                  `inline-block px-8 mx-2 py-2 border-b-4 border-transparent text-sm font-medium text-gray-600 hover:text-gray-800 hover:border-gray-500 duration-300 focus:outline-none ${
+                    selected ? 'border-gray-500 text-gray-800' : ''
+                  }`
                 }
+                key={index}
+              >
+                {x.name}
+              </Tab>
+            ))}
+          </Tab.List>
 
-                return true;
-              })
-              .filter((i) => {
-                if (selectedRarity) {
-                  return selectedRarity === i.immutable_data.League.toLowerCase();
-                }
-
-                return true;
-              })
-              .filter((i) => {
-                if (selectedPuppy) {
-                  return (
-                    selectedPuppy?.toLowerCase() === i.immutable_data['Item Owner']?.toLowerCase()
-                  );
-                }
-
-                return true;
-              })
-              .map((i, index) => (
-                <ImageLightbox
-                  key={index}
-                  src={`https://atomichub-ipfs.com/ipfs/${i.immutable_data.img}`}
-                  alt={i.name}
-                />
-              ))}
-          </ul>
-        )}
+          <Tab.Panels className="w-full mt-8 max-12 h-172 lg:h-200 border border-warmGray-300 rounded-lg overflow-auto p-6">
+            {images === false ? (
+              <p>
+                Failed to load gallery images. If problem persists, please send a message to
+                community mods and admins.
+              </p>
+            ) : images == null ? (
+              <p>Loading...</p>
+            ) : (
+              allSets.map((x, index) => (
+                <Tab.Panel key={index}>
+                  <GalleryImages
+                    category={selectedCategory?.name}
+                    rarity={selectedRarity}
+                    pupname={selectedPuppy}
+                    set={x}
+                    images={images}
+                  />
+                </Tab.Panel>
+              ))
+            )}
+          </Tab.Panels>
+        </Tab.Group>
       </div>
     </div>
   );

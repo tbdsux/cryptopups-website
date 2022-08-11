@@ -1,7 +1,9 @@
+import { useWaxUser } from '@cryptopuppie/next-waxauth';
 import { Listbox, Tab, Transition } from '@headlessui/react';
 import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
-import { Fragment, useState } from 'react';
+import { Fragment, useRef, useState } from 'react';
 import GalleryImages from './gallery-images';
+import GalleryProvider from './provider';
 import { ImageSets } from './sets';
 import { useImages } from './useImages';
 
@@ -28,11 +30,16 @@ const categories: CategoriesProp[] = [
 const rarities = ['common', 'uncommon', 'rare', 'mythic', 'cosmic', 'ethereal', 'special'];
 
 const GalleryContainer = () => {
+  const { isLoggedIn } = useWaxUser();
   const images = useImages();
 
   const [selectedCategory, setSelectedCategory] = useState<CategoriesProp | undefined>(undefined);
   const [selectedRarity, setSelectedRarity] = useState<string | undefined>(undefined);
   const [selectedPuppy, setSelectedPuppy] = useState<string | undefined>(undefined);
+
+  const [showOwned, setShowOwned] = useState(isLoggedIn);
+
+  const btnShowOwned = useRef<HTMLInputElement>(null);
 
   const allSets = [
     {
@@ -44,7 +51,7 @@ const GalleryContainer = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-center flex-wrap mb-8">
+      <div className="flex items-end justify-center flex-wrap mb-8">
         <div className="mb-4 mx-8">
           <span className="text-sm font-medium">Category</span>
           <Listbox value={selectedCategory} onChange={setSelectedCategory}>
@@ -228,6 +235,32 @@ const GalleryContainer = () => {
             </div>
           </Listbox>
         </div>
+
+        {isLoggedIn ? (
+          <div className="mb-4 mx-8">
+            <div className="inline-flex items-center justify-center">
+              <input
+                type="checkbox"
+                defaultChecked={true}
+                className="h-4 w-4 mr-2"
+                ref={btnShowOwned}
+                onChange={(e) => setShowOwned(e.currentTarget.checked)}
+              />
+              <button
+                onClick={() => {
+                  if (!btnShowOwned.current) return;
+                  btnShowOwned.current.checked = !btnShowOwned.current.checked;
+                  setShowOwned(btnShowOwned.current.checked);
+                }}
+                className="text-sm font-medium text-gray-600"
+              >
+                Show owned NFTs
+              </button>
+            </div>
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
 
       <div className="mt-2">
@@ -258,13 +291,16 @@ const GalleryContainer = () => {
             ) : (
               allSets.map((x, index) => (
                 <Tab.Panel key={index}>
-                  <GalleryImages
+                  <GalleryProvider
                     category={selectedCategory?.name}
                     rarity={selectedRarity}
                     pupname={selectedPuppy}
                     set={x}
                     images={images}
-                  />
+                    showOwned={showOwned}
+                  >
+                    <GalleryImages />
+                  </GalleryProvider>
                 </Tab.Panel>
               ))
             )}

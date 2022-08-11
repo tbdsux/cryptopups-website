@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@cryptopuppie/next-waxauth': ^0.3.0
+  '@cryptopuppie/useatomicassets': ^0.1.6
   '@fortawesome/fontawesome-svg-core': ^6.1.2
   '@fortawesome/free-brands-svg-icons': ^6.1.2
   '@fortawesome/free-solid-svg-icons': ^6.1.2
@@ -42,6 +43,7 @@ specifiers:
 
 dependencies:
   '@cryptopuppie/next-waxauth': 0.3.0_biqbaboplfbrettd7655fr4n2y
+  '@cryptopuppie/useatomicassets': 0.1.6
   '@fortawesome/fontawesome-svg-core': 6.1.2
   '@fortawesome/free-brands-svg-icons': 6.1.2
   '@fortawesome/free-solid-svg-icons': 6.1.2
@@ -128,6 +130,19 @@ packages:
       - react-dom
       - sass
       - utf-8-validate
+    dev: false
+
+  /@cryptopuppie/useatomicassets/0.1.6:
+    resolution: {integrity: sha512-S4VZUOyHzQMME9bcupIxxBqoxiGI8VGjM7hjj51cRBPFDcrwoUP0r+N5zvl6Pb9psKSQgAm9eYYFBom4s+q8ZA==}
+    engines: {node: '>=14'}
+    dependencies:
+      cross-fetch: 3.1.5
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      swr: 1.3.0_react@18.2.0
+      url-join: 5.0.0
+    transitivePeerDependencies:
+      - encoding
     dev: false
 
   /@cypress/request/2.88.10:
@@ -1195,6 +1210,14 @@ packages:
   /core-util-is/1.0.2:
     resolution: {integrity: sha512-3lqz5YjWTYnW6dlDa5TLaTCcShfar1e40rmcJVwCBJC6mWlFuj0eCHIElmG1g5kyuJ/GD+8Wn4FFCcz4gJPfaQ==}
     dev: true
+
+  /cross-fetch/3.1.5:
+    resolution: {integrity: sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==}
+    dependencies:
+      node-fetch: 2.6.7
+    transitivePeerDependencies:
+      - encoding
+    dev: false
 
   /cross-spawn/7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}

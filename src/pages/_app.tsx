@@ -1,4 +1,5 @@
 import WaxAuthProvider from '@cryptopuppie/next-waxauth';
+import { UseAtomicAssetsProvider } from '@cryptopuppie/useatomicassets';
 import { DefaultSeo } from 'next-seo';
 import type { AppProps } from 'next/app';
 import SEO from '../../next-seo.config';
@@ -11,8 +12,10 @@ const dApp = 'worldofcryptopups.cf';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <WaxAuthProvider net={{ chainId, endpoint, dApp }}>
-      <DefaultSeo {...SEO} />
-      <Component {...pageProps} />
+      <UseAtomicAssetsProvider endpoint="https://wax.api.atomicassets.io">
+        <DefaultSeo {...SEO} />
+        <Component {...pageProps} />
+      </UseAtomicAssetsProvider>
     </WaxAuthProvider>
   );
 }

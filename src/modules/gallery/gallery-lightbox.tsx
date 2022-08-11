@@ -5,8 +5,9 @@ import { BasicLightbox } from 'unstyled-lightbox';
 type ImageLightboxProps = {
   src: string;
   alt?: string;
+  className?: string;
 };
-const ImageLightbox = ({ src, alt }: ImageLightboxProps) => {
+const ImageLightbox = ({ src, alt, className }: ImageLightboxProps) => {
   const [open, setOpen] = useState<ImageLightboxProps | undefined>(undefined);
 
   return (
@@ -34,7 +35,7 @@ const ImageLightbox = ({ src, alt }: ImageLightboxProps) => {
         alt={alt}
         height="300"
         width="200"
-        className="cursor-pointer"
+        className={`cursor-pointer ${className}`}
       />
     </li>
   );

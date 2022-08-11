@@ -1,6 +1,6 @@
 const ImageSets = [
   {
-    name: 'Adventure Cards',
+    name: 'Adventure Set',
     templates: [
       '219058',
       '219059',
@@ -39,7 +39,7 @@ const ImageSets = [
     templates: ['219089', '219088', '219087']
   },
   {
-    name: 'Rainbow Pups Set',
+    name: 'Rainbow Set',
     templates: ['219062', '219063', '219064', '219065', '219066', '219067', '219075']
   },
   {

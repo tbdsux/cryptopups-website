@@ -1,6 +1,7 @@
 import { useAuthFunctions, useWaxUser } from '@cryptopuppie/next-waxauth';
 import { Dialog, Menu, Transition } from '@headlessui/react';
 import { Fragment, useEffect, useState } from 'react';
+import BaseModal from './modal';
 
 const ConnectWalletButton = () => {
   const { isLoggedIn, user } = useWaxUser();
@@ -56,67 +57,41 @@ const ConnectWalletButton = () => {
         </Menu>
       ) : (
         <>
-          <Transition appear show={open} as={Fragment}>
-            <Dialog as="div" className="relative z-50" onClose={closeModal}>
-              <Transition.Child
-                as={Fragment}
-                enter="ease-out duration-300"
-                enterFrom="opacity-0"
-                enterTo="opacity-100"
-                leave="ease-in duration-200"
-                leaveFrom="opacity-100"
-                leaveTo="opacity-0"
+          <BaseModal
+            className="max-w-md rounded-2xl bg-white p-6 text-center"
+            open={open}
+            closeModal={closeModal}
+          >
+            <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">
+              Connect Wallet
+            </Dialog.Title>
+            <div className="mt-2">
+              <p className="text-sm text-gray-500">
+                Authenticate your WAX blockchain wallet to be able to use some of the functions
+                within the website
+              </p>
+            </div>
+
+            <div className="text-center mt-8">
+              <button
+                type="button"
+                title="Authenticate your account with WAX Cloud Wallet"
+                className="m-2 py-2 px-6 rounded-md font-medium tracking-wide text-white bg-orange-500 hover:bg-orange-600"
+                onClick={loginWithCloudWallet}
               >
-                <div className="fixed inset-0 bg-black bg-opacity-50" />
-              </Transition.Child>
+                Login with WAX Cloud Wallet
+              </button>
 
-              <div className="fixed inset-0 overflow-y-auto">
-                <div className="flex min-h-full items-center justify-center p-4 text-center">
-                  <Transition.Child
-                    as={Fragment}
-                    enter="ease-out duration-300"
-                    enterFrom="opacity-0 scale-95"
-                    enterTo="opacity-100 scale-100"
-                    leave="ease-in duration-200"
-                    leaveFrom="opacity-100 scale-100"
-                    leaveTo="opacity-0 scale-95"
-                  >
-                    <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-center align-middle shadow-xl transition-all">
-                      <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">
-                        Connect Wallet
-                      </Dialog.Title>
-                      <div className="mt-2">
-                        <p className="text-sm text-gray-500">
-                          Authenticate your WAX blockchain wallet to be able to use some of the
-                          functions within the website
-                        </p>
-                      </div>
-
-                      <div className="text-center mt-8">
-                        <button
-                          type="button"
-                          title="Authenticate your account with WAX Cloud Wallet"
-                          className="m-2 py-2 px-6 rounded-md font-medium tracking-wide text-white bg-orange-500 hover:bg-orange-600"
-                          onClick={loginWithCloudWallet}
-                        >
-                          Login with WAX Cloud Wallet
-                        </button>
-
-                        <button
-                          type="button"
-                          title="Authenticate your account with Anchor"
-                          className="m-2 py-2 px-6 rounded-md font-medium tracking-wide text-white bg-blue-500 hover:bg-blue-600"
-                          onClick={loginWithAnchor}
-                        >
-                          Login with Anchor
-                        </button>
-                      </div>
-                    </Dialog.Panel>
-                  </Transition.Child>
-                </div>
-              </div>
-            </Dialog>
-          </Transition>
+              <button
+                type="button"
+                title="Authenticate your account with Anchor"
+                className="m-2 py-2 px-6 rounded-md font-medium tracking-wide text-white bg-blue-500 hover:bg-blue-600"
+                onClick={loginWithAnchor}
+              >
+                Login with Anchor
+              </button>
+            </div>
+          </BaseModal>
 
           <button
             className="hidden md:block text-stone-300 text-sm font-semibold tracking-wide hover:text-white"

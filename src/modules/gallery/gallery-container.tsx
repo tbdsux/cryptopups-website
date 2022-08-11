@@ -232,7 +232,7 @@ const GalleryContainer = () => {
 
       <div className="mt-2">
         <Tab.Group>
-          <Tab.List className="overflow-auto whitespace-nowrap">
+          <Tab.List className="overflow-auto text-center whitespace-nowrap">
             {allSets.map((x, index) => (
               <Tab
                 className={({ selected }) =>
@@ -247,7 +247,7 @@ const GalleryContainer = () => {
             ))}
           </Tab.List>
 
-          <Tab.Panels className="w-full mt-8 max-12 h-172 lg:h-200 border border-warmGray-300 rounded-lg overflow-auto p-6">
+          <Tab.Panels className="w-full mt-8 max-12 h-172 lg:h-200 overflow-auto p-6">
             {images === false ? (
               <p>
                 Failed to load gallery images. If problem persists, please send a message to

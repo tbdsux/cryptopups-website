@@ -18,7 +18,7 @@ const useGetOwnerTemplates = () => {
   const { data } = useAtomicGetter<useGetOwnerTemplatesResponseProps>(
     user
       ? {
-          uri: `/atomicassets/v1/accounts/5g2vm.wam/cryptopuppie`
+          uri: `/atomicassets/v1/accounts/${user.wallet}/cryptopuppie`
         }
       : undefined
   );
@@ -26,7 +26,6 @@ const useGetOwnerTemplates = () => {
   if (!data) return;
 
   let allTemplates: string[] = [];
-
   for (const i of data.templates) {
     allTemplates.push(i.template_id);
   }

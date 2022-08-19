@@ -1,22 +1,22 @@
+import { ITemplate } from '@cryptopuppie/useatomicassets';
 import { createContext, ReactNode, useContext } from 'react';
-import { ImagesTemplateProps } from '../../types/template';
+import { SetProps } from '../../types/sets';
 
 interface GalleryContextProps {
   category?: string;
   rarity?: string;
   pupname?: string;
-  set: {
-    name: string;
-    templates: string[];
-  };
-  images: ImagesTemplateProps[];
+  set: SetProps;
+  images: ITemplate[];
   showOwned: boolean;
 }
 
 const GalleryContext = createContext<GalleryContextProps>({
   set: {
-    name: '',
-    templates: []
+    setid: -1,
+    title: '',
+    templates: [],
+    reward: 0
   },
   images: [],
   showOwned: true
@@ -26,11 +26,8 @@ interface GalleryProviderProps {
   category?: string;
   rarity?: string;
   pupname?: string;
-  set: {
-    name: string;
-    templates: string[];
-  };
-  images: ImagesTemplateProps[];
+  set: SetProps;
+  images: ITemplate[];
   showOwned: boolean;
   children: ReactNode;
 }

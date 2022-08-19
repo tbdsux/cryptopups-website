@@ -2,10 +2,10 @@ import { useWaxUser } from '@cryptopuppie/next-waxauth';
 import { Listbox, Tab, Transition } from '@headlessui/react';
 import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
 import { Fragment, useRef, useState } from 'react';
+import { useImages } from '../../hooks/useImages';
 import GalleryImages from './gallery-images';
 import GalleryProvider from './provider';
-import { ImageSets } from './sets';
-import { useImages } from './useImages';
+import { useSetsProvider } from './sets-provider';
 
 interface CategoriesProp {
   name: string;
@@ -32,6 +32,7 @@ const rarities = ['common', 'uncommon', 'rare', 'mythic', 'cosmic', 'ethereal', 
 const GalleryContainer = () => {
   const { isLoggedIn } = useWaxUser();
   const images = useImages();
+  const { sets } = useSetsProvider();
 
   const [selectedCategory, setSelectedCategory] = useState<CategoriesProp | undefined>(undefined);
   const [selectedRarity, setSelectedRarity] = useState<string | undefined>(undefined);
@@ -43,10 +44,12 @@ const GalleryContainer = () => {
 
   const allSets = [
     {
-      name: 'All',
-      templates: []
+      setid: -1,
+      title: 'All',
+      templates: [],
+      reward: 0
     },
-    ...ImageSets
+    ...sets
   ];
 
   return (
@@ -209,7 +212,7 @@ const GalleryContainer = () => {
                               active ? 'bg-gray-100 text-gray-900' : 'text-gray-900'
                             }`
                           }
-                          value={x.name}
+                          value={x.immutable_data.name}
                         >
                           {({ selected }) => (
                             <>
@@ -218,7 +221,7 @@ const GalleryContainer = () => {
                                   selected ? 'font-medium' : 'font-normal'
                                 }`}
                               >
-                                {x.name}
+                                {x.immutable_data.name}
                               </span>
                               {selected ? (
                                 <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-600">
@@ -275,7 +278,7 @@ const GalleryContainer = () => {
                 }
                 key={index}
               >
-                {x.name}
+                {x.title}
               </Tab>
             ))}
           </Tab.List>

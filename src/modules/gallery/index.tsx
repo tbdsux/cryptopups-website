@@ -1,9 +1,17 @@
+import { GetTableRowsResult } from '@cryptopuppie/useeoschain';
+import { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
 import Container from '../../components/container';
 import PageLayout from '../../layouts/page-layout';
+import { SetProps } from '../../types/sets';
 import GalleryContainer from './gallery-container';
+import SetsProvider from './sets-provider';
 
-const GalleryPage = () => {
+interface GalleryPageProps {
+  data: GetTableRowsResult<SetProps>;
+}
+
+const GalleryPage: NextPage<GalleryPageProps> = ({ data }) => {
   return (
     <PageLayout
       title="Pup Gallery!"
@@ -17,9 +25,11 @@ const GalleryPage = () => {
       />
       {/* end seo */}
 
-      <Container className="w-11/12 xs:w-4/5 md:w-11/12 mx-auto">
-        <GalleryContainer />
-      </Container>
+      <SetsProvider sets={data}>
+        <Container className="w-11/12 xs:w-4/5 md:w-11/12 mx-auto">
+          <GalleryContainer />
+        </Container>
+      </SetsProvider>
     </PageLayout>
   );
 };

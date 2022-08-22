@@ -27,7 +27,7 @@ const GalleryImages = () => {
         <ul className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 2xl:grid-cols-8 3xl:grid-cols-8 gap-6">
           {images
             .filter((i) => {
-              if (category != '') {
+              if (category != 'None') {
                 return category == i.schema.schema_name;
               }
 

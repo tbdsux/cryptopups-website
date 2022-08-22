@@ -15,7 +15,7 @@ interface CategoriesProp {
 const categories: CategoriesProp[] = [
   {
     name: 'None',
-    value: ''
+    value: 'None'
   },
   {
     name: 'Pupskins',
@@ -40,7 +40,7 @@ const GalleryContainer = () => {
 
   const [selectedCategory, setSelectedCategory] = useState<CategoriesProp>(categories[0]);
   const [selectedRarity, setSelectedRarity] = useState<string>(rarities[0]);
-  const [selectedPuppy, setSelectedPuppy] = useState<string | undefined>(undefined);
+  const [selectedPuppy, setSelectedPuppy] = useState<string>('None');
 
   const [showOwned, setShowOwned] = useState(isLoggedIn);
 
@@ -168,7 +168,7 @@ const GalleryContainer = () => {
             <div className="relative mt-1">
               <Listbox.Button className="relative w-80 cursor-default rounded-lg bg-white hover:bg-gray-50 duration-300 py-3 pl-5 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
                 <span className="block truncate">
-                  {selectedPuppy ? selectedPuppy : 'Select a pup name...'}
+                  {selectedPuppy != 'None' ? selectedPuppy : 'Select a pup name...'}
                 </span>
                 <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
                   <SelectorIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
@@ -189,7 +189,7 @@ const GalleryContainer = () => {
                           active ? 'bg-gray-100 text-gray-900' : 'text-gray-900'
                         }`
                       }
-                      value={undefined}
+                      value="None"
                     >
                       {({ selected }) => (
                         <>

@@ -27,22 +27,29 @@ const GalleryImages = () => {
         <ul className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 2xl:grid-cols-8 3xl:grid-cols-8 gap-6">
           {images
             .filter((i) => {
-              if (category) {
-                return category === i.schema.schema_name;
+              if (category != '') {
+                return category == i.schema.schema_name;
               }
 
               return true;
             })
             .filter((i) => {
-              if (rarity) {
-                return rarity === i.immutable_data.League.toLowerCase();
+              if (rarity != 'None') {
+                return (
+                  rarity == i.immutable_data.League?.toLowerCase() ||
+                  rarity == i.immutable_data.league?.toLowerCase()
+                );
               }
 
               return true;
             })
             .filter((i) => {
-              if (pupname) {
-                return pupname?.toLowerCase() === i.immutable_data['Item Owner']?.toLowerCase();
+              if (pupname != 'None') {
+                return (
+                  i.immutable_data['Item Owner']?.toLowerCase().includes(pupname?.toLowerCase()) || // this filter is for pupitems
+                  i.immutable_data['item owner']?.toLowerCase().includes(pupname?.toLowerCase()) || // this filter is for pupitems
+                  i.immutable_data.name.toLowerCase().includes(pupname?.toLowerCase()) // filter for both puppycards and pupskincards
+                );
               }
 
               return true;

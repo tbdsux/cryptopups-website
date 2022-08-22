@@ -3,4 +3,5 @@ export interface SetProps {
   title: string;
   templates: number[];
   reward: number;
+  amount: number;
 }

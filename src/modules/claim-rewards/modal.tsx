@@ -27,11 +27,11 @@ const GalleryClaimRewards = () => {
         closeModal={closeModal}
       >
         <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-700">
-          <strong className="text-orange-500 font-black">Claim Rewards</strong> | {set.name}
+          <strong className="text-orange-500 font-black">Claim Rewards</strong> | {set.title}
         </Dialog.Title>
 
         <div className="my-10 px-6 text-center text-gray-700">
-          <p>Thank you very much for completing the {set.name} NFTs.</p>
+          <p>Thank you very much for completing the {set.title} NFTs.</p>
 
           <p className="text-xl font-medium mt-4">
             This section is currently not available right now.

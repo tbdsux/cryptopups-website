@@ -1,6 +1,7 @@
 import { useAuthFunctions, useWaxUser } from '@cryptopuppie/next-waxauth';
 import { Dialog, Menu, Transition } from '@headlessui/react';
 import { Fragment, useEffect, useState } from 'react';
+import { isDev } from '../lib/config';
 import BaseModal from './modal';
 
 const ConnectWalletButton = () => {
@@ -73,14 +74,18 @@ const ConnectWalletButton = () => {
             </div>
 
             <div className="text-center mt-8">
-              <button
-                type="button"
-                title="Authenticate your account with WAX Cloud Wallet"
-                className="m-2 py-2 px-6 rounded-md font-medium tracking-wide text-white bg-orange-500 hover:bg-orange-600"
-                onClick={loginWithCloudWallet}
-              >
-                Login with WAX Cloud Wallet
-              </button>
+              {!isDev ? (
+                <button
+                  type="button"
+                  title="Authenticate your account with WAX Cloud Wallet"
+                  className="m-2 py-2 px-6 rounded-md font-medium tracking-wide text-white bg-orange-500 hover:bg-orange-600"
+                  onClick={loginWithCloudWallet}
+                >
+                  Login with WAX Cloud Wallet
+                </button>
+              ) : (
+                <></>
+              )}
 
               <button
                 type="button"

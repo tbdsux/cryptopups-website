@@ -59,6 +59,7 @@ const GalleryImages = () => {
                 key={index}
                 src={`https://atomichub-ipfs.com/ipfs/${i.immutable_data.img}`}
                 alt={i.immutable_data.name}
+                className={showOwned ? (templates?.includes(i.template_id) ? '' : 'grayscale') : ''}
               />
             ))}
         </ul>

@@ -277,7 +277,7 @@ const GalleryContainer = () => {
             <div className="inline-flex items-center justify-center">
               <input
                 type="checkbox"
-                defaultChecked={true}
+                defaultChecked={showOwned}
                 className="h-4 w-4 mr-2"
                 ref={btnShowOwned}
                 onChange={(e) => setShowOwned(e.currentTarget.checked)}

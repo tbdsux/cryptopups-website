@@ -1,5 +1,5 @@
 import { useWaxUser } from '@cryptopuppie/next-waxauth';
-import useGetOwnerTemplates from '../../hooks/useGetOwnerTemplates';
+import useGetOwnedTemplates from '../../hooks/useGetOwnedTemplates';
 import GalleryClaimRewards from '../claim-rewards/modal';
 import ImageLightbox from './gallery-lightbox';
 import { useGallery } from './provider';
@@ -8,7 +8,7 @@ const GalleryImages = () => {
   const { category, rarity, pupname, set, images, showOwned } = useGallery();
 
   const { isLoggedIn } = useWaxUser();
-  const templates = useGetOwnerTemplates();
+  const templates = useGetOwnedTemplates();
 
   const filterImages = images.filter((i) => {
     return set.templates.includes(Number(i.template_id));

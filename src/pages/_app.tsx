@@ -4,6 +4,8 @@ import { UseEOSProvider } from '@cryptopuppie/useeoschain';
 import { DefaultSeo } from 'next-seo';
 import type { AppProps } from 'next/app';
 import NextNProgress from 'nextjs-progressbar';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import SEO from '../../next-seo.config';
 import { atomicassets, chainId, dApp, endpoint } from '../lib/config';
 import '../styles/globals.css';
@@ -21,6 +23,19 @@ function MyApp({ Component, pageProps }: AppProps) {
           </UseAtomicAssetsProvider>
         </UseEOSProvider>
       </WaxAuthProvider>
+
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        rtl={false}
+        theme="colored"
+        className="text-sm"
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </>
   );
 }

@@ -47,7 +47,7 @@ const GalleryClaimRewards = () => {
         <div className="my-10 px-6 text-center text-gray-700">
           {userConfig?.setids.includes(set.setid) ? (
             <>
-              <p>Sorry, but you have already claimed the rewards for completing this set.</p>
+              <p>You have alreay claimed the rewards for completing this set.</p>
             </>
           ) : (
             <>

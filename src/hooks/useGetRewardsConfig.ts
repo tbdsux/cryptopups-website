@@ -31,6 +31,7 @@ const useGetUserRewardsConfig = () => {
           table: 'claimed',
           scope: 'wocgalleryrw',
           lower_bound: user.wallet,
+          upper_bound: user.wallet,
           limit: 1
         }
       : undefined

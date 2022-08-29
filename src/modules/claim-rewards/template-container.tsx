@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Fragment, useState } from 'react';
 import BaseModal from '../../components/modal';
 import useGetOwnedAssets from '../../hooks/useGetOwnedAssets';
-import { useGetRewardsConfig } from '../../hooks/useGetRewardsConfig';
+import { useGetAssetRewardsConfig } from '../../hooks/useGetRewardsConfig';
 import { useClaimReward } from './provider';
 
 interface RewardTemplateContainerProps {
@@ -17,7 +17,7 @@ interface RewardTemplateContainerProps {
 const RewardTemplateContainer = ({ src, alt, template_id }: RewardTemplateContainerProps) => {
   const assets = useGetOwnedAssets();
   const { selections, setSelections } = useClaimReward();
-  const config = useGetRewardsConfig();
+  const config = useGetAssetRewardsConfig();
 
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState<IAsset | undefined>(undefined);
@@ -92,7 +92,7 @@ const RewardTemplateContainer = ({ src, alt, template_id }: RewardTemplateContai
                             } ${disabled ? 'opacity-70' : ''}`
                           }
                           value={x}
-                          disabled={config?.used_assets.includes(x.asset_id)}
+                          disabled={config?.assets.includes(x.asset_id)}
                         >
                           {({ selected }) => (
                             <>
@@ -102,7 +102,7 @@ const RewardTemplateContainer = ({ src, alt, template_id }: RewardTemplateContai
                                 }`}
                               >
                                 #{x.template_mint} {x.name} ({x.asset_id}){' '}
-                                {config?.used_assets.includes(x.asset_id) ? '[already used]' : ''}
+                                {config?.assets.includes(x.asset_id) ? '[already used]' : ''}
                               </span>
                               {selected ? (
                                 <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-600">

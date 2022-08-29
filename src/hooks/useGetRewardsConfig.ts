@@ -2,8 +2,8 @@ import { useWaxUser } from '@cryptopuppie/next-waxauth';
 import { useGetTableRows } from '@cryptopuppie/useeoschain';
 
 interface RewardConfigProps {
-  setcounter: number;
-  used_assets: string[];
+  setid: number;
+  assets: string[];
 }
 
 interface UserRewardConfigProps {
@@ -11,12 +11,19 @@ interface UserRewardConfigProps {
   setids: number[];
 }
 
-const useGetRewardsConfig = () => {
-  const { data } = useGetTableRows<RewardConfigProps>({
-    code: 'wocgalleryrw',
-    table: 'config',
-    scope: 'wocgalleryrw'
-  });
+const useGetAssetRewardsConfig = (setid?: number) => {
+  const { data } = useGetTableRows<RewardConfigProps>(
+    setid
+      ? {
+          code: 'wocgalleryrw',
+          table: 'claimedasset',
+          scope: 'wocgalleryrw',
+          lower_bound: setid.toString(),
+          upper_bound: setid.toString(),
+          limit: 1
+        }
+      : undefined
+  );
 
   return data?.rows[0];
 };
@@ -28,7 +35,7 @@ const useGetUserRewardsConfig = () => {
     user
       ? {
           code: 'wocgalleryrw',
-          table: 'claimed',
+          table: 'claimeduser',
           scope: 'wocgalleryrw',
           lower_bound: user.wallet,
           upper_bound: user.wallet,
@@ -40,4 +47,4 @@ const useGetUserRewardsConfig = () => {
   return data?.rows[0];
 };
 
-export { useGetRewardsConfig, useGetUserRewardsConfig };
+export { useGetAssetRewardsConfig, useGetUserRewardsConfig };

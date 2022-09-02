@@ -63,23 +63,26 @@ const ClaimRewardsButton = () => {
     }
 
     await user
-      .transact([
-        {
-          account: 'wocgalleryrw',
-          name: 'claimrewards',
-          authorization: [
-            {
-              actor: user.wallet,
-              permission: user.permission
+      .transact(
+        [
+          {
+            account: 'wocgalleryrw',
+            name: 'claimrewards',
+            authorization: [
+              {
+                actor: user.wallet,
+                permission: user.permission
+              }
+            ],
+            data: {
+              wallet: user.wallet,
+              setid: set.setid,
+              assets
             }
-          ],
-          data: {
-            wallet: user.wallet,
-            setid: set.setid,
-            assets
           }
-        }
-      ])
+        ],
+        { blocksBehind: 3, expireSeconds: 1200 }
+      )
       .then((r) => {
         console.log(r);
 

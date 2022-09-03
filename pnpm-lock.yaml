@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@cryptopuppie/next-waxauth': ^0.3.0
+  '@cryptopuppie/next-waxauth': ^0.3.1
   '@cryptopuppie/useatomicassets': ^0.1.6
   '@cryptopuppie/useeoschain': ^0.2.2
   '@fortawesome/fontawesome-svg-core': ^6.1.2
@@ -45,7 +45,7 @@ specifiers:
   unstyled-lightbox: ^0.1.0
 
 dependencies:
-  '@cryptopuppie/next-waxauth': 0.3.0_biqbaboplfbrettd7655fr4n2y
+  '@cryptopuppie/next-waxauth': 0.3.1_biqbaboplfbrettd7655fr4n2y
   '@cryptopuppie/useatomicassets': 0.1.6
   '@cryptopuppie/useeoschain': 0.2.2
   '@fortawesome/fontawesome-svg-core': 6.1.2
@@ -114,8 +114,8 @@ packages:
     dev: true
     optional: true
 
-  /@cryptopuppie/next-waxauth/0.3.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-JJm2FJ3E+u0xRkNsyQ9uAl3CDBDt9kELUMObE5cTjhgA+7XN4EZwn5Ah9dvvpB4B1DcTFXhY9SHH2r7iDen7dg==}
+  /@cryptopuppie/next-waxauth/0.3.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-8xEKZPbWemWqNJA7+E2p7VvjgJKur2uAyFzI//qkMkXnT9qxPwnoy0xzU51Ok9nnFBsCz0Zsb6PcW2AQ2nTHqg==}
     dependencies:
       '@hapi/iron': 7.0.0
       '@waxio/waxjs': 1.1.0

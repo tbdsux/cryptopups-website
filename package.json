@@ -13,7 +13,7 @@
     "test:cypress:cli": "cypress run"
   },
   "dependencies": {
-    "@cryptopuppie/next-waxauth": "^0.3.0",
+    "@cryptopuppie/next-waxauth": "^0.3.1",
     "@cryptopuppie/useatomicassets": "^0.1.6",
     "@cryptopuppie/useeoschain": "^0.2.2",
     "@fortawesome/fontawesome-svg-core": "^6.1.2",

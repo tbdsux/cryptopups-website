@@ -12,7 +12,8 @@ interface useGetOwnerTemplatesResponseProps {
   }[];
 }
 
-const useGetOwnerTemplates = () => {
+// gets the owned assets of the user from the collection
+const useGetOwnedTemplates = () => {
   const { user } = useWaxUser();
 
   const { data } = useAtomicGetter<useGetOwnerTemplatesResponseProps>(
@@ -33,4 +34,4 @@ const useGetOwnerTemplates = () => {
   return allTemplates;
 };
 
-export default useGetOwnerTemplates;
+export default useGetOwnedTemplates;

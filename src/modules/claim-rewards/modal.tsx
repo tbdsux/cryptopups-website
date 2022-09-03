@@ -1,10 +1,16 @@
 import { Dialog } from '@headlessui/react';
 import { useState } from 'react';
 import BaseModal from '../../components/modal';
+// import { useGetUserRewardsConfig } from '../../hooks/useGetRewardsConfig';
 import { useGallery } from '../gallery/provider';
+// import ClaimRewardsButton from './claim-button';
+// import ClaimRewardsForm from './form';
+// import PreviewRewardModal from './preview-reward';
+import ClaimRewardProvider from './provider';
 
 const GalleryClaimRewards = () => {
   const { set } = useGallery();
+  // const userConfig = useGetUserRewardsConfig();
 
   const [open, setOpen] = useState(false);
 
@@ -12,7 +18,7 @@ const GalleryClaimRewards = () => {
   const closeModal = () => setOpen(false);
 
   return (
-    <>
+    <ClaimRewardProvider>
       <button
         type="button"
         onClick={openModal}
@@ -22,25 +28,41 @@ const GalleryClaimRewards = () => {
       </button>
 
       <BaseModal
-        className="max-w-2xl rounded-2xl bg-white p-6 text-left"
+        className="max-w-4xl rounded-2xl bg-white p-6 text-left"
         open={open}
         closeModal={closeModal}
       >
-        <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-700">
-          <strong className="text-orange-500 font-black">Claim Rewards</strong> | {set.title}
-        </Dialog.Title>
+        <div className="flex items-center justify-between">
+          <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-700">
+            <strong className="text-orange-500 font-black">Claim Rewards</strong> | {set.title} Set
+          </Dialog.Title>
+
+          {/* <div className="inline-flex items-center">
+            <PreviewRewardModal />
+
+            <ClaimRewardsButton />
+          </div> */}
+        </div>
 
         <div className="my-10 px-6 text-center text-gray-700">
-          <p>Thank you very much for completing the {set.title} NFTs.</p>
-
-          <p className="text-xl font-medium mt-4">
-            This section is currently not available right now.
-            <br />
-            Please check back again later...
-          </p>
+          {/* {userConfig?.setids.includes(set.setid) ? (
+            <>
+              <p>You have alreay claimed the rewards for completing this set.</p>
+            </>
+          ) : (
+            <>
+              <p>Thank you very much for completing the {set.title} NFTs.</p>
+              <ClaimRewardsForm />
+            </>
+          )} */}
+          Thank you very much for completing this NFT set. <br />
+          <strong>
+            This section is still not available and is still in development.
+            <br /> Please check back again later...
+          </strong>
         </div>
       </BaseModal>
-    </>
+    </ClaimRewardProvider>
   );
 };
 

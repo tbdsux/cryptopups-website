@@ -2,6 +2,7 @@ import { useWaxUser } from '@cryptopuppie/next-waxauth';
 import useGetOwnedTemplates from '../../hooks/useGetOwnedTemplates';
 import GalleryClaimRewards from '../claim-rewards/modal';
 import ImageLightbox from './gallery-lightbox';
+import GallerySetImages from './gallery-set-images';
 import { useGallery } from './provider';
 
 const GalleryImages = () => {
@@ -76,16 +77,7 @@ const GalleryImages = () => {
             <></>
           )}
 
-          <ul className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 2xl:grid-cols-8 3xl:grid-cols-8 gap-6 justify-center ">
-            {filterImages.map((i, index) => (
-              <ImageLightbox
-                key={index}
-                src={`https://atomichub-ipfs.com/ipfs/${i.immutable_data.img}`}
-                alt={i.immutable_data.name}
-                className={showOwned ? (templates?.includes(i.template_id) ? '' : 'grayscale') : ''}
-              />
-            ))}
-          </ul>
+          <GallerySetImages showOwned={showOwned} templates={templates ?? []} />
         </>
       )}
     </>

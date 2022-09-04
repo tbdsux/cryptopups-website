@@ -28,6 +28,10 @@ const categories: CategoriesProp[] = [
   {
     name: 'Puppycards',
     value: 'puppycards'
+  },
+  {
+    name: 'Pupemoji',
+    value: 'pupmojicards'
   }
 ];
 

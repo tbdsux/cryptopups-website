@@ -1,9 +1,12 @@
 import { NextSeo } from 'next-seo';
 import DefaultLayout from '../../layouts/default';
-import AboutProject from './about-project';
-import OurLinks from './links';
+import ExternalLinks from './external-links';
+import Faqs from './faqs';
+import PupCommunity from './pup-community';
+import PupLinks from './pup-links';
+import CardRarities from './rarities';
 import Showcase from './showcase';
-import Rarities from './slider/rarities';
+import WhatThePup from './what-the-pup';
 
 const IndexPage = () => {
   return (
@@ -22,15 +25,19 @@ const IndexPage = () => {
 
       <Showcase />
 
-      <AboutProject />
+      <div id="content">
+        <WhatThePup />
 
-      <hr className="w-11/12 mx-auto" />
+        <PupLinks />
 
-      <Rarities />
+        <CardRarities />
 
-      <hr />
+        <PupCommunity />
 
-      <OurLinks />
+        <Faqs />
+
+        <ExternalLinks />
+      </div>
     </DefaultLayout>
   );
 };

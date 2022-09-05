@@ -28,7 +28,7 @@ const MobileMenu = () => {
 
       {open ? (
         <div>
-          <ul className="mt-4 flex flex-col items-center text-stone-300 text-sm font-semibold ease transition-transform duration-300">
+          <ul className="my-4 flex flex-col items-center justify-center text-stone-300 text-sm font-semibold ease transition-transform duration-300">
             <li className="py-2">
               <Link href="/">
                 <a className="tracking-wide hover:text-white" title="Home">
@@ -44,22 +44,11 @@ const MobileMenu = () => {
               </Link>
             </li>
             <li className="py-2">
-              <Link href="/pup-squad">
+              <Link href="/profile">
                 <a className="tracking-wide hover:text-white" title="Gallery">
-                  Pup Squad
+                  Profile
                 </a>
               </Link>
-            </li>
-            <li className="py-2">
-              <a
-                className="tracking-wide hover:text-white"
-                title="Join the Community"
-                href="https://discord.io/worldofcryptopups"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Community
-              </a>
             </li>
           </ul>
 

@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Knicknack';
+  src: url('../fonts/KNICKNACK-REGULAR.TTF');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Knicknack';
+  src: url('../fonts/KNICKNACK-MEDIUM.TTF');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Knicknack';
+  src: url('../fonts/KNICKNACK_BOLD.OTF');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Knicknack';
+  src: url('../fonts/KNICKNACK-HEAVY.TTF');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Knicknack';
+  src: url('../fonts/KNICKNACK-BLACK.TTF');
+  font-weight: 800;
+  font-style: normal;
+}

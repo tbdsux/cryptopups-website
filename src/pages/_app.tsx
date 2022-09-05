@@ -8,6 +8,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SEO from '../../next-seo.config';
 import { atomicassets, chainId, dApp, endpoint } from '../lib/config';
+import '../styles/fonts.css';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {

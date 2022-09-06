@@ -1,6 +1,7 @@
-import { ChevronDoubleLeftIcon, ChevronDoubleRightIcon } from '@heroicons/react/solid';
+import Image from 'next/image';
 import { useReducer } from 'react';
 import Container from '../../components/container';
+import { ArrowSides } from '../../lib/assets';
 import { ImageCenter, ImageSides } from './slider/images';
 import { GallerySlideReducer, initGallerySlideReducer } from './slider/images-reducer';
 
@@ -23,10 +24,10 @@ const CardRarities = () => {
       <Container className="w-11/12 sm:w-2/3 md:w-full xl:w-11/12">
         <div className="flex items-center justify-center mt-8">
           <button
-            className="p-2 rounded-full text-pastel-green bg-pastel-green bg-opacity-10 hover:bg-opacity-30 duration-300 mx-3"
+            className="p-2 rounded-full text-pastel-green bg-pastel-green bg-opacity-10 hover:bg-opacity-30 duration-300 mx-3 flex items-center justify-center"
             onClick={() => dispatch({ type: 'prev' })}
           >
-            <ChevronDoubleLeftIcon aria-hidden="true" className="w-6 h-6" />
+            <Image src={ArrowSides} height={55} width={55} alt="" className="scale-x-[-1]" />
           </button>
 
           <ImageSides image={state.prev.image} />
@@ -36,10 +37,10 @@ const CardRarities = () => {
           <ImageSides image={state.next.image} />
 
           <button
-            className="p-2 rounded-full text-pastel-green bg-pastel-green bg-opacity-10 hover:bg-opacity-30 duration-300 mx-4 md:mx-0"
+            className="p-2 rounded-full text-pastel-green bg-pastel-green bg-opacity-10 hover:bg-opacity-30 duration-300 mx-4 md:mx-0 flex items-center justify-center"
             onClick={() => dispatch({ type: 'next' })}
           >
-            <ChevronDoubleRightIcon aria-hidden="true" className="w-6 h-6" />
+            <Image src={ArrowSides} height={55} width={55} alt="" className="" />
           </button>
         </div>
       </Container>

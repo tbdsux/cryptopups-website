@@ -1,6 +1,8 @@
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
 import Link from 'next/link';
+import { Logo } from '../lib/assets';
 import { SocialLinks } from '../modules/index/social-icons';
 import Container from './container';
 
@@ -10,13 +12,13 @@ const Footer = () => {
       <Container className="w-5/6 2xl:w-4/5 3xl:w-2/3">
         <Link href="/">
           <a>
-            {/* <Image
+            <Image
               src={Logo}
               height="40"
               width="180"
               alt="World of CryptoPups"
               placeholder="blur"
-            /> */}
+            />
           </a>
         </Link>
 

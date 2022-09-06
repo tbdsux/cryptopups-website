@@ -1,15 +1,14 @@
-import { ChevronDoubleDownIcon } from '@heroicons/react/solid';
 import Image from 'next/image';
-import EventLogo from '../../../public/logo-void.png';
 import Background from '../../assets/background.png';
 import Container from '../../components/container';
+import { ArrowDown, Logo } from '../../lib/assets';
 
 const Showcase = () => {
   return (
     <div className="w-full bg-pastel-purple relative">
       <Container className="relative w-5/6 2xl:w-3/4 3xl:w-1/2 text-center pt-56 pb-16 z-30">
         <Image
-          src={EventLogo}
+          src={Logo}
           height="225"
           width="625"
           alt="World of CryptoPups"
@@ -33,8 +32,8 @@ const Showcase = () => {
             href="#content"
             className="animate-[bounce_2s_infinite] text-sm font-bold inline-flex flex-col items-center text-white"
           >
-            Exciting Stuff
-            <ChevronDoubleDownIcon aria-hidden="true" className="h-5 w-5" />
+            <span className="mb-2">Exciting Stuff</span>
+            <Image src={ArrowDown} alt="" height={20} width={25} className="" />
           </a>
         </div>
       </Container>

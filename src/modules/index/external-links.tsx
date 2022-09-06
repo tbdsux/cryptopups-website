@@ -1,6 +1,7 @@
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
+import { AtomichubImg, NeftyblocksImg } from '../../lib/assets';
 
 const ExternalLinks = () => {
   return (
@@ -23,9 +24,9 @@ const ExternalLinks = () => {
           className="m-3 font-bold flex items-center py-5 px-14 uppercase bg-pastel-red bg-opacity-80 hover:bg-opacity-100 duration-300 rounded-full text-white"
         >
           <Image
-            src="https://wax.atomichub.io/apple-touch-icon.png"
-            height="40"
-            width="40"
+            src={AtomichubImg}
+            height="37"
+            width="37"
             alt=""
             className="rounded-full"
             objectFit="contain"
@@ -37,13 +38,13 @@ const ExternalLinks = () => {
           target="_blank"
           href="https://neftyblocks.com/c/cryptopuppie/"
           rel="noreferrer"
-          title="Atomichub Link"
+          title="Neftyblocks Link"
           className="m-3 font-bold flex items-center py-5 px-14 uppercase bg-pastel-red bg-opacity-80 hover:bg-opacity-100 duration-300 rounded-full text-white"
         >
           <Image
-            src="https://neftyblocks.com/android-chrome-144x144.png"
-            height="40"
-            width="40"
+            src={NeftyblocksImg}
+            height="37"
+            width="37"
             alt=""
             className="rounded-full"
             objectFit="contain"
@@ -55,7 +56,7 @@ const ExternalLinks = () => {
           target="_blank"
           href="https://twitter.com/apppllleee_pie"
           rel="noreferrer"
-          title="Atomichub Link"
+          title="Twitter Link"
           className="m-3 font-bold flex items-center py-5 px-14 uppercase bg-pastel-red bg-opacity-80 hover:bg-opacity-100 duration-300 rounded-full text-white"
         >
           <FontAwesomeIcon icon={faTwitter} className="text-3xl" />

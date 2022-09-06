@@ -35,7 +35,7 @@ const PupLinks = () => {
           <h2 className="font-alt font-bold text-4xl tracking-wide text-white uppercase">
             Pup Links
           </h2>
-          <div className="py-0.5 rounded-full bg-white w-3/5"></div>
+          <div className="mt-0.5 py-0.5 rounded-full bg-white w-3/5"></div>
         </div>
 
         <p className="text-xl mt-8 text-white">

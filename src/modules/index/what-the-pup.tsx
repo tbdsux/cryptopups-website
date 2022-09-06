@@ -5,7 +5,7 @@ const WhatThePup = () => {
         <h2 className="font-alt font-bold text-4xl tracking-wide text-pastel-violet uppercase">
           What the Pup?
         </h2>
-        <div className="py-0.5 rounded-full bg-pastel-violet w-3/5"></div>
+        <div className="mt-0.5 py-0.5 rounded-full bg-pastel-violet w-3/5"></div>
       </div>
 
       <p className="text-xl mt-8">

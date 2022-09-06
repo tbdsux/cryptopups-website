@@ -10,7 +10,7 @@ const ExternalLinks = () => {
         <h2 className="font-alt font-bold text-4xl tracking-wide text-pastel-red uppercase">
           External Links
         </h2>
-        <div className="py-0.5 rounded-full bg-pastel-red w-3/5"></div>
+        <div className="mt-0.5 py-0.5 rounded-full bg-pastel-red w-3/5"></div>
       </div>
 
       <p className="text-xl mt-8">View our collection page, drops, announcements and more</p>

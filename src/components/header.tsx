@@ -34,9 +34,7 @@ const Header = () => {
       <Container className="w-11/12 2xl:w-5/6 text-center">
         <MobileMenu />
 
-        <div className="hidden md:flex items-center justify-between">
-          <div></div>
-
+        <div className="hidden md:flex items-center justify-center relative">
           <ul className="hidden md:flex items-center justify-center text-stone-300 text-sm font-semibold">
             <li className="px-6 lg:px-8 xl:px-10 py-2">
               <Link href="/">

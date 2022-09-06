@@ -99,7 +99,7 @@ const ConnectWalletButton = () => {
           </BaseModal>
 
           <button
-            className="text-stone-300 text-sm font-semibold tracking-wide hover:text-white"
+            className="md:absolute right-0 z-50 text-stone-300 text-sm font-semibold tracking-wide hover:text-white"
             title="Connect your wax wallet"
             onClick={openModal}
           >

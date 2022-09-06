@@ -36,7 +36,7 @@ module.exports = {
     },
     fontFamily: {
       alt: ['Knicknack', ...defaultTheme.fontFamily.sans],
-      sans: ['"Montserrat Alternates"', ...defaultTheme.fontFamily.sans]
+      sans: ['"Montserrat"', ...defaultTheme.fontFamily.sans]
     },
     extend: {
       spacing: {

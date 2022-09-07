@@ -21,26 +21,36 @@ const CardRarities = () => {
         What is a dps? <strong>Learn about it here</strong>
       </p>
 
-      <Container className="w-11/12 sm:w-2/3 md:w-full xl:w-11/12">
+      <Container className="w-full sm:w-2/3 md:w-full xl:w-11/12">
         <div className="flex items-center justify-center mt-8">
           <button
-            className="p-2 rounded-full text-pastel-green bg-pastel-green bg-opacity-10 hover:bg-opacity-30 duration-300 mx-3 flex items-center justify-center"
+            className="p-2 rounded-full text-pastel-green bg-pastel-green bg-opacity-10 hover:bg-opacity-30 duration-300 flex items-center justify-center"
             onClick={() => dispatch({ type: 'prev' })}
           >
-            <Image src={ArrowSides} height={55} width={55} alt="" className="scale-x-[-1]" />
+            <div className="relative h-6 w-6">
+              <Image
+                src={ArrowSides}
+                alt=""
+                layout="fill"
+                objectFit="contain"
+                className="scale-x-[-1]"
+              />
+            </div>
           </button>
 
-          <ImageSides image={state.prev.image} />
+          <ImageSides image={state.prev?.image} />
 
-          <ImageCenter image={state.current.image} />
+          <ImageCenter image={state.current?.image} />
 
-          <ImageSides image={state.next.image} />
+          <ImageSides image={state.next?.image} />
 
           <button
-            className="p-2 rounded-full text-pastel-green bg-pastel-green bg-opacity-10 hover:bg-opacity-30 duration-300 mx-4 md:mx-0 flex items-center justify-center"
+            className="p-2 rounded-full text-pastel-green bg-pastel-green bg-opacity-10 hover:bg-opacity-30 duration-300 flex items-center justify-center"
             onClick={() => dispatch({ type: 'next' })}
           >
-            <Image src={ArrowSides} height={55} width={55} alt="" className="" />
+            <div className="relative h-6 w-6">
+              <Image src={ArrowSides} alt="" layout="fill" objectFit="contain" className="" />
+            </div>
           </button>
         </div>
       </Container>

@@ -9,17 +9,15 @@ const PupCommunity = () => {
           <div className="mt-0.5 py-0.5 rounded-full bg-white w-3/5"></div>
         </div>
 
-        <p className="text-xl mt-8 text-white">
+        <p className="text-lg mt-8 text-white">
           Check what our <strong>pups</strong> have to say
         </p>
 
         <div className="mt-12 font-medium w-4/5 mx-auto text-white">
-          <p className="my-1 text-lg">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam tenetur blanditiis
-            explicabo perspiciatis autem voluptate cupiditate repellendus debitis eos quis incidunt
-            temporibus libero sunt est qui officiis alias facilis tempore ut, vel id consequatur?
-            Vero quia, aspernatur, tempora eum reprehenderit molestiae illum voluptates inventore
-            similique, ipsa iste asperiores id ex.
+          <p className="my-1 font-bold text-lg">
+            This area is reserved for our amazing pup community who shaped the very foundation of
+            who we are today. Get a chance to be featured on the pup community wall after you fill
+            out our reward form! Go on pup, go on and be a celebrity!
           </p>
         </div>
       </div>

@@ -17,7 +17,7 @@ const CardRarities = () => {
         <div className="mt-0.5 py-0.5 rounded-full bg-pastel-green w-3/5"></div>
       </div>
 
-      <p className="text-xl mt-8">
+      <p className="text-lg mt-8">
         What is a dps? <strong>Learn about it here</strong>
       </p>
 

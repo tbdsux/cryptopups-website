@@ -2,28 +2,34 @@ import Link from 'next/link';
 
 const links = [
   {
-    name: 'Gallery',
-    link: '/gallery'
+    name: 'Pup Drops',
+    link: '/',
+    title: 'Coming Soon'
   },
   {
     name: 'Pupgrades',
-    link: '/'
+    link: '/',
+    title: 'Coming Soon'
   },
   {
-    name: 'My Collection',
-    link: '/my-collection'
+    name: 'Pup Community',
+    link: '/',
+    title: 'Coming Soon'
   },
   {
     name: 'Leaderboards',
-    link: '/leaderboards'
+    link: '/',
+    title: 'Coming Soon'
   },
   {
     name: 'Marketplace',
-    link: '/'
+    link: '/',
+    title: 'Coming Soon'
   },
   {
     name: 'Pupswap',
-    link: '/'
+    link: '/',
+    title: 'Coming Soon'
   }
 ];
 
@@ -38,14 +44,17 @@ const PupLinks = () => {
           <div className="mt-0.5 py-0.5 rounded-full bg-white w-3/5"></div>
         </div>
 
-        <p className="text-xl mt-8 text-white">
+        <p className="text-lg mt-8 text-white">
           Where do you want to <strong>start your adventure?</strong>
         </p>
 
         <div className="mt-12 w-4/5 mx-auto grid grid-cols-3 gap-12">
           {links.map((i, index) => (
             <Link key={index} href={i.link}>
-              <a className="font-alt py-3 px-6 rounded-xl bg-white text-pastel-blue text-3xl">
+              <a
+                title={i.title}
+                className="font-alt py-3 px-6 rounded-xl bg-white text-pastel-blue text-3xl"
+              >
                 {i.name}
               </a>
             </Link>

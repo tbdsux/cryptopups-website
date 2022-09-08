@@ -22,10 +22,11 @@ const Showcase = () => {
           <span className="text-2xl 2xl:text-3xl font-bold">
             The cutest and most adorable pup collectibles in WAX
           </span>
-          <p className="mt-4">
-            Collect, Trade, and Show off your World of Cryptopups Adventure Cards. <br />
-            Each pup has their own unique personality and ability. Collect Pup Items to increase
-            puppy card DPS.
+          <p className="mt-4 lg:w-5/6 mx-auto">
+            Have you ever seen the cutest pup collection in WAX? Now you have. The World of
+            Cryptopups brings you unbelievably cute collectible trading cards that will make your
+            squirm! Hop right into the fun and join the puppy madness, exciting stuff awaits,
+            literally exciting.
           </p>
         </div>
 

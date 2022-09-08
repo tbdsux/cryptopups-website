@@ -2,6 +2,7 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import { AtomichubImg, NeftyblocksImg } from '../../lib/assets';
+import { atomichub, neftyblocks, twitter } from '../../lib/links';
 
 const ExternalLinks = () => {
   return (
@@ -13,12 +14,12 @@ const ExternalLinks = () => {
         <div className="mt-0.5 py-0.5 rounded-full bg-pastel-red w-3/5"></div>
       </div>
 
-      <p className="text-xl mt-8">View our collection page, drops, announcements and more</p>
+      <p className="text-lg mt-8">View our collection page, drops, announcements and more</p>
 
       <div className="mt-12 font-medium w-4/5 mx-auto flex flex-wrap justify-center">
         <a
           target="_blank"
-          href="https://wax.atomichub.io/explorer/collection/cryptopuppie"
+          href={atomichub}
           rel="noreferrer"
           title="Atomichub Link"
           className="m-3 font-bold flex items-center py-5 px-14 uppercase bg-pastel-red bg-opacity-80 hover:bg-opacity-100 duration-300 rounded-full text-white"
@@ -36,7 +37,7 @@ const ExternalLinks = () => {
 
         <a
           target="_blank"
-          href="https://neftyblocks.com/c/cryptopuppie/"
+          href={neftyblocks}
           rel="noreferrer"
           title="Neftyblocks Link"
           className="m-3 font-bold flex items-center py-5 px-14 uppercase bg-pastel-red bg-opacity-80 hover:bg-opacity-100 duration-300 rounded-full text-white"
@@ -54,7 +55,7 @@ const ExternalLinks = () => {
 
         <a
           target="_blank"
-          href="https://twitter.com/apppllleee_pie"
+          href={twitter}
           rel="noreferrer"
           title="Twitter Link"
           className="m-3 font-bold flex items-center py-5 px-14 uppercase bg-pastel-red bg-opacity-80 hover:bg-opacity-100 duration-300 rounded-full text-white"

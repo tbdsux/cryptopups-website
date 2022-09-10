@@ -1,6 +1,6 @@
-import { config, dom } from "@fortawesome/fontawesome-svg-core";
-import Head from "next/head";
-import { ReactNode } from "react";
+import { config, dom } from '@fortawesome/fontawesome-svg-core';
+import Head from 'next/head';
+import { ReactNode } from 'react';
 
 type BaseLayoutProps = {
   children: ReactNode;

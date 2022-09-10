@@ -23,11 +23,20 @@ module.exports = {
       'spec-yellow': '#f2d24c',
       'spec-green': '#8fc96e',
       'spec-blue': '#75b9e3',
-      'spec-purple': '#afa5d1'
+      'spec-purple': '#afa5d1',
+      pastel: {
+        purple: '#8C8CC5',
+        violet: '#D9BDE3',
+        blue: '#B4D3E8',
+        green: '#ACDED5',
+        yellow: '#FCDCA9',
+        orange: '#F0C3A3',
+        red: '#EBBAB5'
+      }
     },
     fontFamily: {
-      alt: ['"Open Sans"', ...defaultTheme.fontFamily.sans],
-      sans: ['Montserrat', ...defaultTheme.fontFamily.sans]
+      alt: ['Knicknack', ...defaultTheme.fontFamily.sans],
+      sans: ['"Montserrat"', ...defaultTheme.fontFamily.sans]
     },
     extend: {
       spacing: {

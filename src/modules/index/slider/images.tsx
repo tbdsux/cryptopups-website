@@ -5,6 +5,7 @@ import etherealPup from '../../../../public/images/ethereal.png';
 import mythicPup from '../../../../public/images/mythic.png';
 import rarePup from '../../../../public/images/rare.png';
 import uncommonPup from '../../../../public/images/uncommon.png';
+import CardInfoModal from './info-modal';
 
 const PUP_IMAGES = [
   <Image src={uncommonPup} alt="Uncommon Pup" />,
@@ -27,12 +28,20 @@ const IMAGES: ImageContainerProps[] = [
         objectFit="contain"
         layout="fill"
         placeholder="blur"
+        className="z-40"
       />
     )
   },
   {
     image: (
-      <Image src={rarePup} alt="Rare Pup" objectFit="contain" layout="fill" placeholder="blur" />
+      <Image
+        src={rarePup}
+        alt="Rare Pup"
+        objectFit="contain"
+        layout="fill"
+        placeholder="blur"
+        className="z-40"
+      />
     )
   },
   {
@@ -43,6 +52,7 @@ const IMAGES: ImageContainerProps[] = [
         objectFit="contain"
         layout="fill"
         placeholder="blur"
+        className="z-40"
       />
     )
   },
@@ -54,6 +64,7 @@ const IMAGES: ImageContainerProps[] = [
         objectFit="contain"
         layout="fill"
         placeholder="blur"
+        className="z-40"
       />
     )
   },
@@ -65,6 +76,7 @@ const IMAGES: ImageContainerProps[] = [
         objectFit="contain"
         layout="fill"
         placeholder="blur"
+        className="z-40"
       />
     )
   }
@@ -72,20 +84,15 @@ const IMAGES: ImageContainerProps[] = [
 
 const ImageCenter = ({ image }: ImageContainerProps) => {
   return (
-    <div className="relative h-112 w-full drop-shadow-2xl">
-      <div className="relative w-dull xl:w-4/5 mx-auto h-full bg-neutral-50 rounded-xl"></div>
+    <div className="relative h-128 w-full drop-shadow-2xl group flex items-center justify-center">
+      <CardInfoModal />
       {image}
     </div>
   );
 };
 
 const ImageSides = ({ image }: ImageContainerProps) => {
-  return (
-    <div className="hidden md:block relative h-72 w-full drop-shadow-2xl">
-      <div className="relative w-2/3 xl:w-1/2 mx-auto h-full bg-neutral-50 rounded-xl"></div>
-      {image}
-    </div>
-  );
+  return <div className="hidden lg:block relative h-72 w-full drop-shadow-2xl">{image}</div>;
 };
 
 export { ImageCenter, ImageSides, IMAGES, PUP_IMAGES };

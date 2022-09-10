@@ -22,8 +22,8 @@ const ConnectWalletButton = () => {
   return (
     <>
       {isLoggedIn && user ? (
-        <Menu as="div" className="relative inline-block text-left">
-          <div>
+        <Menu as="div" className="md:absolute right-0 z-50 inline-block text-left">
+          <div className="">
             <Menu.Button className="inline-flex w-full justify-center rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-stone-300 hover:text-white duration-300 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
               {user.wallet}
             </Menu.Button>
@@ -99,11 +99,11 @@ const ConnectWalletButton = () => {
           </BaseModal>
 
           <button
-            className="hidden md:block text-stone-300 text-sm font-semibold tracking-wide hover:text-white"
+            className="md:absolute right-0 z-50 text-stone-300 text-sm font-semibold tracking-wide hover:text-white"
             title="Connect your wax wallet"
             onClick={openModal}
           >
-            connect wallet
+            Connect Wallet
           </button>
         </>
       )}

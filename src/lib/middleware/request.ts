@@ -3,7 +3,8 @@ import { NextApiHandler, NextApiRequest, NextApiResponse } from 'next';
 // check if referrer is ok or  not
 const validateRequest =
   (handler: NextApiHandler) => (req: NextApiRequest, res: NextApiResponse) => {
-    if (req.headers.referer === process.env.APP_URL + '/my-collections') {
+    // TODO: should implement a better security in here in the future
+    if (req.headers.referer?.endsWith('/my-collections')) {
       return handler(req, res);
     }
 

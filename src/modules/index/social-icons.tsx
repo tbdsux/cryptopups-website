@@ -32,32 +32,6 @@ const SocialLinks = [
   }
 ];
 
-const SocialIcons = () => {
-  return (
-    <div>
-      <p className="mb-4 text-neutral-200 tracking-wider text-sm uppercase">
-        Follow us at our social media pages to stay updated
-      </p>
-
-      <ul className="flex items-center justify-center">
-        {SocialLinks.map((s) => (
-          <li key={s.name}>
-            <a
-              className="text-3xl text-neutral-200 mx-1 group"
-              title={`Visit us at ${s.name}`}
-              target="_blank"
-              rel="noreferrer"
-              href={s.link}
-            >
-              <FontAwesomeIcon icon={s.icon} className="transform group-hover:scale-105 " />
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-
 const SocialContainer = () => {
   return (
     <Container className="w-5/6 py-20">
@@ -102,4 +76,4 @@ const SocialContainer = () => {
   );
 };
 
-export { SocialLinks, SocialIcons, SocialContainer };
+export { SocialLinks, SocialContainer };

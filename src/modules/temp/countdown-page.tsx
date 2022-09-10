@@ -33,13 +33,17 @@ const CountdownPage: NextPage = () => {
           date={new Date(countdownDate)}
           renderer={({ days, hours, minutes, seconds, completed }) => {
             if (completed) {
-              return <p>Countdown is over!</p>;
+              return (
+                <p className="mt-12 font-alt text-4xl text-white font-bold uppercase">
+                  Countdown is over!
+                </p>
+              );
             }
 
             return (
-              <div className="mt-12 font-alt text-4xl text-white uppercase font-bold">
+              <div className="mt-12 font-alt text-5xl text-white uppercase font-bold">
                 <p>
-                  {days} days : {hours}h : {minutes}m : {seconds}s
+                  {days} day{days == 1 ? '' : 's'} : {hours}h : {minutes}m : {seconds}s
                 </p>
               </div>
             );

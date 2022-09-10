@@ -1,11 +1,11 @@
 /* eslint-disable react/jsx-key */
 import Image from 'next/image';
-import { useState } from 'react';
 import cosmicPup from '../../../../public/images/cosmic.png';
 import etherealPup from '../../../../public/images/ethereal.png';
 import mythicPup from '../../../../public/images/mythic.png';
 import rarePup from '../../../../public/images/rare.png';
 import uncommonPup from '../../../../public/images/uncommon.png';
+import CardInfoModal from './info-modal';
 
 const PUP_IMAGES = [
   <Image src={uncommonPup} alt="Uncommon Pup" />,
@@ -83,27 +83,9 @@ const IMAGES: ImageContainerProps[] = [
 ];
 
 const ImageCenter = ({ image }: ImageContainerProps) => {
-  const [open, setOpen] = useState(false);
-
   return (
     <div className="relative h-128 w-full drop-shadow-2xl group flex items-center justify-center">
-      {/* TODO:: 
-       <div className="hidden group-hover:flex absolute h-96 w-72 rounded-lg z-50 items-center justify-center">
-        <BaseModal
-          open={open}
-          closeModal={() => setOpen(false)}
-          className="bg-white rounded-lg p-6 max-w-md"
-        >
-          <h2>hello</h2>
-        </BaseModal>
-
-        <button
-          className="text-white bg-black/50 hover:bg-black/60 duration-300 py-2 px-8 rounded-lg font-bold"
-          onClick={() => setOpen(true)}
-        >
-          click more here
-        </button>
-      </div> */}
+      <CardInfoModal />
       {image}
     </div>
   );
@@ -115,4 +97,3 @@ const ImageSides = ({ image }: ImageContainerProps) => {
 
 export { ImageCenter, ImageSides, IMAGES, PUP_IMAGES };
 export type { ImageContainerProps };
-

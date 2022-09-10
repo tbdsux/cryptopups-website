@@ -2,6 +2,7 @@ import { Disclosure } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/solid';
 import Link from 'next/link';
 import { atomichubMarketplace, discord, neftyblocks, twitter } from '../../lib/links';
+import FaqsBlendingGuide from './faqs/blending-guide';
 
 const Faqs = () => {
   return (
@@ -109,9 +110,7 @@ const Faqs = () => {
                     </p>
                     <br />
 
-                    <a className="italic text-pastel-orange underline opacity-80 hover:opacity-100">
-                      click here for our blending guide
-                    </a>
+                    <FaqsBlendingGuide />
                   </div>
                 </div>
 

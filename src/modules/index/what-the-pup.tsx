@@ -8,11 +8,11 @@ const WhatThePup = () => {
         <div className="mt-0.5 py-0.5 rounded-full bg-pastel-violet w-3/5"></div>
       </div>
 
-      <p className="text-lg mt-8">
+      <p className="lg:text-lg mt-8">
         Learn about the puppy <strong>mission and vision</strong>
       </p>
 
-      <div className="mt-12 font-medium w-4/5 mx-auto text-lg">
+      <div className="mt-12 font-medium md:w-4/5 mx-auto lg:text-lg">
         <p className="my-1">
           Hey pupper, have you ever collected baseball cards? maybe even collectible creatures of
           all shapes and sizes who live in the wild or alongside their human trainers? Oh, maybe

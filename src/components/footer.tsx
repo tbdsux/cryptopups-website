@@ -30,21 +30,21 @@ const Footer = () => {
               <ul className="">
                 <li className="my-1">
                   <Link href="/">
-                    <a className="font-medium" title="Home">
+                    <a className="" title="Home">
                       Home
                     </a>
                   </Link>
                 </li>
                 <li className="my-1">
                   <Link href="/gallery">
-                    <a className="font-medium" title="Gallery">
+                    <a className="" title="Gallery">
                       Gallery
                     </a>
                   </Link>
                 </li>
                 <li className="my-1">
                   <Link href="/contact-us">
-                    <a className="font-medium" title="Contact Us">
+                    <a className="" title="Contact Us">
                       Contact Us
                     </a>
                   </Link>
@@ -59,7 +59,7 @@ const Footer = () => {
                 {SocialLinks.map((s, index) => (
                   <li className="my-1" key={index}>
                     <a
-                      className="font-medium"
+                      className=""
                       title={`Goto ${s.name}`}
                       href={s.link}
                       target="_blank"
@@ -78,7 +78,7 @@ const Footer = () => {
               <ul className="">
                 <li className="my-1">
                   <a
-                    className="font-medium"
+                    className=""
                     title="Neftyblocks Link"
                     target="_blank"
                     href="https://neftyblocks.com/c/cryptopuppie/"
@@ -89,7 +89,7 @@ const Footer = () => {
                 </li>
                 <li className="my-1">
                   <a
-                    className="font-medium"
+                    className=""
                     title="Atomichub Link"
                     target="_blank"
                     href="https://wax.atomichub.io/explorer/collection/cryptopuppie"
@@ -107,7 +107,7 @@ const Footer = () => {
               <ul className="">
                 <li className="my-1">
                   <a
-                    className="font-medium"
+                    className=""
                     title="Packs"
                     target="_blank"
                     rel="noreferrer"
@@ -118,7 +118,7 @@ const Footer = () => {
                 </li>
                 <li className="my-1">
                   <a
-                    className="font-medium"
+                    className=""
                     title="Dev"
                     target="_blank"
                     rel="noreferrer"
@@ -129,7 +129,7 @@ const Footer = () => {
                 </li>
                 <li className="my-1">
                   <Link href="/pup-squad">
-                    <a className="font-medium" title="The Pup Squad">
+                    <a className="" title="The Pup Squad">
                       The Pup Squad
                     </a>
                   </Link>
@@ -143,14 +143,14 @@ const Footer = () => {
               <ul className="">
                 <li className="my-1">
                   <Link href="/dps-calculator">
-                    <a className="font-medium" title="DPS Calculator">
+                    <a className="" title="DPS Calculator">
                       DPS Calculator
                     </a>
                   </Link>
                 </li>
                 <li className="my-1">
                   <Link href="/my-collections">
-                    <a className="font-medium" title="My Collections">
+                    <a className="" title="My Collections">
                       My Collections
                     </a>
                   </Link>
@@ -174,7 +174,7 @@ const Footer = () => {
 
         <hr className="border-white my-4" />
 
-        <div className="text-sm font-medium text-white">
+        <div className="text-sm  text-white">
           <p className="tracking-wider">
             All Rights Reserved | World of Cryptopups &copy; {new Date().getFullYear()}
           </p>

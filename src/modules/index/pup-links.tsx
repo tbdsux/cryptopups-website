@@ -45,11 +45,11 @@ const PupLinks = () => {
           <div className="mt-0.5 py-0.5 rounded-full bg-white w-3/5"></div>
         </div>
 
-        <p className="text-lg mt-8 text-white">
+        <p className="lg:text-lg mt-8 text-white">
           Where do you want to <strong>start your adventure?</strong>
         </p>
 
-        <div className="mt-12 w-4/5 mx-auto grid grid-cols-3 gap-12">
+        <div className="mt-12 w-4/5 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
           {links.map((i, index) => (
             <a
               key={index}
@@ -57,7 +57,7 @@ const PupLinks = () => {
               title={i.title}
               target={i.link.startsWith('#') ? '_self' : '_blank'}
               rel="noreferrer"
-              className="font-alt py-3 px-6 rounded-xl bg-white text-pastel-blue text-3xl"
+              className="font-alt py-3 px-6 rounded-xl bg-white text-pastel-blue text-2xl lg:text-3xl flex items-center justify-center"
             >
               {i.name}
             </a>

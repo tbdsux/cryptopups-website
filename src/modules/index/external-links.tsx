@@ -14,7 +14,7 @@ const ExternalLinks = () => {
         <div className="mt-0.5 py-0.5 rounded-full bg-pastel-red w-3/5"></div>
       </div>
 
-      <p className="text-lg mt-8">View our collection page, drops, announcements and more</p>
+      <p className="lg:text-lg mt-8">View our collection page, drops, announcements and more</p>
 
       <div className="mt-12 font-medium w-4/5 mx-auto flex flex-wrap justify-center">
         <a
@@ -62,7 +62,7 @@ const ExternalLinks = () => {
         >
           <FontAwesomeIcon icon={faTwitter} className="text-3xl" />
 
-          <span className="ml-2">Atomichub</span>
+          <span className="ml-2">Twitter</span>
         </a>
       </div>
     </div>

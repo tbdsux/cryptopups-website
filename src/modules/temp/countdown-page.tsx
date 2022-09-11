@@ -18,7 +18,7 @@ const CountdownPage: NextPage = () => {
         <title>World of Cryptopups - Update Countdown!</title>
       </Head>
 
-      <div className="z-30 relative text-center">
+      <div className="z-30 relative text-center w-5/6 mx-auto">
         <Image
           src={Logo}
           height="125"

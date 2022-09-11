@@ -17,18 +17,18 @@ const CardInfoModal = () => {
         className="bg-white rounded-lg p-6 max-w-4xl"
       >
         <div className="inline-flex flex-col items-center justify-center">
-          <h2 className="font-alt font-bold text-4xl tracking-wide text-pastel-green uppercase">
+          <h2 className="font-alt font-bold text-3xl lg:text-4xl tracking-wide text-pastel-green uppercase">
             Card Rarities
           </h2>
           <div className="mt-0.5 py-0.5 rounded-full bg-pastel-green w-3/5"></div>
         </div>
 
-        <p className="text-lg mt-8">
+        <p className="lg:text-lg mt-8">
           Everything you need to <strong>know about cards</strong>
         </p>
 
         <div>
-          <div className="text-left w-4/5 mx-auto mt-8">
+          <div className="text-left lg:w-4/5 mx-auto mt-8">
             <p>
               Each collectible cards have their own identifiers to determine what rarity your card
               is, what pup you have, and what stats you have for your card. Scroll down to view all
@@ -47,7 +47,7 @@ const CardInfoModal = () => {
               width="400"
               objectFit="contain"
             />
-            <div className="text-left w-4/5 mx-auto mt-8">
+            <div className="text-left lg:w-4/5 mx-auto mt-8">
               <p>
                 WoC digital collectibles have 7 rarities: Common, Uncommon, Rare, Mythic, Cosmic,
                 Ethereal and Special. The higher the rarity, the more valuable the card is. Each
@@ -69,7 +69,7 @@ const CardInfoModal = () => {
               width="500"
               objectFit="contain"
             />
-            <div className="text-left w-4/5 mx-auto mt-8">
+            <div className="text-left lg:w-4/5 mx-auto mt-8">
               <p>
                 Cards have stats to determine their overall strength. Agility and Power are used to
                 measure the final strength of the card. The higher the stats, the higher the DPS.
@@ -100,7 +100,7 @@ const CardInfoModal = () => {
               width="300"
               objectFit="contain"
             />
-            <div className="text-left w-4/5 mx-auto mt-8">
+            <div className="text-left lg:w-4/5 mx-auto mt-8">
               <p>
                 Group identifiers are simply a way to tell how many cards are in that group. They
                 come in different shapes and symbols, and can differ from each other. Group
@@ -123,7 +123,7 @@ const CardInfoModal = () => {
               width="200"
               objectFit="contain"
             />
-            <div className="text-left w-4/5 mx-auto mt-8">
+            <div className="text-left lg:w-4/5 mx-auto mt-8">
               <p>
                 Everypup may have a skin, but every pup also has their own unique number! The oldest
                 pup has a lower pup number while newer pups have higher pup numbers. Owning an older

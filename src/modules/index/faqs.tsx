@@ -18,7 +18,7 @@ const Faqs = () => {
         Its all that <strong>you need</strong>, pupper
       </p>
 
-      <div className="mt-12 font-medium w-4/5 mx-auto text-left">
+      <div className="mt-12 font-medium md:w-4/5 mx-auto text-left">
         <Disclosure>
           {({ open }) => (
             <>
@@ -33,7 +33,7 @@ const Faqs = () => {
                   <strong className="font-bold text-pastel-orange italic">
                     What is a linked pup?
                   </strong>
-                  <div className="mt-4 ml-12">
+                  <div className="mt-4 ml-6 md:ml-8 lg:ml-12">
                     <p>
                       To make puptown a safe place for pups, we created the linked pup role! The
                       linked pup role links your WAX or Anchor wallet to our pupdatabase. Don&apos;t
@@ -47,7 +47,7 @@ const Faqs = () => {
                   <strong className="font-bold text-pastel-orange italic">
                     Why do we need this?
                   </strong>
-                  <div className="mt-4 ml-12">
+                  <div className="mt-4 ml-6 md:ml-8 lg:ml-12">
                     <p>
                       Linked pups are secured pups! When you link your account to our service, you
                       are automatically verified in our discord server. That&apos;s not all, you are
@@ -62,7 +62,7 @@ const Faqs = () => {
                   <strong className="font-bold text-pastel-orange italic">
                     How can I link my account?
                   </strong>
-                  <div className="mt-4 ml-12">
+                  <div className="mt-4 ml-6 md:ml-8 lg:ml-12">
                     <p>
                       Linking your account is easy, just follow this tutorial provided by our Admins
                       in puptown!!
@@ -90,7 +90,7 @@ const Faqs = () => {
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 py-2">
                 <div className="my-6">
-                  <div className="mt-4 ml-12">
+                  <div className="mt-4 ml-6 md:ml-8 lg:ml-12">
                     <p>
                       Our digital collectibles are built to last! With each new release, recent
                       cards just increase in value! There is no limit for the World of Cryptopups
@@ -102,7 +102,7 @@ const Faqs = () => {
 
                 <div className="my-6">
                   <strong className="font-bold text-pastel-orange italic">Blending</strong>
-                  <div className="mt-4 ml-12">
+                  <div className="mt-4 ml-6 md:ml-8 lg:ml-12">
                     <p>
                       You don&apos;t just stare at digital collectibles, right? You Increase their
                       value! You can blend lower rarities into higher rarities to increase their
@@ -118,7 +118,7 @@ const Faqs = () => {
                   <strong className="font-bold text-pastel-orange italic">
                     Upgrades and Swaps
                   </strong>
-                  <div className="mt-4 ml-12">
+                  <div className="mt-4 ml-6 md:ml-8 lg:ml-12">
                     <p>
                       The newest feature being added to our digital collectibles! We are improving
                       our collectible economy by allowing old cards to be repurposed (swapped &
@@ -137,7 +137,7 @@ const Faqs = () => {
                   <strong className="font-bold text-pastel-orange italic">
                     Completion rewards
                   </strong>
-                  <div className="mt-4 ml-12">
+                  <div className="mt-4 ml-6 md:ml-8 lg:ml-12">
                     <p>
                       Collect more and earn more! We&apos;ve introduced the newest set collection
                       reward system in our latest update, and everyone gets more rewards than ever!
@@ -167,7 +167,7 @@ const Faqs = () => {
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 py-2">
                 <div className="my-6">
-                  <div className="mt-4 ml-12">
+                  <div className="mt-4 ml-6 md:ml-8 lg:ml-12">
                     <p>
                       Everything you need has been placed here in our website for your convenience,
                       but if you need more info on some other stuff {"here's"} where to get them:
@@ -179,7 +179,7 @@ const Faqs = () => {
                   <strong className="font-bold text-pastel-orange italic">
                     Drop info and announcements
                   </strong>
-                  <div className="mt-4 ml-12">
+                  <div className="mt-4 ml-6 md:ml-8 lg:ml-12">
                     <p>
                       Drops do not have any specific dates as of now. To follow along with the
                       latest info on drops make sure you join our{' '}
@@ -208,7 +208,7 @@ const Faqs = () => {
 
                 <div className="my-6">
                   <strong className="font-bold text-pastel-orange italic">Purchasing info</strong>
-                  <div className="mt-4 ml-12">
+                  <div className="mt-4 ml-6 md:ml-8 lg:ml-12">
                     <p>
                       All transactions are crypto-basis ($WAX, $NEFTY) only. No credit cards or
                       other form of payments are available. Drop purchases are available on our{' '}
@@ -238,7 +238,7 @@ const Faqs = () => {
                   <strong className="font-bold text-pastel-orange italic">
                     Technical Difficulties
                   </strong>
-                  <div className="mt-4 ml-12">
+                  <div className="mt-4 ml-6 md:ml-8 lg:ml-12">
                     <p>
                       We sometimes experience some unexpected turn of events here at puptown. If you
                       are experiencing something odd or is affecting your overall experience with

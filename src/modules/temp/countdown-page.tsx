@@ -34,9 +34,11 @@ const CountdownPage: NextPage = () => {
           renderer={({ days, hours, minutes, seconds, completed }) => {
             if (completed) {
               return (
-                <p className="mt-12 font-alt text-4xl text-white font-bold uppercase">
-                  Countdown is over!
-                </p>
+                <div className="mt-12 text-white">
+                  <p className="font-alt text-3xl font-bold uppercase">Countdown is over!</p>
+
+                  <p className="mt-4 font-bold text-lg">Please refresh the page...</p>
+                </div>
               );
             }
 

@@ -4,7 +4,6 @@ import CustomPageHeader from '../../components/custom-page-header';
 import CustomLayout from '../../layouts/custom';
 import { WAXResponseProps } from './apitypes';
 import DPS_Fetch from './fetch';
-import DPSListTable from './table-list';
 
 type DPSCalculatorPageProps = {
   wallet?: string;
@@ -80,7 +79,7 @@ const DPSCalculatorPage = ({ wallet: w, data }: DPSCalculatorPageProps) => {
             <button
               onClick={fetcher}
               ref={btnGetRef}
-              className="py-3 px-8 rounded-lg m-2 bg-warmGray-600 hover:bg-warmGray-700 text-white tracking-wide disabled:opacity-80"
+              className="py-3 px-8 rounded-lg m-2 bg-pastel-purple opacity-80 hover:opacity-100 duration-300 font-bold uppercase text-white tracking-wide disabled:opacity-80"
             >
               Get
             </button>
@@ -104,8 +103,6 @@ const DPSCalculatorPage = ({ wallet: w, data }: DPSCalculatorPageProps) => {
       </div>
 
       <hr />
-
-      <DPSListTable />
     </CustomLayout>
   );
 };

@@ -43,9 +43,16 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="my-1">
-                  <Link href="/contact-us">
-                    <a className="" title="Contact Us">
-                      Contact Us
+                  <Link href="/profile">
+                    <a className="" title="Profile">
+                      Profile
+                    </a>
+                  </Link>
+                </li>
+                <li className="my-1">
+                  <Link href="/pup-squad">
+                    <a className="" title="The Pup Squad">
+                      Pup Squad
                     </a>
                   </Link>
                 </li>
@@ -97,42 +104,6 @@ const Footer = () => {
                   >
                     Atomichub
                   </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* other links */}
-            <div className="mr-8 md:mr-16 2xl:mr-24 my-1">
-              <h5 className="font-bold uppercase tracking-wide">Others</h5>
-              <ul className="">
-                <li className="my-1">
-                  <a
-                    className=""
-                    title="Packs"
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://packs.worldofcryptopups.cf/"
-                  >
-                    Packs
-                  </a>
-                </li>
-                <li className="my-1">
-                  <a
-                    className=""
-                    title="Dev"
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://dev.worldofcryptopups.cf/"
-                  >
-                    Dev
-                  </a>
-                </li>
-                <li className="my-1">
-                  <Link href="/pup-squad">
-                    <a className="" title="The Pup Squad">
-                      The Pup Squad
-                    </a>
-                  </Link>
                 </li>
               </ul>
             </div>

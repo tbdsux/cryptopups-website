@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ReactNode } from 'react';
-import Logo from '../../public/logo.png';
+import { Logo } from '../lib/assets';
 import Container from './container';
 
 type CustomPageHeaderProps = {
@@ -31,10 +31,14 @@ const CustomPageHeader = ({ title, description, children }: CustomPageHeaderProp
         </Link>
 
         <div className="mt-8 text-center">
-          <h1 className="text-3xl md:text-4xl xl:text-5xl text-stone-900 font-black tracking-wide leading-loose">
-            {title}
-          </h1>
-          <p className="text-lg tracking-wide text-stone-700 mt-3">{description}</p>
+          <div className="inline-flex flex-col items-center justify-center">
+            <h1 className="text-4xl lg:text-5xl text-pastel-purple font-alt font-bold uppercase tracking-wide leading-loose">
+              {title}
+            </h1>
+            <div className="mt-0.5 py-0.5 rounded-full bg-pastel-purple w-3/5"></div>
+          </div>
+
+          <p className="text-lg tracking-wide mt-8">{description}</p>
         </div>
 
         <div>{children}</div>

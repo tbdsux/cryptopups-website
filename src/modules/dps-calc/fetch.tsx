@@ -78,7 +78,7 @@ const DPS_Fetch = ({ wallet, btnGetRef, data }: DPS_FetchProps) => {
       <hr className="my-4" />
 
       {puppycardsData.data.length > 0 && (
-        <div className="my-4 w-4/5 mx-auto">
+        <div className="my-4 md:w-4/5 mx-auto">
           <h4 className="text-warmGray-700 text-2xl font-black tracking-wide leading-loose">
             Puppy Cards
           </h4>
@@ -88,7 +88,7 @@ const DPS_Fetch = ({ wallet, btnGetRef, data }: DPS_FetchProps) => {
       )}
 
       {pupskinsData.data.length > 0 && (
-        <div className="my-4 w-4/5 mx-auto">
+        <div className="my-4 md:w-4/5 mx-auto">
           <h4 className="text-warmGray-700 text-2xl font-black tracking-wide leading-loose">
             Pup Skins
           </h4>
@@ -98,7 +98,7 @@ const DPS_Fetch = ({ wallet, btnGetRef, data }: DPS_FetchProps) => {
       )}
 
       {pupitemsData.data.length > 0 && (
-        <div className="my-4 w-4/5 mx-auto">
+        <div className="my-4 md:w-4/5 mx-auto">
           <h4 className="text-warmGray-700 text-2xl font-black tracking-wide leading-loose">
             Pup Items
           </h4>

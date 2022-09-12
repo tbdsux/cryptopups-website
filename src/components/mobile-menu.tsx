@@ -44,7 +44,7 @@ const MobileMenu = () => {
               </Link>
             </li>
             <li className="py-2">
-              <Link href="/profile">
+              <Link href="/my-collections">
                 <a className="tracking-wide hover:text-white" title="Gallery">
                   Profile
                 </a>

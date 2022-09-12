@@ -69,7 +69,12 @@ const Faqs = () => {
                     </p>
                     <br />
 
-                    <a className="italic text-pastel-orange underline opacity-80 hover:opacity-100">
+                    <a
+                      href="https://cdn.discordapp.com/attachments/880103250257399859/993917469364322484/Link.png"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="italic text-pastel-orange underline opacity-80 hover:opacity-100"
+                    >
                       click here for tutorial
                     </a>
                   </div>

@@ -4,7 +4,10 @@ import { NextApiHandler, NextApiRequest, NextApiResponse } from 'next';
 const validateRequest =
   (handler: NextApiHandler) => (req: NextApiRequest, res: NextApiResponse) => {
     // TODO: should implement a better security in here in the future
-    if (req.headers.referer?.endsWith('/my-collections')) {
+    if (
+      req.headers.referer?.endsWith('/my-collections') ||
+      req.headers.referer?.endsWith('/profile')
+    ) {
       return handler(req, res);
     }
 

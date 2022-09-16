@@ -1,23 +1,23 @@
-interface DPSProps {
-  dps: DPSInfoProps;
-  user: DPSUserProps;
+export interface DPSProps {
+  error: boolean;
+  data: DPSData;
+  message: string;
+}
+
+export interface DPSData {
   wallet: string;
-}
-
-interface DPSInfoProps {
-  pupcards: number;
-  pupitems: {
-    raw: number;
-    real: number;
-  };
-  pupskins: number;
-}
-
-interface DPSUserProps {
-  avatar: string;
   id: string;
-  tag: string;
-  username: string;
+  dps: Dps;
+  role: string;
 }
 
-export type { DPSProps, DPSInfoProps, DPSUserProps };
+export interface Dps {
+  pupitems: Pupitems;
+  puppycards: number;
+  pupskincards: number;
+}
+
+export interface Pupitems {
+  raw: number;
+  real: number;
+}

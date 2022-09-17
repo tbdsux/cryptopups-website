@@ -1,7 +1,7 @@
-import useGetAccountCollectionSchemas from '../../hooks/useGetAccountCollection';
+import useGetOwnedSchemas from '../../hooks/useGetOwnedSchemas';
 
 const MyCards = () => {
-  const data = useGetAccountCollectionSchemas();
+  const data = useGetOwnedSchemas();
 
   return (
     <div className="mt-16 w-5/6 mx-auto">

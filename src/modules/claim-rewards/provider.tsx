@@ -1,6 +1,6 @@
 import { IAsset } from '@cryptopuppie/useatomicassets';
 import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from 'react';
-import useGetOwnedAssets from '../../hooks/useGetOwnedAssets';
+import useGetUserAssets from '../../hooks/useGetUserAssets';
 
 export interface SelectTemplateProps {
   template_id: number;
@@ -26,7 +26,7 @@ interface ClaimRewardProviderProps {
 const ClaimRewardProvider = ({ children }: ClaimRewardProviderProps) => {
   const [selections, setSelections] = useState<Record<number, SelectTemplateProps>>({});
 
-  const assets = useGetOwnedAssets();
+  const assets = useGetUserAssets();
 
   return (
     <ClaimRewardContext.Provider value={{ selections, setSelections, assets }}>

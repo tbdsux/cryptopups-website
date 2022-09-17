@@ -1,28 +1,8 @@
-import { useWaxUser } from '@cryptopuppie/next-waxauth';
-import { useAtomicGetter } from '@cryptopuppie/useatomicassets';
-
-interface useGetOwnerTemplatesResponseProps {
-  schemas: {
-    schema_name: string;
-    assets: string;
-  }[];
-  templates: {
-    template_id: string;
-    assets: string;
-  }[];
-}
+import useGetCollectionAssets from './useGetCollectionAssets';
 
 // gets the owned assets of the user from the collection
 const useGetOwnedTemplates = () => {
-  const { user } = useWaxUser();
-
-  const { data } = useAtomicGetter<useGetOwnerTemplatesResponseProps>(
-    user
-      ? {
-          uri: `/atomicassets/v1/accounts/${user.wallet}/cryptopuppie`
-        }
-      : undefined
-  );
+  const { data } = useGetCollectionAssets();
 
   if (!data) return;
 

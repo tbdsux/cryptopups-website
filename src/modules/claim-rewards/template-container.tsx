@@ -4,8 +4,8 @@ import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
 import Image from 'next/image';
 import { Fragment, useState } from 'react';
 import BaseModal from '../../components/modal';
-import useGetOwnedAssets from '../../hooks/useGetOwnedAssets';
 import { useGetAssetRewardsConfig } from '../../hooks/useGetRewardsConfig';
+import useGetUserAssets from '../../hooks/useGetUserAssets';
 import { useClaimReward } from './provider';
 
 interface RewardTemplateContainerProps {
@@ -15,7 +15,7 @@ interface RewardTemplateContainerProps {
 }
 
 const RewardTemplateContainer = ({ src, alt, template_id }: RewardTemplateContainerProps) => {
-  const assets = useGetOwnedAssets();
+  const assets = useGetUserAssets();
   const { selections, setSelections } = useClaimReward();
   const config = useGetAssetRewardsConfig();
 

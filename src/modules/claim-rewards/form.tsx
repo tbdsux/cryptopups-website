@@ -1,4 +1,3 @@
-import { useGetAssetRewardsConfig } from '../../hooks/useGetRewardsConfig';
 import { useGallery } from '../gallery/provider';
 import { SelectTemplateProps, useClaimReward } from './provider';
 import RewardTemplateContainer from './template-container';
@@ -6,7 +5,6 @@ import RewardTemplateContainer from './template-container';
 const ClaimRewardsForm = () => {
   const { set, images } = useGallery();
   const { setSelections, assets } = useClaimReward();
-  const config = useGetAssetRewardsConfig();
 
   const filterImages = images.filter((i) => {
     return set.templates.includes(Number(i.template_id));
@@ -19,9 +17,7 @@ const ClaimRewardsForm = () => {
 
     for (const img of filterImages) {
       const filter = assets
-        .filter(
-          (i) => i.template?.template_id === img.template_id && !config?.assets.includes(i.asset_id)
-        )
+        .filter((i) => i.template?.template_id === img.template_id)
         .sort((a, b) => Number(b.template_mint) - Number(a.template_mint));
 
       if (filter.length == 0) continue;

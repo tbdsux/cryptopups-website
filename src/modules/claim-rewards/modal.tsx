@@ -1,16 +1,20 @@
+import { useWaxUser } from '@cryptopuppie/next-waxauth';
 import { Dialog } from '@headlessui/react';
 import { useState } from 'react';
 import BaseModal from '../../components/modal';
-// import { useGetUserRewardsConfig } from '../../hooks/useGetRewardsConfig';
+import useGetContractConfig from '../../hooks/ueGetContractConfig';
+import { useGetUserRewardsConfig } from '../../hooks/useGetRewardsConfig';
 import { useGallery } from '../gallery/provider';
-// import ClaimRewardsButton from './claim-button';
-// import ClaimRewardsForm from './form';
-// import PreviewRewardModal from './preview-reward';
+import ClaimRewardsButton from './claim-button';
+import ClaimRewardsForm from './form';
+import PreviewRewardModal from './preview-reward';
 import ClaimRewardProvider from './provider';
 
 const GalleryClaimRewards = () => {
+  const { user } = useWaxUser();
   const { set } = useGallery();
-  // const userConfig = useGetUserRewardsConfig();
+  const userConfig = useGetUserRewardsConfig();
+  const contractConfig = useGetContractConfig();
 
   const [open, setOpen] = useState(false);
 
@@ -37,29 +41,39 @@ const GalleryClaimRewards = () => {
             <strong className="text-orange-500 font-black">Claim Rewards</strong> | {set.title} Set
           </Dialog.Title>
 
-          {/* <div className="inline-flex items-center">
-            <PreviewRewardModal />
+          <div className="inline-flex items-center">
+            {contractConfig?.blacklisted_wallets.includes(user?.wallet ?? '') ? (
+              <></>
+            ) : (
+              <>
+                <PreviewRewardModal />
 
-            <ClaimRewardsButton />
-          </div> */}
+                <ClaimRewardsButton />
+              </>
+            )}
+          </div>
         </div>
 
         <div className="my-10 px-6 text-center text-gray-700">
-          {/* {userConfig?.setids.includes(set.setid) ? (
-            <>
-              <p>You have alreay claimed the rewards for completing this set.</p>
-            </>
+          {contractConfig?.blacklisted_wallets.includes(user?.wallet ?? '') ? (
+            <strong className="text-lg">
+              YOU HAVE BEEN BANNED FOR MALICIOUS INTENT ON USING OUR SERVICE. <br /> PLEASE CONTACT
+              US THROUGH DISCORD IF THIS WAS A MISTAKE.
+            </strong>
           ) : (
             <>
-              <p>Thank you very much for completing the {set.title} NFTs.</p>
-              <ClaimRewardsForm />
+              {userConfig?.setids.includes(set.setid) ? (
+                <>
+                  <p>You have alreay claimed the rewards for completing this set.</p>
+                </>
+              ) : (
+                <>
+                  <p>Thank you very much for completing the {set.title} NFTs.</p>
+                  <ClaimRewardsForm />
+                </>
+              )}
             </>
-          )} */}
-          Thank you very much for completing this NFT set. <br />
-          <strong>
-            This section is still not available and is still in development.
-            <br /> Please check back again later...
-          </strong>
+          )}
         </div>
       </BaseModal>
     </ClaimRewardProvider>

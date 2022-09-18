@@ -4,7 +4,6 @@ import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
 import Image from 'next/image';
 import { Fragment, useState } from 'react';
 import BaseModal from '../../components/modal';
-import { useGetAssetRewardsConfig } from '../../hooks/useGetRewardsConfig';
 import useGetUserAssets from '../../hooks/useGetUserAssets';
 import { useClaimReward } from './provider';
 
@@ -17,7 +16,6 @@ interface RewardTemplateContainerProps {
 const RewardTemplateContainer = ({ src, alt, template_id }: RewardTemplateContainerProps) => {
   const assets = useGetUserAssets();
   const { selections, setSelections } = useClaimReward();
-  const config = useGetAssetRewardsConfig();
 
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState<IAsset | undefined>(undefined);
@@ -56,10 +54,6 @@ const RewardTemplateContainer = ({ src, alt, template_id }: RewardTemplateContai
           <p className="text-sm text-gray-600">
             Select the NFT you want to use to claim this reward.{' '}
           </p>
-          <p className="text-sm text-gray-600">
-            *Once chosen and reward is claimed the NFT won&apos;t be usable to claim a reward
-            again...
-          </p>
 
           <div className="flex flex-col my-3">
             <Listbox value={selected} onChange={setSelected}>
@@ -92,7 +86,6 @@ const RewardTemplateContainer = ({ src, alt, template_id }: RewardTemplateContai
                             } ${disabled ? 'opacity-70' : ''}`
                           }
                           value={x}
-                          disabled={config?.assets.includes(x.asset_id)}
                         >
                           {({ selected }) => (
                             <>
@@ -102,7 +95,6 @@ const RewardTemplateContainer = ({ src, alt, template_id }: RewardTemplateContai
                                 }`}
                               >
                                 #{x.template_mint} {x.name} ({x.asset_id}){' '}
-                                {config?.assets.includes(x.asset_id) ? '[already used]' : ''}
                               </span>
                               {selected ? (
                                 <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-600">

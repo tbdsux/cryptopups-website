@@ -1,5 +1,6 @@
 import { IAsset } from '@cryptopuppie/useatomicassets';
 import Image from 'next/image';
+import AssetListDetails from './asset-details';
 
 interface AssetListProps {
   asset: IAsset;
@@ -7,14 +8,26 @@ interface AssetListProps {
 
 const AssetList = ({ asset }: AssetListProps) => {
   return (
-    <Image
-      src={`https://atomichub-ipfs.com/ipfs/${asset.data.img}`}
-      alt={asset.name}
-      height="300"
-      width="200"
-      className={`cursor-pointer`}
-      objectFit="contain"
-    />
+    <li className="mx-auto flex flex-col border rounded-lg text-center relative">
+      <div className="relative rounded-t-lg">
+        <AssetListDetails asset={asset} />
+
+        <div className="p-2">
+          <Image
+            src={`https://atomichub-ipfs.com/ipfs/${asset.data.img}`}
+            alt={asset.name}
+            height="300"
+            width="200"
+            className={`cursor-pointer z-30`}
+            objectFit="contain"
+          />
+        </div>
+      </div>
+
+      <hr />
+
+      <strong className="mt-1 p-2">{asset.name}</strong>
+    </li>
   );
 };
 

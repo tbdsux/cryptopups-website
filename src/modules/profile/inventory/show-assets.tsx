@@ -8,7 +8,7 @@ const ShowAssets = () => {
 
   return (
     <div className="h-screen overflow-auto p-6 mt-8">
-      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 gap-6 lg:gap-8">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 gap-6 lg:gap-8">
         {assets
           ?.filter((i) => {
             if (category != 'None') {
@@ -38,9 +38,7 @@ const ShowAssets = () => {
             return true;
           })
           .map((i, index) => (
-            <li key={index} className="mx-auto">
-              <AssetList asset={i} />
-            </li>
+            <AssetList key={index} asset={i} />
           ))}
       </ul>
     </div>

@@ -15,7 +15,7 @@ const ProfilePage = () => {
       <NextSeo title="My Collection" description="View your pawsome pup collection here!" />
       {/* end seo */}
 
-      <div className="w-4/5 mx-auto">
+      <div className="w-11/12 md:w-5/6 lg:w-4/5 mx-auto">
         {!isLoggedIn ? (
           <div className="text-center">
             <p className="text-lg font-medium text-gray-900">

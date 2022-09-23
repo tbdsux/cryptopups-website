@@ -1,5 +1,6 @@
 import { useAuthFunctions, useWaxUser } from '@cryptopuppie/next-waxauth';
 import { Dialog, Menu, Transition } from '@headlessui/react';
+import { ChevronDownIcon } from '@heroicons/react/solid';
 import { Fragment, useEffect, useState } from 'react';
 import { isDev } from '../lib/config';
 import BaseModal from './modal';
@@ -24,8 +25,11 @@ const ConnectWalletButton = () => {
       {isLoggedIn && user ? (
         <Menu as="div" className="md:absolute right-0 z-50 inline-block text-left">
           <div className="">
-            <Menu.Button className="inline-flex w-full justify-center rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-stone-300 hover:text-white duration-300 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-              {user.wallet}
+            <Menu.Button className="inline-flex w-full items-center justify-center rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-stone-300 hover:text-white duration-300 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+              @{user.wallet}
+              <span className="ml-1">
+                <ChevronDownIcon aria-hidden="true" className="h-4 w-4" />
+              </span>
             </Menu.Button>
           </div>
           <Transition

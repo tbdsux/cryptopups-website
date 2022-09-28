@@ -17,7 +17,7 @@ const ImageLightbox = ({ src, alt, className }: ImageLightboxProps) => {
           open={open !== undefined}
           onClose={() => setOpen(undefined)}
           images={[open]}
-          className="fixed w-full h-full bg-black/80 z-50 inset-0 flex items-center justify-center"
+          className="fixed w-full h-full bg-black/80 z-[99999] inset-0 flex items-center justify-center"
           overlayClassname="absolute h-full w-full z-30"
           arrowsClassName={{
             icons: '',

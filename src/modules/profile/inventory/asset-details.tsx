@@ -22,7 +22,7 @@ const AssetListDetails = ({ asset }: AssetListDetailsProps) => {
   return (
     <>
       {isOpen ? (
-        <div className="absolute z-50 h-full w-full bg-white p-2 rounded-t-lg">
+        <div className="absolute z-50 h-full w-full bg-gray-100 p-2 rounded-t-lg">
           <button onClick={close} className="absolute top-1 right-1 z-40">
             <XIcon aria-hidden="true" className="h-5 w-5" />
           </button>
@@ -32,6 +32,10 @@ const AssetListDetails = ({ asset }: AssetListDetailsProps) => {
       ) : (
         <></>
       )}
+
+      <span className="absolute top-1 left-1 z-40 text-xs font-bold bg-gray-300 p-1 rounded-lg">
+        #{asset.template_mint}
+      </span>
 
       <button onClick={open} className="absolute top-1 right-1 text-black z-40">
         <InformationCircleIcon aria-hidden="true" className="h-5 w-5" />

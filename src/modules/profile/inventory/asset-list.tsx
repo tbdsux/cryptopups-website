@@ -8,7 +8,7 @@ interface AssetListProps {
 
 const AssetList = ({ asset }: AssetListProps) => {
   return (
-    <li className="mx-auto flex flex-col border rounded-lg text-center relative">
+    <li className="mx-auto flex flex-col border rounded-lg text-center relative bg-gray-100">
       <div className="relative rounded-t-lg">
         <AssetListDetails asset={asset} />
 
@@ -26,7 +26,7 @@ const AssetList = ({ asset }: AssetListProps) => {
 
       <hr />
 
-      <strong className="mt-1 p-2">{asset.name}</strong>
+      <strong className="mt-1 py-3 text-stone-900">{asset.name}</strong>
     </li>
   );
 };

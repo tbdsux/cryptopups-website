@@ -9,30 +9,32 @@ const AssetDetailsHidden = ({ data, template }: AssetDetailsHiddenProps) => {
   const assetMarket = useGetAssetListingPrice(template);
 
   return (
-    <div className="flex flex-col">
-      <ul className="mt-6 px-1 h-full">
+    <div className="">
+      <ul className="mt-6 flex flex-col h-full">
         {data.map(([i, value], index) => (
           <li key={index} className="text-sm flex items-center justify-between flex-wrap m-1">
-            <span className="first-letter:uppercase lowercase underline">{i}:</span>
+            <span className="text-gray-600 first-letter:uppercase lowercase underline">{i}:</span>
 
-            <span className="font-medium">{value}</span>
+            <span className="font-medium text-right">{value}</span>
           </li>
         ))}
       </ul>
 
-      <hr className="my-3" />
+      <div className="absolute bottom-0">
+        <hr className="my-3" />
 
-      <ul className="">
-        <li className="text-sm flex items-center justify-between flex-wrap m-1">
-          <span className="first-letter:uppercase lowercase font-medium text-gray-700">
-            Lowest Listing:
-          </span>
+        <ul className="mb-2">
+          <li className="text-sm flex items-center justify-between flex-wrap m-1">
+            <span className="first-letter:uppercase lowercase font-medium text-gray-700">
+              Lowest Listing price:
+            </span>
 
-          <span className="font-bold truncate w-full text-right">
-            {assetMarket ? (Number(assetMarket?.listing_price) / 100000000).toFixed(1) : '-'} WAX
-          </span>
-        </li>
-      </ul>
+            <span className="font-bold truncate w-full text-left ml-4">
+              {assetMarket ? (Number(assetMarket?.listing_price) / 100000000).toFixed(1) : '-'} WAX
+            </span>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

@@ -1,19 +1,19 @@
-import { Datum } from './apitypes';
+import { IAsset } from '@cryptopuppie/useatomicassets';
 import { dpsCalculator, dpsItemsCalculator } from './calculator';
 
 type DPS_CalculateProps = {
   owner: string;
   data: {
-    pupskins: Datum[];
-    puppycards: Datum[];
-    pupitems: Datum[];
+    pupskins: IAsset[];
+    puppycards: IAsset[];
+    pupitems: IAsset[];
   };
 };
 
 const DPS_Calculate = ({ owner, data }: DPS_CalculateProps) => {
-  const skinsDPs = dpsCalculator({ owner, data: data.pupskins });
-  const cardsDps = dpsCalculator({ owner, data: data.puppycards });
-  const rawItemsDps = dpsCalculator({ owner, data: data.pupitems });
+  const skinsDPs = dpsCalculator(data.pupskins);
+  const cardsDps = dpsCalculator(data.puppycards);
+  const rawItemsDps = dpsCalculator(data.pupitems);
   const realItemsDps = dpsItemsCalculator(data.pupskins, data.pupitems, owner);
 
   return (

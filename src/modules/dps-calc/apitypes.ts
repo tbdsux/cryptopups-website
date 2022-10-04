@@ -1,8 +1,10 @@
 // response props for api in DPS Calculator
 
+import { IAsset } from '@cryptopuppie/useatomicassets';
+
 export interface DPSComponentProps {
   owner?: string;
-  data: Datum[];
+  data: IAsset[];
 }
 
 export interface WAXResponseProps {
@@ -61,8 +63,8 @@ export interface Data {
   Agility: string;
   BackImg: string;
   Description: string;
-  "Authenticity Card": string;
-  "Item Owner"?: string;
+  'Authenticity Card': string;
+  'Item Owner'?: string;
 }
 
 export interface MutableData {}

@@ -1,14 +1,13 @@
-import { Datum, DPSComponentProps } from './apitypes';
+import { IAsset } from '@cryptopuppie/useatomicassets';
 
-const dpsCalculator = ({ data, owner }: DPSComponentProps) => {
+const dpsCalculator = (data: IAsset[]) => {
   var dps = 0;
 
   for (let index = 0; index < data.length; index++) {
     const element = data[index];
 
-    if (element.owner === owner) {
-      dps += Number(element.data.DPS);
-    }
+    // note: data fetched should be owned by user to avoid more checking
+    dps += Number(element.data.DPS);
   }
 
   return dps;
@@ -18,7 +17,7 @@ const dpsCalculator = ({ data, owner }: DPSComponentProps) => {
 const demon = ['Demon Queen', 'Demon Ace', 'Demon King'];
 const mecha = ['Mecha Glitter', 'Mecha Apollo', 'Mecha Draco'];
 
-const dpsItemsCalculator = (basis: Datum[], data: Datum[], owner: string) => {
+const dpsItemsCalculator = (basis: IAsset[], data: IAsset[], owner: string) => {
   var dps = 0;
 
   for (let index = 0; index < data.length; index++) {

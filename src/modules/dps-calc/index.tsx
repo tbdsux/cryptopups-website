@@ -1,16 +1,16 @@
+import { IAsset } from '@cryptopuppie/useatomicassets';
 import { NextSeo } from 'next-seo';
 import { useEffect, useRef, useState } from 'react';
 import CustomPageHeader from '../../components/custom-page-header';
 import CustomLayout from '../../layouts/custom';
-import { WAXResponseProps } from './apitypes';
 import DPS_Fetch from './fetch';
 
 type DPSCalculatorPageProps = {
   wallet?: string;
   data?: {
-    pupitems: WAXResponseProps;
-    pupcards: WAXResponseProps;
-    pupskins: WAXResponseProps;
+    pupitems: IAsset[];
+    pupcards: IAsset[];
+    pupskins: IAsset[];
   };
 };
 

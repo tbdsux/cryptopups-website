@@ -16,9 +16,9 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
       props: {
         wallet,
         data: {
-          pupskins,
-          pupcards,
-          pupitems
+          pupskins: pupskins.data,
+          pupcards: pupcards.data,
+          pupitems: pupitems.data
         }
       }
     };

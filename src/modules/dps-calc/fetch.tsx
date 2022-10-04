@@ -1,9 +1,7 @@
+import { IAsset } from '@cryptopuppie/useatomicassets';
 import { RefObject, useEffect } from 'react';
-import useSWR from 'swr';
 import Container from '../../components/container';
-import fetcher from '../../lib/fetcher';
-import { PUPITEMS_API, PUPPYCARDS_API, PUPSKINS_API } from './apilinks';
-import { WAXResponseProps } from './apitypes';
+import useGetSchemaAssets from '../../hooks/useGetSchemaAssets';
 import DPS_Calculate from './calculate';
 import ShowItems from './show-items';
 
@@ -11,45 +9,28 @@ type DPS_FetchProps = {
   wallet: string;
   btnGetRef: RefObject<HTMLButtonElement>;
   data?: {
-    pupskins: WAXResponseProps;
-    pupcards: WAXResponseProps;
-    pupitems: WAXResponseProps;
+    pupskins: IAsset[];
+    pupcards: IAsset[];
+    pupitems: IAsset[];
   };
 };
 
 const DPS_Fetch = ({ wallet, btnGetRef, data }: DPS_FetchProps) => {
-  // pupskins
-  const { data: pupskinsData } = useSWR<WAXResponseProps>(
-    wallet ? PUPSKINS_API.replace('{{owner}}', wallet) : null,
-    fetcher,
-    { revalidateOnFocus: false, fallbackData: data?.pupskins } // do not revalidate on focus
-  );
-
-  // pupcards
-  const { data: puppycardsData } = useSWR<WAXResponseProps>(
-    wallet ? PUPPYCARDS_API.replace('{{owner}}', wallet) : null,
-    fetcher,
-    { revalidateOnFocus: false, fallbackData: data?.pupcards } // do not revalidate on focus
-  );
-
-  // pupitems
-  const { data: pupitemsData } = useSWR<WAXResponseProps>(
-    wallet ? PUPITEMS_API.replace('{{owner}}', wallet) : null,
-    fetcher,
-    { revalidateOnFocus: false, fallbackData: data?.pupitems } // do not revalidate on focus
-  );
+  const pupskins = useGetSchemaAssets('pupskincards', wallet, data?.pupskins);
+  const puppycards = useGetSchemaAssets('puppycards', wallet, data?.pupcards);
+  const pupitems = useGetSchemaAssets('pupitems', wallet, data?.pupitems);
 
   useEffect(() => {
-    if (pupskinsData && puppycardsData && pupitemsData) {
+    if (pupskins && puppycards && pupitems) {
       if (btnGetRef.current) {
         btnGetRef.current.innerHTML = 'Get';
         btnGetRef.current.disabled = false;
       }
       // setDone(true);
     }
-  }, [btnGetRef, pupitemsData, puppycardsData, pupskinsData]);
+  }, [btnGetRef, pupitems, puppycards, pupskins]);
 
-  if (!pupskinsData || !puppycardsData || !pupitemsData) {
+  if (!pupskins || !puppycards || !pupitems) {
     return <div className="text-sm tracking-wide text-center">Fetching...</div>;
   }
 
@@ -69,41 +50,41 @@ const DPS_Fetch = ({ wallet, btnGetRef, data }: DPS_FetchProps) => {
       <DPS_Calculate
         owner={wallet}
         data={{
-          pupskins: pupskinsData.data,
-          puppycards: puppycardsData.data,
-          pupitems: pupitemsData.data
+          pupskins: pupskins,
+          puppycards: puppycards,
+          pupitems: pupitems
         }}
       />
 
       <hr className="my-4" />
 
-      {puppycardsData.data.length > 0 && (
+      {puppycards.length > 0 && (
         <div className="my-4 md:w-4/5 mx-auto">
           <h4 className="text-warmGray-700 text-2xl font-black tracking-wide leading-loose">
             Puppy Cards
           </h4>
 
-          <ShowItems owner={wallet} data={puppycardsData.data} />
+          <ShowItems owner={wallet} data={puppycards} />
         </div>
       )}
 
-      {pupskinsData.data.length > 0 && (
+      {pupskins.length > 0 && (
         <div className="my-4 md:w-4/5 mx-auto">
           <h4 className="text-warmGray-700 text-2xl font-black tracking-wide leading-loose">
             Pup Skins
           </h4>
 
-          <ShowItems owner={wallet} data={pupskinsData.data} />
+          <ShowItems owner={wallet} data={pupskins} />
         </div>
       )}
 
-      {pupitemsData.data.length > 0 && (
+      {pupitems.length > 0 && (
         <div className="my-4 md:w-4/5 mx-auto">
           <h4 className="text-warmGray-700 text-2xl font-black tracking-wide leading-loose">
             Pup Items
           </h4>
 
-          <ShowItems owner={wallet} data={pupitemsData.data} />
+          <ShowItems owner={wallet} data={pupitems} />
         </div>
       )}
     </Container>

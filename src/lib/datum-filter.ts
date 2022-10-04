@@ -1,13 +1,13 @@
-import { Datum } from '../modules/dps-calc/apitypes';
+import { IAsset } from '@cryptopuppie/useatomicassets';
 
 type FilteredDatum = {
   [x: string]: {
-    data: Datum;
+    data: IAsset;
     count: number;
   };
 };
 
-const datumFilter = (data: Datum[]) => {
+const datumFilter = (data: IAsset[]) => {
   var x: FilteredDatum = {};
 
   data.forEach((i) => {

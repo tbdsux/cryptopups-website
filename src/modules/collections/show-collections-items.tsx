@@ -1,9 +1,9 @@
+import { IAsset } from '@cryptopuppie/useatomicassets';
 import Image from 'next/image';
 import { datumFilter } from '../../lib/datum-filter';
-import { Datum } from '../dps-calc/apitypes';
 
 type ShowCollectionsItemsProps = {
-  data: Datum[];
+  data: IAsset[];
 };
 
 const ShowCollectionsItems = ({ data: x }: ShowCollectionsItemsProps) => {

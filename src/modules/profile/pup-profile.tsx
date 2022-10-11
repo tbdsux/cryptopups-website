@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import useGetToken from '../../hooks/useGetToken';
 import useGetWaxProfile from '../../hooks/useGetWaxProfile';
+import { bloks } from '../../lib/config';
 
 const PupProfile = () => {
   const { user } = useWaxUser();
@@ -65,7 +66,15 @@ const PupProfile = () => {
           <span className="text-4xl lg:text-5xl ml-0 md:ml-6 font-medium">{user?.wallet}</span>
         </div>
 
-        <a className="mt-4 md:mt-0">view on bloks</a>
+        <a
+          title="View account on bloks.io"
+          target="_blank"
+          href={`${bloks}/account/${user?.wallet}`}
+          className="mt-4 md:mt-0 hover:underline"
+          rel="noreferrer"
+        >
+          view on bloks
+        </a>
       </div>
     </div>
   );

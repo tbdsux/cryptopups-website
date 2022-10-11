@@ -49,7 +49,15 @@ const SeasonDPS = () => {
           {totalDps.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ', ')}
         </strong>
 
-        <a>dps calculator</a>
+        <a
+          title="Show calculation of dps"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:underline"
+          href={`/dps-calculator?waxid=${user?.wallet}`}
+        >
+          dps calculator
+        </a>
       </div>
     </div>
   );

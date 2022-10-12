@@ -70,7 +70,7 @@ const Faqs = () => {
                     <br />
 
                     <a
-                      href="https://cdn.discordapp.com/attachments/880103250257399859/993917469364322484/Link.png"
+                      href="https://gateway.pinata.cloud/ipfs/QmXdemg433ALpu9qhBiMzqRnf1y63oV1JjLr1pf9Q3RW8v"
                       target="_blank"
                       rel="noreferrer"
                       className="italic text-pastel-orange underline opacity-80 hover:opacity-100"

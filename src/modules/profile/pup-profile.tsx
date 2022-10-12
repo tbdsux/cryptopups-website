@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import useGetToken from '../../hooks/useGetToken';
 import useGetWaxProfile from '../../hooks/useGetWaxProfile';
 import { bloks } from '../../lib/config';
+import TokenUseModal from './token-use/modal';
 
 const PupProfile = () => {
   const { user } = useWaxUser();
@@ -37,10 +38,11 @@ const PupProfile = () => {
           Token ID:
           <span className="inline-flex items-center ml-2">
             {authData?.token}
+
             <button
               onClick={copyToken}
               title={copied ? 'Token has been copied' : 'Copy Token'}
-              className=" ml-1"
+              className="mx-1"
             >
               {copied ? (
                 <CheckIcon aria-hidden="true" className="h-5 w-5" />
@@ -48,6 +50,8 @@ const PupProfile = () => {
                 <DuplicateIcon aria-hidden="true" className="h-5 w-5" />
               )}
             </button>
+
+            <TokenUseModal />
           </span>
         </p>
       </div>

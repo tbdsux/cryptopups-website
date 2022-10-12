@@ -33,11 +33,11 @@ const AssetListDetails = ({ asset }: AssetListDetailsProps) => {
         <></>
       )}
 
-      <span className="absolute top-1 left-1 z-40 text-xs font-bold bg-gray-300 p-1 rounded-lg">
+      <span className="absolute top-3 left-3 z-40 text-xs font-bold bg-gray-300 p-1 rounded-lg">
         #{asset.template_mint}
       </span>
 
-      <button onClick={open} className="absolute top-1 right-1 text-black z-40">
+      <button onClick={open} className="absolute top-3 right-3 text-black z-40">
         <InformationCircleIcon aria-hidden="true" className="h-5 w-5" />
       </button>
     </>

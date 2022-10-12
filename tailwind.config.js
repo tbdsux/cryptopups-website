@@ -32,6 +32,18 @@ module.exports = {
         yellow: '#FCDCA9',
         orange: '#F0C3A3',
         red: '#EBBAB5'
+      },
+      flat: {
+        yellow: '#fff276',
+        purple: '#c792dd',
+        red: '#dd6868',
+        orange: '#f4a351'
+      },
+      opaque: {
+        yellow: '#fef5d4',
+        orange: '#ffd5aa',
+        pink: '#f0b9d6',
+        purple: '#dadafc'
       }
     },
     fontFamily: {

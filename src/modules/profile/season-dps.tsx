@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import useGetSchemaAssets from '../../hooks/useGetSchemaAssets';
 import { dpsCalculator, dpsItemsCalculator } from '../dps-calc/calculator';
 import { rankIdentifier } from './season-dps/rank';
+import ViewPerksModal from './view-perks/modal';
 
 const SeasonDPS = () => {
   const { user } = useWaxUser();
@@ -39,7 +40,7 @@ const SeasonDPS = () => {
           {rank}
         </strong>
 
-        <a>view perks</a>
+        <ViewPerksModal />
       </div>
 
       <div className="mt-8 lg:mt-0 bg-pastel-blue w-full lg:w-2/5 rounded-3xl p-12 text-white flex flex-col lg:ml-8">

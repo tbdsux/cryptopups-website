@@ -49,3 +49,7 @@ hr {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
 }
+
+.perks-gradient {
+  background-image: linear-gradient(to right, #fef5d4, #ffd5aa, #f0b9d6, #dadafc);
+}

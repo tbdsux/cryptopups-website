@@ -1,5 +1,8 @@
 import { faPaw } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
+import { AtomichubImg, NeftyblocksImg } from '../../../lib/assets';
+import { atomichubMarketplace, neftyblocks } from '../../../lib/links';
 import { pupPerks } from './perks';
 
 const getEtherealListColor = (index: number) => {
@@ -21,7 +24,7 @@ const ViewPerksContent = () => {
         {pupPerks.map((p, index) => (
           <div
             key={index}
-            className="w-80 m-6 rounded-[2rem] border border-gray-100 shadow-2xl px-6 py-16"
+            className="w-80 m-8 rounded-[2rem] border border-gray-100 shadow-2xl px-6 py-16"
           >
             <div className="inline-flex flex-col items-center justify-center">
               <h2
@@ -65,6 +68,53 @@ const ViewPerksContent = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="mt-32">
+        <div className="inline-flex flex-col items-center justify-center">
+          <h2 className="font-alt font-bold text-4xl tracking-wide text-pastel-blue uppercase">
+            Collect More Pups!
+          </h2>
+          <div className="mt-0.5 py-0.5 rounded-full bg-pastel-blue w-3/5"></div>
+        </div>
+
+        <div className="flex items-center justify-center flex-wrap mt-8">
+          <a
+            target="_blank"
+            href={neftyblocks}
+            rel="noreferrer"
+            title="Neftyblocks Link"
+            className="m-3 font-alt text-3xl tracking-wide font-bold flex items-center py-5 px-14 uppercase bg-pastel-blue bg-opacity-80 hover:bg-opacity-100 duration-300 rounded-3xl text-white"
+          >
+            <Image
+              src={NeftyblocksImg}
+              height="37"
+              width="37"
+              alt=""
+              className="rounded-full"
+              objectFit="contain"
+            />
+            <span className="ml-4">Neftyblocks</span>
+          </a>
+
+          <a
+            target="_blank"
+            href={atomichubMarketplace}
+            rel="noreferrer"
+            title="Atomichub Link"
+            className="m-3 font-alt text-3xl tracking-wide font-bold flex items-center py-5 px-14 uppercase bg-pastel-yellow bg-opacity-80 hover:bg-opacity-100 duration-300 rounded-3xl text-white"
+          >
+            <Image
+              src={AtomichubImg}
+              height="37"
+              width="37"
+              alt=""
+              className="rounded-full"
+              objectFit="contain"
+            />
+            <span className="ml-4">Atomichub</span>
+          </a>
+        </div>
       </div>
     </div>
   );

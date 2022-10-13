@@ -1,7 +1,6 @@
 import { config, dom } from '@fortawesome/fontawesome-svg-core';
 import Head from 'next/head';
 import { ReactNode } from 'react';
-import UpdateFormModal from '../modules/temp/update-form-modal';
 
 type BaseLayoutProps = {
   children: ReactNode;
@@ -13,8 +12,6 @@ config.autoAddCss = false;
 const BaseLayout = ({ children }: BaseLayoutProps) => {
   return (
     <>
-      <UpdateFormModal />
-
       <Head>
         <style>{dom.css()}</style>
       </Head>

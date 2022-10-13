@@ -120,9 +120,9 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="my-1">
-                  <Link href="/my-collections">
-                    <a className="" title="My Collections">
-                      My Collections
+                  <Link href="/profile">
+                    <a className="" title="Profile">
+                      Profile
                     </a>
                   </Link>
                 </li>

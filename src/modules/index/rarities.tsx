@@ -18,7 +18,7 @@ const CardRarities = () => {
       </div>
 
       <p className="text-lg mt-8">
-        What is a dps? <strong>Learn about it here</strong>
+        What is a dps? <strong>Click the card below to learn more</strong>
       </p>
 
       <Container className="w-full sm:w-2/3 md:w-full xl:w-11/12">

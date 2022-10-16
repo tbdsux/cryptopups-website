@@ -23,13 +23,102 @@ const Faqs = () => {
           {({ open }) => (
             <>
               <Disclosure.Button className="font-bold flex w-full justify-between border-b-2 border-pastel-orange px-4 py-2 text-left focus:outline-none focus-visible:ring focus-visible:ring-pastel-orange-500 focus-visible:ring-opacity-75 my-3">
+                <span>I&apos;m new here where do I start?</span>
+                <ChevronUpIcon
+                  className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-pastel-orange`}
+                />
+              </Disclosure.Button>
+              <Disclosure.Panel className="px-4 py-2">
+                <div className="my-3 md:my-6">
+                  <strong className="font-bold text-pastel-orange italic">Linked Pup</strong>
+                  <div className="mt-4 ml-6 md:ml-8 lg:ml-12">
+                    <p>
+                      Everybody is linking their wallets, come and join us!! Info on the linked pup
+                      role is right below this FAQ.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="my-3 md:my-6">
+                  <strong className="font-bold text-pastel-orange italic">DPS and roles</strong>
+                  <div className="mt-4 ml-6 md:ml-8 lg:ml-12">
+                    <div className="mb-4">
+                      <strong className="font-bold text-pastel-orange">Roles</strong>
+                      <div className="sm:ml-6">
+                        <p>
+                          Cards give you DPS, and DPS gives you roles (plus perks)!! Here are the
+                          following DPS roles and how much DPS you need to attain them :
+                        </p>
+                        <ul className="ml-2 sm:ml-6 my-2">
+                          <li className="font-bold text-neutral-900">Knight Pups - 5000 DPS</li>
+                          <li className="font-bold text-neutral-900">Overlord Pups - 10000 DPS </li>
+                          <li className="font-bold text-neutral-900">
+                            Apocalypse Pups - 20000 DPS
+                          </li>
+                          <li className="font-bold text-neutral-900">Above all Pups - 35000 DPS</li>
+                          <li className="font-bold text-neutral-900">Infinity Pups - 60000 DPS</li>
+                          <li className="font-bold text-neutral-900">Eternity Pups - 100000 DPS</li>
+                        </ul>
+                        <p>Important : you need to be linked to receive a role.</p>
+                      </div>
+                    </div>
+
+                    <div className="mb-4">
+                      <strong className="font-bold text-pastel-orange">
+                        Pups and pupitems DPS
+                      </strong>
+                      <div className="sm:ml-6">
+                        <p className="my-1">
+                          DPS (damage per second) is determined by a simple formula{' '}
+                          <span className="text-pastel-orange font-bold">
+                            (dps formula = (speed ÷ 60) × power)
+                          </span>
+                          . Every pupskincard has it&apos;s own DPS, and as well as pupitemcards.
+                        </p>
+                        <p className="my-1">
+                          Important Info : Pupitemcards DPS will only calculate if you own the item
+                          owner.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="mb-4">
+                      <strong className="font-bold text-pastel-orange">Perks</strong>
+                      <div className="sm:ml-6">
+                        <p>
+                          To view your perks, make sure you{' '}
+                          <span className="text-pastel-orange font-bold">login</span> and head to
+                          your{' '}
+                          <a
+                            href="/profile"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-pastel-orange font-bold italic hover:underline"
+                          >
+                            profile
+                          </a>{' '}
+                          to view your DPS and its perks
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Disclosure.Panel>
+            </>
+          )}
+        </Disclosure>
+
+        <Disclosure>
+          {({ open }) => (
+            <>
+              <Disclosure.Button className="font-bold flex w-full justify-between border-b-2 border-pastel-orange px-4 py-2 text-left focus:outline-none focus-visible:ring focus-visible:ring-pastel-orange-500 focus-visible:ring-opacity-75 my-3">
                 <span>I don&apos;t have a linked pup role, help!</span>
                 <ChevronUpIcon
                   className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-pastel-orange`}
                 />
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 py-2">
-                <div className="my-6">
+                <div className="my-3 md:my-6">
                   <strong className="font-bold text-pastel-orange italic">
                     What is a linked pup?
                   </strong>
@@ -43,7 +132,7 @@ const Faqs = () => {
                   </div>
                 </div>
 
-                <div className="my-6">
+                <div className="my-3 md:my-6">
                   <strong className="font-bold text-pastel-orange italic">
                     Why do we need this?
                   </strong>
@@ -58,7 +147,7 @@ const Faqs = () => {
                   </div>
                 </div>
 
-                <div className="my-6">
+                <div className="my-3 md:my-6">
                   <strong className="font-bold text-pastel-orange italic">
                     How can I link my account?
                   </strong>
@@ -94,7 +183,7 @@ const Faqs = () => {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 py-2">
-                <div className="my-6">
+                <div className="my-3 md:my-6">
                   <div className="mt-4 ml-6 md:ml-8 lg:ml-12">
                     <p>
                       Our digital collectibles are built to last! With each new release, recent
@@ -105,7 +194,7 @@ const Faqs = () => {
                   </div>
                 </div>
 
-                <div className="my-6">
+                <div className="my-3 md:my-6">
                   <strong className="font-bold text-pastel-orange italic">Blending</strong>
                   <div className="mt-4 ml-6 md:ml-8 lg:ml-12">
                     <p>
@@ -119,7 +208,7 @@ const Faqs = () => {
                   </div>
                 </div>
 
-                <div className="my-6">
+                <div className="my-3 md:my-6">
                   <strong className="font-bold text-pastel-orange italic">
                     Upgrades and Swaps
                   </strong>
@@ -138,7 +227,7 @@ const Faqs = () => {
                   </div>
                 </div>
 
-                <div className="my-6">
+                <div className="my-3 md:my-6">
                   <strong className="font-bold text-pastel-orange italic">
                     Completion rewards
                   </strong>
@@ -171,7 +260,7 @@ const Faqs = () => {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 py-2">
-                <div className="my-6">
+                <div className="my-3 md:my-6">
                   <div className="mt-4 ml-6 md:ml-8 lg:ml-12">
                     <p>
                       Everything you need has been placed here in our website for your convenience,
@@ -180,7 +269,7 @@ const Faqs = () => {
                   </div>
                 </div>
 
-                <div className="my-6">
+                <div className="my-3 md:my-6">
                   <strong className="font-bold text-pastel-orange italic">
                     Drop info and announcements
                   </strong>
@@ -211,7 +300,7 @@ const Faqs = () => {
                   </div>
                 </div>
 
-                <div className="my-6">
+                <div className="my-3 md:my-6">
                   <strong className="font-bold text-pastel-orange italic">Purchasing info</strong>
                   <div className="mt-4 ml-6 md:ml-8 lg:ml-12">
                     <p>
@@ -239,7 +328,7 @@ const Faqs = () => {
                   </div>
                 </div>
 
-                <div className="my-6">
+                <div className="my-3 md:my-6">
                   <strong className="font-bold text-pastel-orange italic">
                     Technical Difficulties
                   </strong>

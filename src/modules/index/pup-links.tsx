@@ -59,9 +59,9 @@ const PupLinks = () => {
         </p>
 
         <div className="mt-12 w-4/5 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
-          {links.map((i, index) => (
-            <>
-              {i.link == '' ? (
+          {links.map((i, index) => {
+            if (i.link == '') {
+              return (
                 <button
                   onClick={openComingSoonModal}
                   key={index}
@@ -70,20 +70,22 @@ const PupLinks = () => {
                 >
                   {i.name}
                 </button>
-              ) : (
-                <a
-                  key={index}
-                  href={i.link}
-                  title={i.title}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-alt py-3 px-6 rounded-xl bg-white text-pastel-blue text-2xl lg:text-3xl flex items-center justify-center"
-                >
-                  {i.name}
-                </a>
-              )}
-            </>
-          ))}
+              );
+            }
+
+            return (
+              <a
+                key={index}
+                href={i.link}
+                title={i.title}
+                target="_blank"
+                rel="noreferrer"
+                className="font-alt py-3 px-6 rounded-xl bg-white text-pastel-blue text-2xl lg:text-3xl flex items-center justify-center"
+              >
+                {i.name}
+              </a>
+            );
+          })}
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ const Faqs = () => {
   const closeComingSoonModal = () => setOpen(false);
 
   return (
-    <div className="py-32 w-5/6 2xl:w-4/5 3xl:w-2/3 mx-auto text-center">
+    <div id="faqs" className="py-32 w-5/6 2xl:w-4/5 3xl:w-2/3 mx-auto text-center">
       <ComingSoonModal open={open} closeModal={closeComingSoonModal} />
 
       <div className="inline-flex flex-col items-center justify-center">
@@ -58,7 +58,7 @@ const Faqs = () => {
                           Cards give you DPS, and DPS gives you roles (plus perks)!! Here are the
                           following DPS roles and how much DPS you need to attain them :
                         </p>
-                        <ul className="ml-2 sm:ml-6 my-2">
+                        <ul className="my-2">
                           <li className="font-bold text-neutral-900">Knight Pups - 5000 DPS</li>
                           <li className="font-bold text-neutral-900">Overlord Pups - 10000 DPS </li>
                           <li className="font-bold text-neutral-900">

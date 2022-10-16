@@ -1,12 +1,21 @@
 import { Disclosure } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/solid';
 import Link from 'next/link';
+import { useState } from 'react';
+import ComingSoonModal from '../../components/coming-soon';
 import { atomichubMarketplace, discord, neftyblocks, twitter } from '../../lib/links';
 import FaqsBlendingGuide from './faqs/blending-guide';
 
 const Faqs = () => {
+  const [open, setOpen] = useState(false);
+
+  const openComingSoonModal = () => setOpen(true);
+  const closeComingSoonModal = () => setOpen(false);
+
   return (
     <div className="py-32 w-5/6 2xl:w-4/5 3xl:w-2/3 mx-auto text-center">
+      <ComingSoonModal open={open} closeModal={closeComingSoonModal} />
+
       <div className="inline-flex flex-col items-center justify-center">
         <h2 className="font-alt font-bold text-4xl tracking-wide text-pastel-orange uppercase">
           Faqs
@@ -221,9 +230,12 @@ const Faqs = () => {
                     </p>
                     <br />
 
-                    <a className="italic text-pastel-orange underline opacity-80 hover:opacity-100">
+                    <button
+                      onClick={openComingSoonModal}
+                      className="italic text-pastel-orange underline opacity-80 hover:opacity-100"
+                    >
                       click here for upgrade and swap guide
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -240,9 +252,11 @@ const Faqs = () => {
                     </p>
                     <br />
 
-                    <a className="italic text-pastel-orange underline opacity-80 hover:opacity-100">
-                      checkout set rewards here
-                    </a>
+                    <Link href="/gallery">
+                      <a className="italic text-pastel-orange underline opacity-80 hover:opacity-100">
+                        checkout set rewards here
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </Disclosure.Panel>

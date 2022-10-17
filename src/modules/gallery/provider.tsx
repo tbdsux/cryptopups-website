@@ -17,7 +17,8 @@ const GalleryContext = createContext<GalleryContextProps>({
     title: '',
     templates: [],
     reward: 0,
-    amount: 0
+    amount: 0,
+    unlock_date: 0
   },
   images: [],
   showOwned: true

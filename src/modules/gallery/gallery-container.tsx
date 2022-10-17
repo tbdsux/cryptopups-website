@@ -56,7 +56,8 @@ const GalleryContainer = () => {
       title: 'All',
       templates: [],
       reward: 0,
-      amount: 0
+      amount: 0,
+      unlock_date: 0
     },
     ...sets
   ];

@@ -4,4 +4,5 @@ export interface SetProps {
   templates: number[];
   reward: number;
   amount: number;
+  unlock_date: number;
 }

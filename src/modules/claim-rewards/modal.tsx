@@ -1,6 +1,7 @@
 import { useWaxUser } from '@cryptopuppie/next-waxauth';
 import { Dialog } from '@headlessui/react';
 import { useState } from 'react';
+import Countdown from 'react-countdown';
 import BaseModal from '../../components/modal';
 import useGetContractConfig from '../../hooks/ueGetContractConfig';
 import { useGetUserRewardsConfig } from '../../hooks/useGetRewardsConfig';
@@ -61,18 +62,37 @@ const GalleryClaimRewards = () => {
               US THROUGH DISCORD IF THIS WAS A MISTAKE.
             </strong>
           ) : (
-            <>
-              {userConfig?.setids.includes(set.setid) ? (
-                <>
-                  <p>You have alreay claimed the rewards for completing this set.</p>
-                </>
-              ) : (
-                <>
-                  <p>Thank you very much for completing the {set.title} NFTs.</p>
-                  <ClaimRewardsForm />
-                </>
-              )}
-            </>
+            <Countdown
+              date={new Date(set.unlock_date * 1000)}
+              renderer={({ days, hours, minutes, seconds, completed }) => {
+                if (completed) {
+                  return (
+                    <>
+                      {userConfig?.setids.includes(set.setid) ? (
+                        <>
+                          <p>You have alreay claimed the rewards for completing this set.</p>
+                        </>
+                      ) : (
+                        <>
+                          <p>Thank you very much for completing the {set.title} NFTs.</p>
+                          <ClaimRewardsForm />
+                        </>
+                      )}
+                    </>
+                  );
+                }
+
+                return (
+                  <div>
+                    <span className="text-lg">Claimable at:</span>
+
+                    <p className="font-bold tracking-wide text-2xl">
+                      {days != 0 ? `${days} days` : ''} {hours}h : {minutes}m : {seconds}s
+                    </p>
+                  </div>
+                );
+              }}
+            />
           )}
         </div>
       </BaseModal>

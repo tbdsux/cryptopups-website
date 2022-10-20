@@ -5,6 +5,8 @@ import Countdown from 'react-countdown';
 import BaseModal from '../../components/modal';
 import useGetContractConfig from '../../hooks/ueGetContractConfig';
 import { useGetUserRewardsConfig } from '../../hooks/useGetRewardsConfig';
+import useGetWhitelists from '../../hooks/useGetWhitelists';
+import { discord } from '../../lib/links';
 import { useGallery } from '../gallery/provider';
 import ClaimRewardsButton from './claim-button';
 import ClaimRewardsForm from './form';
@@ -15,6 +17,7 @@ const GalleryClaimRewards = () => {
   const { user } = useWaxUser();
   const { set } = useGallery();
   const userConfig = useGetUserRewardsConfig();
+  const whitelists = useGetWhitelists();
   const contractConfig = useGetContractConfig();
 
   const [open, setOpen] = useState(false);
@@ -66,12 +69,28 @@ const GalleryClaimRewards = () => {
               date={new Date(set.unlock_date * 1000)}
               renderer={({ days, hours, minutes, seconds, completed }) => {
                 if (completed) {
+                  // check if wallet is whitelisted
+                  if (!whitelists.includes(user?.wallet ?? '')) {
+                    return (
+                      <p>
+                        Sorry, your wallet is currently not whitelisted. Please join our{' '}
+                        <a
+                          href={discord}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="font-bold hover:underline"
+                        >
+                          discord server
+                        </a>{' '}
+                        for more info.
+                      </p>
+                    );
+                  }
+
                   return (
                     <>
                       {userConfig?.setids.includes(set.setid) ? (
-                        <>
-                          <p>You have alreay claimed the rewards for completing this set.</p>
-                        </>
+                        <p>You have alreay claimed the rewards for completing this set.</p>
                       ) : (
                         <>
                           <p>Thank you very much for completing the {set.title} NFTs.</p>

@@ -8,6 +8,7 @@ import { toast } from 'react-toastify';
 import BaseModal from '../../components/modal';
 import useGetOwnedTemplates from '../../hooks/useGetOwnedTemplates';
 import { useGetUserRewardsConfig } from '../../hooks/useGetRewardsConfig';
+import useGetWhitelists from '../../hooks/useGetWhitelists';
 import { bloks } from '../../lib/config';
 import { useGallery } from '../gallery/provider';
 import { useClaimReward } from './provider';
@@ -17,6 +18,7 @@ const ClaimRewardsButton = () => {
   const { set, images } = useGallery();
   const { selections } = useClaimReward();
   const templates = useGetOwnedTemplates();
+  const whitelists = useGetWhitelists();
   const userConfig = useGetUserRewardsConfig();
 
   // state and props for the transaction modal
@@ -142,16 +144,19 @@ const ClaimRewardsButton = () => {
         date={new Date(set.unlock_date * 1000)}
         renderer={({ completed }) => {
           if (completed) {
-            return (
-              <button
-                onClick={claimRewards}
-                disabled={hasClaimed ? true : !completed}
-                title={completed ? 'Claim Rewards' : 'Reward is not yet claimable...'}
-                className="text-sm mx-0.5 py-2 px-4 rounded-lg uppercase font-bold bg-orange-400 enabled:hover:bg-orange-500 text-white duration-300 disabled:opacity-50"
-              >
-                {hasClaimed ? 'claimed' : completed ? 'claim' : 'incomplete...'}
-              </button>
-            );
+            // check if whitelisted first
+            if (whitelists.includes(user?.wallet ?? '')) {
+              return (
+                <button
+                  onClick={claimRewards}
+                  disabled={hasClaimed ? true : !completed}
+                  title={completed ? 'Claim Rewards' : 'Reward is not yet claimable...'}
+                  className="text-sm mx-0.5 py-2 px-4 rounded-lg uppercase font-bold bg-orange-400 enabled:hover:bg-orange-500 text-white duration-300 disabled:opacity-50"
+                >
+                  {hasClaimed ? 'claimed' : completed ? 'claim' : 'incomplete...'}
+                </button>
+              );
+            }
           }
 
           return (

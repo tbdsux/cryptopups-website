@@ -23,7 +23,7 @@ const PreviewRewardModal = () => {
     <>
       <BaseModal
         open={isOpen}
-        closeModal={() => {}}
+        closeModal={() => setIsOpen(false)}
         className="max-w-md bg-white p-6 rounded-lg text-left"
       >
         <div className="flex items-center justify-between">

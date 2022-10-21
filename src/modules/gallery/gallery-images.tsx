@@ -8,7 +8,7 @@ import { useGallery } from './provider';
 
 // USED TO IGNORE TEMPLATE MISTAKES IN THE MAINNET,
 // TODO: make it so it can be dynamically set in the admin dashboard
-const MainNetIgnoreTemplates = ['611378'];
+const MainNetIgnoreTemplates = ['612990'];
 
 const GalleryImages = () => {
   const { category, rarity, pupname, set, images, showOwned } = useGallery();

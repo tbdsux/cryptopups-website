@@ -1,6 +1,6 @@
 import { useWaxUser } from '@cryptopuppie/next-waxauth';
 import useGetOwnedTemplates from '../../hooks/useGetOwnedTemplates';
-import { isDev } from '../../lib/config';
+import { atomicMarket, isDev } from '../../lib/config';
 import GalleryClaimRewards from '../claim-rewards/modal';
 import ImageLightbox from './gallery-lightbox';
 import GallerySetImages from './gallery-set-images';
@@ -67,12 +67,34 @@ const GalleryImages = () => {
               return true;
             })
             .map((i, index) => (
-              <ImageLightbox
-                key={index}
-                src={`https://atomichub-ipfs.com/ipfs/${i.immutable_data.img}`}
-                alt={i.immutable_data.name}
-                className={showOwned ? (templates?.includes(i.template_id) ? '' : 'grayscale') : ''}
-              />
+              <li key={index} className="relative group">
+                {isLoggedIn && showOwned && !templates?.includes(i.template_id) ? (
+                  <div className="absolute w-full h-full hidden group-hover:flex items-center justify-center z-30">
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      className="bg-black/80 py-1 px-3 rounded-lg text-sm text-white"
+                      href={`${atomicMarket}?template_id=${i.template_id}`}
+                    >
+                      view in market
+                    </a>
+                  </div>
+                ) : (
+                  <></>
+                )}
+
+                <ImageLightbox
+                  src={`https://atomichub-ipfs.com/ipfs/${i.immutable_data.img}`}
+                  alt={i.immutable_data.name}
+                  className={
+                    isLoggedIn && showOwned
+                      ? templates?.includes(i.template_id)
+                        ? ''
+                        : 'grayscale'
+                      : ''
+                  }
+                />
+              </li>
             ))}
         </ul>
       ) : (

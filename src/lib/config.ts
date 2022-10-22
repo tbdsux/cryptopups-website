@@ -5,7 +5,18 @@ const dApp = 'worldofcryptopups.com';
 const bloks = process.env.NEXT_PUBLIC_BLOKS ?? '';
 const cordyApi = process.env.NEXT_PUBLIC_CORDY_API ?? '';
 const waxGGContract = process.env.NEXT_PUBLIC_WAXGG_CONTRACT ?? '';
+const atomicMarket = process.env.NEXT_PUBLIC_MARKET ?? '';
 
 const isDev = process.env.NEXT_PUBLIC_IS_DEV === 'true';
 
-export { atomicassets, endpoint, chainId, dApp, bloks, cordyApi, waxGGContract, isDev };
+export {
+  atomicassets,
+  endpoint,
+  chainId,
+  dApp,
+  bloks,
+  cordyApi,
+  waxGGContract,
+  atomicMarket,
+  isDev
+};

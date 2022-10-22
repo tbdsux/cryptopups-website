@@ -11,7 +11,7 @@ const ImageLightbox = ({ src, alt, className }: ImageLightboxProps) => {
   const [open, setOpen] = useState<ImageLightboxProps | undefined>(undefined);
 
   return (
-    <li>
+    <>
       {open !== undefined && (
         <BasicLightbox
           open={open !== undefined}
@@ -34,9 +34,9 @@ const ImageLightbox = ({ src, alt, className }: ImageLightboxProps) => {
         alt={alt}
         height="300"
         width="200"
-        className={`cursor-pointer ${className}`}
+        className={`z-20 cursor-pointer ${className}`}
       />
-    </li>
+    </>
   );
 };
 

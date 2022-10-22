@@ -1,4 +1,4 @@
-import { QuestionMarkCircleIcon } from '@heroicons/react/solid';
+import { QuestionMarkCircleIcon } from '@heroicons/react/24/solid';
 import { useState } from 'react';
 import BaseModal from '../../../components/modal';
 

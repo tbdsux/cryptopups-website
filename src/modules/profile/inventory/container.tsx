@@ -1,5 +1,5 @@
 import { Listbox, Transition } from '@headlessui/react';
-import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
+import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/24/solid';
 import { Fragment, useState } from 'react';
 import { useImages } from '../../../hooks/useImages';
 import InventoryProvider from './provider';
@@ -58,7 +58,7 @@ const ProfileInventory = () => {
                   {selectedCategory.name != 'None' ? selectedCategory.name : 'Select a category...'}
                 </span>
                 <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-                  <SelectorIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+                  <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
                 </span>
               </Listbox.Button>
               <Transition
@@ -109,7 +109,7 @@ const ProfileInventory = () => {
                   {selectedRarity != 'None' ? selectedRarity : 'Select a rarity...'}
                 </span>
                 <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-                  <SelectorIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+                  <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
                 </span>
               </Listbox.Button>
               <Transition
@@ -160,7 +160,7 @@ const ProfileInventory = () => {
                   {selectedPuppy != 'None' ? selectedPuppy : 'Select a pup name...'}
                 </span>
                 <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-                  <SelectorIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+                  <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
                 </span>
               </Listbox.Button>
               <Transition

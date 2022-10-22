@@ -1,7 +1,7 @@
 import { useWaxUser } from '@cryptopuppie/next-waxauth';
 import { TransactResult } from '@cryptopuppie/useeoschain';
 import { Dialog } from '@headlessui/react';
-import { CheckIcon } from '@heroicons/react/solid';
+import { CheckIcon } from '@heroicons/react/24/solid';
 import { useState } from 'react';
 import Countdown from 'react-countdown';
 import { toast } from 'react-toastify';

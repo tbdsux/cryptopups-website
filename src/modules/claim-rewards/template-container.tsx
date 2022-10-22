@@ -1,6 +1,6 @@
 import { IAsset } from '@cryptopuppie/useatomicassets';
 import { Dialog, Listbox, Transition } from '@headlessui/react';
-import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
+import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import { Fragment, useState } from 'react';
 import BaseModal from '../../components/modal';
@@ -65,7 +65,7 @@ const RewardTemplateContainer = ({ src, alt, template_id }: RewardTemplateContai
                       : 'Select a NFT...'}
                   </span>
                   <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-                    <SelectorIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+                    <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
                   </span>
                 </Listbox.Button>
                 <Transition

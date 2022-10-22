@@ -1,5 +1,5 @@
 import { useWaxUser } from '@cryptopuppie/next-waxauth';
-import { CheckIcon, DuplicateIcon } from '@heroicons/react/solid';
+import { CheckIcon, ClipboardIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import useGetToken from '../../hooks/useGetToken';
@@ -47,7 +47,7 @@ const PupProfile = () => {
               {copied ? (
                 <CheckIcon aria-hidden="true" className="h-5 w-5" />
               ) : (
-                <DuplicateIcon aria-hidden="true" className="h-5 w-5" />
+                <ClipboardIcon aria-hidden="true" className="h-5 w-5" />
               )}
             </button>
 

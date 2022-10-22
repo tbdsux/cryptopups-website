@@ -1,5 +1,5 @@
 import { IAsset } from '@cryptopuppie/useatomicassets';
-import { InformationCircleIcon, XIcon } from '@heroicons/react/solid';
+import { InformationCircleIcon, XMarkIcon } from '@heroicons/react/24/solid';
 import { useState } from 'react';
 import AssetDetailsHidden from './asset-details-hidden';
 
@@ -24,7 +24,7 @@ const AssetListDetails = ({ asset }: AssetListDetailsProps) => {
       {isOpen ? (
         <div className="absolute z-50 h-full w-full bg-gray-100 p-2 rounded-t-lg">
           <button onClick={close} className="absolute top-1 right-1 z-40">
-            <XIcon aria-hidden="true" className="h-5 w-5" />
+            <XMarkIcon aria-hidden="true" className="h-5 w-5" />
           </button>
 
           <AssetDetailsHidden data={filterData} template={asset.template?.template_id} />

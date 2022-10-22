@@ -1,6 +1,6 @@
 import { useGetTemplateID } from '@cryptopuppie/useatomicassets';
 import { Dialog } from '@headlessui/react';
-import { XCircleIcon } from '@heroicons/react/solid';
+import { XCircleIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import { useState } from 'react';
 import BaseModal from '../../components/modal';

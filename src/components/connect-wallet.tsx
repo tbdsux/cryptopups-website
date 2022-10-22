@@ -1,6 +1,6 @@
 import { useAuthFunctions, useWaxUser } from '@cryptopuppie/next-waxauth';
 import { Dialog, Menu, Transition } from '@headlessui/react';
-import { ChevronDownIcon } from '@heroicons/react/solid';
+import { ChevronDownIcon } from '@heroicons/react/24/solid';
 import { Fragment, useEffect, useState } from 'react';
 import { isDev } from '../lib/config';
 import BaseModal from './modal';

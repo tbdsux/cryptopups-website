@@ -1,6 +1,6 @@
 import { useWaxUser } from '@cryptopuppie/next-waxauth';
 import { Listbox, Tab, Transition } from '@headlessui/react';
-import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
+import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/24/solid';
 import { Fragment, useRef, useState } from 'react';
 import { useImages } from '../../hooks/useImages';
 import GalleryImages from './gallery-images';
@@ -74,7 +74,7 @@ const GalleryContainer = () => {
                   {selectedCategory.name != 'None' ? selectedCategory.name : 'Select a category...'}
                 </span>
                 <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-                  <SelectorIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+                  <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
                 </span>
               </Listbox.Button>
               <Transition
@@ -125,7 +125,7 @@ const GalleryContainer = () => {
                   {selectedRarity != 'None' ? selectedRarity : 'Select a rarity...'}
                 </span>
                 <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-                  <SelectorIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+                  <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
                 </span>
               </Listbox.Button>
               <Transition
@@ -176,7 +176,7 @@ const GalleryContainer = () => {
                   {selectedPuppy != 'None' ? selectedPuppy : 'Select a pup name...'}
                 </span>
                 <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-                  <SelectorIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+                  <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
                 </span>
               </Listbox.Button>
               <Transition

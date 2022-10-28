@@ -1,7 +1,9 @@
 import { useAuthFunctions, useWaxUser } from '@cryptopuppie/next-waxauth';
 import { Dialog, Menu, Transition } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/24/solid';
+import Image from 'next/image';
 import { Fragment, useEffect, useState } from 'react';
+import { AnchorLogo, WaxIcon } from '../lib/assets';
 import { isDev } from '../lib/config';
 import BaseModal from './modal';
 
@@ -77,15 +79,17 @@ const ConnectWalletButton = () => {
               </p>
             </div>
 
-            <div className="text-center mt-8">
+            <div className="text-center mt-8 md:mx-8">
               {!isDev ? (
                 <button
                   type="button"
                   title="Authenticate your account with WAX Cloud Wallet"
-                  className="m-2 py-2 px-6 rounded-md font-medium tracking-wide text-white bg-orange-500 hover:bg-orange-600"
+                  className="m-2 py-2 px-6 w-full rounded-2xl font-medium tracking-wide text-white bg-orange-500 hover:bg-orange-600 inline-flex items-center justify-center"
                   onClick={loginWithCloudWallet}
                 >
-                  Login with WAX Cloud Wallet
+                  <Image src={WaxIcon} alt="Wax Cloud Wallet" height={32} width={32} className="" />
+
+                  <span className="ml-2 text-sm">Login with WAX Cloud Wallet</span>
                 </button>
               ) : (
                 <></>
@@ -94,10 +98,18 @@ const ConnectWalletButton = () => {
               <button
                 type="button"
                 title="Authenticate your account with Anchor"
-                className="m-2 py-2 px-6 rounded-md font-medium tracking-wide text-white bg-blue-500 hover:bg-blue-600"
+                className="m-2 py-2 px-6 w-full rounded-2xl font-medium tracking-wide text-white bg-blue-500 hover:bg-blue-600 inline-flex items-center justify-center"
                 onClick={loginWithAnchor}
               >
-                Login with Anchor
+                <Image
+                  src={AnchorLogo}
+                  alt="Wax Cloud Wallet"
+                  height={32}
+                  width={32}
+                  className=""
+                />
+
+                <span className="ml-2 text-sm">Login with Anchor</span>
               </button>
             </div>
           </BaseModal>

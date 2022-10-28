@@ -34,7 +34,7 @@ module.exports = {
         red: '#EBBAB5'
       },
       flat: {
-        yellow: '#fff276',
+        yellow: '#fae200',
         purple: '#c792dd',
         red: '#dd6868',
         orange: '#f4a351'

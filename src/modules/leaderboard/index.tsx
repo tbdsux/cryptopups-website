@@ -1,0 +1,23 @@
+import { NextSeo } from 'next-seo';
+import PageLayout from '../../layouts/page-layout';
+import LeaderboardContainer from './container';
+
+const LeaderboardPage = () => {
+  return (
+    <PageLayout
+      title="Leaderboard"
+      description="View DPS leaderboard of all of pup collectors in the community"
+    >
+      {/* start seo */}
+      <NextSeo
+        title="Leaderboard"
+        description="View DPS leaderboard of all of pup collectors in the community"
+      />
+      {/* end seo */}
+
+      <LeaderboardContainer />
+    </PageLayout>
+  );
+};
+
+export default LeaderboardPage;

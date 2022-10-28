@@ -17,7 +17,7 @@ const LeaderboardContainer = () => {
             .map(([key, value], index) => (
               <div key={index} className="border border-gray-100 rounded-xl p-8 shadow-xl">
                 <h3
-                  className={`text-center tracking-wider font-black text-2xl uppercase ${
+                  className={`text-center tracking-wider font-medium font-alt text-3xl uppercase ${
                     getColor(key).color
                   }`}
                 >
@@ -47,7 +47,7 @@ const LeaderboardContainer = () => {
             ))}
         </div>
       ) : (
-        <></>
+        <p className="text-sm">Loading leaderboard...</p>
       )}
     </div>
   );

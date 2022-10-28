@@ -50,6 +50,22 @@ hr {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
 }
 
-.perks-gradient {
-  background-image: linear-gradient(to right, #fef5d4, #ffd5aa, #f0b9d6, #dadafc);
+.perks-eternity {
+  background-image: linear-gradient(to right, #ffd4ff, #bbaef7);
+}
+
+.perks-infinity {
+  background-image: linear-gradient(to right, #ffb26b, #ffe06b);
+}
+
+.perks-aboveall {
+  background-image: linear-gradient(to right, #ffaf4a, #ea6c52);
+}
+
+.perks-apocalyptic {
+  background-image: linear-gradient(to right, #f44f60, #a4192b);
+}
+
+.perks-overlord {
+  background-image: linear-gradient(to right, #c794d4, #6252b6);
 }

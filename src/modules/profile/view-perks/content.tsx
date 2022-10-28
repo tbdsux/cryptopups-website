@@ -24,7 +24,7 @@ const ViewPerksContent = () => {
         {pupPerks.map((p, index) => (
           <div
             key={index}
-            className="w-80 m-8 rounded-[2rem] border border-gray-100 shadow-2xl px-6 py-16"
+            className="w-80 m-8 rounded-[2rem] border border-gray-100 shadow-xl px-6 py-16"
           >
             <div className="inline-flex flex-col items-center justify-center">
               <h2

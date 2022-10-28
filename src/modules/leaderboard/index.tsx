@@ -6,12 +6,12 @@ const LeaderboardPage = () => {
   return (
     <PageLayout
       title="Leaderboard"
-      description="View DPS leaderboard of all of pup collectors in the community"
+      description="View DPS leaderboard with the top pup collectors in the community"
     >
       {/* start seo */}
       <NextSeo
         title="Leaderboard"
-        description="View DPS leaderboard of all of pup collectors in the community"
+        description="View DPS leaderboard with the top pup collectors in the community"
       />
       {/* end seo */}
 

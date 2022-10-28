@@ -20,9 +20,9 @@ const links = [
     title: 'Pup Community'
   },
   {
-    name: 'Leaderboards',
-    link: '',
-    title: 'Coming Soon'
+    name: 'Leaderboard',
+    link: '/leaderboard',
+    title: 'Leaderboard'
   },
   {
     name: 'Pupgrades',
@@ -78,7 +78,7 @@ const PupLinks = () => {
                 key={index}
                 href={i.link}
                 title={i.title}
-                target="_blank"
+                target={i.link.startsWith('/') ? '_self' : '_blank'}
                 rel="noreferrer"
                 className="font-alt py-3 px-6 rounded-xl bg-white text-pastel-blue text-2xl lg:text-3xl flex items-center justify-center"
               >

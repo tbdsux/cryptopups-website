@@ -126,6 +126,13 @@ const Footer = () => {
                     </a>
                   </Link>
                 </li>
+                <li className="my-1">
+                  <Link href="/leaderboard">
+                    <a className="" title="Leaderboard">
+                      Leaderboard
+                    </a>
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>

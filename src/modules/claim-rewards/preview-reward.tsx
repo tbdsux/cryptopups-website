@@ -1,18 +1,15 @@
-import { useGetTemplateID } from '@cryptopuppie/useatomicassets';
 import { Dialog } from '@headlessui/react';
 import { XCircleIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import { useState } from 'react';
 import BaseModal from '../../components/modal';
+import useGetTemplate from '../../hooks/useGetTemplate';
 import { useGallery } from '../gallery/provider';
 
 const PreviewRewardModal = () => {
   const { set } = useGallery();
 
-  const { data } = useGetTemplateID({
-    templateID: set.reward,
-    collectionName: 'cryptopuppie'
-  });
+  const { data } = useGetTemplate(set.reward);
 
   const [isOpen, setIsOpen] = useState(false);
 

@@ -5,6 +5,7 @@ import Countdown from 'react-countdown';
 import BaseModal from '../../components/modal';
 import useGetContractConfig from '../../hooks/ueGetContractConfig';
 import { useGetUserRewardsConfig } from '../../hooks/useGetRewardsConfig';
+import useGetTemplate from '../../hooks/useGetTemplate';
 import useGetWhitelists from '../../hooks/useGetWhitelists';
 import { discord } from '../../lib/links';
 import { useGallery } from '../gallery/provider';
@@ -19,6 +20,8 @@ const GalleryClaimRewards = () => {
   const userConfig = useGetUserRewardsConfig();
   const whitelists = useGetWhitelists();
   const contractConfig = useGetContractConfig();
+
+  const { data: template } = useGetTemplate(set.reward);
 
   const [open, setOpen] = useState(false);
 
@@ -40,6 +43,20 @@ const GalleryClaimRewards = () => {
         open={open}
         closeModal={closeModal}
       >
+        <div className="mb-4">
+          <p className="text-left text-sm font-medium bg-orange-500 py-2 px-4 rounded-lg text-white">
+            Issued Supply:{' '}
+            {template ? (
+              <strong title="Issued supply">
+                {template.issued_supply} /{' '}
+                {template.max_supply === '0' ? <>&infin;</> : template.max_supply}
+              </strong>
+            ) : (
+              <span>fetching...</span>
+            )}
+          </p>
+        </div>
+
         <div className="flex items-center justify-between">
           <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-700">
             <strong className="text-orange-500 font-black">Claim Rewards</strong> | {set.title} Set
@@ -48,12 +65,17 @@ const GalleryClaimRewards = () => {
           <div className="inline-flex items-center">
             {contractConfig?.blacklisted_wallets.includes(user?.wallet ?? '') ? (
               <></>
-            ) : (
+            ) : template ? (
               <>
                 <PreviewRewardModal />
 
-                <ClaimRewardsButton />
+                <ClaimRewardsButton
+                  max_supply={template.max_supply}
+                  issued_supply={template.issued_supply}
+                />
               </>
+            ) : (
+              <></>
             )}
           </div>
         </div>

@@ -13,7 +13,12 @@ import { bloks } from '../../lib/config';
 import { useGallery } from '../gallery/provider';
 import { useClaimReward } from './provider';
 
-const ClaimRewardsButton = () => {
+interface ClaimRewardsButtonProps {
+  max_supply: string;
+  issued_supply: string;
+}
+
+const ClaimRewardsButton = ({ max_supply, issued_supply }: ClaimRewardsButtonProps) => {
   const { user } = useWaxUser();
   const { set, images } = useGallery();
   const { selections } = useClaimReward();
@@ -144,6 +149,19 @@ const ClaimRewardsButton = () => {
         date={new Date(set.unlock_date * 1000)}
         renderer={({ completed }) => {
           if (completed) {
+            // check if max supply is reached
+            if (max_supply !== '0' && Number(max_supply) === Number(issued_supply)) {
+              return (
+                <button
+                  disabled={true}
+                  title="Max Supply limit reached"
+                  className="text-sm mx-0.5 py-2 px-4 rounded-lg font-bold bg-orange-400 enabled:hover:bg-orange-500 text-white duration-300 disabled:opacity-50 "
+                >
+                  Max Supply Limit Reached
+                </button>
+              );
+            }
+
             // check if whitelisted first
             if (whitelists.includes(user?.wallet ?? '')) {
               return (
@@ -161,7 +179,6 @@ const ClaimRewardsButton = () => {
 
           return (
             <button
-              onClick={claimRewards}
               disabled={true}
               title="Waiting..."
               className="text-sm mx-0.5 py-2 px-4 rounded-lg uppercase font-bold bg-orange-400 enabled:hover:bg-orange-500 text-white duration-300 disabled:opacity-50"

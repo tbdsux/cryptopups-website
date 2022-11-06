@@ -48,6 +48,7 @@
     "@types/cookie": "^0.5.1",
     "@types/ioredis": "^4.28.10",
     "@types/lodash": "^4.14.186",
+    "@types/node": "18.11.9",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "@types/react-measure": "^2.0.8",

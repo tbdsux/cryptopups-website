@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 html {
-  @apply scroll-smooth;
+  scroll-behavior: smooth;
+  --swiper-pagination-color: #fafafa;
 }
 
 hr {
@@ -68,4 +69,10 @@ hr {
 
 .perks-overlord {
   background-image: linear-gradient(to right, #c794d4, #6252b6);
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+  @apply text-orange-300;
 }

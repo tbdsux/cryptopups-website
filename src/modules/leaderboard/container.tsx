@@ -11,11 +11,11 @@ const LeaderboardContainer = () => {
   return (
     <div className="w-5/6 mx-auto">
       {leaderboard ? (
-        <div className="grid grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 gap-12">
           {Object.entries(leaderboard)
             .reverse()
             .map(([key, value], index) => (
-              <div key={index} className="border border-gray-100 rounded-xl p-8 shadow-xl">
+              <div key={index} className="border border-gray-100 rounded-3xl p-8 shadow-xl">
                 <h3
                   className={`text-center tracking-wider font-medium font-alt text-3xl uppercase ${
                     getColor(key).color

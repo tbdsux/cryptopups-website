@@ -1,14 +1,10 @@
 import { useWaxUser } from '@cryptopuppie/next-waxauth';
 import useGetOwnedTemplates from '../../hooks/useGetOwnedTemplates';
-import { atomicMarket, isDev } from '../../lib/config';
+import { atomicMarket, ignoreTemplates, isDev } from '../../lib/config';
 import GalleryClaimRewards from '../claim-rewards/modal';
 import ImageLightbox from './gallery-lightbox';
 import GallerySetImages from './gallery-set-images';
 import { useGallery } from './provider';
-
-// USED TO IGNORE TEMPLATE MISTAKES IN THE MAINNET,
-// TODO: make it so it can be dynamically set in the admin dashboard
-const MainNetIgnoreTemplates = ['612990', '611378'];
 
 const GalleryImages = () => {
   const { category, rarity, pupname, set, images, showOwned } = useGallery();
@@ -35,7 +31,7 @@ const GalleryImages = () => {
             .filter((i) => {
               if (isDev) return true;
 
-              return !MainNetIgnoreTemplates.includes(i.template_id);
+              return !ignoreTemplates.includes(i.template_id);
             })
             .filter((i) => i.immutable_data.img != undefined) // filter for blank image fields
             .filter((i) => {

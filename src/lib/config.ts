@@ -6,6 +6,7 @@ const bloks = process.env.NEXT_PUBLIC_BLOKS ?? '';
 const cordyApi = process.env.NEXT_PUBLIC_CORDY_API ?? '';
 const waxGGContract = process.env.NEXT_PUBLIC_WAXGG_CONTRACT ?? '';
 const atomicMarket = process.env.NEXT_PUBLIC_MARKET ?? '';
+const ignoreTemplates = (process.env.NEXT_PUBLIC_IGNORE_TEMPLATES ?? '').split(','); // templates to be ignored in gallery page
 
 const isDev = process.env.NEXT_PUBLIC_IS_DEV === 'true';
 
@@ -18,5 +19,6 @@ export {
   cordyApi,
   waxGGContract,
   atomicMarket,
+  ignoreTemplates,
   isDev
 };

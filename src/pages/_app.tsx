@@ -1,6 +1,7 @@
 import WaxAuthProvider from '@cryptopuppie/next-waxauth';
 import { UseAtomicAssetsProvider } from '@cryptopuppie/useatomicassets';
 import { UseEOSProvider } from '@cryptopuppie/useeoschain';
+import { Analytics } from '@vercel/analytics/react';
 import { DefaultSeo } from 'next-seo';
 import type { AppProps } from 'next/app';
 import NextNProgress from 'nextjs-progressbar';
@@ -37,6 +38,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         draggable
         pauseOnHover
       />
+
+      <Analytics />
     </>
   );
 }

@@ -11,15 +11,7 @@ const Footer = () => {
     <footer className="bg-pastel-violet py-12">
       <Container className="w-5/6 2xl:w-4/5 3xl:w-2/3">
         <Link href="/">
-          <a>
-            <Image
-              src={Logo}
-              height="40"
-              width="180"
-              alt="World of CryptoPups"
-              placeholder="blur"
-            />
-          </a>
+          <Image src={Logo} height="40" width="180" alt="World of CryptoPups" placeholder="blur" />
         </Link>
 
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between mt-8 text-white">
@@ -29,31 +21,23 @@ const Footer = () => {
               <h5 className="font-bold uppercase tracking-wide">Pages</h5>
               <ul className="">
                 <li className="my-1">
-                  <Link href="/">
-                    <a className="" title="Home">
-                      Home
-                    </a>
+                  <Link href="/" className="" title="Home">
+                    Home
                   </Link>
                 </li>
                 <li className="my-1">
-                  <Link href="/gallery">
-                    <a className="" title="Gallery">
-                      Gallery
-                    </a>
+                  <Link href="/gallery" className="" title="Gallery">
+                    Gallery
                   </Link>
                 </li>
                 <li className="my-1">
-                  <Link href="/profile">
-                    <a className="" title="Profile">
-                      Profile
-                    </a>
+                  <Link href="/profile" className="" title="Profile">
+                    Profile
                   </Link>
                 </li>
                 <li className="my-1">
-                  <Link href="/pup-squad">
-                    <a className="" title="The Pup Squad">
-                      Pup Squad
-                    </a>
+                  <Link href="/pup-squad" className="" title="The Pup Squad">
+                    Pup Squad
                   </Link>
                 </li>
               </ul>
@@ -113,24 +97,18 @@ const Footer = () => {
               <h5 className="font-bold uppercase tracking-wide">Tools</h5>
               <ul className="">
                 <li className="my-1">
-                  <Link href="/dps-calculator">
-                    <a className="" title="DPS Calculator">
-                      DPS Calculator
-                    </a>
+                  <Link href="/dps-calculator" className="" title="DPS Calculator">
+                    DPS Calculator
                   </Link>
                 </li>
                 <li className="my-1">
-                  <Link href="/profile">
-                    <a className="" title="Profile">
-                      Profile
-                    </a>
+                  <Link href="/profile" className="" title="Profile">
+                    Profile
                   </Link>
                 </li>
                 <li className="my-1">
-                  <Link href="/leaderboard">
-                    <a className="" title="Leaderboard">
-                      Leaderboard
-                    </a>
+                  <Link href="/leaderboard" className="" title="Leaderboard">
+                    Leaderboard
                   </Link>
                 </li>
               </ul>

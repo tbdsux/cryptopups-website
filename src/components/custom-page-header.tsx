@@ -16,18 +16,14 @@ const CustomPageHeader = ({ title, description, children }: CustomPageHeaderProp
       <div className="bg-stone-900 pt-12 pb-8">
         <Container className="w-11/12 text-center">
           <Link href="/">
-            <a>
-              <Image src={Logo} height="60" width="260" alt="World of CryptoPups" />
-            </a>
+            <Image src={Logo} height="60" width="260" alt="World of CryptoPups" />
           </Link>
         </Container>
       </div>
 
       <Container className="w-11/12 mt-4 mx-auto">
-        <Link href="/">
-          <a className="text-sm tracking-wide hover:underline" title="Return To Home">
-            Return Home
-          </a>
+        <Link href="/" className="text-sm tracking-wide hover:underline" title="Return To Home">
+          Return Home
         </Link>
 
         <div className="mt-8 text-center">

@@ -252,10 +252,11 @@ const Faqs = () => {
                     </p>
                     <br />
 
-                    <Link href="/gallery">
-                      <a className="italic text-pastel-orange underline opacity-80 hover:opacity-100">
-                        checkout set rewards here
-                      </a>
+                    <Link
+                      href="/gallery"
+                      className="italic text-pastel-orange underline opacity-80 hover:opacity-100"
+                    >
+                      checkout set rewards here
                     </Link>
                   </div>
                 </div>
@@ -363,10 +364,11 @@ const Faqs = () => {
                     </p>
                     <br />
 
-                    <Link href="/pup-squad">
-                      <a className="italic text-pastel-orange underline opacity-80 hover:opacity-100">
-                        click here for more info on the puppy team
-                      </a>
+                    <Link
+                      href="/pup-squad"
+                      className="italic text-pastel-orange underline opacity-80 hover:opacity-100"
+                    >
+                      click here for more info on the puppy team
                     </Link>
                   </div>
                 </div>

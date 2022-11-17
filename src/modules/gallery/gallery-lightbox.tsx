@@ -31,7 +31,7 @@ const ImageLightbox = ({ src, alt, className }: ImageLightboxProps) => {
       <Image
         onClick={() => setOpen({ src, alt })}
         src={src}
-        alt={alt}
+        alt={alt ?? ""}
         height="300"
         width="200"
         className={`z-20 cursor-pointer ${className}`}

@@ -45,7 +45,7 @@ const CardInfoModal = () => {
               alt="Rarity identifier"
               height="150"
               width="400"
-              objectFit="contain"
+              className="object-contain mx-auto"
             />
             <div className="text-left lg:w-4/5 mx-auto mt-8">
               <p>
@@ -67,7 +67,7 @@ const CardInfoModal = () => {
               alt="Stats identifier"
               height="150"
               width="500"
-              objectFit="contain"
+              className="object-contain mx-auto"
             />
             <div className="text-left lg:w-4/5 mx-auto mt-8">
               <p>
@@ -98,7 +98,7 @@ const CardInfoModal = () => {
               alt="Group identifier"
               height="150"
               width="300"
-              objectFit="contain"
+              className="object-contain mx-auto"
             />
             <div className="text-left lg:w-4/5 mx-auto mt-8">
               <p>
@@ -121,7 +121,7 @@ const CardInfoModal = () => {
               alt="Stats identifier"
               height="200"
               width="200"
-              objectFit="contain"
+              className="object-contain mx-auto"
             />
             <div className="text-left lg:w-4/5 mx-auto mt-8">
               <p>

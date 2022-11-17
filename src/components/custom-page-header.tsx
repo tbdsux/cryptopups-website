@@ -16,7 +16,13 @@ const CustomPageHeader = ({ title, description, children }: CustomPageHeaderProp
       <div className="bg-stone-900 pt-12 pb-8">
         <Container className="w-11/12 text-center">
           <Link href="/">
-            <Image src={Logo} height="60" width="260" alt="World of CryptoPups" />
+            <Image
+              src={Logo}
+              height="60"
+              width="260"
+              className="mx-auto"
+              alt="World of CryptoPups"
+            />
           </Link>
         </Container>
       </div>

@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <header
       ref={headerRef}
-      className="py-6 bg-black/50 hover:bg-black duration-500 fixed w-full z-[9999]"
+      className="py-6 bg-black/50 hover:bg-black duration-500 fixed w-full z-[99]"
     >
       <Container className="w-11/12 2xl:w-5/6 text-center">
         <MobileMenu />

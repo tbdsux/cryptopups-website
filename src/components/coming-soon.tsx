@@ -10,7 +10,7 @@ interface ComingSoonProps {
 const ComingSoonModal = ({ open, closeModal }: ComingSoonProps) => {
   return (
     <BaseModal open={open} closeModal={closeModal} className="max-w-4xl h-112 bg-white rounded-lg">
-      <Image src={ComingSoonImg} layout="fill" objectFit="contain" alt="Coming Soon" />
+      <Image src={ComingSoonImg} fill className="object-contain mx-auto" alt="Coming Soon" />
     </BaseModal>
   );
 };

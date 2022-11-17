@@ -12,7 +12,7 @@ const Showcase = () => {
           height="125"
           width="525"
           alt="World of CryptoPups"
-          className="object-contain"
+          className="object-contain mx-auto"
         />
 
         <div

@@ -30,24 +30,18 @@ const MobileMenu = () => {
         <div>
           <ul className="my-4 flex flex-col items-center justify-center text-stone-300 text-sm font-semibold ease transition-transform duration-300">
             <li className="py-2">
-              <Link href="/">
-                <a className="tracking-wide hover:text-white" title="Home">
-                  Home
-                </a>
+              <Link href="/" className="tracking-wide hover:text-white" title="Home">
+                Home
               </Link>
             </li>
             <li className="py-2">
-              <Link href="/gallery">
-                <a className="tracking-wide hover:text-white" title="Gallery">
-                  Gallery
-                </a>
+              <Link href="/gallery" className="tracking-wide hover:text-white" title="Gallery">
+                Gallery
               </Link>
             </li>
             <li className="py-2">
-              <Link href="/profile">
-                <a className="tracking-wide hover:text-white" title="Gallery">
-                  Profile
-                </a>
+              <Link href="/profile" className="tracking-wide hover:text-white" title="Gallery">
+                Profile
               </Link>
             </li>
           </ul>

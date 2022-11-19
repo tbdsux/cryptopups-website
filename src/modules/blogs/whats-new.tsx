@@ -14,7 +14,7 @@ const WhatsNew = () => {
     <a href={data?.data ? data.data.redirect : '#'} className="group">
       <strong className="text-pastel-purple italic text-lg font-black">What&apos;s New</strong>
       <div
-        className={`h-96 w-full bg-gray-200 rounded-xl mt-2 relative ${
+        className={`h-96 w-full bg-gray-200 rounded-3xl mt-8 relative ${
           data?.data ? '' : 'animate-pulse'
         }`}
       >
@@ -23,7 +23,7 @@ const WhatsNew = () => {
             src={data.data.banner}
             alt="What's New"
             fill
-            className="object-cover h-full w-full rounded-xl"
+            className="object-cover h-full w-full rounded-3xl"
             sizes="(max-width: 768px) 83.33vw,
               (max-width: 1024px) 80vw,
               (max-width: 1280px) 66.67vw,

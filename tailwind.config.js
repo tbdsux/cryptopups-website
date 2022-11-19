@@ -1,6 +1,7 @@
 const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './src/pages/**/*.tsx',
@@ -61,11 +62,18 @@ module.exports = {
       brightness: {
         20: '.2',
         30: '.3'
-      }
+      },
+      typography: ({ theme }) => ({
+        DEFAULT: {
+          css: {
+            '--tw-prose-headings': theme('colors.pastel.purple')
+          }
+        }
+      })
     }
   },
   variants: {
     extend: {}
   },
-  plugins: []
+  plugins: [require('@tailwindcss/line-clamp'), require('@tailwindcss/typography')]
 };

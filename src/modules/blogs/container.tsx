@@ -21,7 +21,7 @@ const BlogsContainer = () => {
                 className="rounded-lg border flex items-center my-3 group relative"
                 key={post.slug}
               >
-                <div className="w-64 h-52 relative rounded-l-lg bg-gray-200">
+                <div className="w-72 h-52 relative rounded-l-lg bg-gray-200">
                   {post.poster ? (
                     <Image
                       src={post.poster}

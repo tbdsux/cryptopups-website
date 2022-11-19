@@ -16,7 +16,7 @@ const PostHeader = ({ post }: PostHeaderProps) => {
         <></>
       )}
 
-      <h3 className="text-4xl font-black text-pastel-purple text-justify">{post.title}</h3>
+      <h3 className="text-4xl font-black text-pastel-purple">{post.title}</h3>
 
       <small className="text-gray-600 font-medium">
         @{post.author} | {new Date(post.created_at * 1000).toString()}

@@ -31,6 +31,11 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="my-1">
+                  <Link href="/blogs" className="" title="Blogs">
+                    Blogs
+                  </Link>
+                </li>
+                <li className="my-1">
                   <Link href="/profile" className="" title="Profile">
                     Profile
                   </Link>

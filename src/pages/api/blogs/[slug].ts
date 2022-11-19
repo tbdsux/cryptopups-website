@@ -11,6 +11,7 @@ const getPost = async (req: NextApiRequest, res: NextApiResponse) => {
   const r = await db.get(Array.isArray(slug) ? slug.join('') : slug);
   if (r == null) {
     res.status(404).json({ error: true, message: 'Post not found.' });
+    return;
   }
 
   res.status(200).json({ error: false, data: r });

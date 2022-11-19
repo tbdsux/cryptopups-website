@@ -11,4 +11,11 @@ export interface PostProps {
   key?: string; // auto added by deta base
 }
 
+export interface WhatsNewProps {
+  banner: string;
+  redirect: string;
+  key?: string; // auto added by base
+}
+
 export const BASE_POSTS = isDev ? 'BlogPosts' : 'BLOGPOSTS';
+export const BASE_WHATS_NEW = isDev ? 'DevBlogWhatsNew' : 'BlogWhatsNew';

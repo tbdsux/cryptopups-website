@@ -18,8 +18,7 @@ const AssetList = ({ asset }: AssetListProps) => {
             alt={asset.name}
             height="300"
             width="200"
-            className={`cursor-pointer z-30`}
-            objectFit="contain"
+            className={`cursor-pointer z-30 object-contain`}
           />
         </div>
       </div>

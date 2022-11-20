@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 import remarkGfm from 'remark-gfm';
 import BlogLayout from '../../layouts/blog';
 import { PostProps } from './posts';
@@ -15,7 +16,9 @@ const PostPage: NextPage<PostPageProps> = ({ post }) => {
       <NextSeo title={`${post.title} - Blogs`} description={post.synopsis ?? ''} />
 
       <div className="prose xl:prose-lg max-w-none">
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
+          {post.content}
+        </ReactMarkdown>
       </div>
     </BlogLayout>
   );

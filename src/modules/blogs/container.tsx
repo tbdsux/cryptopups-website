@@ -16,7 +16,7 @@ const BlogsContainer = () => {
       <div className="mt-8">
         <strong className="text-pastel-purple italic text-lg font-black">All Blogs</strong>
 
-        <ul className="grid grid-cols-3 2xl:grid-cols-4 gap-8 mt-8">
+        <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8 mt-8">
           {data ? (
             data.data
               ?.sort((x, y) => y.created_at - x.created_at)
@@ -31,6 +31,12 @@ const BlogsContainer = () => {
                         src={post.poster}
                         alt={post.title}
                         fill
+                        sizes="(max-width: 768px) 83.33vw,
+              (max-width: 1024px) 80vw,
+              (max-width: 1280px) 66.67vw,
+              (max-width: 1536px) 60vw,
+              (max-width: 2048px) 50vw,
+              91.67vw"
                         className="object-cover w-full h-full rounded-t-2xl z-20"
                       />
                     ) : (

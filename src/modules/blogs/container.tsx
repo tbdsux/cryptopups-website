@@ -3,6 +3,7 @@ import Link from 'next/link';
 import useSWR from 'swr';
 import fetcher from '../../lib/fetcher';
 import { InternalAPIResponseProps } from '../../types/responses';
+import BlogLoadingPlaceholder from './loading';
 import { PostProps } from './posts';
 import WhatsNew from './whats-new';
 
@@ -66,7 +67,7 @@ const BlogsContainer = () => {
                 </li>
               ))
           ) : (
-            <p className="mt-4 text-sm text-gray-700">loading...</p>
+            <BlogLoadingPlaceholder />
           )}
         </ul>
       </div>

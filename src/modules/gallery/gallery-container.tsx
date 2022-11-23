@@ -4,6 +4,7 @@ import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/24/solid';
 import { Fragment, useRef, useState } from 'react';
 import { useImages } from '../../hooks/useImages';
 import GalleryImages from './gallery-images';
+import GalleryLoadingPlaceholder from './loading-placeholder';
 import GalleryProvider from './provider';
 import { useSetsProvider } from './sets-provider';
 
@@ -328,7 +329,7 @@ const GalleryContainer = () => {
                 community mods and admins.
               </p>
             ) : images == null ? (
-              <p>Loading...</p>
+              <GalleryLoadingPlaceholder />
             ) : (
               allSets.map((x, index) => (
                 <Tab.Panel key={index}>

@@ -22,6 +22,7 @@
     "@headlessui/react": "^1.7.4",
     "@heroicons/react": "^2.0.13",
     "@vercel/analytics": "^0.1.5",
+    "@vercel/og": "^0.0.21",
     "@waxio/waxjs": "^1.1.0",
     "anchor-link": "^3.5.1",
     "anchor-link-browser-transport": "^3.5.1",

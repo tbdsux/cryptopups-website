@@ -25,23 +25,15 @@ const IMAGES: ImageContainerProps[] = [
       <Image
         src={uncommonPup}
         alt="Uncommon Pup"
-        objectFit="contain"
-        layout="fill"
+        fill
         placeholder="blur"
-        className="z-40"
+        className="z-40 object-contain"
       />
     )
   },
   {
     image: (
-      <Image
-        src={rarePup}
-        alt="Rare Pup"
-        objectFit="contain"
-        layout="fill"
-        placeholder="blur"
-        className="z-40"
-      />
+      <Image src={rarePup} alt="Rare Pup" fill placeholder="blur" className="z-40 object-contain" />
     )
   },
   {
@@ -49,10 +41,9 @@ const IMAGES: ImageContainerProps[] = [
       <Image
         src={mythicPup}
         alt="Mythic Pup"
-        objectFit="contain"
-        layout="fill"
+        fill
         placeholder="blur"
-        className="z-40"
+        className="z-40 object-contain"
       />
     )
   },
@@ -61,10 +52,9 @@ const IMAGES: ImageContainerProps[] = [
       <Image
         src={cosmicPup}
         alt="Cosmic Pup"
-        objectFit="contain"
-        layout="fill"
+        fill
         placeholder="blur"
-        className="z-40"
+        className="z-40 object-contain"
       />
     )
   },
@@ -73,10 +63,9 @@ const IMAGES: ImageContainerProps[] = [
       <Image
         src={etherealPup}
         alt="Ethereal Pup"
-        objectFit="contain"
-        layout="fill"
+        fill
         placeholder="blur"
-        className="z-40"
+        className="z-40 object-contain"
       />
     )
   }

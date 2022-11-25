@@ -28,13 +28,7 @@ const CardRarities = () => {
             onClick={() => dispatch({ type: 'prev' })}
           >
             <div className="relative h-6 w-6">
-              <Image
-                src={ArrowSides}
-                alt=""
-                layout="fill"
-                objectFit="contain"
-                className="scale-x-[-1]"
-              />
+              <Image src={ArrowSides} alt="" fill className="scale-x-[-1] object-contain" />
             </div>
           </button>
 
@@ -49,7 +43,7 @@ const CardRarities = () => {
             onClick={() => dispatch({ type: 'next' })}
           >
             <div className="relative h-6 w-6">
-              <Image src={ArrowSides} alt="" layout="fill" objectFit="contain" className="" />
+              <Image src={ArrowSides} alt="" fill className="object-contain" />
             </div>
           </button>
         </div>

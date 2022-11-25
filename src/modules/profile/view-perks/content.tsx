@@ -91,8 +91,7 @@ const ViewPerksContent = () => {
               height="37"
               width="37"
               alt=""
-              className="rounded-full"
-              objectFit="contain"
+              className="rounded-full object-contain"
             />
             <span className="ml-4">Neftyblocks</span>
           </a>
@@ -109,8 +108,7 @@ const ViewPerksContent = () => {
               height="37"
               width="37"
               alt=""
-              className="rounded-full"
-              objectFit="contain"
+              className="rounded-full object-contain"
             />
             <span className="ml-4">Atomichub</span>
           </a>

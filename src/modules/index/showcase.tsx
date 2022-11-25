@@ -44,10 +44,8 @@ const Showcase = () => {
       <Image
         src={Background}
         alt="World of Cryptopups"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="bottom"
-        className="w-full h-full inset-0 z-20"
+        fill
+        className="w-full h-full inset-0 z-20 object-cover object-bottom"
       />
     </div>
   );

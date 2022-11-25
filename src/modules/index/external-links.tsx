@@ -29,8 +29,7 @@ const ExternalLinks = () => {
             height="37"
             width="37"
             alt=""
-            className="rounded-full"
-            objectFit="contain"
+            className="rounded-full object-contain"
           />
           <span className="ml-2">Atomichub</span>
         </a>
@@ -47,8 +46,7 @@ const ExternalLinks = () => {
             height="37"
             width="37"
             alt=""
-            className="rounded-full"
-            objectFit="contain"
+            className="rounded-full object-contain"
           />
           <span className="ml-2">Neftyblocks</span>
         </a>

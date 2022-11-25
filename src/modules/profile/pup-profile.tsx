@@ -1,33 +1,12 @@
 import { useWaxUser } from '@cryptopuppie/next-waxauth';
-import { CheckIcon, ClipboardIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
-import useGetToken from '../../hooks/useGetToken';
 import useGetWaxProfile from '../../hooks/useGetWaxProfile';
-import { bloks } from '../../lib/config';
-import TokenUseModal from './token-use/modal';
+import { bloks, isDev } from '../../lib/config';
+import ProfileToken from './profile-token';
 
 const PupProfile = () => {
   const { user } = useWaxUser();
-  const authData = useGetToken();
   const profile = useGetWaxProfile();
-
-  const [copied, setCopied] = useState(false);
-
-  const copyToken = () => {
-    if (!authData) return;
-
-    navigator.clipboard.writeText(authData.token);
-    setCopied(true);
-  };
-
-  useEffect(() => {
-    if (copied) {
-      setTimeout(() => {
-        setCopied(false);
-      }, 3000);
-    }
-  }, [copied]);
 
   return (
     <div className="bg-pastel-violet text-white p-12 rounded-3xl">
@@ -36,23 +15,11 @@ const PupProfile = () => {
 
         <p className="font-medium w-full sm:w-auto text-right sm:text-lg flex items-center justify-end">
           Token ID:
-          <span className="inline-flex items-center ml-2">
-            {authData?.token}
-
-            <button
-              onClick={copyToken}
-              title={copied ? 'Token has been copied' : 'Copy Token'}
-              className="mx-1"
-            >
-              {copied ? (
-                <CheckIcon aria-hidden="true" className="h-5 w-5" />
-              ) : (
-                <ClipboardIcon aria-hidden="true" className="h-5 w-5" />
-              )}
-            </button>
-
-            <TokenUseModal />
-          </span>
+          {isDev ? (
+            <span className="text-sm ml-1">(Not applicable in testnet)</span>
+          ) : (
+            <ProfileToken />
+          )}
         </p>
       </div>
 

@@ -40,6 +40,11 @@ const MobileMenu = () => {
               </Link>
             </li>
             <li className="py-2">
+              <Link href="/blogs" className="tracking-wide hover:text-white" title="Blogs">
+                Blogs
+              </Link>
+            </li>
+            <li className="py-2">
               <Link href="/profile" className="tracking-wide hover:text-white" title="Gallery">
                 Profile
               </Link>

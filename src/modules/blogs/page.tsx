@@ -14,7 +14,7 @@ const BlogsPage = () => {
         description="Read updates, blogs and news of the latest changes to our project"
       />
 
-      <Container className="w-11/12 md:w-5/6 lg:w-4/5 xl:w-2/3 2xl:w-3/5 3xl:w-1/2">
+      <Container className="w-11/12 md:w-5/6 lg:w-4/5 xl:w-2/3 3xl:w-3/5">
         <BlogsContainer />
       </Container>
     </PageLayout>

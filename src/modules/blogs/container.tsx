@@ -17,7 +17,7 @@ const BlogsContainer = () => {
       <div className="mt-8">
         <strong className="text-pastel-purple italic text-lg font-black">All Blogs</strong>
 
-        <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8 mt-8">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8 mt-8">
           {data ? (
             data.data
               ?.sort((x, y) => y.created_at - x.created_at)
@@ -26,7 +26,7 @@ const BlogsContainer = () => {
                   className="rounded-2xl flex flex-col group relative shadow-xl border border-gray-100"
                   key={post.slug}
                 >
-                  <div className="w-full h-52 relative rounded-t-2xl bg-gray-200">
+                  <div className="w-full h-64 sm:h-44 relative rounded-t-2xl bg-gray-200">
                     {post.poster ? (
                       <Image
                         src={post.poster}

@@ -33,8 +33,9 @@ export default function handler(req: NextRequest) {
           <img
             alt=""
             style={{ height: '100%', width: '100%', position: 'absolute', objectFit: 'cover' }}
-            src="https://www.worldofcryptopups.com/background.png"
+            src="/background.png"
           />
+
           <div style={{ color: '#fff' }}>{title}</div>
         </div>
       ),

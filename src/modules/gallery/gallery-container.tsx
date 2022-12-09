@@ -38,6 +38,23 @@ const categories: CategoriesProp[] = [
 
 const rarities = ['None', 'common', 'uncommon', 'rare', 'mythic', 'cosmic', 'ethereal', 'special'];
 
+const handleName = (name: string) => {
+  if (name === 'Pupbee Waxy') {
+    return 'Waxy';
+  }
+  if (name === 'Pupple Apple') {
+    return 'Apple';
+  }
+  if (name === 'Redpup Rusty') {
+    return 'Rusty';
+  }
+  if (name === 'Pupcat Mimi') {
+    return 'Mimi';
+  }
+
+  return name;
+};
+
 const GalleryContainer = () => {
   const { isLoggedIn } = useWaxUser();
   const images = useImages();
@@ -250,7 +267,7 @@ const GalleryContainer = () => {
                                 active ? 'bg-gray-100 text-gray-900' : 'text-gray-900'
                               }`
                             }
-                            value={x.immutable_data.name}
+                            value={handleName(x.immutable_data.name)}
                           >
                             {({ selected }) => (
                               <>
@@ -259,7 +276,7 @@ const GalleryContainer = () => {
                                     selected ? 'font-medium' : 'font-normal'
                                   }`}
                                 >
-                                  {x.immutable_data.name}
+                                  {handleName(x.immutable_data.name)}
                                 </span>
                                 {selected ? (
                                   <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-600">

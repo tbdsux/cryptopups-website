@@ -1,6 +1,6 @@
 import { useWaxUser } from '@cryptopuppie/next-waxauth';
 import useGetOwnedTemplates from '../../hooks/useGetOwnedTemplates';
-import { atomicMarket, ignoreTemplates, isDev } from '../../lib/config';
+import { atomicMarket, ignoreTemplates } from '../../lib/config';
 import GalleryClaimRewards from '../claim-rewards/modal';
 import ImageLightbox from './gallery-lightbox';
 import GallerySetImages from './gallery-set-images';
@@ -29,8 +29,6 @@ const GalleryImages = () => {
         <ul className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 2xl:grid-cols-8 3xl:grid-cols-8 gap-6">
           {images
             .filter((i) => {
-              if (isDev) return true;
-
               return !ignoreTemplates.includes(i.template_id);
             })
             .filter((i) => i.immutable_data.img != undefined) // filter for blank image fields
@@ -54,9 +52,12 @@ const GalleryImages = () => {
             .filter((i) => {
               if (pupname != 'None') {
                 return (
-                  i.immutable_data['Item Owner']?.toLowerCase().includes(pupname?.toLowerCase()) || // this filter is for pupitems
-                  i.immutable_data['item owner']?.toLowerCase().includes(pupname?.toLowerCase()) || // this filter is for pupitems
-                  i.immutable_data.name.toLowerCase().includes(pupname?.toLowerCase()) // filter for both puppycards and pupskincards
+                  i.schema.schema_name !== 'pupmojicards' && // ignore pupmojicards (info: hard to filter, since there's no distinction)
+                  (i.immutable_data['Item Owner']?.toLowerCase().includes(pupname?.toLowerCase()) || // this filter is for pupitems
+                    i.immutable_data['item owner']
+                      ?.toLowerCase()
+                      .includes(pupname?.toLowerCase()) || // this filter is for pupitems
+                    i.immutable_data.name.toLowerCase().includes(pupname?.toLowerCase())) // filter for both puppycards and pupskincards
                 );
               }
 

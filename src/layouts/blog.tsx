@@ -17,7 +17,7 @@ const BlogLayout = ({ children, post }: BlogLayoutProps) => {
 
         <hr className="my-6 " />
 
-        <div className=" mt-4 mb-32">{children}</div>
+        <div className=" mt-4 mb-16">{children}</div>
       </Container>
     </DefaultLayout>
   );

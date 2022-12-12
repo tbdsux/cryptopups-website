@@ -1,3 +1,4 @@
+import ApolProfile from '../assets/apol.png';
 import ArrowDown from '../assets/arrow-down.png';
 import ArrowSides from '../assets/arrow-sides.png';
 import AtomichubImg from '../assets/atomichub.png';
@@ -6,7 +7,7 @@ import ComingSoonImg from '../assets/coming-soon.png';
 import Logo from '../assets/logo.png';
 import NeftyblocksImg from '../assets/neftyblocks.png';
 
-export { Background, AtomichubImg, NeftyblocksImg, Logo, ArrowSides, ArrowDown, ComingSoonImg };
+export { Background, AtomichubImg, NeftyblocksImg, Logo, ArrowSides, ArrowDown, ComingSoonImg, ApolProfile };
 
 // https://github.com/eosdac/ual-wax/blob/master/src/WaxIcon.ts
 export const WaxIcon: string = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAEt2lUWHRYTU

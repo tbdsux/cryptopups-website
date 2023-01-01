@@ -11,12 +11,6 @@ module.exports = {
         height: 720,
         width: 1280,
         alt: 'The World of CryptoPups'
-      },
-      {
-        url: 'https://www.worldofcryptopups.com/logo.png',
-        height: 175,
-        width: 400,
-        alt: 'The World of CryptoPups'
       }
     ]
   },

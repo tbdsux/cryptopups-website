@@ -14,6 +14,7 @@ const PostHeader = ({ post }: PostHeaderProps) => {
             src={post.poster}
             fill
             alt={post.title}
+            priority
             className="h-full w-full object-cover rounded-3xl"
             sizes="(max-width: 768px) 83.33vw,
               (max-width: 1024px) 80vw,

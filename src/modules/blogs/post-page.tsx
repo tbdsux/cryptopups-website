@@ -19,16 +19,18 @@ const PostPage: NextPage<PostPageProps> = ({ post }) => {
         title={`${post.title} - Blogs`}
         description={post.synopsis ?? ''}
         openGraph={{
+          title: `${post.title} - Blogs`,
+          description: post.synopsis ?? undefined,
           images: post.poster
             ? [
                 {
                   url: post.poster,
-                  height: 720,
-                  width: 1280,
+                  height: 630,
+                  width: 1200,
                   alt: `${post.title} - Blogs`
                 }
               ]
-            : []
+            : undefined
         }}
       />
 

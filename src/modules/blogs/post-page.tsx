@@ -15,7 +15,22 @@ export interface PostPageProps {
 const PostPage: NextPage<PostPageProps> = ({ post }) => {
   return (
     <BlogLayout post={post}>
-      <NextSeo title={`${post.title} - Blogs`} description={post.synopsis ?? ''} />
+      <NextSeo
+        title={`${post.title} - Blogs`}
+        description={post.synopsis ?? ''}
+        openGraph={{
+          images: post.poster
+            ? [
+                {
+                  url: post.poster,
+                  height: 720,
+                  width: 1280,
+                  alt: `${post.title} - Blogs`
+                }
+              ]
+            : []
+        }}
+      />
 
       <div className="prose xl:prose-lg max-w-none">
         <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>

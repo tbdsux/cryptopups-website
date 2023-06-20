@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@cryptopuppie/next-waxauth':
     specifier: ^0.3.1
@@ -35,8 +39,8 @@ dependencies:
     specifier: ^0.1.11
     version: 0.1.11(react@18.2.0)
   '@waxio/waxjs':
-    specifier: ^1.4.2
-    version: 1.4.2(typescript@4.9.5)
+    specifier: ^1.5.0
+    version: 1.5.0(typescript@4.9.5)
   anchor-link:
     specifier: ^3.5.1
     version: 3.5.1
@@ -175,7 +179,7 @@ packages:
     resolution: {integrity: sha512-8xEKZPbWemWqNJA7+E2p7VvjgJKur2uAyFzI//qkMkXnT9qxPwnoy0xzU51Ok9nnFBsCz0Zsb6PcW2AQ2nTHqg==}
     dependencies:
       '@hapi/iron': 7.0.1
-      '@waxio/waxjs': 1.4.2(typescript@4.9.5)
+      '@waxio/waxjs': 1.5.0(typescript@4.9.5)
       anchor-link: 3.5.1
       anchor-link-browser-transport: 3.5.1(anchor-link@3.5.1)
       cookie: 0.5.0
@@ -872,8 +876,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@waxio/waxjs@1.4.2(typescript@4.9.5):
-    resolution: {integrity: sha512-glt9Sle28ceNuiTdaOlMCx0FEGQaA2zSgUbYPRQXUnFHqG7i2ooymzQtFxiB1pQGmiMs1nI9RdHr98Ruuz99fQ==}
+  /@waxio/waxjs@1.5.0(typescript@4.9.5):
+    resolution: {integrity: sha512-+0DOm02tJm99LaYUaFdKCQ61YdmtCwCMn8qWhEke9xUtJfLqSwT3oth19zCgpL3BHi66mCneGmHXjpFRds41PQ==}
     dependencies:
       eosjs: 22.1.0
       ts-node-dev: 1.1.8(typescript@4.9.5)
